@@ -1,0 +1,105 @@
+
+// footer main
+footer {
+  .passport-banner-footer-height {
+    height: 200px;
+}
+
+.passport-banner-images .card-passport-footer:nth-child(3n+1), .passport-banner-images .card-passport:nth-child(3n+1) {
+  -webkit-transform: rotate(16deg);
+  transform: rotate(16deg);
+}
+
+.card-passport-footer {
+  min-width: 145px;
+  -ms-flex-preferred-size: 145px;
+  flex-basis: 145px;
+}
+.card-passport-footer {
+  width: 8.33%;
+  height: 188px;
+  /* min-width: 75px; */
+  -ms-flex-preferred-size: 75px;
+  /* flex-basis: 75px; */
+}
+
+.profile-bg {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-print-color-adjust: exact;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,.5);
+}
+.left-0 {
+  left: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
+.top-0 {
+  top: 0;
+}
+
+
+.logo {
+  background-image: url(../images/footer-fade.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .logoin {
+    background-image: url(../images/logo-footer.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+}
+
+.links {
+div {
+  @include xs { width: 50% }
+  @include sm { width: 50% }
+  @include lg { width: 12.5% }
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+}
+
+.footer2 {
+color: white;
+z-index: 10;
+background-color: #ee2569;
+
+.footer2_1 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.footer2_3 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.icons {
+font-size: 19px;
+margin-left: 5px;
+margin-right: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+}
+
+}

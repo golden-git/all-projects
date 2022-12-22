@@ -1,0 +1,46 @@
+extends components/layout.pug
+block title
+  |  اضافة مستخدم
+block main
+  +breadcrumb-in-1(' اضافة مستخدم  ', ' اضافة مستخدم  ', 'الرئسية', 'index.html')
+
+  section.content
+    .card.card-primary.card-outline
+      .card-header البيانات الاساسية
+      .card-body
+        form
+          .row
+            .col-md-6
+              .form-group
+                label  اسم الموظف
+                select.form-control
+                  - for (var x = 1; x <= 10; x++)
+                    option موظف #{x}
+            .col-md-6
+              .form-group
+                label الاسم
+                input.form-control(type="text")
+            .col-md-6
+              .form-group
+                label كلمة المرور
+                input.form-control(type="password")
+            .col-md-6
+              .form-group
+                label  العمل
+                select.form-control
+                  - for (var x = 1; x <= 5; x++)
+                    option العمل #{x}
+            .col-md-6
+              .form-group
+                label  نوع المستخدام
+                select.form-control
+                  - for (var x = 1; x <= 5; x++)
+                    option نوع #{x}
+            .col-md-6
+              .form-group
+                label  الحالة
+                select.form-control
+                  - for (var x = 1; x <= 5; x++)
+                    option الحالة #{x}
+            .col-12
+               +btn-save

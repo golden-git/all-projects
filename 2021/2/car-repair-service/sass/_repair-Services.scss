@@ -1,0 +1,84 @@
+/*========== repair-Services ==========*/
+
+.repair-Services {
+    padding: 5% 0;
+    background-image: url(../imgaes/repair-Services/block-bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .section__text-background {
+        font-size: 180px;
+        opacity: .05;
+        color: #fff;
+        bottom: -130px;
+    }
+
+    li {
+        font-size: 20px;
+        i {
+            font-size: 10px;
+        }
+    }
+     
+
+}
+
+
+@media (max-width: 575.98px) {
+    .repair-Services {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+
+        li {
+            font-size: 18px;
+            i {
+                font-size: 8px;
+            }
+        }
+     
+    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .repair-Services {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+        
+        li {
+            font-size: 18px;
+            i {
+                font-size: 8px;
+            }
+        }
+    
+    }
+}
+
+/*========== repair-Services ==========*/

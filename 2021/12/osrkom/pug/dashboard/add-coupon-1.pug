@@ -1,0 +1,31 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اضافة كوبون - 1 ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اضافة كوبون - 1 ")
+        .row
+          .col-12.mb-4: +circle-number("1", "تفاصيل الكوبون")
+          .col-12: +dash-input("اسم الكود", "اسم الكود يجب ان يحتوي على حروف و ارقام", "text", "مثلا : 32Asrm")
+          .col-12.mb-2: +dash-select(
+            " نوع الخصم ",
+            "",
+            " مبلغ ثابت من مجموع المشتريات "
+            )
+          .col-12: +dash-input-price("ادخل مبلغ الخصم", "ريال")
+          .col-12: +dash-switch-between("", "مع شحن مجاني", "1")
+          .col-12: hr
+          .col-12: +dash-input-price("  المبلغ الاقصي للخصم", "ريال")
+          .col-12: +dash-input-calendar("تاريخ ووقت انتهاء الكوبون", "اختر اليوم و الوقت الذى ستنتهي به صلاحية الكوبون", "text", "وقت الانتهاء")
+          .col-12.mb-2: +dash-select(
+            "استثناء المنتجات المخفضة",
+            "",
+            " نعم "
+            )
+          .col-12: +dash-input("عدد مرات الاستخدام للجميع", "", "number", "")
+          .col-12: +dash-input("عدد مرات الاستخدام للعميل الواحد", "", "number", "")
+          .col-12: +action-btn("التالي", "add-coupon-2.html" , "الغاء")
+
+    include ./includes/scripts

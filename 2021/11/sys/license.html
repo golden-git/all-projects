@@ -1,0 +1,825 @@
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<title>التراخيص
+</title>
+<!-- fontawesome-->
+<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"/>
+<!-- adminlte-->
+<link rel="stylesheet" href="dist/css/adminlte.css"/>
+<!-- style1-->
+<link rel="stylesheet" href="dist/css/style1.css"/>
+<!-- bootstrap-->
+<link rel="stylesheet" href="dist/css/bootstrap-rtl.css"/>
+<!-- myEdit-->
+<link rel="stylesheet" href="dist/css/myEdit.css"/>
+<!-- style-->
+<link rel="stylesheet" href="dist/css/style.css"/>
+<div class="wrapper">
+  <!-- navbar-->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="accountingSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-magic"></i><span>روابط سريعة</span></a>
+        <ul class="dropdown-menu" aria-labelledby="accountingSubMenu">
+          <li><a class="dropdown-item" href="index.html"><span>النظام</span></a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <div id="app">
+        <div>
+          <li class="navbar-link"><a class="nav-link" href="/mail"><i class="fa fa-bell"></i><span class="badge badge-primary">0</span></a></li>
+        </div>
+      </div>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="mainSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="transactionsSubMenu">
+          <li><a class="dropdown-item" href="#/tutorial/tutorials"><i class="fa fa-question-circle"></i><span>مركز المعرفة</span></a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="mainSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="transactionsSubMenu">
+          <li><a class="dropdown-item" href="#/translate?lang=ar"><i class="fa fa-language"></i><span>العربية</span></a></li>
+          <li><a class="dropdown-item" href="#/translate?lang=en"><i class="fa fa-language"></i><span>English</span></a></li>
+          <li><a class="dropdown-item" href="#/translate?lang=ur"><i class="fa fa-language"></i><span>ur</span></a></li>
+        </ul>
+      </li>
+      <li class="navbar-link"><a class="nav-link logout" href="#"><i class="fa fa-power-off"></i></a></li>
+    </ul>
+  </nav>
+  <!-- aside-->
+  <aside class="main-sidebar sidebar-light-primary elevation-4"><a class="brand-link" href="#"><span class="brand-text font-weight-light text-capitalize">المصمم الذكي</span></a>
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <h3 class="text-center">اسم النظام</h3>
+          </li>
+          <!-- index-->
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-chart-pie nav-icon"></i>
+              <p>الرئيسية</p></a></li>
+          <!-- sys-->
+          <li class="nav-item"><a class="nav-link" href="sys.html"><i class="fas fa-cogs nav-icon"></i>
+              <p> ادخالات النظام</p></a></li>
+          <!-- users-->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon fas fa-users"></i>
+              <p> المستخدمين<i class="right fas fa-angle-left"></i></p></a>
+            <ul class="nav nav-treeview">
+              <!-- add-->
+              <li class="nav-item"><a class="nav-link" href="add-user.html"><i class="far fa-circle nav-icon"></i>
+                  <p>اضافة مستخدم</p></a></li>
+              <!-- users-->
+              <li class="nav-item"><a class="nav-link" href="users.html"><i class="far fa-circle nav-icon"></i>
+                  <p>قائمة المستخدمين</p></a></li>
+              <!-- privilege-->
+              <li class="nav-item"><a class="nav-link" href="users-privilege.html"><i class="far fa-circle nav-icon"></i>
+                  <p>الصلاحيات</p></a></li>
+              <!-- add privilege-->
+              <li class="nav-item"><a class="nav-link" href="user-add-privilege.html"><i class="far fa-circle nav-icon"></i>
+                  <p>اضافة صلاحية لمستخدم</p></a></li>
+            </ul>
+          </li>
+          <!-- companies + bank-->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon fas fa-building"></i>
+              <p> الشركات و البنوك<i class="right fas fa-angle-left"></i></p></a>
+            <ul class="nav nav-treeview">
+              <!-- companies-->
+              <li class="nav-item"><a class="nav-link" href="companies.html"><i class="far fa-circle nav-icon"></i>
+                  <p>الشركات</p></a></li>
+              <!-- banks-->
+              <li class="nav-item"><a class="nav-link" href="banks.html"><i class="far fa-circle nav-icon"></i>
+                  <p>البنوك</p></a></li>
+            </ul>
+          </li>
+          <!-- companies + bank-->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="nav-icon fas fa-globe"></i>
+              <p> اللغات و المناطق<i class="right fas fa-angle-left"></i></p></a>
+            <ul class="nav nav-treeview">
+              <!-- language-->
+              <li class="nav-item"><a class="nav-link" href="language.html"><i class="far fa-circle nav-icon"></i>
+                  <p>اللغات</p></a></li>
+              <!-- locations-->
+              <li class="nav-item"><a class="nav-link" href="locations.html"><i class="far fa-circle nav-icon"></i>
+                  <p>المناطق</p></a></li>
+            </ul>
+          </li>
+          <!-- license-->
+          <li class="nav-item"><a class="nav-link" href="license.html"><i class="fas fa-id-badge nav-icon"></i>
+              <p> التراخيص</p></a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <div class="content-wrapper" style="min-height: 757px;">
+    <!-- main content-->
+    <main class="content">
+      <div class="container-fluid">
+                <div class="content-header">
+                  <div class="container-fluid">
+                    <div class="row mb-2">
+                      <div class="col-sm-12 mb-3">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">الرئسية</a></li>
+                          <li class="breadcrumb-item"><span>التراخيص</span></li>
+                        </ol>
+                      </div>
+                      <div class="col-sm-12">
+                        <h1>التراخيص</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <section class="content">
+          <div class="card card-primary card-outline card-outline-tabs">
+            <div class="card-header p-0 border-bottom-0">
+              <ul class="nav nav-tabs" id="tabs-tab" role="tablist">
+                <!-- license-->
+                <li class="nav-item"><a class="nav-link active" id="tabs-1-tab" data-toggle="pill" href="#tabs-1" role="tab" aria-controls="tabs-1" aria-selected="true">
+                    قائمة التراخيص
+                    </a></li>
+                <!-- license type-->
+                <li class="nav-item"><a class="nav-link" id="tabs-2-tab" data-toggle="pill" href="#tabs-2" role="tab" aria-controls="tabs-2" aria-selected="false">
+                    انواع التراخيص
+                    
+                    </a></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="tabs-tabContent">
+                <!-- license-->
+                <div class="tab-pane fade active show" id="tabs-1" role="tabpanel" aria-labelledby="tabs-1-tab">
+                  <section class="content">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card shadow-none">
+                                  <div class="d-lg-flex bg-gray-light justify-content-lg-between px-4 py-3">
+                                    <h4 class="align-self-center">قائمة التراخيص</h4>
+                                    <div class="align-self-center">
+                                      <button class="btn btn-primary departments" data-toggle="modal" data-target="#modal1"><i class="fa fa-plus"></i> اضافة</button>
+                                      <button class="btn btn-tool" type="button" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                  </div>
+                          <!-- add modal-->
+                          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">اضافة ترخيص  </h5>
+                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                <form>
+                                  <div class="modal-body row">
+                                    <div class="form-group col-lg-6">
+                                      <label>رقم الترخيص</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>   الاسم</label>
+                                      <select class="form-control">
+                                        <option>الترخيص     1</option>
+                                        <option>الترخيص     2</option>
+                                        <option>الترخيص     3</option>
+                                        <option>الترخيص     4</option>
+                                        <option>الترخيص     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ الاصدار</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ الانتهاء</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ التجديد</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>مكان الاصدار</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>جهة الاصدار</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>حالة الترخيص</label>
+                                      <select class="form-control">
+                                        <option>الترخيص     1</option>
+                                        <option>الترخيص     2</option>
+                                        <option>الترخيص     3</option>
+                                        <option>الترخيص     4</option>
+                                        <option>الترخيص     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>   النشاط</label>
+                                      <select class="form-control">
+                                        <option>النشاط     1</option>
+                                        <option>النشاط     2</option>
+                                        <option>النشاط     3</option>
+                                        <option>النشاط     4</option>
+                                        <option>النشاط     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                      <label>الفرع</label>
+                                      <select class="form-control">
+                                        <option>الفرع     1</option>
+                                        <option>الفرع     2</option>
+                                        <option>الفرع     3</option>
+                                        <option>الفرع     4</option>
+                                        <option>الفرع     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                      <label>مرفق</label>
+                                      <input class="form-control" type="file"/>
+                                    </div>
+                                  </div>
+                                          <div class="modal-footer justify-content-start">
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                            <button class="btn btn-primary add" type="button">حفظ</button>
+                                          </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- edit modal-->
+                          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">تعديل بيانات الترخيص </h5>
+                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                <form>
+                                  <div class="modal-body row">
+                                    <div class="form-group col-lg-6">
+                                      <label>رقم الترخيص</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>   الاسم</label>
+                                      <select class="form-control">
+                                        <option>الترخيص     1</option>
+                                        <option>الترخيص     2</option>
+                                        <option>الترخيص     3</option>
+                                        <option>الترخيص     4</option>
+                                        <option>الترخيص     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ الاصدار</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ الانتهاء</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                      <label>تاريخ التجديد</label>
+                                      <input class="form-control" type="date"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>مكان الاصدار</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>جهة الاصدار</label>
+                                      <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>حالة الترخيص</label>
+                                      <select class="form-control">
+                                        <option>الترخيص     1</option>
+                                        <option>الترخيص     2</option>
+                                        <option>الترخيص     3</option>
+                                        <option>الترخيص     4</option>
+                                        <option>الترخيص     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>   النشاط</label>
+                                      <select class="form-control">
+                                        <option>النشاط     1</option>
+                                        <option>النشاط     2</option>
+                                        <option>النشاط     3</option>
+                                        <option>النشاط     4</option>
+                                        <option>النشاط     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                      <label>الفرع</label>
+                                      <select class="form-control">
+                                        <option>الفرع     1</option>
+                                        <option>الفرع     2</option>
+                                        <option>الفرع     3</option>
+                                        <option>الفرع     4</option>
+                                        <option>الفرع     5</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                      <label>مرفق</label>
+                                      <input class="form-control" type="file"/>
+                                    </div>
+                                  </div>
+                                          <div class="modal-footer justify-content-start">
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                            <button class="btn btn-primary add" type="button">حفظ</button>
+                                          </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- show modal-->
+                          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">عرض تفاصيل الشركة</h5>
+                                          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                <div class="modal-body row">
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>رقم الترخيص
+                                      <p class="h5">35467</p>
+                                    </label>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>   الاسم</label>
+                                    <p class="h5">اسم الترخيص</p>
+                                  </div>
+                                  <div class="col-12">
+                                    <hr/>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-4">
+                                    <label>تاريخ الاصدار</label>
+                                    <p class="h5">12\12\2022</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-4">
+                                    <label>تاريخ الانتهاء</label>
+                                    <p class="h5">12\12\2022</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-4">
+                                    <label>تاريخ التجديد</label>
+                                    <p class="h5">12\12\2022</p>
+                                  </div>
+                                  <div class="col-12">
+                                    <hr/>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>مكان الاصدار</label>
+                                    <p class="h5">مكان الاصدار</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>جهة الاصدار</label>
+                                    <p class="h5">جهة الاصدار</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>حالة الترخيص</label>
+                                    <p class="h5">نشط</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-6">
+                                    <label>   النشاط</label>
+                                    <p class="h5">النشاط</p>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-12">
+                                    <label>الفرع</label>
+                                    <p class="h5">  وسط المدينة</p>
+                                  </div>
+                                  <div class="col-12">
+                                    <hr/>
+                                  </div>
+                                  <div class="form-group mb-3 col-lg-12">
+                                    <label>مرفق</label>
+                                    <p><img class="p-1" src="dist/img/default-150x150.png" alt="alt"/><img class="p-1" src="dist/img/default-150x150.png" alt="alt"/><img class="p-1" src="dist/img/default-150x150.png" alt="alt"/></p>
+                                  </div>
+                                </div>
+                                        <div class="modal-footer justify-content-start">
+                                          <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                        </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                                    <div class="card-extra clearfix mb-3">
+                                      <form class="form-inline guide-advanced-search mb-3">
+                                        <div class="form-group mr-2">
+                                          <label><i class="fa fa-cogs mr-1"></i><span>بحث متقدم</span></label>
+                                        </div>
+                                        <div class="form-group mr-2">
+                                          <label class="mr-1">الفرع</label>
+                                          <select class="form-control">
+                                            <option>الكل</option>
+                                            <option>1-الاصول</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group mr-2">
+                                          <label class="mr-1">نوع الترخيص</label>
+                                          <select class="form-control">
+                                            <option>الكل</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group mr-2">
+                                          <label class="mr-1">تاريخ الاصدار من</label>
+                                          <input class="form-control" type="date" value="2021-11-28"/>
+                                        </div>
+                                        <div class="form-group mr-2">
+                                          <label class="mr-1">و حتي</label>
+                                          <input class="form-control" type="date" value="2021-11-28"/>
+                                        </div>
+                                        <button class="btn btn-primary" type="button"><i class="fa fa-search ml-2"></i><span>بحث</span></button>
+                                      </form>
+                                    </div>
+                            <div class="d-md-flex justify-content-between mb-4">
+                              <div class="dataTables_filter" id="datatable_filter">
+                                <label>
+                                  <input type="search" placeholder="بحث" aria-controls="datatable"/>
+                                </label>
+                              </div>
+                              <div class="dt-buttons">
+                                <button class="btn btn-default" tabindex="0" aria-controls="datatable" type="button"><span><i class="fa fa-print mr-1"></i>طباعة</span></button>
+                                <button class="btn btn-success" tabindex="0" aria-controls="datatable" type="button"><span><i class="fa fa-file-excel mr-1"></i>اكسل</span></button>
+                              </div>
+                            </div>
+                            <table class="table table-bordered table-striped text-center">
+                              <thead>
+                                <tr>
+                                  <th>رقم</th>
+                                  <th>رقم الترخيص</th>
+                                  <th>النوع</th>
+                                  <th>الاصدار</th>
+                                  <th>الانتهاء</th>
+                                  <th>التجديد</th>
+                                  <th>الحالة</th>
+                                  <th>الفرع</th>
+                                  <th>خيارات</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                                <tr>
+                                  <td>رقم</td>
+                                  <td>23456  </td>
+                                  <td>نوع الترخيص</td>
+                                  <td>12/21/2020</td>
+                                  <td>20/12/2020</td>
+                                  <td>13/7/2020</td>
+                                  <td>نشط</td>
+                                  <td>وسط المدينة</td>
+                                          <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                            <div class="dropdown d-inline-block">
+                                              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span class="caret"></span></button>
+                                              <div class="dropdown-menu"><a class="dropdown-item text-info" href="#" data-toggle="modal" data-target="#modal3"><i class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a class="dropdown-item text-warning" href="#" data-toggle="modal" data-target="#modal2"><i class="fa fa-edit mr-1"></i><span>تعديل</span></a><a class="dropdown-item delete text-danger" href="#"><i class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                            </div>
+                                          </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="mt-3">
+                              <ul class="pagination">
+                                <li class="paginate_button page-item previous disabled" id="example1_previous"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">السابق</a></li>
+                                <li class="paginate_button page-item active"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li>
+                                <li class="paginate_button page-item"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">2</a></li>
+                                <li class="paginate_button page-item"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="3" tabindex="0">3</a></li>
+                                <li class="paginate_button page-item next" id="example1_next"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">التالي</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- license type-->
+                <div class="tab-pane fade" id="tabs-2" role="tabpanel" aria-labelledby="tabs-2-tab">
+                  <section class="content">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card shadow-none"></div>
+                                <div class="d-lg-flex bg-gray-light justify-content-lg-between px-4 py-3">
+                                  <h4 class="align-self-center">انواع التراخيص</h4>
+                                  <div class="align-self-center">
+                                    <button class="btn btn-primary departments" data-toggle="modal" data-target="#modal7"><i class="fa fa-plus"></i> اضافة</button>
+                                    <button class="btn btn-tool" type="button" data-card-widget="maximize"><i class="fas fa-expand"></i></button>
+                                  </div>
+                                </div>
+                        <!-- add modal-->
+                        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title">اضافة ترخيص  </h5>
+                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                      </div>
+                              <form>
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label>الاسم</label>
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                                </div>
+                                        <div class="modal-footer justify-content-start">
+                                          <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                          <button class="btn btn-primary add" type="button">حفظ</button>
+                                        </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- edit modal-->
+                        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title">تعديل القسم  </h5>
+                                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                      </div>
+                              <form>
+                                <div class="modal-body">
+                                  <div class="form-group">
+                                    <label>الاسم</label>
+                                    <input class="form-control" type="text"/>
+                                  </div>
+                                </div>
+                              </form>
+                                      <div class="modal-footer justify-content-start">
+                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                        <button class="btn btn-primary add" type="button">حفظ</button>
+                                      </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="d-md-flex justify-content-between mb-4">
+                            <div class="dataTables_filter" id="datatable_filter">
+                              <label>
+                                <input type="search" placeholder="بحث" aria-controls="datatable"/>
+                              </label>
+                            </div>
+                            <div class="dt-buttons">
+                              <button class="btn btn-default" tabindex="0" aria-controls="datatable" type="button"><span><i class="fa fa-print mr-1"></i>طباعة</span></button>
+                              <button class="btn btn-success" tabindex="0" aria-controls="datatable" type="button"><span><i class="fa fa-file-excel mr-1"></i>اكسل</span></button>
+                            </div>
+                          </div>
+                          <table class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>الرقم</th>
+                                <th>الاسم</th>
+                                <th>عدد التراخيص</th>
+                                <th>خيارات</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>9</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                              <tr>
+                                <td>10</td>
+                                <td>اسم الترخيص  </td>
+                                <td>32 </td>
+                                        <td><a class="btn btn-warning btn-xs mx-1" href="#" data-toggle="modal" data-target="#modal8"><i class="fa fa-edit mr-1"></i>تعديل</a><a class="btn btn-danger btn-xs mx-1" href="#"><i class="fa fa-trash mr-1"></i>خذف</a>
+                                        </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="mt-3">
+                            <ul class="pagination">
+                              <li class="paginate_button page-item previous disabled" id="example1_previous"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="0" tabindex="0">السابق</a></li>
+                              <li class="paginate_button page-item active"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="1" tabindex="0">1</a></li>
+                              <li class="paginate_button page-item"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="2" tabindex="0">2</a></li>
+                              <li class="paginate_button page-item"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="3" tabindex="0">3</a></li>
+                              <li class="paginate_button page-item next" id="example1_next"><a class="page-link" href="#" aria-controls="example1" data-dt-idx="7" tabindex="0">التالي</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <!-- footer-->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-inline"></div>
+  </footer>
+</div>
+<!-- jquery-->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- bootstrap-->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- adminlte-->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- min-->
+<script src="dist/js/main.js"></script>

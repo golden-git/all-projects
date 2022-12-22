@@ -1,0 +1,128 @@
+.explore {
+  background-color: #fff;
+  .title {
+    margin-bottom: 20px;
+    @include xs { font-size: 22px; }
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+   span {
+    content: "";
+    display: block;
+    margin: 0px;
+    padding-top: 5px;
+    border-bottom: var(--m-color) 3px solid;
+    width: max-content;
+   }
+  }
+
+  .explore-slider-1 {
+    a {
+      text-decoration: none;
+      img {
+        border: 1px solid #ececec;
+        margin-bottom: 15px;
+      }
+      h5 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .explore-slider-2 {
+    span {
+      padding: 2px 4px;
+      border-radius: 4px;
+      background-color: var(--s-color);
+      color: #fff;
+      top: 15px;
+      left: 15px;
+    }
+    a {
+      text-decoration: none;
+      img {
+        margin-bottom: 15px;
+      }
+      h5 {
+        text-align: right;
+        font-size: 14px;
+      }
+      p {
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .slider {
+    .slick-dots {
+      bottom: -15px;
+      .slick-active {
+        button:before {
+          opacity: 1;
+          color: var(--s-color);
+        }
+      }
+
+      li {
+        button:before {
+          font-family: 'slick';
+          font-size: 14px;
+          line-height: 16px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          content: '•';
+          text-align: center;
+          opacity: 1;
+          color: #D6D6D6;
+        }
+      }
+    }
+    .slick-prev, .slick-next {
+      z-index: 10;
+      width: 35px;
+      height: 35px;
+      border-radius: 2px;
+      &:hover {
+        &:before {
+          color: #fff;
+        }
+        color: #fff;
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 20px;
+      line-height: 1;
+      opacity: 1;
+      color: var(--s-color);
+    }
+
+    .slick-prev:before {
+      font-family: 'mbicon';
+      content: "\e93c";
+    }
+
+    .slick-next:before {
+      font-family: 'mbicon';
+      content: "\e93b";
+    }
+
+    .slick-prev {
+      right: -40px !important;
+      top: 40%;
+      @include xs-md{right: 0 !important;};
+    }
+    .slick-next {
+      left: -40px !important;
+      top: 40%;
+      @include xs-md{left: 0 !important;};
+    }
+  }
+}

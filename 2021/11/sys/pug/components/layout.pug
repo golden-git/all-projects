@@ -1,0 +1,84 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+meta(http-equiv="x-ua-compatible", content="ie=edge")
+title
+ block title
+  | دف جرافكس
+// fontawesome
+link(rel="stylesheet", href="plugins/fontawesome-free/css/all.min.css")
+// adminlte
+link(rel="stylesheet", href="dist/css/adminlte.css")
+// style1
+link(rel="stylesheet", href="dist/css/style1.css")
+// bootstrap
+link(rel="stylesheet", href="dist/css/bootstrap-rtl.css")
+// myEdit
+link(rel="stylesheet", href="dist/css/myEdit.css")
+// style
+link(rel="stylesheet", href="dist/css/style.css")
+.wrapper
+  // navbar
+  nav.main-header.navbar.navbar-expand.navbar-white.navbar-light
+    ul.navbar-nav
+      li.nav-item.dropdown
+        a#accountingSubMenu.nav-link.dropdown-toggle(href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+          i.fa.fa-magic
+          span روابط سريعة
+        ul.dropdown-menu(aria-labelledby="accountingSubMenu")
+          li
+            a.dropdown-item(href="index.html")
+              span النظام
+    ul.navbar-nav.ml-auto
+      #app
+        div
+          li.navbar-link
+            a.nav-link(href="/mail")
+              i.fa.fa-bell
+              span.badge.badge-primary 0
+      li.nav-item.dropdown
+        a#mainSubMenu.nav-link.dropdown-toggle(href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+          i.fa.fa-th
+        ul.dropdown-menu(aria-labelledby="transactionsSubMenu")
+          li
+            a.dropdown-item(href="#/tutorial/tutorials")
+              i.fa.fa-question-circle
+              span مركز المعرفة
+
+      li.nav-item.dropdown
+        a#mainSubMenu.nav-link.dropdown-toggle(href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+          i.fa.fa-language
+        ul.dropdown-menu(aria-labelledby="transactionsSubMenu")
+          li
+            a.dropdown-item(href="#/translate?lang=ar")
+              i.fa.fa-language
+              span العربية
+          li
+            a.dropdown-item(href="#/translate?lang=en")
+              i.fa.fa-language
+              span English
+          li
+            a.dropdown-item(href="#/translate?lang=ur")
+              i.fa.fa-language
+              span ur
+      li.navbar-link
+        a.nav-link.logout(href="#")
+          i.fa.fa-power-off
+  // aside
+  include sidebar
+  .content-wrapper(style="min-height: 757px;")
+    // main content
+    main.content
+      .container-fluid
+        include ../mixin/header
+        block main
+  // footer
+  footer.main-footer
+    .float-right.d-none.d-sm-inline.
+// jquery
+script(src="plugins/jquery/jquery.min.js")
+// bootstrap
+script(src="plugins/bootstrap/js/bootstrap.bundle.min.js")
+// adminlte
+script(src="dist/js/adminlte.min.js")
+// min
+script(src="dist/js/main.js")

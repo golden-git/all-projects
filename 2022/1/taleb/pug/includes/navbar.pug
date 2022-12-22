@@ -1,0 +1,97 @@
+// top nav
+.top-nav
+  .container
+    .row
+      .col-md-7.email-phone
+        ul.list-group.list-group-horizontal
+          li.list-group-item
+            span
+              i.fas.fa-envelope
+              span support@example.com
+          li.list-group-item
+            span
+              i.fas.fa-mobile-alt
+              span 98 012345 6789
+      .col-md-5.links
+        ul.list-group.list-group-horizontal
+          li.list-group-item
+            a.text-decoration-none.s-color-text-hover(href="#")
+              i.fab.fa-facebook-f
+          li.list-group-item
+            a.text-decoration-none.s-color-text-hover(href="#")
+              i.fab.fa-twitter
+          li.list-group-item
+            a.text-decoration-none.s-color-text-hover(href="#")
+              i.fab.fa-linkedin-in
+          li.list-group-item
+            a.text-decoration-none.s-color-text-hover(href="#")
+              i.fab.fa-dribbble
+// top nav
+
+// middle nav
+nav.navbar.navbar-expand-xl.navbar-light.bg-light.middle-nav.bg-white
+  .container
+    a.navbar-brand(href="index.html")
+      img.img-fluid(src="./images/logo.png", alt="logo")
+    span.navbar-toggler.border-0.p-0( data-bs-toggle="collapse", data-bs-target="#navbarContent", aria-controls="navbarContent", aria-expanded="false", aria-label="Toggle navigation")
+      img.rounded-3(src="./images/icons/list.png", alt="list", width="40")
+    .collapse.navbar-collapse#navbarContent
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link.active(href="index.html") الرئيسية
+        li.nav-item
+          a.nav-link(href="courses.html") الكورسات
+        li.nav-item
+          a.nav-link(href="trainer.html") المعلم
+        li.nav-item
+          a.nav-link(href="course.html") الكورس
+        li.nav-item.dropdown
+          a.nav-link#navbarDropdown(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false").
+            الصفحات
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="index.html") الرئيسية
+            li
+              a.dropdown-item(href="trainer.html") المعلم
+            li
+              a.dropdown-item(href="courses.html") الكورسات
+            li
+              a.dropdown-item(href="course.html") الكورس
+            li
+              a.dropdown-item(href="cart.html") السلة
+
+        li.nav-item
+          a.nav-link.cart(href="cart.html")
+            i.fas.fa-shopping-cart
+            span 9
+        li.nav-item.login-register
+          a.nav-link.register(href="#") إنشاء حساب
+          a.nav-link(href="#") تسجيل دخول
+
+        li.nav-item.input
+          input.form-control(placeholder="إبحث عن درس")
+          i.fas.fa-search.search-icon
+
+// middle nav
+
+// phone bottom icons
+.phone-bottom-icons.position-fixed.bottom-0.start-50.translate-middle-x.bg-white.bg.pt-2.d-xl-none.d-block
+  .icon-row.d-flex.justify-content-around
+    a.icon.text-center.text-decoration-none.text-dark(href="index.html")
+      i.mbi.mbi-home3
+      p.m-0  الرئيسية
+
+    a.icon.text-center.text-decoration-none.text-dark(href="#")
+      i.mbi.mbi-user
+      p.m-0  بياناتي
+
+
+    a.icon.text-center.text-decoration-none.text-dark(href="#")
+      i.mbi.mbi-alarm
+      p.m-0  الإشعارات
+
+    a.icon.text-center.text-decoration-none.text-dark(href="#")
+      i.mbi.mbi-papers
+      p.m-0  دوراتي
+
+// phone bottom icons

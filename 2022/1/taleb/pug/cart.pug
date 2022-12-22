@@ -1,0 +1,79 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("السلة")
+  body
+    include ./includes/navbar
+    style.
+      .top-nav { background-color: var(--g-color); }
+      .top-nav span, .top-nav a { color: #666 !important; }
+    main.cart
+      // header
+      header.d-flex
+        .container.align-self-center.text-center
+          .section-sm-title السلة
+          h1.section-lg-title(id="courses-info") قائمة المنتجات في سلة التسوق
+          nav(aria-label="breadcrumb")
+            ol.breadcrumb.d-inline-flex
+              li.breadcrumb-item
+                a(href="index.html") الرئيسية
+              li.breadcrumb-item
+                a(href="#") المنتجات
+              li.breadcrumb-item.active(aria-current="page") السلة
+          a.link(href="#courses-info")  إكتشف
+
+      section.py-0
+        .container
+          .row.cart-row
+            // cart summary
+            .col-lg-4.cart-summary.mb-lg-0.mb-4.order-lg-1.order-2
+              .g-color-bg.p-3.cart-summary-number.rounded-8.mb-4
+                h5.px-3 ملخص الطلب
+                hr.my-2
+                .d-flex.justify-content-between.mb-2
+                  span.me-3 مجموع السلة
+                  span.title-font SAR 2,472.00
+                .d-flex.justify-content-between
+                  span.me-5 الشحن
+                  span.ms-2.title-font SAR 2,472.00
+                hr.my-2
+                .d-flex.justify-content-between
+                  span.me-5 المجموع
+                  span.title-font SAR 2,472.00
+              .rounded-8.mb-4
+                h6 هل لديك كود للخصم أو رمز بطاقة الهدية؟
+                form.row.g-3
+                  .col-9
+                    input.form-control#des(type="text", value="ادخل كود الخصم هنا")
+                  .col-auto
+                    button.btn.s-color-bg.m-color-bg-hover.rounded-8.text-white(type="submit") تطبيق
+              .g-color-bg.px-2.py-3.rounded-8
+                a.btn.m-color-bg.s-color-bg-hover.text-white.rounded-8.w-100.py-3(href="checkout.html") إتمام الشراء
+            .col-lg-8.order-lg-2.order-1
+              div
+              - for (x = 1; x <= 5; x++)
+                // cart
+                .row
+                  .my-shadow.py-3.mb-4.cart-content.rounded-8
+                    i.mbi.mbi-cross.remove.text-danger.pointer.rounded-8
+                    .my-auto.col-lg-12
+                      .d-flex.justify-content-lg-between
+                        a.align-self-sm-center.align-self-start.me-2(href="product.html")
+                          img.img-fluid.rounded-8(src="./images/products/product.jpg", alt="explore slider img", width="120", height="120")
+                        .row.w-100
+                          .col-lg-6.align-self-sm-center.align-self-start.text-lg-center
+                            a.text-decoration-none.text-dark.s-color-text-hover.align-self-sm-center.align-self-start.me-2(href="product.html") هنا إسم المنتج #{x}
+                          .my-auto.col-lg-2.col-sm-4.mb-sm-auto.mb-2.text-lg-center
+                            span.d-sm-none.d-inline.me-3 السعر
+                            |749.00 SAR
+                          .my-auto.col-lg-2.col-sm-4.mb-sm-auto.mb-2.text-lg-center
+                            .d-sm-block.d-flex
+                              span.d-sm-none.d-inline-block.me-3.align-self-center العدد
+                              input.form-control.py-1.ps-0.align-self-center(type="number", value="1", min="1", style="width: 70px")
+                          .my-auto.col-lg-2.col-sm-4.mb-sm-auto.mb-2.text-lg-center
+                            span.d-sm-none.d-inline.me-3 المجموع
+                            |749.00 SAR
+              .py-3
+                a.section-link(href="#") تابع التسوق
+
+    include ./includes/footer

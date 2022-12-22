@@ -1,0 +1,87 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" من نحن ")
+  body.bg-white
+    // join
+    section.join
+        .about.pb-5
+            include ./includes/navbar
+            .container.pb-lg-5
+                .join-title.pt-5.text-md-start.text-center
+                    h3.ms-3
+                        span.m-color-text O
+                        span SRKOM
+                    P.ms-3 من نحن
+                    h4.ms-3
+                        span.m-color-text  او موقع
+                        span  و تطبيق يجمع بين الاسر المنتجة و المستخدمين بسهولة
+                    P.ms-3 لدي  اسركم
+                    a.px-0.btn.abut-link.text-dark.w-color-text-hover.d-color-bg-hover.rounded-0.h4
+                        span.align-self-center.ms-3.m-color-text  اطلب الان
+                        i.align-self-center.me-3.mbi.mbi-arrow-left
+
+    // try-app
+    section.about-app.try-app.py-lg-5.py-4
+        .container
+            .row.justify-content-center
+                .col-md-6.col-xl-6.mb-md-0.mb-3
+                    .try-app-title.pt-md-5.text-md-start.text-center
+                        h3
+                            span.m-color-text عن
+                            span  اسركم
+                        P
+                            span او موقع
+                            span و تطبيق يجمع بين الاسر المنتجة
+                            br
+                            span و المستخدمين بسهولة
+                        P
+                            span او موقع
+                            span و تطبيق يجمع بين الاسر المنتجة
+                            br
+                            span  و المستخدمين بسهولة
+
+                .col-md-6.col-xl-6
+                    .try-app-img
+                        img.img-fluid(src="./images/about.png",  )
+
+
+    // why-us
+    section.why-us.py-lg-5.py-4
+        .container.text-center
+            h2.section-title   لماذا اسركم
+            .row.mt-4
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-1.png",  )
+                    h5.item-title افضل الاكلات
+                    p.item-p افضل الاكلات من افضل و اقرب
+                        br
+                        | الاسر المنتجة لك
+
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-2.png",  )
+                    h5.item-title تواصل مباشر
+                    p.item-p تواصل مباشر مع الاسر المنتجة
+                        br
+                        | لدينا بسهولة وامان
+
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-3.png",  )
+                    h5.item-title خدمة سريعة
+                    p.item-p خدمة سريعة و دعم فني لك
+                        br
+                        | 24 ساعة
+
+
+    include ./includes/footer
+    style.
+        footer::after {
+            background-color: #fff
+        }
+
+        .try-app::after, .try-app::before,  .try-app .try-app-img::before {
+            display: none
+        }
+
+
+    include ./includes/scripts

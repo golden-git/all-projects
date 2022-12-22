@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>الرئيسية</title>
+  <!--  bootstrap rtl-->
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+  <!--  iconfont-->
+  <link rel="stylesheet" href="./css/iconfont/css/iconfont.css">
+  <!--  fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--  google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <!--  slick style-->
+  <link rel="stylesheet" href="./css/slick.css">
+  <!--  slick style-->
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <!--  main style-->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- top nav-->
+  <div class="top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 email-phone">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><span><i class="fas fa-envelope"></i><span>support@example.com</span></span>
+            </li>
+            <li class="list-group-item"><span><i class="fas fa-mobile-alt"></i><span>98 012345 6789</span></span></li>
+          </ul>
+        </div>
+        <div class="col-md-5 links">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                  class="fab fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top nav-->
+  <!-- middle nav-->
+  <nav class="navbar navbar-expand-xl navbar-light bg-light middle-nav bg-white">
+    <div class="container"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/logo.png"
+          alt="logo"></a><span class="navbar-toggler border-0 p-0" data-bs-toggle="collapse"
+        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+        aria-label="Toggle navigation"><img class="rounded-3" src="./images/icons/list.png" alt="list"
+          width="40"></span>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">الكورسات</a></li>
+          <li class="nav-item"><a class="nav-link" href="trainer.html">المعلم</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.html">الكورس</a></li>
+          <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">الصفحات</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html">الرئيسية</a></li>
+              <li><a class="dropdown-item" href="trainer.html">المعلم</a></li>
+              <li><a class="dropdown-item" href="courses.html">الكورسات</a></li>
+              <li><a class="dropdown-item" href="course.html">الكورس</a></li>
+              <li><a class="dropdown-item" href="cart.html">السلة</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link cart" href="cart.html"><i
+                class="fas fa-shopping-cart"></i><span>9</span></a></li>
+          <li class="nav-item login-register"><a class="nav-link register" href="#">إنشاء حساب</a><a class="nav-link"
+              href="#">تسجيل دخول</a></li>
+          <li class="nav-item input">
+            <input class="form-control" placeholder="إبحث عن درس"><i class="fas fa-search search-icon"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- middle nav-->
+  <!-- phone bottom icons-->
+  <div
+    class="phone-bottom-icons position-fixed bottom-0 start-50 translate-middle-x bg-white bg pt-2 d-xl-none d-block">
+    <div class="icon-row d-flex justify-content-around"><a class="icon text-center text-decoration-none text-dark"
+        href="index.html"><i class="mbi mbi-home3"></i>
+        <p class="m-0"> الرئيسية</p>
+      </a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-user"></i>
+        <p class="m-0"> بياناتي</p>
+      </a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-alarm"></i>
+        <p class="m-0"> الإشعارات</p>
+      </a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-papers"></i>
+        <p class="m-0"> دوراتي</p>
+      </a></div>
+  </div>
+  <!-- phone bottom icons-->
+  <main class="home">
+    <!-- header-->
+    <header class="d-flex">
+      <div class="container align-self-center text-center">
+        <div class="s-color-text small-title">ابدأ التعلم من المنزل</div>
+        <h1 class="larg-title">تواصل مع خبيرنا وابدأ التعلم اليوم</h1>
+        <p class="mb-4">نحن نقدم دورات عالية الجودة عبر الإنترنت لتحسين مهاراتك. جميع المدربين لدينا من ذوي الخبرة
+          العالية والخبراء.</p><a href="#"> إكتشف المزيد</a>
+      </div>
+    </header>
+    <!-- categories-->
+    <section class="categories">
+      <div class="container">
+        <div class="text-center"><span class="section-sm-title">فئات</span>
+          <h2 class="section-lg-title">الفئات الشعبية</h2>
+        </div>
+        <div class="d-flex flex-wrap mb-4">
+          <!-- category-->
+          <div class="category">
+            <div class="category-container"><a class="img-container pointer" href="courses.html"><img class="img-fluid"
+                  src="./images/category/3.jpg" alt=""></a>
+              <h5><a href="courses.html">تصميم المواقع</a></h5><span>1 دورات</span>
+            </div>
+          </div>
+          <!-- category-->
+          <div class="category">
+            <div class="category-container"><a class="img-container pointer" href="courses.html"><img class="img-fluid"
+                  src="./images/category/3.jpg" alt=""></a>
+              <h5><a href="courses.html">تصميم المواقع</a></h5><span>2 دورات</span>
+            </div>
+          </div>
+          <!-- category-->
+          <div class="category">
+            <div class="category-container"><a class="img-container pointer" href="courses.html"><img class="img-fluid"
+                  src="./images/category/3.jpg" alt=""></a>
+              <h5><a href="courses.html">تصميم المواقع</a></h5><span>3 دورات</span>
+            </div>
+          </div>
+          <!-- category-->
+          <div class="category">
+            <div class="category-container"><a class="img-container pointer" href="courses.html"><img class="img-fluid"
+                  src="./images/category/3.jpg" alt=""></a>
+              <h5><a href="courses.html">تصميم المواقع</a></h5><span>4 دورات</span>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"><a class="section-link" href="courses.html">جميع الفئات</a></div>
+      </div>
+    </section>
+    <!-- courses-->
+    <section class="courses g-color-bg">
+      <div class="container">
+        <div class="text-center mb-4"><span class="section-sm-title">الدورات</span>
+          <h2 class="section-lg-title">اكتشف الدورات الشعبية</h2>
+        </div>
+        <div class="row mb-4">
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- course-->
+            <div class="course">
+              <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid"
+                  src="./images/course/2.jpg" alt=""></a>
+              <div class="course-info">
+                <!-- course price--><span class="course-price">150 رس</span>
+                <!-- course title-->
+                <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <!-- course reviews-->
+                <div class="course-reviews">
+                  <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                        class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span>
+                  </div><span class="number">(4 مراجعات)</span>
+                </div>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div><span>0</span><i class="mbi mbi-user"></i></div>
+                  <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"><a class="section-link" href="#">جميع الدورات</a></div>
+      </div>
+    </section>
+    <!-- descount-->
+    <section class="descount d-color-bg p-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 order-lg-1 order-2">
+            <!-- descount image-->
+            <div class="descount-image text-center"><img class="img-fluid" src="./images/home/app-1.png"
+                alt="descount image"></div>
+          </div>
+          <div class="col-lg-7 order-lg-2 order-1">
+            <!-- descount text-->
+            <div class="mb-4 descount-text"><span class="section-sm-title">عرض لوقت محدود</span>
+              <h2 class="section-lg-title text-white">خصم 50٪ على جميع دوراتنا الجديدة والقادمة</h2>
+              <p class="text-white">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت
+                بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور
+                بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية
+                ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ
+                بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.</p>
+              <p class="text-white">
+                و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه
+                الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي
+                ربما تنجم عنه بعض المتعة ؟
+                علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما
+                يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم
+                فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم .
+              </p>
+              <div class="mt-4"><a href="#"> تسجيل الان</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="testimonials-news g-color-bg">
+      <!-- testimonials-->
+      <section class="testimonials">
+        <div class="container">
+          <div class="text-center mb-4"><span class="section-sm-title">شهادة</span>
+            <h2 class="section-lg-title">ماذا يقول طلابنا</h2>
+          </div>
+          <div class="d-flex flex-wrap mb-4 justify-content-center">
+            <div class="testimonial">
+              <div class="testimonial-container"><img class="mb-md-3 mb-1 lamp"
+                  src="./images/home/testimonial/testimonial-icon.svg" alt="testimonial">
+                <div class="testimonial-reviews mb-md-3 mb-1"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div>
+                <p>في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة, ان تونس بالتوقيع
+                  سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا، الساحلية. اتفاق أوزار
+                  فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.</p>
+                <div class="d-flex user">
+                  <div class="imgage-container"><img class="img-fluid" src="./images/home/testimonial/1.jpg"
+                      alt="testimonial"></div>
+                  <div>
+                    <h6>جاك موركيل</h6>
+                    <p>مصمم جرافيك</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-container"><img class="mb-md-3 mb-1 lamp"
+                  src="./images/home/testimonial/testimonial-icon.svg" alt="testimonial">
+                <div class="testimonial-reviews mb-md-3 mb-1"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div>
+                <p>في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة, ان تونس بالتوقيع
+                  سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا، الساحلية. اتفاق أوزار
+                  فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.</p>
+                <div class="d-flex user">
+                  <div class="imgage-container"><img class="img-fluid" src="./images/home/testimonial/1.jpg"
+                      alt="testimonial"></div>
+                  <div>
+                    <h6>جاك موركيل</h6>
+                    <p>مصمم جرافيك</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-container"><img class="mb-md-3 mb-1 lamp"
+                  src="./images/home/testimonial/testimonial-icon.svg" alt="testimonial">
+                <div class="testimonial-reviews mb-md-3 mb-1"><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i
+                      class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div>
+                <p>في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة, ان تونس بالتوقيع
+                  سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا، الساحلية. اتفاق أوزار
+                  فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.</p>
+                <div class="d-flex user">
+                  <div class="imgage-container"><img class="img-fluid" src="./images/home/testimonial/1.jpg"
+                      alt="testimonial"></div>
+                  <div>
+                    <h6>جاك موركيل</h6>
+                    <p>مصمم جرافيك</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- news-->
+      <section class="news pt-0">
+        <div class="container">
+          <div class="news-container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h4 class="title"><span>اشترك في نشرتنا الإخبارية</span></h4>
+                <p>انضم إلى قائمة المراسلة الخاصة بنشرتنا الإلكترونية لتحصل على آخر المستجدات والعروض الحصرية.</p>
+              </div>
+              <div class="col-lg-6 my-auto">
+                <form class="row mx-0 justify-content-lg-end justify-content-center">
+                  <div class="col px-0 position-relative">
+                    <input class="rounded-0 form-control" type="text" placeholder="أدخل بريدك الإلكتروني هنا">
+                    <button class="search btn" type="submit">إشترك الان</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- whay us-->
+    <section class="whay-us">
+      <div class="container">
+        <div class="row m-color-bg p-2">
+          <div class="col-lg-4 mb-lg-0 mb-4 whay-us-container-col">
+            <div class="whay-us-container"><span class="section-sm-title">لماذا نحن</span>
+              <h2 class="section-lg-title text-white">ما يميزنا</h2>
+              <p class="mb-3 text-white">في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة,
+                ان تونس بالتوقيع سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا،
+                الساحلية. اتفاق أوزار فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.</p><a href="#">إعرف
+                أكثر</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <!-- whay us element-->
+              <div class="col-sm-6 whay-us-element mb-sm-0 mb-4">
+                <div class="d-md-flex"><img class="mb-md-0 mb-3" src="./images/home/whay-us/whay-us-1.svg" alt="whay us"
+                    width="75" height="75">
+                  <div>
+                    <h5>منهجية علمية عالية</h5>
+                    <p>
+                      في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ،
+                      هي كل قادة المقالات بمباركة.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- whay us element-->
+              <div class="col-sm-6 whay-us-element mb-sm-0 mb-4">
+                <div class="d-md-flex"><img class="mb-md-0 mb-3" src="./images/home/whay-us/whay-us-2.svg" alt="whay us"
+                    width="72" height="72">
+                  <div>
+                    <h5>أساتذة مؤهلين لجميع المستويات</h5>
+                    <p>
+                      في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ،
+                      هي كل قادة المقالات بمباركة.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- whay us element-->
+              <div class="col-sm-6 whay-us-element mb-sm-0 mb-4">
+                <div class="d-md-flex"><img class="mb-md-0 mb-3" src="./images/home/whay-us/whay-us-3.svg" alt="whay us"
+                    width="72" height="72">
+                  <div>
+                    <h5>بيئة تعليمية جاذبة</h5>
+                    <p>
+                      في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ،
+                      هي كل قادة المقالات بمباركة.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- whay us element-->
+              <div class="col-sm-6 whay-us-element mb-sm-0 mb-4">
+                <div class="d-md-flex"><img class="mb-md-0 mb-3" src="./images/home/whay-us/whay-us-4.svg" alt="whay us"
+                    width="72" height="72">
+                  <div>
+                    <h5>تخفيف أعباء الدراسة وتسهيلها</h5>
+                    <p>
+                      في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ،
+                      هي كل قادة المقالات بمباركة.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team-->
+    <section class="team g-color-bg">
+      <div class="container">
+        <div class="text-center mb-4"><span class="section-sm-title">الرفيق</span>
+          <h2 class="section-lg-title">مدربينا المهرة</h2>
+        </div>
+        <div class="team-slider-rtl">
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+          <div>
+            <div class="position-relative team-div text-start"><a href="trainer.html"><img class="position-absolute"
+                  src="./images/home/team/1.jpg" alt="team"></a>
+              <h5 class="mb-2"><a href="trainer.html"> مارك أنتوني</a></h5>
+              <p class="mb-2">مطور التطبيق</p>
+              <div class="d-flex justify-content-between">
+                <div class="text-start"><span class="d-block"><i
+                      class="fas fa-mobile-alt me-2 s-color-text "></i>121-3245-214</span><span class="d-block"><i
+                      class="fas fa-envelope  me-2 s-color-text"></i>sample@mail.com</span></div>
+                <div class=" position-relative"><i class="fas fa-share-alt s-color-bg rounded-circle fa-fw"></i></div>
+              </div><span class="position-absolute link text-center py-2"><a class="d-block" href="#"><i
+                    class="fab fa-facebook-f"></i></a><a class="d-block" href="#"><i class="fab fa-youtube"></i></a><a
+                  class="d-block" href="#"><i class="fab fa-linkedin-in"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-twitter"></i></a><a class="d-block" href="#"><i
+                    class="fab fa-app-store-ios"></i></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogs-->
+    <section class="blogs s-color-bg">
+      <div class="container">
+        <div class="text-center mb-4"><span class="section-sm-title">المدونة</span>
+          <h2 class="section-lg-title">أحدث الأخبار</h2>
+        </div>
+        <div class="row mb-4">
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- blog-->
+            <div class="blog">
+              <!-- img blog--><a class="img-blog" href="#"><img class="img-fluid" src="./images/blog/1.jpg"
+                  alt="blog title"></a>
+              <div class="blog-info">
+                <!-- blog title-->
+                <h4 class="blog-title"><a href="#">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <p class="blog-desc">ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم.
+                  هذا فقط.</p>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div class="align-self-center"><span>Amir</span><i class="mbi mbi-user"></i></div>
+                  <div class="align-self-center"><span>22/1/20222</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- blog-->
+            <div class="blog">
+              <!-- img blog--><a class="img-blog" href="#"><img class="img-fluid" src="./images/blog/1.jpg"
+                  alt="blog title"></a>
+              <div class="blog-info">
+                <!-- blog title-->
+                <h4 class="blog-title"><a href="#">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <p class="blog-desc">ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم.
+                  هذا فقط.</p>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div class="align-self-center"><span>Amir</span><i class="mbi mbi-user"></i></div>
+                  <div class="align-self-center"><span>22/1/20222</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- course-->
+          <div class="col-lg-4 col-6 mb-md-4 px-md-3 mb-3">
+            <!-- blog-->
+            <div class="blog">
+              <!-- img blog--><a class="img-blog" href="#"><img class="img-fluid" src="./images/blog/1.jpg"
+                  alt="blog title"></a>
+              <div class="blog-info">
+                <!-- blog title-->
+                <h4 class="blog-title"><a href="#">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                <p class="blog-desc">ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم.
+                  هذا فقط.</p>
+                <hr>
+                <!-- icons-->
+                <div class="d-flex justify-content-between icons">
+                  <div class="align-self-center"><span>Amir</span><i class="mbi mbi-user"></i></div>
+                  <div class="align-self-center"><span>22/1/20222</span><i class="mbi mbi-clock3"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-white">
+    <!-- footer main-->
+    <div class="footer-main pt-lg-0 pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-3 col-lg-4">
+            <div class="mb-3 footer-contact">
+              <div class="title"><img class="img-fluid" src="./images/logo.png" alt="logo"></div>
+              <div class="textwidget">
+                <p>نحن نقدم دورات عالية الجودة عبر الإنترنت لمدة عشر سنوات تقريبًا. لدينا جميع المدربين خبراء وذوي خبرة
+                  عالية. نحن نقدم جميع أنواع المواد الدراسية لطلابنا</p>
+              </div>
+              <div class="title mt-1"> تابعنا</div>
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                      class="fab fa-facebook-f"></i></a></li>
+                <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                      class="fab fa-twitter"></i></a></li>
+                <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                      class="fab fa-linkedin-in"></i></a></li>
+                <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i
+                      class="fab fa-dribbble"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 mb-3 col-md-3 col-lg-2 col-sm-4">
+            <div>
+              <div class="title"><span>التصنيفات</span></div>
+              <div class="list">
+                <ul class="list-unstyled">
+                  <li><a href="#">اعمال</a></li>
+                  <li><a href="#">تصميم</a></li>
+                  <li><a href="#">تطوير</a></li>
+                  <li><a href="#">تسويق</a></li>
+                  <li><a href="#">التصوير</a></li>
+                  <li><a href="#">البرمجة</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3 col-md-5 col-lg-3 col-sm-8">
+            <div>
+              <div class="title"><span>المشاركات الاخيرة</span></div>
+              <div class="list">
+                <ul class="list-unstyled">
+                  <li class="d-flex last-nows mb-3"><span class="me-3 last-nows-span-image"><img class="img-fluid"
+                        src="./images/footer/news.png" alt=""></span><span><a href="#">تعلم تطوير تطبيقات الويب من
+                        الخبراء</a><span>أبريل 1, 2021</span></span></li>
+                  <li class="d-flex last-nows mb-3"><span class="me-3 last-nows-span-image"><img class="img-fluid"
+                        src="./images/footer/news.png" alt=""></span><span><a href="#">تعلم تطوير تطبيقات الويب من
+                        الخبراء</a><span>أبريل 1, 2021</span></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3 col-md-4 col-lg-3">
+            <div>
+              <div class="title"><span>اتصل بنا</span></div>
+              <div class="list contact">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="me-2 fas fa-map-marker-alt"></i><span>شارع أوفال ، ماونت فيو ، لندن ،
+                      المملكة المتحدة</span></li>
+                  <li class="mb-2"><i class="me-2 fas fa-envelope"></i><span>support@example.com</span></li>
+                  <li class="mb-2"><i class="me-2 fas fa-mobile-alt"></i><span>1234567890</span></li>
+                  <li>لا تتردد في الاتصال بنا</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center border-top mt-4 pt-4">
+            <p>جميع الحقوق محفوظة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer main-->
+  </footer>
+  <!-- Bootstrap Bundle with Popper.js-->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!--  jquery-->
+  <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+  <!--  jquery-migrate-->
+  <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+  <!--  slick slider-->
+  <script src="./js/slick.js"></script>
+  <!--  main script-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

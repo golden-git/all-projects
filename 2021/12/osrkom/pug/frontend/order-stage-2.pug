@@ -1,0 +1,170 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الطلب في الطريق ")
+  body
+    include ./includes/navbar
+    .check-out.py-md-5.py-3
+      .container-fluid
+        // order complete
+        .order-complete
+          .row
+            .col-lg-6.order-lg-1.order-2.map
+                p.mb-0.text-muted حالة الطلب
+                h2.mb-5 الطلب فى الطريق
+
+                .stages.mb-lg-4.mb-3
+                  div.stage-1.active
+                    i.fas.fa-check
+                    h6 يتم تجهيز الطلب
+                  div.stage-2.active
+                    i.fas.fa-circle
+                    h6 الطلب فى الطريق
+                  div.stage-3
+                    i.fas.fa-circle
+                    h6 تم التسليم
+
+
+                div(style='width: 100%')
+                  iframe(width='100%', height='300', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed')
+                .in-rood
+                  .code.my-3.d-flex.justify-content-between
+                    div
+                      .d-flex.mb-3
+                        img.align-self-start.me-2(src="./images/icons/in-rood.png", alt="in-rood", width="25", height="27")
+                        img.align-self-start.me-2(src="./images/icons/res.png", alt="res", width="20", height="25")
+                        div.align-self-start
+                          h4.title-font.mb-0 ابو مازن للماكولات الصينية
+                          p.mb-0.text-muted شاعر احمد سعود
+                          p.mb-0.text-muted رقم الشقة 33 -رقم البناية 12
+
+
+                    div
+                      button.border-0.btn-lg.px-4.rounded-pill.btn.g-color-bg.m-color-bg-hover.text-dark 2.5 كم
+                  .code.mt-5.mb-3.d-flex.justify-content-between
+                    div
+                      .d-flex.mb-3
+                        img.align-self-start.me-2(src="./images/icons/in-rood.png", alt="in-rood", width="25", height="27")
+                        img.align-self-start.me-2(src="./images/icons/location.png", alt="location", width="20", height="25")
+                        div.align-self-start
+                          h4.title-font.mb-0 تبوك, السعودية
+                          p.mb-0.text-muted شاعر احمد سعود
+                          p.mb-0.text-muted رقم الشقة 33 -رقم البناية 12
+
+
+                    div
+                      button.border-0.btn-lg.px-4.rounded-pill.btn.g-color-bg.m-color-bg-hover.text-dark منزل
+                .vendor
+                  .d-md-flex.vendor-info.justify-content-between.g-color-bg.py-3.px-4.rounded-pill
+                    .mb-lg-0.mb-3
+                        h4.vendor-title.m-0 Mohamed Ali
+                        .d-lg-flex
+                            .align-self-center
+                                div.stars
+                                    span.full
+                                        i.mbi.mbi-star
+                                    span.full
+                                        i.mbi.mbi-star
+                                    span.full
+                                        i.mbi.mbi-star
+                                    span.full
+                                        i.mbi.mbi-star
+                                    span.half
+                                        i.mbi.mbi-star
+                    .vendor-fet.pt-0.align-self-center
+                        .d-lg-flex.vendor-fet-container.justify-content-end
+                            a.align-self-center.message-toggle.text-white.m-color-bg-hover.text-dark.fet-element.rounded-pill(href="chat.html")
+                                i.fas.fa-comments.me-3
+                                | مراسلة
+                .actions.my-4.d-block
+                    a.w-100.text-white.py-3.link.d-color-bg-hover.m-color-bg(href="order-track.html")  تتبع الطلب
+
+
+            .col-lg-6.order-lg-2.order-1.vendor.mb-lg-0.mb-4
+              .d-md-flex.vendor-info.justify-content-around.mb-5
+                .mb-lg-0.mb-3
+                    h4.vendor-title ابو مازن للماكولات الصينية
+                    .d-lg-flex
+                        .mb-3.align-self-center
+                            div.stars
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.half
+                                    i.mbi.mbi-star
+                    .d-md-inline.mb-2.me-3
+                        img.tag.me-2(src="./images/icons/tag.png", alt="التوصيل", width="12")
+                        span.me-3 12 SR
+                        span.text-muted نكلفة توصيل
+                    .d-md-inline.mb-4.me-3
+                        img.delivery.me-2(src="./images/icons/delivery.png", alt="الزمن", width="25")
+                        span.me-3 40-60
+                        span.text-muted وقت التوصيل
+                .vendor-fet
+                    .d-lg-flex.vendor-fet-container.justify-content-end
+                        a.align-self-center.message-toggle.text-white.m-color-bg-hover.text-dark.fet-element.rounded-pill(href="chat.html")
+                            i.fas.fa-comments.me-3
+                            | مراسلة
+              .order-container
+                .order-details
+                  .order-block.mb-5
+                      - for (x=1; x <= 5; x++)
+                        // order item
+                        .d-flex.justify-content-between.mb-2.border-bottom.py-3.order-item
+                            div
+                              .d-flex
+                                span.text-success.me-2 1x
+                                div
+                                  h4.title-font.mb-0 Vegan Quinoa Salad
+                                  p.mb-0.text-muted سبايسي - بيبسي كبير - صلصة بيضاء
+                                  p.mb-0.text-muted - صوص اضافة +1.5 SR
+                            span.text-dark 31 SR
+
+                  .order-block.mb-5
+                    // order detail
+                    .d-flex.justify-content-between.mb-2
+                      h4.title-font إجمالي الطلب
+                      span.text-dark 31 SR
+
+                    .d-flex.justify-content-between.mb-2
+                      h4.title-font التوصيل
+                      span.text-dark 2.5 SR
+
+                    .d-flex.justify-content-between
+                      h4.title-font إجمالي
+                      span.m-color-text 32.5 SR
+
+                  .code.mb-5
+                    .d-flex.mb-3.justify-content-between
+                      .d-flex
+                        img.align-self-center.me-2(src="./images/icons/code.png", alt="code", width="30", height="30")
+                        div.align-self-center
+                          h4.title-font.mb-0 كود خصم
+                          p.mb-0.text-muted DSErty45
+                      div.h5 -3.4SR
+
+
+                  .d-flex.mb-3.justify-content-between
+                    .d-flex
+                      img.align-self-center.me-2(src="./images/icons/pay/pay.png", alt="pay", width="30", height="30")
+                      div.align-self-center
+                        h4.title-font.mb-0 طريقة الدفع
+                        p.mb-0.text-muted فيزا \ ماستر كارد
+                    img(src="./images/icons/pay/0.png", alt="pay", width="70")
+
+
+
+
+
+    include ./includes/footer
+    style.
+        footer::after {
+            background-color: #fff
+        }
+
+    include ./includes/scripts

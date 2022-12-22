@@ -1,0 +1,140 @@
+/* .team */
+.team {
+  padding: 80px 0;
+  h2 {
+    font-size: 50px;
+    line-height: 1;
+
+  }
+
+  .slick-slide {
+    padding: 25px;
+    height: 330px;
+  }
+
+
+  /* team-div */
+  .team-div {
+    width: 255px;
+    padding: 70px 15px 20px;
+    -webkit-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+    -webkit-box-shadow: 0 12px 43px 0 rgb(0 0 0 / 18%);
+    box-shadow: 0 12px 43px 0 rgb(0 0 0 / 18%);
+    border-radius: 10px;
+    &:hover {
+      -webkit-box-shadow: 0 23px 43px 0 rgb(0 0 0 / 26%);
+      box-shadow: 0 23px 43px 0 rgb(0 0 0 / 26%);
+      img {
+        border-radius: 100%;
+        border: 3px solid #cc0fda;
+      }
+      .link {
+        height: 81%;
+      }
+      .fa-share-alt {
+        background-color: #cc0fda;
+      }
+    }
+    h5 {
+      font-size: 28px;
+      padding-top: 50px;
+      line-height: .5;
+    }
+    p {
+      font-size: 23px;
+    }
+    span {
+      font-size: 22px;
+      // line-height: .5;
+      i {
+        font-size: 15px;
+      }
+    }
+    img {
+      top: -25px;
+      right: -25px;
+      border: 3px solid transparent;
+      padding: 2px;
+      -webkit-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+    }
+    .link {
+      background-color: #53117f;
+      height: 0;
+      overflow: hidden;
+      width: 43px;
+      bottom: 45px;
+      left: 18px;
+      border-radius: 50px;
+      -webkit-transition: 0.4s all ease-in-out;
+      -o-transition: 0.4s all ease-in-out;
+      transition: 0.4s all ease-in-out;
+      z-index: 1;
+      a {
+
+        &:hover {
+          i {
+            margin-right: 9px;
+          }
+        }
+        i {
+          -webkit-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+          font-size: 13px;
+        }
+      }
+    }
+    .fa-share-alt {
+      z-index: 2;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 2.8;
+    }
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+  .team {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 33px;
+    }
+
+
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team {
+    padding: 60px 0;
+
+    h2 {
+      font-size: 37px;
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .team {
+    padding: 80px 0;
+
+    h2 {
+      font-size: 45px;
+    }
+
+  }
+}
+
+/* .team */

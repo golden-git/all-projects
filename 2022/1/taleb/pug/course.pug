@@ -1,0 +1,280 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("المدرب")
+  body
+    include ./includes/navbar
+    style.
+      .top-nav { background-color: var(--g-color); }
+      .top-nav span, .top-nav a { color: #666 !important; }
+    main.course
+      // header
+      header.d-flex
+        .container.align-self-center.text-center
+          .section-sm-title التفاصيل
+          h1.section-lg-title(id="course-data-info") استراتيجيات تسويق المنتجات
+          nav(aria-label="breadcrumb")
+            ol.breadcrumb.d-inline-flex
+              li.breadcrumb-item
+                a(href="index.html") الرئيسية
+              li.breadcrumb-item
+                a(href="courses.html") الكورسات
+              li.breadcrumb-item
+                a(href="courses.html") الاعمال
+              li.breadcrumb-item.active(aria-current="page") استراتيجيات تسويق المنتجات
+          a.link(href="#course-data-info")  إكتشف
+
+      section.course-data-info.pb-0
+        .container
+          .row.mx-0
+            .col-lg-5
+              .team.mb-md-0.mb-4
+                div(class="position-relative team-div text-start")
+                  .text-center: img.img-fluid(src="./images/course/2.jpg" alt="team" )
+                  div.my-3
+                    h1.section-lg-title كورس مجاني
+                    ul.list-unstyled.ul-info
+                      li.py-3.d-flex.border-bottom.justify-content-between
+                        span
+                          i.tutor-icon-fav-line
+                          | المستوي
+                        span متوسط
+                      li.py-3.d-flex.border-bottom.justify-content-between
+                        span
+                          i.tutor-icon-clock
+                          | المدة
+                        span 22h 30m
+                      li.py-3.d-flex.border-bottom.justify-content-between
+                        span
+                          i.tutor-icon-user
+                          | المسجلين
+                        span 100 طالب
+                      li.py-3.d-flex.border-bottom.justify-content-between
+                        span
+                          i.tutor-icon-user
+                          | الدروس
+                        span 8 دروس
+                  div.mb-4
+                    h1.section-lg-title تشمل المواد
+                    ul.course-benefits.list-unstyled
+                      li 4 ساعات فيديو حسب الطلب
+                      li 4 مقالات
+                      li 3 موارد قابلة للتنزيل
+                      li شهادة إتمام
+
+
+                  div.my-4
+                    a.section-link(href="#") إشترك الآن
+
+
+                  div.my-3
+                    h1.section-lg-title شارك الكورس
+                    ul.list-group.list-group-horizontal
+                      li.list-group-item.px-0
+                        a.text-decoration-none.s-color-text-hover.p-3.pointer(href="#")
+                          i.fab.fa-facebook-f
+                      li.list-group-item.px-0
+                        a.text-decoration-none.s-color-text-hover.p-3.pointer(href="#")
+                          i.fab.fa-twitter
+                      li.list-group-item.px-0
+                        a.text-decoration-none.s-color-text-hover.p-3.pointer(href="#")
+                          i.fab.fa-linkedin-in
+                      li.list-group-item.px-0
+                        a.text-decoration-none.s-color-text-hover.p-3.pointer(href="#")
+                          i.fab.fa-dribbble
+
+              .team.mb-md-0.my-4
+                div(class="position-relative team-div text-start")
+                  div.my-3
+                    h1.section-lg-title الاقسام
+                    ul.course-benefits.list-unstyled
+                      -for(x=1; x<=5; x++)
+                          li.mb-3.d-inline-block.border.rounded-8.me-2.pe-2: a.pt-1.d-inline-block.text-decoration-none.text-dark.s-color-text-hover(href="#") قسم #{x}
+
+              .team.mb-md-0.my-4
+                div(class="position-relative team-div text-start")
+                  div.my-3
+                    h1.section-lg-title الاشارات
+                    ul.course-benefits.list-unstyled
+                      -for(x=1; x<=5; x++)
+                          li.mb-3.d-inline-block.border.rounded-8.me-2.pe-2: a.pt-1.d-inline-block.text-decoration-none.text-dark.s-color-text-hover(href="#") Tag #{x}
+
+            .col-lg-7.course-info-data
+              div.mb-4
+                h1.section-lg-title عن الكورس
+                p.ps-2 لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.
+              div
+                h1.section-lg-title ماذا سوف تتعلم
+                .row
+                  -for(x=1; x<=2; x++)
+                    .col-lg-6.mb-lg-0.mb-0
+                      ul.course-benefits.list-unstyled
+                        li حان الوقت لبدء العمل على الضحك.
+                        li مؤلف البروتين
+                        li الآن تلك الابتسامة هي خوف صعب.
+                        li العيش عند مدخل لا شيء على الإطلاق.
+
+              div.mb-4
+                h1.section-lg-title الوصف
+                -for(x=1; x<=4; x++)
+                  p.ps-2 لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.
+                div.mb-4.experiences
+                  .row
+                    .col-12
+                      .experience
+                        h6 2000+
+                        p الطلاب المسجلين
+              div.mb-4
+                h1.section-lg-title محتويات الكورس
+                .accordion.accordion-flush(id="accordion-1")
+                  +course-topic-accordion("1", "1", "1", "مقدمة الكورس", "مقدمة")
+                  +course-topic-accordion("1", "2", "2", "اساليب تسويق المنتجات", "اسلوب التسويق")
+                  +course-topic-accordion("1", "3", "3", "اساليب تسويق المنتجات", "اسلوب التسويق")
+                  +course-topic-accordion("1", "4", "4", "استراتيجيات تسويق المنتجات", "استراتيجية التسويق")
+                  +course-topic-accordion("1", "5", "5", "استراتيجيات تسويق المنتجات", "استراتيجية التسويق")
+
+              div.mb-4
+                h1.section-lg-title مقدم الكورس
+                  .team.mt-3
+                    div(class="team-div text-start position-static")
+                      .d-flex
+                        div.me-3
+                          .text-center(style="width:100px"): img.img-fluid(src="./images/team/team.jpg" alt="team" )
+                        div
+                          h5(class="mb-2 mt-0") مارك أنتوني
+                          .team-reviews
+                            div.d-inline
+                              span
+                                  i.mbi.mbi-star2.full
+                              span
+                                  i.mbi.mbi-star2.full
+                              span
+                                  i.mbi.mbi-star2.full
+                              span
+                                  i.mbi.mbi-star2.full
+                              span
+                                  i.mbi.mbi-star2.half
+                          div(class="d-flex justify-content-between")
+                            div(class="text-start")
+                              span(class="d-block")
+                                i(class="fas fa-users me-2 m-color-text ")
+                                | 19 طالب
+                              span(class="d-block")
+                                i(class="fas fa-graduation-cap  me-2 m-color-text")
+                                | 45 كورس
+
+              div.mb-4.students-reviews
+                h1.section-lg-title اراء الطلاب
+
+                // reviews
+                .tutor-course-reviews-wrap
+                  .tutor-course-student-rating-wrap
+                    .course-avg-rating-wrap
+                      .tutor-row.tutor-align-items-center
+                        .tutor-col-auto
+                          // reviews avg
+                          p.course-avg-rating.
+                            5.0
+                          .tutor-star-rating-group
+                            i.mbi.mbi-star2.full(data-rating-value="1")
+                            i.mbi.mbi-star2.full(data-rating-value="2")
+                            i.mbi.mbi-star2.full(data-rating-value="3")
+                            i.mbi.mbi-star2.full(data-rating-value="4")
+                            i.mbi.mbi-star2.full(data-rating-value="5")
+                          p.tutor-course-avg-rating-total
+                            |  كل التقيمات
+                            span  2
+                        .tutor-col
+                          .course-ratings-count-meter-wrap
+                            .course-rating-meter
+                              .rating-meter-col
+                                i.mbi.mbi-star2.full
+                              .rating-meter-col 5
+                              .rating-meter-col.rating-meter-bar-wrap
+                                .rating-meter-bar
+                                  .rating-meter-fill-bar(style="width: 100%;")
+                              .rating-meter-col.rating-text-col.
+
+                                2 تقيم
+                            .course-rating-meter
+                              .rating-meter-col
+                                i.mbi.mbi-star2.full
+                              .rating-meter-col 4
+                              .rating-meter-col.rating-meter-bar-wrap
+                                .rating-meter-bar
+                                  .rating-meter-fill-bar(style="width: 0%;")
+                              .rating-meter-col.rating-text-col.
+
+                                0 تقيم
+                            .course-rating-meter
+                              .rating-meter-col
+                                i.mbi.mbi-star2.full
+                              .rating-meter-col 3
+                              .rating-meter-col.rating-meter-bar-wrap
+                                .rating-meter-bar
+                                  .rating-meter-fill-bar(style="width: 0%;")
+                              .rating-meter-col.rating-text-col.
+
+                                0 تقيم
+                            .course-rating-meter
+                              .rating-meter-col
+                                i.mbi.mbi-star2.full
+                              .rating-meter-col 2
+                              .rating-meter-col.rating-meter-bar-wrap
+                                .rating-meter-bar
+                                  .rating-meter-fill-bar(style="width: 0%;")
+                              .rating-meter-col.rating-text-col.
+
+                                0 تقيم
+                            .course-rating-meter
+                              .rating-meter-col
+                                i.mbi.mbi-star2.full
+                              .rating-meter-col 1
+                              .rating-meter-col.rating-meter-bar-wrap
+                                .rating-meter-bar
+                                  .rating-meter-fill-bar(style="width: 0%;")
+                              .rating-meter-col.rating-text-col.
+
+                                0 تقيم
+                  .tutor-course-reviews-list
+                    // reviews-list
+                    -for(x=1; x<=4; x++)
+                      .tutor-review-individual-item
+                        .review-left
+                          .review-avatar
+                            // avatar
+                            img.img-fluid(src="./images/team/team.jpg" alt="team" )
+                          .tutor-review-user-info
+                            .review-time-name
+                              // name
+                              p
+                                | علي محمد
+                              // date
+                              p.review-meta.
+                                12/1/2022
+                            // rating stars
+                            .individual-review-rating-wrap
+                              .tutor-star-rating-group
+                                i.mbi.mbi-star2.full
+                                i.mbi.mbi-star2.full
+                                i.mbi.mbi-star2.full
+                                i.mbi.mbi-star2.full
+                                i.mbi.mbi-star2.full
+                        // review content
+                        .review-content.review-right
+                          p ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط. ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.
+
+              div
+                h1.section-lg-title كورسات مشابهة
+                .row.mb-4
+                  -for(x=1; x<=4; x++)
+                    // course
+                    .col-6.mb-md-4.mb-3
+                      +course()
+                div
+                  a.section-link(href="courses.html") تصفح جميع الدورات
+
+
+
+
+    include ./includes/footer

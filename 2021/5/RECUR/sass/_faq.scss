@@ -1,0 +1,79 @@
+/* .faq */
+.faq {
+  background-image: url(../imgaes/faq/img1.png);
+  padding: 80px 0;
+  background-color: #ECEEF2;
+  background-repeat: no-repeat;
+    background-size: cover;
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .accordion {
+    .accordion-header .accordion-button {font-size: 24px;}
+    .accordion-body {font-size: 26px;}
+
+    .accordion-button:not(.collapsed) {
+      color: var(--m-color);
+      background-color: transparent;
+  }
+
+  }
+
+
+}
+
+
+@media (max-width: 575.98px) {
+  .faq {
+    padding: 60px 0;
+
+
+    h2 {
+      font-size: 35px;
+    }
+
+    .accordion {
+      .accordion-header .accordion-button {font-size: 23px;}
+      .accordion-body {font-size: 25px;}
+
+
+    }
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .faq {
+    padding: 60px 0;
+
+    h2 {
+      font-size: 37px;
+    }
+    .accordion {
+      .accordion-header .accordion-button {font-size: 23px;}
+      .accordion-body {font-size: 24px;}
+
+
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .faq {
+    padding: 80px 0;
+
+    h2 {
+      font-size: 45px;
+    }
+
+  }
+}
+
+/* .faq */

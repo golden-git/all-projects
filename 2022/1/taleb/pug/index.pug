@@ -1,0 +1,215 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("الرئيسية")
+  body
+    include ./includes/navbar
+    main.home
+      // header
+      header.d-flex
+        .container.align-self-center.text-center
+          .s-color-text.small-title ابدأ التعلم من المنزل
+          h1.larg-title تواصل مع خبيرنا وابدأ التعلم اليوم
+          p.mb-4 نحن نقدم دورات عالية الجودة عبر الإنترنت لتحسين مهاراتك. جميع المدربين لدينا من ذوي الخبرة العالية والخبراء.
+          a(href="#")  إكتشف المزيد
+
+      // categories
+      section.categories
+        .container
+          div.text-center
+            span.section-sm-title فئات
+            h2.section-lg-title الفئات الشعبية
+          .d-flex.flex-wrap.mb-4
+            -for(x=1; x<=4; x++)
+              // category
+              .category
+                .category-container
+                  a.img-container.pointer(href="courses.html")
+                    img.img-fluid(src="./images/category/3.jpg", alt="")
+                  h5: a(href="courses.html") تصميم المواقع
+                  span #{x} دورات
+          .text-center
+            a.section-link(href="courses.html") جميع الفئات
+
+      // courses
+      section.courses.g-color-bg
+        .container
+          div.text-center.mb-4
+            span.section-sm-title الدورات
+            h2.section-lg-title اكتشف الدورات الشعبية
+          .row.mb-4
+            -for(x=1; x<=6; x++)
+              // course
+              .col-lg-4.col-6.mb-md-4.px-md-3.mb-3
+                +course()
+          .text-center
+            a.section-link(href="#") جميع الدورات
+
+      // descount
+      section.descount.d-color-bg.p-0
+        .container
+          .row.justify-content-center
+            .col-lg-5.order-lg-1.order-2
+              // descount image
+              .descount-image.text-center
+                img.img-fluid(src="./images/home/app-1.png", alt="descount image")
+            .col-lg-7.order-lg-2.order-1
+              // descount text
+              div.mb-4.descount-text
+                span.section-sm-title عرض لوقت محدود
+                h2.section-lg-title.text-white خصم 50٪ على جميع دوراتنا الجديدة والقادمة
+                p.text-white.
+                  لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن نستشعرها بصورة أكثر عقلانية ومنطقية فيعرضهم هذا لمواجهة الظروف الأليمة، وأكرر بأنه لا يوجد من يرغب في الحب ونيل المنال ويتلذذ بالآلام، الألم هو الألم ولكن نتيجة لظروف ما قد تكمن السعاده فيما نتحمله من كد وأسي.
+                p.text-white.
+                  و سأعرض مثال حي لهذا، من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة التي لا تشوبها عواقب أليمة أو آخر أراد أن يتجنب الألم الذي ربما تنجم عنه بعض المتعة ؟
+                  علي الجانب الآخر نشجب ونستنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، واللوم كذلك يشمل هؤلاء الذين أخفقوا في واجباتهم نتيجة لضعف إرادتهم فيتساوي مع هؤلاء الذين يتجنبون وينأون عن تحمل الكدح والألم .
+                .mt-4
+                  a(href="#")  تسجيل الان
+
+      div.testimonials-news.g-color-bg
+        // testimonials
+        section.testimonials
+          .container
+            div.text-center.mb-4
+              span.section-sm-title شهادة
+              h2.section-lg-title ماذا يقول طلابنا
+            .d-flex.flex-wrap.mb-4.justify-content-center
+              -for(x=1; x<=3; x++)
+                .testimonial
+                  .testimonial-container
+                    img.mb-md-3.mb-1.lamp(src="./images/home/testimonial/testimonial-icon.svg", alt="testimonial")
+                    div.testimonial-reviews.mb-md-3.mb-1
+                      span
+                          i.mbi.mbi-star2.full
+                      span
+                          i.mbi.mbi-star2.full
+                      span
+                          i.mbi.mbi-star2.full
+                      span
+                          i.mbi.mbi-star2.full
+                      span
+                          i.mbi.mbi-star-outline.half
+                    p.
+                      في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة, ان تونس بالتوقيع سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا، الساحلية. اتفاق أوزار فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.
+                    .d-flex.user
+                      .imgage-container
+                        img.img-fluid(src="./images/home/testimonial/1.jpg", alt="testimonial")
+                      div
+                        h6 جاك موركيل
+                        p مصمم جرافيك
+
+        // news
+        section.news.pt-0
+          .container
+            .news-container
+              .row
+                .col-lg-6
+                  h4.title
+                    span اشترك في نشرتنا الإخبارية
+                  p انضم إلى قائمة المراسلة الخاصة بنشرتنا الإلكترونية لتحصل على آخر المستجدات والعروض الحصرية.
+                .col-lg-6.my-auto
+                  form.row.mx-0.justify-content-lg-end.justify-content-center
+                    .col.px-0.position-relative
+                      input.rounded-0.form-control(type="text", placeholder="أدخل بريدك الإلكتروني هنا")
+                      button.search.btn(type="submit") إشترك الان
+
+      // whay us
+      section.whay-us
+        .container
+          .row.m-color-bg.p-2
+            .col-lg-4.mb-lg-0.mb-4.whay-us-container-col
+              div.whay-us-container
+                span.section-sm-title لماذا نحن
+                h2.section-lg-title.text-white ما يميزنا
+                p.mb-3.text-white.
+                  في عدم القوى الفترة إتفاقية, بحق لأداء الشمال استرجاع ما. مدن أي أملاً الخطّة, ان تونس بالتوقيع سنغافورة دار, انه كل قادة المواد بمباركة. تم عدد ثانية بالعمل, دول أم وبلجيكا، الساحلية. اتفاق أوزار فرنسا أخذ عل, المدن يتعلّق ٣٠ قبل. حادثة بأيدي الشهيرة.
+                a(href="#") إعرف أكثر
+            .col-lg-8
+              .row
+                // whay us element
+                .col-sm-6.whay-us-element.mb-sm-0.mb-4
+                  .d-md-flex
+                    img.mb-md-0.mb-3(src="./images/home/whay-us/whay-us-1.svg", alt="whay us", width="75", height="75")
+                    div
+                      h5 منهجية علمية عالية
+                      p.
+                        في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ، هي كل قادة المقالات بمباركة.
+
+                // whay us element
+                .col-sm-6.whay-us-element.mb-sm-0.mb-4
+                  .d-md-flex
+                    img.mb-md-0.mb-3(src="./images/home/whay-us/whay-us-2.svg", alt="whay us", width="72", height="72")
+                    div
+                      h5 أساتذة مؤهلين لجميع المستويات
+                      p.
+                        في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ، هي كل قادة المقالات بمباركة.
+
+                // whay us element
+                .col-sm-6.whay-us-element.mb-sm-0.mb-4
+                  .d-md-flex
+                    img.mb-md-0.mb-3(src="./images/home/whay-us/whay-us-3.svg", alt="whay us", width="72", height="72")
+                    div
+                      h5 بيئة تعليمية جاذبة
+                      p.
+                        في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ، هي كل قادة المقالات بمباركة.
+
+                // whay us element
+                .col-sm-6.whay-us-element.mb-sm-0.mb-4
+                  .d-md-flex
+                    img.mb-md-0.mb-3(src="./images/home/whay-us/whay-us-4.svg", alt="whay us", width="72", height="72")
+                    div
+                      h5 تخفيف أعباء الدراسة وتسهيلها
+                      p.
+                        في فترة عدم وجود قوة ، يستعيد حق أداء الشمال ما. أي مدن أمل للخطة ، أن تونس بتوقيع سنغافورة دار ، هي كل قادة المقالات بمباركة.
+
+      // team
+      section.team.g-color-bg
+        .container
+          div.text-center.mb-4
+            span.section-sm-title الرفيق
+            h2.section-lg-title مدربينا المهرة
+
+          .team-slider-rtl
+            -for(x=1; x<=6; x++)
+              div
+                div(class="position-relative team-div text-start")
+                  a(href="trainer.html"): img(src="./images/home/team/1.jpg" alt="team" class="position-absolute")
+                  h5(class="mb-2"): a(href="trainer.html")  مارك أنتوني
+                  p(class="mb-2") مطور التطبيق
+                  div(class="d-flex justify-content-between")
+                    div(class="text-start")
+                      span(class="d-block")
+                        i(class="fas fa-mobile-alt me-2 s-color-text ")
+                        | 121-3245-214
+                      span(class="d-block")
+                        i(class="fas fa-envelope  me-2 s-color-text")
+                        | sample@mail.com
+                    div(class=" position-relative")
+                      i(class="fas fa-share-alt s-color-bg rounded-circle fa-fw")
+                  span(class="position-absolute link text-center py-2")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-facebook-f")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-youtube")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-linkedin-in")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-twitter")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-app-store-ios")
+
+      // blogs
+      section.blogs.s-color-bg
+        .container
+          div.text-center.mb-4
+            span.section-sm-title المدونة
+            h2.section-lg-title أحدث الأخبار
+          .row.mb-4
+            -for(x=1; x<=3; x++)
+              // course
+              .col-lg-4.col-6.mb-md-4.px-md-3.mb-3
+                +blog()
+
+
+      //- section(style=" height: 3000px")
+    include ./includes/footer

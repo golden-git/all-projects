@@ -1,0 +1,187 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("تفاصيل المنتج")
+  body
+    include ./includes/navbar
+    .container.py-2
+      +breadcrumb-1-links("الرئيسية", "index.html", "حاملة بـ3 طبقات لتقديم حلى أو مقبلات ASA")
+    section.product.bg-white.py-3
+      .container
+        h2.page-tite.mb-1 حاملة بـ3 طبقات لتقديم حلى أو مقبلات ASA
+        .d-md-flex.justify-content-between.border-bottom.pb-3
+          p.mb-md-0.text-muted.align-self-center SKU AS-99205-950
+
+          div.btns.align-self-center
+            button.btn.rounded-0.text-white.facebook
+              i.mbi.mbi-facebook
+            button.btn.rounded-0.text-white.twitter
+              i.mbi.mbi-twitter
+            button.btn.rounded-0.text-white.google
+              i.mbi.mbi-google
+
+        .row
+          .col-md-4.pb-3
+            .product-slider.slider
+              img.img-fluid.me-md-3(src="./images/products/2.jpg")
+              img.img-fluid.me-md-3(src="./images/products/6.webp")
+              img.img-fluid.me-md-3(src="./images/products/7.webp")
+              img.img-fluid.me-md-3(src="./images/products/8.webp")
+
+          .col-md-8.pt-lg-5.pt-md-3
+            h5 SAR 190.00
+            span.text-success  متوفر
+            p.py-3.mb-0
+              | لاكتشاف طريقة طبخ استثنائية مع قدر انستانت بوت المتعدد الاستخدامات. هذا القدر المتوافق مع الجهد
+              ul
+                li
+                  | يتميز هذا القدر بكونه يجمع 9 أدوات في 1، حيث يعمل كقدر ضغط، قدر للطبخ على طريقة التفريغ من الهواء (سوفيد)، قدر للتشويح، قدر للطبخ البطيء، قدر لطبخ الأرز/الحبوب، قدر تسخين الطعام، محضّر لبن الزبادي، قدر للطبخ على البخار وقدر للتعقيم.
+
+                li
+                  |يمكن طبخ الطعام بسرعة أكبر من طرق الطبخ التقليدية بنسبة %70.
+
+                li
+                  |ثلاثة إعدادات للحرارة: منخفضة، مرتفعة وحسب الطلب. ويحافظ على سخونة الطعام لمدة 24 ساعة.
+
+                li
+                  |صمم بمزايا آمنة لتسهيل الطبخ بقدر الضغط والحفاظ على السلامة.
+
+                li
+                  |يعتبر الوعاء الداخلي المصنوع من الستانلس ستيل آمناً للغسل في غسالة الصحون.
+            hr
+
+            div.mb-3
+              .d-md-flex
+                .kemia
+                  .number.border.d-inline-block.py-1.px-2
+                    span.plus.text-dark
+                      i.mbi.mbi-plus
+                    input(type="text", value="1")
+                    span.minus.text-dark
+                      i.mbi.mbi-minus
+                button.btn.m-color-bg.s-color-bg-hover.w-color-text-hover.rounded-sm.mx-md-5 أضف إلى سلة التسوق
+                i.mbi.mbi-heart.align-self-center.h2
+            p.g-color-bg.p-2
+              img(src="./images/icons/product-shipping-pdp.webp", style="margin-left:15px;")
+              | المدة المتوقعة للتوصيل: 2-3 أيام عمل في الرياض و 3-5 أيام عمل في مدن المنطقة الشرقية
+
+          .col-12.mt-4
+            ul.nav.justify-content-center.nav-tabs#product(role="tablist")
+              li.nav-item(role="presentation")
+                a.text-muted.nav-link.active#home-tab(data-bs-toggle="tab", data-bs-target="#home", type="button", role="tab", aria-controls="home", aria-selected="true")
+                  img.mx-auto.mb-2.d-block(src="./images/icons/product-details-tab.webp", alt="")
+                  | تفاصيل إضافية
+              li.nav-item(role="presentation")
+                a.text-muted.nav-link#profile-tab(data-bs-toggle="tab", data-bs-target="#profile", type="button", role="tab", aria-controls="profile", aria-selected="false")
+                  img.mx-auto.mb-2.d-block(src="./images/icons/features-and-specs-tab-icon.webp", alt="")
+                  | مميزات ومواصفات
+            .tab-content.mb-4.g-color-bg.p-lg-4.p-md-3.p-2#productContent
+              .tab-pane.fade.show.active#home(role="tabpanel", aria-labelledby="home-tab")
+                div
+                  ul
+                    li خالية من المعادن الثقيلة مثل الرصاص والكادميوم
+                    li صحية بحيث أنها لا تنتج أطعمة حمضية
+                    li يمكنك استخدام نصف كمية الطاقة المستخدمة في المقالي الأخرى للحصول على طبيخ صحي
+                    li قاعدة توزيع الحراري العالية تمكنك من الطبخ على لهب حراري منخفض
+                    li الأداء المتميز للطبقة الغير اللاصقة، يمنع الطعام من الإلتصاق عند الطهو
+                    li قدر أكبر من مقاومة القحط بالمقارنة مع غيرها من المنتجات الأخرى 
+                    li طبقة خارجية غير لاصقة تسهل عملية التنظيف 
+                    li غطاء زجاج
+                    li مقابض بلاستيك
+                    li تقنية الاكستيرما
+                    li الأاحجام: قدور: ٢٠+٢٤+٢٨ سم/ طاوة: ٢٨ سم/ كسرول: ١٨ سم
+                    li صناعة كورية
+              .tab-pane.fade#profile(role="tabpanel", aria-labelledby="profile-tab")
+                .additional-attributes-wrapper.table-wrapper
+                  table.data.table.additional-attributes#product-attribute-specs-table
+                    tbody
+                      tr
+                        th.label(scope="row") Features
+                        td.data(data-th="Features")
+                          p
+                            strong مواصفات المنتج:
+                          p
+                            strong المادة:
+                            |  ستانلس ستيل
+                            br
+                            strong السعة:
+                            |  8 ليتر
+                            br
+                            strong القوة:
+                            |  -1200 واط
+                            br
+                            strong الوزن:
+                            |  - 7.01 كيلوغرام
+                            br
+                            strong القياسات:  
+                            | - الطول 37.6 * العرض 34.3 * الارتفاع 36.8
+                            br
+                            strong الأكسسوارات:
+                            | رف الطبخ على البخار مع مقابض وكتيب الوصفات.
+                      tr
+                        th.label(scope="row") Warranty
+                        td.data(data-th="Warranty")
+                          p مدة الكفالة سنتان من تاريخ الشراء.
+                      tr
+                        th.label(scope="row") Specification
+                        td.data(data-th="Specification")
+                          p صممت انستانت بوت لمنع أي أخطاء شائعة من التسبب بأي ضرر أو إفساد للطعام. معتمدة من قبل معايير UL و ULC الصارمة، مما يمنحك الأمان وراحة البال. كما تقوم انستانت بوت بحمايتك شخصياً بفضل 10 آليات أمان مضمونة وتكنولوجيا حائزة على براءة الاختراع.
+                          ol
+                            li
+                              strong
+                                span.bold مقبض تفريغ البخار
+                              |   - يقوم صمام / مقبض تحرير الضغط بالتخلص من الضغط الزائد عن طريق تنفيس البخار.
+                            li
+                              strong
+                                span.bold الغطاء الواقي من الانسداد
+                              |  - غطاء الستانلس ستيل الواقي من الانسداد يمنع جزيئات الطعام من الصعود عبر أنبوب تفريغ البخار لتجنب خطر الانسداد.
+                            li
+                              strong
+                                span.bold آلية قفل الغطاء الآمنة
+                              |  - عندما يكون القدر مضغوطاً، يتم قفل الغطاء تلقائيًا لمنع فتح القدر. لا تحاول فتح الغطاء عندما يكون القدر مضغوطاً.
+                            li
+                              strong
+                                span.bold محدد وضعية الغطاء
+                              |   - لن يبدأ القدر بالطهي ان لم يكن الغطاء مثبت بأمان.
+                            li
+                              strong
+                                span.bold التحكم التلقائي بدرجة الحرارة
+                              |  - يقوم القدر بتنظيم التسخين لضمان بقاء الوعاء الداخلي في نطاق درجة حرارة آمنة واستناداً إلى البرنامج.
+                            li
+                              strong
+                                span.bold الحماية من التسخين المفرط (الحريق)
+                              |  - تحدث حالة التسخين المفرط في الحالات التالية:
+                              br
+                              | •بعد الطبخ على نار هادئة، حيث لا يكون الوعاء الداخلي نظيفاً ويكون الطعام عالقاً في الأسفل.
+                              br
+                              | • تشغيل قدر الضغط دون وضع كمية كافية من سائل الطهي.
+                              br
+                              | • عدم تلامس الوعاء الداخلي كما يجب مع عنصر التسخين.
+                              br
+                              | • إعاقة تبديد الحرارة كما في حالة تراكم بقايا النشا في الجزء السفلي من الإناء الداخلي.
+                              br
+                              | يقلل القدر تلقائيًا درجة الحرارة لتجنب التسخين المفرط.
+                            li
+                              strong
+                                span.bold جهاز التحكم بالضغط الأوتوماتيكي
+                              |  - يحافظ القدر على مستوى الضغط أثناء العمل. يتوقف عنصر التسخين عن العمل إن تجاوز الضغط حدود المستوى المفترض.
+                            li
+                              strong
+                                span.bold الصمامات الكهربائية
+                                |  
+                              | - يقطع التيار الكهربائي إذا تجاوزت الكهرباء حدود السلامة.
+                            li
+                              strong
+                                span.bold الصمامات الحرارية
+                              |   - يقطع التيار الكهربائي إذا تجاوزت الحرارة الداخلية حدود السلامة.
+                            li
+                              strong
+                                span.bold الكشف عن تسرب البخار من الغطاء
+                              |   - لن يُضغط القدر ان تسرب البخار من الغطاء (كعدم ثبات حلقة الإغلاق أو وجود مقبض تفريغ البخار في وضعية "التنفيس" بدلاً من "الإقفال"). قد يؤدي فقدان البخار إلى حرق الطعام. يراقب القدر وقت التسخين المسبق ويقلل درجة الحرارة إن لم يتم الوصول إلى الضغط المفترض وصوله وقت الطهي خلال 40 دقيقة.
+                      tr
+                        th.label(scope="row") اللون
+                        td.data(data-th="اللون") أسود
+
+
+
+    include ./includes/footer

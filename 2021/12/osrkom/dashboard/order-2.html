@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> الطلب </title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+      <!--  bootstrap ltr-->
+      <!--  iconfont-->
+      <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick.css">
+      <!-- intlTelInput-->
+      <link rel="stylesheet" href="../css/intlTelInput.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick-theme.css">
+      <!-- AOS-->
+      <link rel="stylesheet" href="../css/aos.css">
+      <!-- plyr-->
+      <link rel="stylesheet" href="../css/plyr.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="../css/main.css">
+      <!--  main style ltr-->
+    </head>
+  <body class="dashboard-body mr-228">
+    <!-- dashboard sidebar-->
+    <aside class="dashboard-sidebar">
+      <div class="text-center mb-3"><img class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar" src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img src="../images/dashboard/logo.png" alt="logo"></a></div>
+      <ul class="list-unstyled px-0">
+        <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+        <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+        <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+        <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+        <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+        <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+        <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+        <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+      </ul>
+    </aside>
+    <div class="dashboard-container">
+        <!-- sart dashboard navbar-->
+        <nav class="navbar navbar-light dashboard-navbar mb-4"><img class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar" src="../images/icons/list.png">
+          <div>
+            <p class="mb-0"> الطلب </p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع للرئيسية</a>
+          </div>
+          <div class="d-md-block d-none">
+            <div class="search"><i class="mbi mbi-magnifier"></i>
+              <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+              <select class="form-select">
+                <option>الطلبات</option>
+                <option>الطلبات</option>
+              </select>
+              <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+            </div>
+          </div>
+          <div class="user">
+            <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png" alt="user">
+              <div class="d-lg-block d-none align-self-center border-end pe-2">
+                <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية المتجر</a>
+              </div>
+              <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i class="mbi mbi-alarm-ringing h3"></i></div>
+            </div>
+          </div>
+        </nav>
+        <!-- sart dashboard navbar-->
+      <div class="check-out py-md-5 py-3">
+        <!-- order complete-->
+        <div class="order-complete">
+          <div class="row">
+            <div class="col-12">
+                <div class="d-md-flex mb-4 justify-content-between border px-3 py-2">
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">رقم الطلب</p>
+                    <h5 class="text-dark">#5434566</h5>
+                  </div>
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">تاريخ ووقت الطلب</p>
+                    <h5 class="text-dark">12/8/2021 - 2 مساء</h5>
+                  </div>
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">حالة الطلب الطلب</p>
+                    <h5 class="text-dark">مرحلة التوصيل</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12">
+              <div class="search search-with-info"><i class="mbi mbi-magnifier"></i>
+                  <div class="mb-3">
+                    <label class="form-label fw-bolder">العميل </label><span class="mb-2 d-block text-muted">ابحث في قائمة العملاء</span>
+                    <input class="form-control form-select-lg dash-input rounded-pill" type="text" placeholder="ابحث عن اسم العميل">
+                  </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="search search-with-info search-container" style="overflow: unset"><i class="mbi mbi-magnifier"></i>
+                      <div class="mb-3">
+                        <label class="form-label fw-bolder">المنتجات </label><span class="mb-2 d-block text-muted">ابحث في قائمة منتجاتك</span>
+                        <input class="form-control form-select-lg dash-input rounded-pill" type="text" placeholder="ابحث عن اسم العميل">
+                      </div>
+                    <div class="search-data-container border rounded-3 p-3">
+                      <div class="d-flex justify-content-between"> 
+                        <div> 
+                          <div class="d-flex"> <img class="me-2 rounded-3" src="../images/products/1.png" alt="product" width="45" height="45">
+                            <div> 
+                              <h6 class="mb-0">منفوشة  زعتر</h6><small class="text-muted">#546788</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="kemia">
+                          <div class="number d-inline-block py-1 px-2"><span class="plus text-dark"><i class="mbi mbi-plus"></i></span>
+                            <input type="text" value="1"><span class="minus text-dark"><i class="mbi mbi-minus"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 align-self-center mb-4">
+                  <div class="btn-link"><a class="py-2 px-4 border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="#">اضافة منتج خاص</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="mb-3">
+                  <label class="mb-1 form-label fw-bolder">طريقة التوصيل </label><br>
+                  <select class="form-select form-select-lg dash-select rounded-pill">
+                    <option selected value="توصيل الى منزل العميل">توصيل الى منزل العميل</option>
+                  </select>
+                </div>
+            </div>
+            <div class="col-12">   
+              <div class="row check-out"> 
+                <div class="col-lg-6">
+                  <div class="order-container d-block" style="min-height: auto !important;">
+                    <div class="code mb-5">
+                      <div class="d-flex mb-3">
+                        <div class="align-self-center">
+                          <h4 class="title-font mb-0">لديك كوبون خصم</h4>
+                          <p class="mb-0 text-muted">من فضلك ادخل كوبون الخصم</p>
+                        </div>
+                      </div>
+                      <form class="code">
+                        <input class="set-input form-control border-0 rounded-pill" type="text" placeholder="ادخل بريدك هنا">
+                        <button class="btn d-color-bg m-color-bg-hover text-white">تفعيل</button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="order-block shadow-none mb-3 border p-3 rounded-3">
+                    <!-- order detail-->
+                    <div class="d-flex justify-content-between mb-2">
+                      <h5 class="title-font">إجمالي الطلب</h5><span class="text-dark">31 SR</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <h5 class="title-font">التوصيل</h5><span class="text-dark">2.5 SR</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <h5 class="title-font">إجمالي</h5><span class="m-color-text">32.5 SR</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 check-out"> 
+                  <div class="pay">
+                    <div class="d-flex mb-3">
+                      <div class="align-self-center">
+                        <h4 class="title-font mb-0">طريقة الدفع</h4>
+                        <p class="mb-0 text-muted">اختر طريقة الدفع المناسبة لك</p>
+                      </div>
+                    </div>
+                    <div class="form-check pay-methods">
+                      <label class="form-check-label text-start" for="check0">فيزا  ماستر كارد</label>
+                      <input class="form-check-input p-0 m-0" name="paytype" id="check0" type="radio"><img src="../images/icons/pay/0.png" alt="pay">
+                    </div>
+                    <div class="form-check pay-methods">
+                      <label class="form-check-label text-start" for="check1">مدي</label>
+                      <input class="form-check-input p-0 m-0" name="paytype" id="check1" type="radio"><img src="../images/icons/pay/1.png" alt="pay">
+                    </div>
+                    <div class="form-check pay-methods">
+                      <label class="form-check-label text-start" for="check2">STC</label>
+                      <input class="form-check-input p-0 m-0" name="paytype" id="check2" type="radio"><img src="../images/icons/pay/2.png" alt="pay">
+                    </div>
+                    <div class="form-check pay-methods">
+                      <label class="form-check-label text-start" for="check3">الدفع عند الاستلام</label>
+                      <input class="form-check-input p-0 m-0" name="paytype" id="check3" type="radio"><img src="../images/icons/pay/3.png" alt="pay">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3 d-flex"><a class="px-5 me-3 btn-lg border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="add-product-2.html">اتمام الطلب</a><a class="px-5 btn-lg border-0 btn rounded-pill w-color-text-hover d-color-bg-hover" href="#">رجوع</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="../js/slick.js"></script>
+    <!-- intlTelInput-->
+    <script src="../js/intlTelInput.js"></script>
+    <!-- AOS-->
+    <script src="../js/aos.js"></script>
+    <!-- polyfilled-->
+    <script src="../js/plyr.polyfilled.js"></script>
+    <!--  chart-->
+    <script src="../js/chart/chart.min.js"></script>
+    <script src="../js/chart/chart-area-demo.js"></script>
+    <!--  main script-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

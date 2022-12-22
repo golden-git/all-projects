@@ -1,0 +1,88 @@
+/*========== start globals ==========*/
+:root {
+    --m-color: #FAD56C;
+    --d-color: #f59957;
+    --s-color: #B80f0A;
+    --g-color: #f5f5f5;
+}
+
+// @font-face {
+//     font-family: 'lightfont';
+//     src: url('../fonts/Somar-Light.otf') format('opentype'),
+// }
+
+// @font-face {
+//     font-family: 'boldfont';
+//     src: url('../fonts/Somar-Bold.otf') format('opentype'),
+// }
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    position: relative;
+    background-color: var(--g-color);
+}
+
+/* title-font */
+.title-font {
+    font-weight: 700;
+}
+
+@each $colorname, $color in
+(m-color-text, var(--m-color)),
+(d-color-text, var(--d-color)),
+(s-color-text, var(--s-color)),
+(g-color-text, var(--g-color))
+{
+    /* color-text */
+    .#{$colorname} {
+        color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-text-hover, var(--m-color)),
+(d-color-text-hover, var(--d-color)),
+(s-color-text-hover, var(--s-color)),
+(w-color-text-hover, #fff),
+(g-color-text-hover, var(--g-color))
+{
+    /* color-text-hover */
+    .#{$colorname}:hover {
+        color:#{$color} !important;
+    }
+}
+
+
+@each $colorname, $color in
+(m-color-bg, var(--m-color)),
+(d-color-bg, var(--d-color)),
+(s-color-bg, var(--s-color)),
+(g-color-bg, var(--g-color))
+{
+    /* background-color */
+    .#{$colorname} {
+        background-color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-bg-hover, var(--m-color)),
+(d-color-bg-hover, var(--d-color)),
+(s-color-bg-hover, var(--s-color)),
+(g-color-bg-hover, var(--g-color))
+{
+    /* background-color-hover */
+    .#{$colorname}:hover {
+        background-color:#{$color} !important;
+    }
+}
+
+/* pointer */
+.pointer {
+    cursor: pointer;
+}
+
+.pay .accordion-button::after {
+    margin-right: 14px
+}

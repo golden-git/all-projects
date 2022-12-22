@@ -1,0 +1,123 @@
+extends components/layout.pug
+block title
+  | البنوك
+block main
+  +breadcrumb-in-1('البنوك', 'البنوك', 'الرئسية', 'index.html')
+
+  section.content
+    .row
+      .col-12
+        .card.border
+          .card-header.p-2
+            +tabel-header("قائمة البنوك", '#modal1')
+          // add modal
+          .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+            .modal-dialog.modal-lg(role="document")
+              .modal-content
+                +modal-header("اضافة بنك  ")
+                form
+                  .modal-body.row
+                    .form-group.col-lg-6
+                      label اسم البنك عربي
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label اسم البنك انجليزي
+                      input.form-control(type="text")
+
+                    .form-group.col-lg-6
+                        label رقم الحساب
+                        select.form-control
+                          - for (var x = 1; x <= 5; x++)
+                            option  حساب   #{x}
+                    .form-group.col-lg-6
+                      label التلفون
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label فاكس
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label البريد
+                      input.form-control(type="text")
+                    .form-group.col-lg-12
+                      label العنوان
+                      input.form-control(type="text")
+                    .form-group.col-lg-12
+                      label ملاحظات
+                      textarea.form-control
+                  +modal-footer("حفظ")
+          // edit modal
+          .modal.fade#modal2(tabindex="-1", role="dialog", aria-labelledby="modal2", aria-hidden="true")
+            .modal-dialog.modal-lg(role="document")
+              .modal-content
+                +modal-header("تعديل بيانات البنك ")
+                form
+                  .modal-body.row
+                    .form-group.col-lg-6
+                      label اسم البنك عربي
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label اسم البنك انجليزي
+                      input.form-control(type="text")
+
+                    .form-group.col-lg-6
+                        label رقم الحساب
+                        select.form-control
+                          - for (var x = 1; x <= 5; x++)
+                            option  حساب   #{x}
+                    .form-group.col-lg-6
+                      label التلفون
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label فاكس
+                      input.form-control(type="text")
+                    .form-group.col-lg-6
+                      label البريد
+                      input.form-control(type="text")
+                    .form-group.col-lg-12
+                      label العنوان
+                      input.form-control(type="text")
+                    .form-group.col-lg-12
+                      label ملاحظات
+                      textarea.form-control
+                  +modal-footer("حفظ")
+          // show modal
+          .modal.fade#modal3(tabindex="-1", role="dialog", aria-labelledby="modal3", aria-hidden="true")
+            .modal-dialog(role="document")
+              .modal-content
+                +modal-header("عرض تفاصيل البنك")
+                .modal-body
+                  .row
+                    .col-12.mb-4
+                      h4.mt-0 بنك السلام
+                      p.h5 الامارت \ دبي \ شارع 23 \ مبني رقم 88
+                      p.h5 +2234567890
+                      p.h5 jshsa@gmail.com
+                    .col-md-6.mb-3
+                      .form-group
+                        label الفاكس
+                        p.h5 35467
+                    .col-md-6.mb-3
+                      .form-group
+                        label صندوق البريد
+                        p.h5 654
+                    .col-12.mb-3
+                      .form-group
+                        label ملاحظات
+                        p.h5 مثال بسيط علي ملاحظات
+                +modal-footer
+          .card-body
+            include components/single-search
+            table.table.table-bordered.table-striped.text-center
+              thead
+                tr
+                  each value in ['الرقم', 'اسم البنك', 'رقم الحساب', 'التلفون' , 'خيارات']
+                    th= value
+
+              tbody
+                - for (var x = 1; x <= 10; x++)
+                  tr
+                    each value in [ x , "  بنك السلام", "6543", "+1234567890"]
+                      td= value
+                    +tabel-option-nolink("modal2", "modal3")
+            include components/pagination
+

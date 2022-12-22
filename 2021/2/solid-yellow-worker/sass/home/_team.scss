@@ -1,0 +1,125 @@
+/*========== team ==========*/
+/* team */
+.team {
+    padding: 5% 0 6% 0;
+    /* team-users */
+    .team-users{
+        /* team-user */
+        .team-user {
+            &:hover {
+                img {
+                    transform:scale(1.1);
+                }
+            }
+            img {
+                transition: .5s;
+            }
+        }
+    }
+     
+} 
+
+@media (max-width: 575.98px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 12px;}
+            h3 {font-size: 23px;}
+            p {font-size: 15px;}
+        }
+    } 
+
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 20px;}
+        small {font-size: 16px;}
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 13px;}
+            h3 {font-size: 27px;}
+            p {font-size: 17px;}
+        }
+    } 
+
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 22px;}
+        small {font-size: 16px;}
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 16px;}
+            h3 {font-size: 32px;}
+            p {font-size: 20px;}
+        }
+    } 
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 25px;}
+        small {font-size: 18px;}
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 16px;}
+            h3 {font-size: 32px;}
+            p {font-size: 20px;}
+        }
+    } 
+
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 30px;}
+        small {font-size: 20px;}
+    }
+}
+ 
+
+@media (min-width: 1200px) and (max-width: 1606px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 18px;}
+            h3 {font-size: 35px;}
+            p {font-size: 22px;}
+        }
+    } 
+
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 35px;}
+        small {font-size: 20px;}
+    }
+}
+
+@media (min-width: 1607px) {
+    /* team */
+    .team {
+        .title {
+            span {font-size: 18px;}
+            h3 {font-size: 35px;}
+            p {font-size: 22px;}
+        }
+    } 
+    
+    /* team-2 */
+    .team-2 {
+        h4 {font-size: 35px;}
+        small {font-size: 20px;}
+    }
+}
+ 
+
+/*========== team ==========*/

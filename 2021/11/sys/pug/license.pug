@@ -1,0 +1,243 @@
+extends components/layout.pug
+block title
+  | التراخيص
+block main
+  +breadcrumb-in-1('التراخيص', 'التراخيص', 'الرئسية', 'index.html')
+
+  section.content
+    .card.card-primary.card-outline.card-outline-tabs
+      .card-header.p-0.border-bottom-0
+        ul.nav.nav-tabs#tabs-tab(role="tablist")
+          // license
+          li.nav-item
+            a.nav-link.active#tabs-1-tab(data-toggle="pill", href="#tabs-1", role="tab", aria-controls="tabs-1", aria-selected="true").
+              قائمة التراخيص
+
+          // license type
+          li.nav-item
+            a.nav-link#tabs-2-tab(data-toggle="pill", href="#tabs-2", role="tab", aria-controls="tabs-2", aria-selected="false").
+              انواع التراخيص
+
+
+      .card-body
+        .tab-content#tabs-tabContent
+          // license
+          .tab-pane.fade.active.show#tabs-1(role="tabpanel", aria-labelledby="tabs-1-tab")
+            section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("قائمة التراخيص", '#modal1')
+                    // add modal
+                    .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("اضافة ترخيص  ")
+                          form
+                            .modal-body.row
+                              .form-group.col-lg-6
+                                label رقم الترخيص
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label    الاسم
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الترخيص     #{x}
+                              .form-group.col-lg-4
+                                label تاريخ الاصدار
+                                input.form-control(type="date")
+                              .form-group.col-lg-4
+                                label تاريخ الانتهاء
+                                input.form-control(type="date")
+                              .form-group.col-lg-4
+                                label تاريخ التجديد
+                                input.form-control(type="date")
+                              .form-group.col-lg-6
+                                label مكان الاصدار
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label جهة الاصدار
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label حالة الترخيص
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الترخيص     #{x}
+                              .form-group.col-lg-6
+                                label    النشاط
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النشاط     #{x}
+                              .form-group.col-lg-12
+                                label الفرع
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الفرع     #{x}
+                              .form-group.col-lg-12
+                                label مرفق
+                                input.form-control(type="file")
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal2(tabindex="-1", role="dialog", aria-labelledby="modal2", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("تعديل بيانات الترخيص ")
+                          form
+                            .modal-body.row
+                              .form-group.col-lg-6
+                                label رقم الترخيص
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label    الاسم
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الترخيص     #{x}
+                              .form-group.col-lg-4
+                                label تاريخ الاصدار
+                                input.form-control(type="date")
+                              .form-group.col-lg-4
+                                label تاريخ الانتهاء
+                                input.form-control(type="date")
+                              .form-group.col-lg-4
+                                label تاريخ التجديد
+                                input.form-control(type="date")
+                              .form-group.col-lg-6
+                                label مكان الاصدار
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label جهة الاصدار
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label حالة الترخيص
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الترخيص     #{x}
+                              .form-group.col-lg-6
+                                label    النشاط
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النشاط     #{x}
+                              .form-group.col-lg-12
+                                label الفرع
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الفرع     #{x}
+                              .form-group.col-lg-12
+                                label مرفق
+                                input.form-control(type="file")
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal3(tabindex="-1", role="dialog", aria-labelledby="modal3", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل الشركة")
+                          .modal-body.row
+                              .form-group.mb-3.col-lg-6
+                                label رقم الترخيص
+                                 p.h5 35467
+                              .form-group.mb-3.col-lg-6
+                                label    الاسم
+                                p.h5 اسم الترخيص
+                              .col-12
+                                hr
+                              .form-group.mb-3.col-lg-4
+                                label تاريخ الاصدار
+                                p.h5 12\12\2022
+                              .form-group.mb-3.col-lg-4
+                                label تاريخ الانتهاء
+                                p.h5 12\12\2022
+                              .form-group.mb-3.col-lg-4
+                                label تاريخ التجديد
+                                p.h5 12\12\2022
+                              .col-12
+                                hr
+                              .form-group.mb-3.col-lg-6
+                                label مكان الاصدار
+                                p.h5 مكان الاصدار
+                              .form-group.mb-3.col-lg-6
+                                label جهة الاصدار
+                                p.h5 جهة الاصدار
+                              .form-group.mb-3.col-lg-6
+                                label حالة الترخيص
+                                p.h5 نشط
+                              .form-group.mb-3.col-lg-6
+                                label    النشاط
+                                p.h5 النشاط
+                              .form-group.mb-3.col-lg-12
+                                label الفرع
+                                p.h5   وسط المدينة
+                              .col-12
+                                hr
+                              .form-group.mb-3.col-lg-12
+                                label مرفق
+                                p
+                                  img(src="dist/img/default-150x150.png", alt="alt" class="p-1")
+                                  img(src="dist/img/default-150x150.png", alt="alt" class="p-1")
+                                  img(src="dist/img/default-150x150.png", alt="alt" class="p-1")
+                          +modal-footer
+                    .card-body
+                      +search-2("الفرع" , "نوع الترخيص"  , "تاريخ الاصدار من", "و حتي")
+                      include components/single-search
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in ["رقم", "رقم الترخيص", "النوع", "الاصدار", "الانتهاء", "التجديد", "الحالة", "الفرع", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in ["رقم", "23456  ", "نوع الترخيص", "12/21/2020", "20/12/2020", "13/7/2020", "نشط", "وسط المدينة"]
+                                td= value
+                              +tabel-option-nolink("modal2", "modal3")
+                      include components/pagination
+
+          // license type
+          .tab-pane.fade#tabs-2(role="tabpanel", aria-labelledby="tabs-2-tab")
+               section.content
+                .row
+                  .col-12
+                    .card.shadow-none
+                    +tabel-header("انواع التراخيص", '#modal7')
+                    // add modal
+                    .modal.fade#modal7(tabindex="-1", role="dialog", aria-labelledby="modal7", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة ترخيص  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label الاسم
+                                input.form-control(type="text")
+
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal8(tabindex="-1", role="dialog", aria-labelledby="modal8", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل القسم  ")
+                          form
+                           .modal-body
+                              .form-group
+                                label الاسم
+                                input.form-control(type="text")
+                          +modal-footer("حفظ")
+
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped
+                        thead
+                          tr
+                            each value in ["الرقم", "الاسم", "عدد التراخيص", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, 'اسم الترخيص  ', '32 ']
+                                td= value
+                              +tabel-option-nolink-sm("modal8", "")
+                      include components/pagination
+
+
+

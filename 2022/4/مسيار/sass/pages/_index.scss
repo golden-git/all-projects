@@ -1,0 +1,172 @@
+/* home page start */
+main.home {
+    /* header */
+    header {
+        background-image: url(../images/header/1.png);
+        background-size: cover;
+        @include lg{
+            padding-bottom: 50px;
+        }
+        .shape {
+            overflow: hidden;
+            @include xs{height: auto;}
+            @include sm{height: auto;}
+            @include md{height: 450px;}
+            @include lg{height: 450px;}
+            @include xl{height: 450px;}
+            @include xxl{height: 450px;}
+            @include xxxl{height: 450px;}
+        }
+        .links {
+            @include xs{background-color: var(--m-color); border-radius: 5px; padding: 8px 20px !important;}
+            @include sm{background-color: var(--m-color); border-radius: 5px; padding: 8px 20px !important;}
+            @include md{background-color: var(--m-color); border-radius: 5px; padding: 8px 20px !important;}
+            @include lg{background-color: transparent;}
+            @include xl{background-color: transparent;}
+            @include xxl{background-color: transparent;}
+            @include xxxl{background-color: transparent;}
+        }
+        ul {
+            li {
+                a {font-size: 20px; i {font-size: 14px;}}
+            }
+        }
+        form {
+            border-radius: 15px;
+            padding: 15px 20px;
+            h1 {
+                font-size: 22px;
+            }
+
+            .input-group {
+                position: relative;
+                input {
+                    border-radius: 5px !important;
+                    padding-right: 37px !important;
+                    background-color: #eee;
+                    border: none;
+                    &:focus {
+                      border: 1px solid #eee;
+                      background-color: #fff;
+                      box-shadow: 0 0 2rem rgb(0 0 0 / 10%) !important;
+                    }
+                }
+                i {
+                    border-left: 1px solid #bbb;
+                    padding-left: 10px;
+                    z-index: 4;
+                    right: 0;
+                    color: #bbb;
+                }
+
+            }
+
+            .twitter {
+                background-color: #32CCFE;
+            }
+
+            .google {
+                background-color: #D93F33;
+            }
+
+            .facebook {
+                background-color: #4966A8;
+            }
+
+        }
+
+        .search {
+            box-shadow: 0 0 2rem rgb(0 0 0 / 20%) !important;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px 20px;
+            @include xs{ position: relative; }
+            @include sm{ position: relative; }
+            @include md{ position: relative; }
+            @include lg{
+                border-radius: 50px;
+                position: absolute;
+                justify-content: space-around;
+                display: flex;
+                bottom: -45px;
+            }
+
+
+            select {
+                background-color: #f4f4f4;
+                border: none;
+                @include xs{width: 100%;}
+                @include sm{width: 100%;}
+                @include md{width: 100%;}
+                @include lg{width: auto;}
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .has-dots {
+        img {
+            width: 250px;
+        }
+    }
+
+    .user-a {
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0 0 1rem rgb(0 0 0 / 10%) !important;
+          }
+        .img-container {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            position: relative;
+            .flag {
+                position: absolute;
+                right: 4px;
+                top: 4px;
+                background-color: #fff;
+                border-radius: 3px;
+                padding: 2px;
+            }
+            .status {
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 1px;
+                color: #8bc34a;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .user-b {
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 1rem 2rem rgb(0 0 0 / 5%) !important;
+        &:hover {
+            box-shadow: 0 0 2rem rgb(0 0 0 / 20%) !important;
+          }
+        .img-container {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            position: relative;
+            .status {
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 1px;
+                color: #8bc34a;
+                font-size: 20px;
+            }
+        }
+    }
+}
+/* home page end*/

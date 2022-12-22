@@ -1,0 +1,95 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الطلبات ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("الطلبات")
+        .d-lg-flex.mb-4.justify-content-between.mt-5
+          h4 اجمالي الطلبات (345)
+          div.align-self-center
+            a.text-white.rounded-pill.border-0.m-color-bg.d-color-bg-hover.btn.btn-lg(href="add-product-1.html")
+              | طلب جديد جديد
+              i.fas.fa-plus-circle.mx-2
+        h4 فلتر النتائج
+        .d-xl-flex.mb-4.justify-content-between
+          div.mb-xl-0.mb-3
+            .date-filter.d-lg-flex
+              .input-1.mb-lg-0.mb-3
+                input.form-control(type="text", placeholder="MM/LL/DD")
+                span.calendar-label
+                  span التاريخ من
+                  i.mbi.mbi-calendar-full.mx-2
+              .input-2.mb-lg-0.mb-3
+                input.form-control(type="text", placeholder="MM/LL/DD")
+                span.calendar-label
+                  span التاريخ من
+                  i.mbi.mbi-calendar-full.mx-2
+              button.border-0.btn-lg.px-4.m-color-bg.d-color-bg-hover.text-white.btn(style="height: 48px") فلترة
+          .search.border
+            i.mbi.mbi-magnifier
+            input.form-control.form-control-lg.bg-white(type="search", placeholder="ابحث عن طلب ")
+            button.rounded-0.btn-lg.px-4.m-color-bg.d-color-bg-hover.text-white.btn(style="height: 48px") بحث
+
+        div.mb-4.myorders
+          .food
+            .nav.border-0.nav-tabs#nav-tab(role='tablist')
+                span.nav-link.pointer
+                    .progress.blue
+                      span.progress-left
+                        span.progress-bar(style="border-color: #198754; animation: loading-2 1.5s linear forwards 1.8s")
+                        |
+                      span.progress-right
+                        span.progress-bar(style="border-color: #198754")
+                    span تم التجهيز (6)
+
+                span.nav-link.pointer.active
+                    .progress.blue
+                      span.progress-left
+                        span.progress-bar(style="border-color: #dee2e6; animation: loading-1 1.5s linear forwards 1.8s")
+                        |
+                      span.progress-right
+                        span.progress-bar(style="border-color: #dc3545")
+                    span مرحلة التوصيل (6)
+                    i.clear-filter.fas.fa-times-circle.m-color-text
+
+                span.nav-link.pointer
+                    .progress.blue
+                      span.progress-left
+                        span.progress-bar(style="border-color: #ffc40d; animation: loading-1 1.5s linear forwards 1.8s")
+                        |
+                      span.progress-right
+                        span.progress-bar(style="border-color: #ffc40d")
+                    span تم التسليم (6)
+
+        .custom-table
+          h4 الطلبات الاخيرة
+          .table-responsive
+            table.table.table-borderless
+              thead
+                tr
+                  each val in [ "رقم الطلب", "العميل", "عنوان العميل", "تاريخ الطلب", "الشحن", "الدفع", "حالة الطلب", "المجموع", "الاجراءات"]
+                    th=val
+              -for(x=1; x<=12; x++)
+                tbody
+                  tr
+                    td #3456789
+                    td
+                      h6.mb-0 Mohamed ali
+                      small.text-muted عميل منذ 21\21\2020
+                    td
+                      h6.mb-0 مكة المكرمة
+                      small.text-muted السعودية
+                    td
+                      h6.mb-0 21/1/2020
+                      small.text-muted  مساء  3:30
+                    td الى اقرم موقع تسليم
+                    td كاش
+                    td: span.m-color-text بانتظار التاكيد
+                    td 9877 ريال
+                    td.icons
+                      i.mbi.mbi-eye
+                      i.mbi.mbi-download2
+
+    include ./includes/scripts

@@ -1,0 +1,182 @@
+mixin head(title)
+  head
+    //- +meta-title(" من نحن ")
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title=title
+    include ../includes/styles
+    
+mixin input-font-icon(type, icon, title, btn)
+  div.text-start
+    label.form-label=title
+  .mb-3.position-relative.input-style-container.form-floating.input-style-container-with-icon(style="width: 100%")
+    span.form-icon
+     i(class="mbi "+icon)
+    if btn
+      button.px-4.d-color-bg.icon.lef-0.m-color-bg-hover.text-white.btn=btn
+    input.input-style.form-control(type=type)
+
+mixin input-img-icon(type, src, title, btn)
+  div.text-start
+    label.form-label=title
+  .mb-3.position-relative.input-style-container.form-floating.input-style-container-with-icon(style="width: 100%")
+    span.form-icon
+      img(src="../images/icons/"+src)
+    if btn
+      button.px-4.d-color-bg.icon.lef-0.m-color-bg-hover.text-white.btn=btn
+    input.input-style.form-control(type=type)
+
+mixin dash-input(lable1, label2, type, placeholder)
+  .mb-3
+    label.form-label.fw-bolder=lable1
+    if label2
+      span.mb-2.d-block.text-muted=label2
+    input.form-control.form-select-lg.dash-input.rounded-pill(type=type, placeholder=placeholder)
+
+mixin dash-input-calendar(lable1, label2, type, calendar)
+  .mb-3.dash-input-calendar
+    label.form-label.fw-bolder=lable1
+    if label2
+      span.mb-2.d-block.text-muted=label2
+    input.form-control.form-select-lg.rounded-pill(type=type)
+    span.calendar-label
+      i.mbi.mbi-calendar-full.me-2.icon
+      span=calendar
+
+
+mixin dash-input-price(label, price)
+  .mb-3.dash-input-price
+    label.form-label.fw-bolder=label
+    input.form-control.form-select-lg.rounded-pill(type="number")
+    span.price-label=price
+
+mixin dash-switch-between(label_1, label_2, id)
+  .mb-3
+    if label_1
+      label.form-label.fw-bolder=label_1
+    .form-check.form-switch.dash-switch-between.pointer
+      label.pointer.form-check-label(for=id)=label_2
+      input.pointer.form-check-input(type='checkbox', id=id, checked)
+
+mixin dash-select(label_1, label_2, val)
+  .mb-3
+    if label_1
+      label.mb-1.form-label.fw-bolder=label_1
+      br
+    if label_2
+      label.form-label=label_2
+    select.form-select.form-select-lg.dash-select.rounded-pill
+      option(selected, value=val)=val
+
+mixin dashboard-navbar(title)
+  // sart dashboard navbar
+  nav.navbar.navbar-light.dashboard-navbar.mb-4
+    img.me-3.toggle-dashboard-sidebar.pointer.rounded-circle.show-dashboard-sidebar(src="../images/icons/list.png")
+
+    div
+      p.mb-0=title
+      a.text-decoration-none.d-color-text-hover.s-color-text(href="#") الرجوع للرئيسية
+    div.d-md-block.d-none
+      .search
+        i.mbi.mbi-magnifier
+        input.form-control(type="search", placeholder="ابحث عن طلب ")
+        select.form-select
+          option الطلبات
+          option الطلبات
+        button.rounded-0.px-4.m-color-bg.d-color-bg-hover.text-white.btn بحث
+
+    div.user
+      .d-flex
+        img.d-lg-block.d-none.align-self-center.me-3(src="../images/icons/user.png", alt="user")
+        div.d-lg-block.d-none.align-self-center.border-end.pe-2
+          h6.mb-0 ابو مازن للماكولات
+          a.s-color-text.d-color-text-hover(href="vendor.html") رؤية المتجر
+
+        .position-relative.ps-2.ringing
+          small.position-absolute.m-color-bg.text-white
+            | 1
+          i.mbi.mbi-alarm-ringing.h3
+  // sart dashboard navbar
+
+mixin circle-number(number, title)
+  .circle-number
+    span=number
+    h3=title
+
+mixin custom-dashfile(name, id)
+  .mb-3.position-relative.input-style-container.input-file
+    .form-check
+      label.pointer.form-check-label(for=id) جعلها صورة رئيسية
+      input.pointer.form-check-input(type='radio', id=id, name=name)
+    input.input-style.form-control.mb-0(type="file")
+    .content
+      img(src="../images/icons/img.png", width="70", height="70")
+      span.file-name
+
+mixin ar-en-input(title ,pills_id, ar_id, en_id, type)
+  .lang
+    h5=title
+    ul.nav.nav-pills.mb-0(id=pills_id,role="tablist")
+      li.nav-item(role="presentation")
+        span.pointer.nav-link(
+          id=ar_id, data-bs-toggle="pill", data-bs-target="#tab-pane"+ar_id,
+          role="tab", aria-controls="tab-pane"+ar_id, aria-selected="false") عربي
+      li.nav-item(role="presentation")
+        span.pointer.nav-link.active(
+          id=en_id, data-bs-toggle="pill", data-bs-target="#tab-pane"+en_id,
+          role="tab", aria-controls="tab-pane"+en_id, aria-selected="true") English
+  .lang-tab.tab-content#pills-tabContent
+    .tab-pane.fade(id="tab-pane"+ar_id, role="tab", aria-labelledby=ar_id)
+      if type == 'textarea'
+        textarea.form-control.form-select-lg(cols="30", rows="10")
+      else
+        input.form-control.form-select-lg(type=type)
+    .tab-pane.fade.show.active(id="tab-pane"+en_id, role="tab", aria-labelledby=en_id)
+      if type == 'textarea'
+        textarea.form-control.form-select-lg(cols="30", rows="10")
+      else
+        input.form-control.form-select-lg(type=type)
+
+mixin action-btn(action1, action1_href, action2)
+  .mb-3.d-flex
+    a.px-5.me-3.btn-lg.border-0.btn.text-white.rounded-pill.m-color-bg.s-color-bg-hover(href=action1_href)=action1
+    if action2
+      a.px-5.btn-lg.border-0.btn.rounded-pill.w-color-text-hover.d-color-bg-hover(href="#")=action2
+
+mixin dashed-btn(action1)
+  .mb-3.dashed-btn
+    span.px-5.btn-lg.btn.rounded-pill=action1
+
+mixin user-card()
+  .user-card.shadow-sm.p-2.rounded-3
+    a.text-dark.text-decoration-none(href="clint.html")
+      .d-flex
+        img.rounded-3(src="../images/icons/user.png", alt="")
+        span: i.mbi.mbi-alarm-ringing
+      .info
+        span اسم العميل
+        h5 Reham mohamed
+        span عضو منذ 12/21/2021
+        p.mb-1
+          | Reham.mohamed@gmail.com
+          i.mbi.mbi-envelope.me-2
+
+        p
+          | 98721478587
+          i.mbi.mbi-telephone.me-2
+      a.px-3.py-2.border-0.btn.rounded-pill(href="#") 658 رسال سعودي
+
+mixin order-info()
+  .d-md-flex.mb-4.justify-content-between.border.px-3.py-2
+    .text-center.mb-md-0.mb-3
+      p.mb-0.text-muted رقم الطلب
+      h5.text-dark #5434566
+
+    .text-center.mb-md-0.mb-3
+      p.mb-0.text-muted تاريخ ووقت الطلب
+      h5.text-dark 12/8/2021 - 2 مساء
+
+    .text-center.mb-md-0.mb-3
+      p.mb-0.text-muted حالة الطلب الطلب
+      h5.text-dark مرحلة التوصيل

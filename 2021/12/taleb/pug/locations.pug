@@ -1,0 +1,262 @@
+extends components/layout.pug
+block title
+  | المناطق
+block main
+  +breadcrumb-in-1('المناطق', 'المناطق', 'الرئسية', 'index.html')
+
+  section.content
+    .card.card-primary.card-outline.card-outline-tabs
+      .card-header.p-0.border-bottom-0
+        ul.nav.nav-tabs#tabs-tab(role="tablist")
+          // companies
+          li.nav-item
+            a.nav-link.active#tabs-1-tab(data-toggle="pill", href="#tabs-1", role="tab", aria-controls="tabs-1", aria-selected="true").
+             الدول
+
+          // branch
+          li.nav-item
+            a.nav-link#tabs-2-tab(data-toggle="pill", href="#tabs-2", role="tab", aria-controls="tabs-2", aria-selected="false").
+              المحافظات
+
+          // departments
+          li.nav-item
+            a.nav-link#tabs-3-tab(data-toggle="pill", href="#tabs-3", role="tab", aria-controls="tabs-3", aria-selected="false").
+              الاحياء
+
+      .card-body
+        .tab-content#tabs-tabContent
+          // companies
+          .tab-pane.fade.active.show#tabs-1(role="tabpanel", aria-labelledby="tabs-1-tab")
+            section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("قائمة الدول", '#modal1')
+                    // add modal
+                    .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة دولة  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم الدولة عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم الدولة انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label رمز الدولة
+                                input.form-control(type="text")
+                              .form-group
+                                label رمز القارة
+                                input.form-control(type="text")
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal2(tabindex="-1", role="dialog", aria-labelledby="modal2", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل بيانات الشركة ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم الدولة عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم الدولة انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label رمز الدولة
+                                input.form-control(type="text")
+                              .form-group
+                                label رمز القارة
+                                input.form-control(type="text")
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal3(tabindex="-1", role="dialog", aria-labelledby="modal3", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل الشركة")
+                          .modal-body
+                            div.mb-3
+                              span الدولة  :
+                                p.h4.d-inline اسم الدولة
+                            div.mb-3
+                              span رمز الدولة  :
+                                p.h4.d-inline UZL
+                            div.mb-3
+                              span رمز القارة  :
+                                p.h4.d-inline AF
+                          +modal-footer
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in ["الرقم", "الاسم", "الرمز", "رمز القارة", "المحافظات", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, "اسم الدولة", "ZA", "FA  ", "23"]
+                                td= value
+                              +tabel-option-nolink-sm("modal2", "modal3")
+                      include components/pagination
+
+          // branch
+          .tab-pane.fade#tabs-2(role="tabpanel", aria-labelledby="tabs-2-tab")
+            section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("قائمة المحافظات", '#modal4')
+                    // add modal
+                    .modal.fade#modal4(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة محافظة  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم المحافظة عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم المحافظة انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  الدولة
+                                select.form-control
+                                  - for (var x = 1; x <= 10; x++)
+                                    option اسم الدولة #{x}
+
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal5(tabindex="-1", role="dialog", aria-labelledby="modal5", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل بيانات المحافظة ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم المحافظة عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم المحافظة انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  الدولة
+                                select.form-control
+                                  - for (var x = 1; x <= 10; x++)
+                                    option اسم الدولة #{x}
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal6(tabindex="-1", role="dialog", aria-labelledby="modal6", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل المحافظة")
+                          .modal-body
+                            div.mb-3
+                              span المحافظة  :
+                                p.h4.d-inline اسم المحافظة
+                            div.mb-3
+                              span  الدولة  :
+                                p.h4.d-inline UZL
+                            div.mb-3
+                              span  الاحياء  :
+                                p.h4.d-inline 43
+
+                          +modal-footer
+                    .card-body
+                      +search-2("الدولة" , select2  , datefrom = null, dateto = null)
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in ["الرقم", "الاسم", "الدولة", "الاحياء", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, "اسم المحافظة", "الدولة",  "23"]
+                                td= value
+                              +tabel-option-nolink-sm("modal5", "modal6")
+                      include components/pagination
+
+          // ‫‪SYSTEM_SCREEN
+          .tab-pane.fade#tabs-3(role="tabpanel", aria-labelledby="tabs-3-tab")
+              section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("قائمة الاحياء", '#modal7')
+                    // add modal
+                    .modal.fade#modal7(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة حي  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم الحي عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم الحي انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  المحافظة
+                                select.form-control
+                                  - for (var x = 1; x <= 10; x++)
+                                    option اسم المحافظة #{x}
+
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal8(tabindex="-1", role="dialog", aria-labelledby="modal8", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل بيانات الحي ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم الحي عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم الحي انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  المحافظة
+                                select.form-control
+                                  - for (var x = 1; x <= 10; x++)
+                                    option اسم المحافظة #{x}
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal9(tabindex="-1", role="dialog", aria-labelledby="modal9", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل الحي")
+                          .modal-body
+                            div.mb-3
+                              span الحي  :
+                                p.h4.d-inline اسم الحي
+                            div.mb-3
+                              span  المحافظة  :
+                                p.h4.d-inline إسم المحافظة
+
+
+                          +modal-footer
+                    .card-body
+                      +search-2("الدولة" , "المحافظة"  , datefrom = null, dateto = null)
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in ["الرقم", "الاسم", "المحافظة", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, "اسم الحي", "المحافظة"]
+                                td= value
+                              +tabel-option-nolink-sm("modal8", "modal9")
+                      include components/pagination
+

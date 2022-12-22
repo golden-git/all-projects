@@ -1,0 +1,26 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اضافة كوبون - 3 ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اضافة كوبون - 3 ")
+        .row
+          .col-12.mb-4: +circle-number("3", "مستثني من الكوبون")
+          .col-12.mb-2: +dash-select(
+            " طرق الدفع المستثناة في الكوبون ",
+            "",
+            "كل الطرق"
+            )
+          .col-12.mb-2: +dash-select(
+            "تصنيفات مستثناة",
+            "",
+            "كل الطرق"
+            )
+          .col-12: +dash-input("منتجات مستثناة", "يمكنك البحث في النتجات", "text", "")
+          .col-12: +dash-input("عملاء مستثنين", "يمكنك البحث في قائمة العملاء", "text", "")
+
+          .col-12: +action-btn("اضافة", "coupon.html" , "الغاء")
+
+    include ./includes/scripts

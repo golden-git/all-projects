@@ -1,0 +1,37 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اضافة منتج - 1 ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اضافة منتج - 1 ")
+        .row
+          .col-12.mb-4: +circle-number("1", "تفاصيل المنتج")
+          .col-12
+            h4 صور المنتج
+            p
+              | المقاس المطلوب للصورة هو
+              span.s-color-text  1080*1080
+            .row
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "1")
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "2")
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "3")
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "4")
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "5")
+              .col-lg-2.col-md-4.col-6: +custom-dashfile("product-img", "6")
+              .col-12.mb-2: +dash-select(
+                "القسم ",
+                "اختر تصيف المنتج",
+                "مثلا : ماكولات سورية"
+                )
+              .col-12.mb-3: +ar-en-input("اسم المنتج", "pills_1", "ar_1", "en_1", "text")
+              .col-12.mb-3: +ar-en-input("وصف المنتج", "pills_2", "ar_2", "en_2", "textarea")
+              .col-12.mb-2: +dash-select(
+                "مدة تجهيز الطلب ",
+                "اختر الوقت الذى تستعرقة في تحضير الاكلة",
+                "6-7 ساعات"
+                )
+              .col-12: +action-btn("التالي", "add-product-2.html" , "الغاء")
+
+    include ./includes/scripts

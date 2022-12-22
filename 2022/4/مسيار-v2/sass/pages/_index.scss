@@ -1,0 +1,61 @@
+/* home page start */
+main.home {
+
+
+  header {
+    background-color: var(--d-color);
+
+    svg {
+      position: relative;
+      z-index: 2;
+    }
+
+    .icon {
+      z-index: 1;
+      opacity: .6;
+      font-size: 50px;
+    }
+
+
+    .circle-progress-value {
+      stroke-width: 10px;
+      stroke: var(--s-color);
+    }
+    .circle-progress-circle {
+      stroke-width: 10px;
+      stroke: #fff;
+    }
+    .circle-progress-text {
+      fill: #fff;
+    }
+
+    .search {
+      box-shadow: 0 0 2rem rgb(0 0 0 / 20%) !important;
+      width: 100%;
+      border-radius: 5px;
+      padding: 10px 20px;
+      @include xs{ position: relative; }
+      @include sm{ position: relative; }
+      @include md{ position: relative; }
+      @include xl {
+          position: absolute;
+          justify-content: space-around;
+          display: flex;
+          bottom: -65px;
+      }
+
+
+      select {
+          background-color: #f4f4f4;
+          border: none;
+          @include xs{width: 100%;}
+          @include sm{width: 100%;}
+          @include md{width: 100%;}
+          @include lg{width: auto;}
+      }
+  }
+  }
+
+
+}
+/* home page end*/

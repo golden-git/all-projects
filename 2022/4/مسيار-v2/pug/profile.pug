@@ -1,0 +1,168 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head("الملف")
+  body
+    include ./includes/navbar
+    main.profile
+      header
+        .d-md-flex.justify-content-between.align-items-center.mb-3.p-3
+            a.text-muted.text-decoration-none(href="index.html")
+              i.icon.fas.fa-arrow-right.ms-2
+              | عودة إلى نتائج
+            div
+              span 6 / 1000
+
+        .container
+          .row
+            .col-lg-7.text-center
+              img.img-fluid.rounded.mb-3#master-img(src="images/users/girl_1.jpg", alt="user")
+              div
+                img.img-fluid.rounded.ms-3.user-multi-img(width="80", data-img="images/users/girl_1.jpg" ,src="images/users/girl_1.jpg", alt="user")
+                img.img-fluid.rounded.ms-3.user-multi-img(width="80", data-img="images/users/girl_1.jpg" ,src="images/users/girl_1.jpg", alt="user")
+                img.img-fluid.rounded.ms-3.user-multi-img(width="80", data-img="images/users/girl_1.jpg" ,src="images/users/girl_1.jpg", alt="user")
+                img.img-fluid.rounded.ms-3.user-multi-img(width="80", data-img="images/users/girl_1.jpg" ,src="images/users/girl_1.jpg", alt="user")
+            .col-lg-5
+              .d-md-flex.justify-content-between.align-items-center.mb-3.p-3
+                div
+                  sapn.text-dark.s-color-bg.px-4.py-2.rounded مرحبا بك
+
+              .card.border-0
+                .card-body
+                    h5.card-title
+                      i.fas.fa-user.ms-2
+                      | ريم أحمد
+                    p.card-text.mb-0.text-muted 28 • الرياض, السعودية
+                    p.card-text.mb-0.text-muted ابحث على: ذكر 30 - 45
+                    p.card-text.mb-0.text-muted منذ 42 دقائق
+                .card-footer.border-0.bg-white.d-flex.justify-content-between.align-items-center
+                    i.h3.text-muted.fas.fa-comment-alt
+                    i.h3.text-muted.fas.fa-heart
+                    sapn.text-muted
+                        i.h3.fas.fa-camera.ms-2
+                        span.h3 5
+              hr
+
+
+              .table-responsive
+                table.table.table-striped.table-borderless.caption-top
+                  caption.text-end  نظرة عامة سريعة
+                  thead
+                    tr
+                      th(scope="col")
+                      th.m-color-text ريم أحمد
+                      th.m-color-text انها تبحث عن
+                  tbody
+                    tr
+                      th التعليم
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th لديهم صغار
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th التدخين
+                      td لا يوجد رد
+                      td لا يوجد رد
+            .col-12.mt-5
+              .table-responsive
+                table.table.table-striped.table-borderless.caption-top
+                  caption.text-end.h4  المزيد عنى
+                  thead
+                    tr
+                      th.m-color-text اساسى
+                      th.m-color-text ريم أحمد
+                      th.m-color-text انها تبحث عن
+                  tbody
+                    tr
+                      th الجنس
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th السن
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th يعيش في
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th على استعداد للتنقل
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+              .table-responsive
+                table.table.table-striped.table-borderless.caption-top
+                  caption.text-end.h4  المظهر
+
+                  tbody
+                    tr
+                      th لون الشعر
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th لون العيون
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th الطول
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+                    tr
+                      th نوع الجسم
+                      td لا يوجد رد
+                      td لا يوجد رد
+
+      .container.coustom-container.pt-3
+          .d-md-flex.justify-content-between.align-items-center.mb-3
+            h5 أعضاء مشابهون
+
+          .row
+            -for(x=1; x<=6; x++)
+              .col-xl-2.col-lg-3.col-6.mb-3
+                .card.border-0.shadow.user
+                  div.position-relative
+                    span.position-absolute.status
+                      i.fas.fa-circle.text-success
+                    a.text-muted.text-decoration-none(href="profile.html")
+                      img.img-fluid.card-img-top(src="images/users/girl_1.jpg", alt="user")
+                  .card-body
+                    h6.card-title.text-muted
+                      a.text-muted.text-decoration-none.m-color-text-hover(href="profile.html")
+                        i.fas.fa-user.ms-2
+                        | ريم أحمد
+                    p.card-text.mb-0.text-muted 28 • الرياض, السعودية
+                    p.card-text.mb-0.text-muted ابحث على: ذكر 30 - 45
+                    p.card-text.mb-0.text-muted منذ 42 دقائق
+                  .card-footer.border-0.bg-white.d-flex.justify-content-between.align-items-center
+                      i.h5.text-muted.fas.fa-comment-alt
+                      i.h5.text-muted.fas.fa-heart
+                      sapn.text-muted
+                          i.h5.fas.fa-camera.ms-2
+                          span.h5 5
+            .co-12.mt-5
+              nav(aria-label="...")
+                ul.pagination.justify-content-center
+                  li.page-item.rounded.mx-1.disabled
+                    a.rounded.page-link(href="#", tabindex="-1", aria-disabled="true") السابق
+                  li.page-item.rounded.mx-1
+                    a.rounded.page-link(href="#") 1
+                  li.page-item.rounded.mx-1.active(aria-current="page")
+                    a.rounded.page-link(href="#") 2
+                  li.page-item.rounded.mx-1
+                    a.rounded.page-link(href="#") 3
+                  li.page-item.rounded.mx-1
+                    a.rounded.page-link(href="#") التالي
+
+
+
+    include ./includes/footer

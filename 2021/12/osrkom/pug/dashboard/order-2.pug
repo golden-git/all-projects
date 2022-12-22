@@ -1,0 +1,93 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الطلب ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" الطلب ")
+        .check-out.py-md-5.py-3
+            // order complete
+            .order-complete
+              .row
+                .col-12: +order-info()
+                .col-12
+                    .search.search-with-info
+                        i.mbi.mbi-magnifier
+                        +dash-input('العميل ', 'ابحث في قائمة العملاء' , 'text', 'ابحث عن اسم العميل')
+
+                .col-12
+                    .row
+                        .col-md-10
+                           .search.search-with-info.search-container(style="overflow: unset")
+                                i.mbi.mbi-magnifier
+                                +dash-input('المنتجات ', 'ابحث في قائمة منتجاتك' , 'text', 'ابحث عن اسم العميل')
+                                .search-data-container.border.rounded-3.p-3
+                                    .d-flex.justify-content-between 
+                                        div 
+                                            .d-flex 
+                                                img.me-2.rounded-3(src="../images/products/1.png", alt="product", width="45", height="45")
+                                                div 
+                                                    h6.mb-0 منفوشة  زعتر
+                                                    small.text-muted #546788
+                                        .kemia
+                                            .number.d-inline-block.py-1.px-2
+                                                span.plus.text-dark
+                                                    i.mbi.mbi-plus
+                                                input(type="text", value="1")
+                                                span.minus.text-dark
+                                                    i.mbi.mbi-minus
+                        .col-md-2.align-self-center.mb-4
+                            div.btn-link
+                                a.py-2.px-4.border-0.btn.text-white.rounded-pill.m-color-bg.s-color-bg-hover(href="#") اضافة منتج خاص
+
+                .col-12.mb-2: +dash-select(
+                    "طريقة التوصيل ",
+                    "",
+                    "توصيل الى منزل العميل"
+                    )
+
+                .col-12    
+                    .row.check-out 
+                        .col-lg-6
+                            .order-container.d-block(style="min-height: auto !important;")
+                                .code.mb-5
+                                    .d-flex.mb-3
+                                        div.align-self-center
+                                            h4.title-font.mb-0 لديك كوبون خصم
+                                            p.mb-0.text-muted من فضلك ادخل كوبون الخصم
+                                    form.code
+                                        input.set-input.form-control.border-0.rounded-pill(
+                                            type='text',
+                                            placeholder='ادخل بريدك هنا')
+                                        button.btn.d-color-bg.m-color-bg-hover.text-white تفعيل
+
+                            .order-block.shadow-none.mb-3.border.p-3.rounded-3
+                                // order detail
+                                .d-flex.justify-content-between.mb-2
+                                    h5.title-font إجمالي الطلب
+                                    span.text-dark 31 SR
+
+                                .d-flex.justify-content-between.mb-2
+                                    h5.title-font التوصيل
+                                    span.text-dark 2.5 SR
+
+                                .d-flex.justify-content-between
+                                    h5.title-font إجمالي
+                                    span.m-color-text 32.5 SR
+
+                        .col-lg-6.check-out 
+                            .pay
+                                .d-flex.mb-3
+                                    div.align-self-center
+                                        h4.title-font.mb-0 طريقة الدفع
+                                        p.mb-0.text-muted اختر طريقة الدفع المناسبة لك
+
+                                each val, index in ["فيزا \ ماستر كارد", "مدي", "STC", "الدفع عند الاستلام"]
+                                    .form-check.pay-methods
+                                        label.form-check-label.text-start(for="check"+index)=val
+                                        input.form-check-input.p-0.m-0( name="paytype" id="check"+index, type="radio")
+                                        img(src="../images/icons/pay/"+index+".png", alt="pay")
+
+                .col-12: +action-btn("اتمام الطلب", "add-product-2.html" , "رجوع")
+    include ./includes/scripts

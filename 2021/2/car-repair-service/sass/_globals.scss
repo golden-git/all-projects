@@ -1,0 +1,117 @@
+// sass --watch /media/roger/roger/F/web/tests/golden/2021/2/car/sass:/media/roger/roger/F/web/tests/golden/2021/2/car/css
+
+/*========== start globals ==========*/
+:root {
+    --m-color: #ffc513;
+    --d-color: #2d2d2d;
+    --g-color: #5e5e5e;
+
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+@each $colorname,
+$color in (m-color-text, var(--m-color)),
+(d-color-text, var(--d-color)),
+(g-color-text, var(--g-color)) {
+
+    /* color-text */
+    .#{$colorname} {
+        color:#{$color};
+    }
+}
+
+@each $colorname,
+$color in (m-color-text-hover, var(--m-color)),
+(d-color-text-hover, var(--d-color)),
+(g-color-text-hover, var(--g-color)) {
+
+    /* color-text-hover */
+    .#{$colorname}:hover {
+        color:#{$color} !important;
+    }
+}
+
+
+@each $colorname,
+$color in (m-color-bg, var(--m-color)),
+(d-color-bg, var(--d-color)),
+(g-color-bg, var(--g-color)) {
+
+    /* background-color */
+    .#{$colorname} {
+        background-color:#{$color};
+    }
+}
+
+@each $colorname,
+$color in (m-color-bg-hover, var(--m-color)),
+(d-color-bg-hover, var(--d-color)),
+(g-color-bg-hover, var(--g-color)) {
+
+    /* background-color-hover */
+    .#{$colorname}:hover {
+        background-color:#{$color} !important;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* title-separator */
+.title-separator {
+    background-color: var(--m-color);
+    height: 3px;
+    width: 50px;
+    display: inline-block;
+    &:after, &:before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        background-color: var(--m-color);
+        display: inline-block;
+        position: absolute;
+    }
+
+    &:after {
+        right: -10px;
+    }
+
+    &:before {
+        right: -5px;
+    }
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: var(--m-color);
+    width: 18px;
+    border-radius: 5px;
+}
+
+.slick-slide img {
+    margin: auto;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    line-height: 20px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: '';
+    text-align: center;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.slick-dots {
+    margin-top: 20px;
+}
+ 
+
+/*========== end globals ==========*/

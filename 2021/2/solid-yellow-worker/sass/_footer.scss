@@ -1,0 +1,17 @@
+/* footer */
+footer {
+    .dark-footer {
+        background-image: url(../imgaes/footer/background-footer.jpg);
+        background-color: rgb(17, 17, 17) !important;
+        background-repeat: no-repeat;
+        padding: 5% 0;
+    }
+
+    .light-footer {
+        padding: 4% 0 1% 0;
+        a {
+            font-size: 15px;
+        }
+    }
+}
+/* footer */

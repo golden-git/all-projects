@@ -1,0 +1,83 @@
+/* .image-section */
+.image-section {
+  padding: 80px 0;
+  background-image: url(../imgaes/image-section/img5.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-color: var(--g-color);
+  .description {
+    h3 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 27px;
+    }
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+  .image-section {
+    padding: 60px 0;
+    .description {
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .image-section {
+    padding: 60px 0;
+    .description {
+      h3 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .image-section {
+    padding: 80px 0;
+    .description {
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .description {
+    h3 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1606px) {
+  .image-section {}
+}
+
+@media (min-width: 1607px) {
+  .image-section {}
+}
+
+/* .image-section */

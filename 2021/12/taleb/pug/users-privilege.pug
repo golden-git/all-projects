@@ -1,0 +1,29 @@
+extends components/layout.pug
+block title
+  | صلاحيات المستخدمين
+block main
+  +breadcrumb-in-1('صلاحيات المستخدمين ', 'صلاحيات المستخدمين ', 'الرئسية', 'index.html')
+
+  section.content
+    .row
+      .col-12
+        .card.border
+          .card-header.p-2
+            +tabel-header-a("قائمة صلاحيات المستخدمين", 'user-add-privilege.html')
+
+          .card-body
+            include components/single-search
+            table.table.table-bordered.table-striped.text-center
+              thead
+                tr
+                  each value in ['الرقم', 'المستخدم ', 'النظام', 'التبويب', 'الشاشة  ' , 'خيارات']
+                    th= value
+
+              tbody
+                - for (var x = 1; x <= 10; x++)
+                  tr
+                    each value in [x, 'علي محمد', 'الموظفين', 'اضافة', 'اضافة موظف']
+                      td= value
+                    +tabel-option-link("user-show-privilege.html", "user-edit-privilege.html")
+            include components/pagination
+

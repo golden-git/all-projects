@@ -1,0 +1,241 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("الرئيسية")
+  body
+    include ./includes/navbar
+    // header
+    header.overflow-hidden
+      .main-slider-lg.m-0.d-lg-block.d-none
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/1.jpg", alt="main slider img")
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/2.jpg", alt="main slider img")
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/3.webp", alt="main slider img")
+
+      .main-slider-sm.m-0.d-block.d-lg-none
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/mobile/1.webp", alt="main slider img")
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/mobile/2.webp", alt="main slider img")
+        a(href="category.html")
+          img.img-fluid(src="./images/main-slider/mobile/3.webp", alt="main slider img")
+
+    // header
+
+    // explore
+    section.explore.py-lg-4.py-3
+      .container.mb-4
+        h4.title
+          span اكتشف
+        .explore-slider-1.slider
+          - for (x = 1; x <= 3; x++)
+            .text-center.p-2
+              a.s-color-text-hover.text-dark(href="category.html")
+                img.img-fluid(src="./images/explore-slider/"+x+".webp", alt="explore slider img")
+                h5  لوازم طبخ عزومة الشتاء #{x}
+          - for (x = 1; x <= 3; x++)
+            .text-center.p-2
+              a.s-color-text-hover.text-dark(href="category.html")
+                img.img-fluid(src="./images/explore-slider/"+x+".webp", alt="explore slider img")
+                h5  لوازم طبخ عزومة الشتاء #{x}
+
+      .container
+        h4.title
+          span الأكثر مبيعاً
+        .explore-slider-2.slider
+          - for (x = 1; x <= 5; x++)
+            .text-center.p-2.position-relative
+              span.position-absolute -25%
+              a.s-color-text-hover.text-dark(href="product.html")
+                img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                h5 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                p 29 SAR
+          - for (x = 1; x <= 5; x++)
+            .text-center.p-2.position-relative
+              span.position-absolute -25%
+              a.s-color-text-hover.text-dark(href="product.html")
+                img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                h5 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                p 29 SAR
+    // explore
+
+    // block product list
+    section.block-product-list.py-lg-4.py-3
+      .container
+        .row.no-gutters.block-cat-wrap
+          .col-12.col-lg-6.mb-lg-0.mb-3.col-xl-5
+            .row.gutters.h-100.bg-white
+              .col-6.col-lg-6.position-relative
+                .block-cat-home
+                  h2.title إسم التصنيف
+                  ul
+                    li
+                      a(href="category.html ") اطقم اواني الطبخ
+                    li
+                      a(href="category.html") اواني الفرن
+                    li
+                      a(href="category.html") اواني طبخ متخصصة
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") اواني القلي وقلايات التشويح
+                    li
+                      a(href="category.html") صواني التحمير
+                    li
+                      a(href="category.html") صواني ومقالي شواء
+                    li
+                      a(href="category.html") قدور الضغط
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") قدور الطاجن
+                    li
+                      a(href="category.html") كسرولات وقدور الطبخ البطيء
+                    li
+                      a(href="category.html") اطقم فوندو
+                  .view-all
+                    a(href="category.html") شاهد الكـل
+              .col-6.col-lg-6.px-0.block-cat-promo.text-end
+                .promo-now
+                  a(href="category.html")
+                    img(src="./images/catalog/1.webp")
+                    button.btn.px-4.m-color-bg.d-color-hover تسـوق الآن
+          .col-12.col-lg-6.col-xl-7.px-0
+            .block-product-slider-1.block-product-slider.bg-white
+               - for (x = 1; x <= 3; x++)
+                .slider-block
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+    // block product list
+
+    // block product list
+    section.block-product-list.py-lg-4.py-3
+      .container
+        .row.no-gutters.block-cat-wrap
+          .col-12.col-lg-6.mb-lg-0.mb-3.col-xl-5
+            .row.gutters.h-100.bg-white
+              .col-6.col-lg-6.position-relative
+                .block-cat-home
+                  h2.title إسم التصنيف
+                  ul
+                    li
+                      a(href="category.html ") اطقم اواني الطبخ
+                    li
+                      a(href="category.html") اواني الفرن
+                    li
+                      a(href="category.html") اواني طبخ متخصصة
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") اواني القلي وقلايات التشويح
+                    li
+                      a(href="category.html") صواني التحمير
+                    li
+                      a(href="category.html") صواني ومقالي شواء
+                    li
+                      a(href="category.html") قدور الضغط
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") قدور الطاجن
+                    li
+                      a(href="category.html") كسرولات وقدور الطبخ البطيء
+                    li
+                      a(href="category.html") اطقم فوندو
+                  .view-all
+                    a(href="category.html") شاهد الكـل
+              .col-6.col-lg-6.px-0.block-cat-promo.text-end
+                .promo-now
+                  a(href="category.html")
+                    img(src="./images/catalog/2.webp")
+                    button.btn.px-4.m-color-bg.d-color-hover تسـوق الآن
+          .col-12.col-lg-6.col-xl-7.px-0
+            .block-product-slider-2.block-product-slider.bg-white
+               - for (x = 1; x <= 3; x++)
+                .slider-block
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+    // block product list
+
+    // block product list
+    section.block-product-list.py-lg-4.py-3
+      .container
+        .row.no-gutters.block-cat-wrap
+          .col-12.col-lg-6.mb-lg-0.mb-3.col-xl-5
+            .row.gutters.h-100.bg-white
+              .col-6.col-lg-6.position-relative
+                .block-cat-home
+                  h2.title إسم التصنيف
+                  ul
+                    li
+                      a(href="category.html ") اطقم اواني الطبخ
+                    li
+                      a(href="category.html") اواني الفرن
+                    li
+                      a(href="category.html") اواني طبخ متخصصة
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") اواني القلي وقلايات التشويح
+                    li
+                      a(href="category.html") صواني التحمير
+                    li
+                      a(href="category.html") صواني ومقالي شواء
+                    li
+                      a(href="category.html") قدور الضغط
+                    li
+                      hr.cat-block
+                    li
+                      a(href="category.html") قدور الطاجن
+                    li
+                      a(href="category.html") كسرولات وقدور الطبخ البطيء
+                    li
+                      a(href="category.html") اطقم فوندو
+                  .view-all
+                    a(href="category.html") شاهد الكـل
+              .col-6.col-lg-6.px-0.block-cat-promo.text-end
+                .promo-now
+                  a(href="category.html")
+                    img(src="./images/catalog/3.webp")
+                    button.btn.px-4.m-color-bg.d-color-hover تسـوق الآن
+          .col-12.col-lg-6.col-xl-7.px-0
+            .block-product-slider-3.block-product-slider.bg-white
+               - for (x = 1; x <= 3; x++)
+                .slider-block
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+                  .text-center.position-relative
+                    span.position-absolute -25%
+                    a.s-color-text-hover.text-dark(href="product.html")
+                      img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                      h5   وتحمير، دبليو إم إف-WMF #{x}
+                      p 29 SAR
+    // block product list
+
+    include ./includes/footer

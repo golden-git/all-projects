@@ -1,0 +1,34 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" ادارة الفرق ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("إدارة الفرق")
+        .row 
+          .col-12: +dash-input("اسم الموظف", '', "text", '')
+          .col-lg-6: +dash-input('رقم الجوال ', '', 'tel', '')
+          .col-lg-6: +dash-input('البريد الالكتروني  ','' , 'email', '')
+          .col-12: +dash-switch-between('مدير عام', "متاح له كل الصلاحيات", '1')
+          .col-12: hr
+          .col-12: +dash-select(
+            "صلاحيات الموظف", 
+            "اختر المعلومات و الصفحات التي  يستطيع الموظف الوصول اليها",
+            "إدارة المنتجات"
+          )
+
+          .col-12: +dash-select(
+            "", 
+            "  ادارةالمنتجات", 
+            "جميع صلاحيات ادارةالمنتجات"
+            )
+            
+          .col-12
+            .border.p-2.rounded
+              +dash-switch-between('', "اسم الصلاحية", "2")
+              +dash-switch-between('', "اسم الصلاحية", "3")
+              +dash-switch-between('', "اسم الصلاحية", "4")
+              +dash-switch-between('', "اسم الصلاحية", "5")
+       
+    include ./includes/scripts

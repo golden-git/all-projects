@@ -1,0 +1,146 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.pageContent {
+				flex-basis: 75%;
+				order:2;
+
+			}
+
+.side {
+				flex-basis: 25%;
+				order: 1;
+
+
+			}
+
+
+			.hideLarge {
+				display: none;
+			}
+
+
+			#searchBoxContent form,#searchBoxContentTag form {
+				width:50%;
+
+			}
+
+
+
+
+
+
+
+div.container.pageView div.pageContent {
+				
+				order:1;
+
+			}
+
+
+
+div.container.pageView div.side {
+				flex-basis: 25%;
+				order: 2;
+
+
+			}	
+
+			
+
+			.adxViewContainer {
+				padding: 0.8rem;
+
+			}
+
+			.adxHeader {
+
+				border: 1px solid #ebe7d1;
+				border-radius: 4px 4px 0px 0px;
+				
+				
+
+
+			}
+			.adxBody{
+				padding: 10px;
+				background-color: #fcfcfa;
+				color: #454444;
+				font-size: 1.8rem;
+				font-family: "Times New Roman",Times,serif;
+				border-left: 1px solid #ebe7d1;
+				border-right: 1px solid #ebe7d1;
+				
+
+
+			}
+
+
+			.contentBox{
+											    display: flex;
+											    justify-content: space-between;
+											    width: 100%;
+											    padding-top: 5px;
+
+										}
+										.box1 {
+											    
+											     width: 30%;
+    											
+
+										}
+										.box2 {
+
+												 flex-grow: 2;
+											     width: 70%;									
+											 }
+
+											 .box2 input[type='text'],.box2 input[type='password'],.box2 input[type='search'],.box2 select {
+											 	width:70%;
+											 }
+
+			.contentBox{
+											   
+											    width: 50%;
+
+										}
+										 .close{
+											 	direction: rtl;
+											 }
+
+
+		.msgs {
+			margin-right:5%;
+					}
+
+
+
+					.adsxPic .adxImg a img {
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+}
+
+.tagFilters > div:last-child {
+	direction: rtl;
+}
+
+.nestedLevel { 
+	margin-top: 6px;
+	margin-bottom: 6px;
+
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+
+					.sideSearchBox {
+					display: block;
+				}
+				.tagSearchIcon {
+					display: none;
+
+				}

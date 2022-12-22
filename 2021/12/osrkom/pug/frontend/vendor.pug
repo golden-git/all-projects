@@ -1,0 +1,232 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الاسرة المنتجة ")
+  body
+    include ./includes/navbar
+    .vendor.pb-4
+        // header
+        header
+            .container-fluid
+                .d-flex.justify-content-between.pt-3
+                    a.rounded-pill(href="home.html") رجوع
+                    span.wish
+                        i.fas.fa-heart.m-color-text-hover
+        h6.text-success.text-center.py-3(style="background-color:#EEF7ED") خصم 50% على جميع المنتجات باستخدام كود اسرة22
+
+        .container-fluid
+            .row.py-4.py-3.vendor-info
+                .col.mb-lg-0.mb-3
+                    p.mb-1.vendor-p  ماكولات صينية
+                    h4.vendor-title ابو مازن للماكولات الصينية
+                    .d-lg-flex
+                        .mb-lg-0.mb-1.me-3.align-self-center
+                            div.stars
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.full
+                                    i.mbi.mbi-star
+                                span.half
+                                    i.mbi.mbi-star
+                        .mb-lg-0.mb-1.me-3.align-self-center (34) تقييم من العملاء
+                        .mb-lg-0.mb-1.me-3.align-self-center
+                            a.text-dark(href="#") مشاهدة التقييمات
+                .col-lg-6.vendor-fet
+                    .d-lg-flex.vendor-fet-container
+                        .mb-lg-0.mb-2.me-3.align-self-center.fet-element.rounded-pill
+                            img.tag.me-2(src="./images/icons/tag.png", alt="التوصيل", width="10")
+                            span.me-3 12 SR
+                            span.text-muted نكلفة توصيل
+                        .mb-lg-0.mb-4.me-3.align-self-center.fet-element.rounded-pill
+                            img.delivery.me-2(src="./images/icons/delivery.png", alt="الزمن", width="22")
+                            span.me-3 40-60
+                            span.text-muted وقت التوصيل
+                        a.message-toggle.text-white.m-color-bg-hover.text-dark.fet-element.rounded-pill(href="#")
+                            i.fas.fa-comments.me-3
+                            | مراسلة
+            .message-content
+                //- .text-end.px-4.pt-3
+                .d-flex.m-color-bg.justify-content-between.py-2.px-3
+                    .align-self-center
+                        h4.mb-1.text-white ابو مازن للماكولات الصينية
+                        div.stars
+                            span.full
+                                i.mbi.mbi-star
+                            span.full
+                                i.mbi.mbi-star
+                            span.full
+                                i.mbi.mbi-star
+                            span.full
+                                i.mbi.mbi-star
+                            span.half
+                                i.mbi.mbi-star
+                        .text-white.h5 (34) تقييم من العملاء
+                    .align-self-center.text-white
+                        i.fas.fa-times.h5.pointer.message-toggle
+                .message-container
+                    .message-details.px-3.pt-3
+                        .from
+                            img(src="./images/icons/user.png", alt="user")
+                            div
+                                h6 Mohamed Ali
+                                p  انا في طريقي اليك
+                        .to
+                            p ليش تاخير الطلب هيك ؟
+                        .from
+                            img(src="./images/icons/user.png", alt="user")
+                            div
+                                h6 Mohamed Ali
+                                p  انا في طريقي اليك
+                        .to
+                            p ليش تاخير الطلب هيك ؟
+                        .to
+                            p ليش تاخير الطلب هيك ؟
+                        .to
+                            p ليش تاخير الطلب هيك ؟
+                        .from
+                            img(src="./images/icons/user.png", alt="user")
+                            div
+                                h6 Mohamed Ali
+                                p  انا في طريقي اليك
+
+                    .actions.my-4.row.mx-0
+                        .col-11.pe-0
+                            .position-relative
+                                i.fas.fa-microphone.voies.pointer.icons
+                                i.fas.fa-camera.camera.pointer.icons
+                                input.rounded-pill.form-control(type="text", placeholder="اكتب راسلتك")
+                        .col-1
+                            img.pointer.send(src="./images/icons/send.png", alt="send")
+        .mt-4.food
+            //  Modal
+            .modal.fade#foodModal(tabindex='-1', aria-labelledby='foodModalLabel', aria-hidden='true')
+                .modal-dialog.modal-dialog-centered.modal-xl
+                    .modal-content.border-0
+                        .modal-body.p-0
+                            .row.g-0.product
+                                .col-md-7.order-md-1.order-2
+                                    .card-body.bg-white.modal-card-body
+                                        i.pointer.fas.fa-times.me-auto.ms-0(data-bs-dismiss='modal', aria-label='Close')
+                                        h4.mt-3.card-title.title.d-md-flex.justify-content-between
+                                            span هناك حقيقة مثبتة
+                                            span 20 SR
+                                        p.mb-0.product-p.card-text نالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها  نالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها
+                                        a.btn-sm.text-muted.btn.rounded-pill.bg-white.border.my-3
+                                            span.text-muted
+                                                i.mbi.mbi-clock3.me-2
+                                                | مدة تجهيز الطلب
+                                                span.ms-2.text-dark 6-7 ساعات
+
+                                        .accordion.mb-3#accordionExample
+
+                                            .mb-3.accordion-item
+                                                h2.accordion-header#headingTwo
+                                                    button.border.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo').
+
+                                                       اختيارات المنتج
+
+                                                #collapseTwo.border-bottom.accordion-collapse.collapse(aria-labelledby='headingTwo', data-bs-parent='#accordionExample')
+                                                    .accordion-body
+                                                        each val, index in ["larg", "meduim", "small"]
+                                                            .d-flex.justify-content-between
+                                                                .form-check.text-capitalize
+                                                                    input.form-check-input(id="check"+index,type="checkbox")
+                                                                    label.form-check-label(for="check"+index)=val
+                                                                h6.m-color-text.fw-bold
+                                                                    span.ms-2=index
+                                                                    span SR
+                                                                    span +
+
+
+                                            .accordion-item
+                                                h2.accordion-header#headingThree
+                                                    button.border.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree').
+
+                                                        خيارات اضافية
+
+                                                #collapseThree.border-bottom.accordion-collapse.collapse(aria-labelledby='headingThree', data-bs-parent='#accordionExample')
+                                                    .accordion-body
+                                                        -for(x=1; x<=8; x++)
+                                                            .d-flex.justify-content-between
+                                                                .form-check.text-capitalize
+                                                                    input.form-check-input(id="check"+x,type="checkbox")
+                                                                    label.form-check-label(for="check"+x) بيبسي
+                                                                h6.m-color-text.fw-bold
+                                                                    span.ms-2=x
+                                                                    span SR
+                                                                    span +
+                                        .d-flex.justify-content-between.action
+                                            a.link.m-color-bg.s-color-bg-hover(href="#")
+                                              |  اضافة 25 SR
+                                              img.ms-3(src="./images/icons/shopping-cart.png", width="30")
+                                            .kemia
+                                                .number.d-inline-block.py-1.px-2
+                                                    span.plus.text-dark
+                                                        i.mbi.mbi-plus
+                                                    input(type="text", value="1")
+                                                    span.minus.text-dark
+                                                        i.mbi.mbi-minus
+                                .col-md-5.order-md-2.order-1.position-relative
+                                    span.position-absolute.wish
+                                        i.fas.fa-heart.m-color-text-hover
+                                    img.img-fluid(src='./images/products/2.jpg', alt='products', style="height:100%")
+
+            .border-bottom.border-2
+                .container-fluid
+                    .nav.border-0.nav-tabs#nav-tab(role='tablist')
+                        span.nav-link.pointer.active#nav-3-tab(
+                            data-bs-toggle='tab',
+                            data-bs-target='#nav-3',
+                            role='tab',
+                            aria-controls='nav-3',
+                            aria-selected='true') اطباق رئيسية
+                        each val, index in [ 'سلطات اسيوية', 'وجبات نباتية',  'مشروبات اسيوية']
+                                span.nav-link.pointer(
+                                    id="nav-"+index+"-tab",
+                                    data-bs-toggle='tab',
+                                    data-bs-target='#nav-'+index,
+                                    role='tab',
+                                    aria-controls='nav-'+index,
+                                    aria-selected='true')=val
+        .container-fluid.food
+            .tab-content.py-lg-5.py-3#nav-tabContent
+                .tab-pane.fade.show.active#nav-3(role='tabpane', aria-labelledby='nav-3-tab')
+                        h4.vendor-title.title-font.mb-3 اطباق رئيسية
+                        .row
+                            - for(x=1; x<=10; x++)
+                                .col-md-4.col-6
+                                    .card.rounded-0.product.mb-3.pointer(data-bs-toggle='modal', data-bs-target='#foodModal')
+                                        .row.g-0
+                                            .col-md-8.order-md-1.order-2
+                                                .card-body.bg-white.product
+                                                    h5.card-title.title هناك حقيقة مثبتة
+                                                    p.mb-2.product-p.card-text نالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها
+                                                    a.text-white.btn.rounded-pill.m-color-bg.s-color-bg-hover(href="#")
+                                                        span.me-3 اضافة
+                                                        | 25 SR
+                                            .col-md-4.order-md-2.order-1.position-relative
+                                                span.position-absolute.wish
+                                                    i.fas.fa-heart.m-color-text-hover
+                                                img.product-img(src='./images/products/2.jpg', alt='products')
+
+                each val, index in [ 'سلطات اسيوية', 'وجبات نباتية',  'مشروبات اسيوية']
+                    .tab-pane.fade(id="nav-"+index,role='tabpane', aria-labelledby='nav-'+index+'-tab')
+                        h4.vendor-title.title-font=val
+
+
+
+    div.text-center.pt-3(style="background-color:#EEF7ED")
+        h6.text-success خصم 50% على جميع المنتجات باستخدام كود اسرة22
+
+
+        include ./includes/footer
+        style.
+            footer::after {
+                background-color: #EEF7ED
+            }
+
+    include ./includes/scripts

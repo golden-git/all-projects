@@ -1,0 +1,152 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الرئيسية ")
+  body.bg-white
+    // sart home navbar
+    nav.navbar.navbar-expand-sm.navbar-light.fixed-top.home-navbar
+        .container-fluid
+            a.navbar-brand.pb-0.mx-0(href='#')
+                img.rounded(src="./images/logo2.png", alt="logo")
+            .collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.nav-links.ms-0.mb-2.mb-lg-0
+
+                    li.nav-item
+                        a.nav-link.login(href='login-with-phone-password.html')
+                            span.d-lg-inline.d-none تسجيل
+                            |  دخول
+                    li.nav-item
+                        a.nav-link.lang(href='#') EN
+    // end home navbar
+    header.home-header
+        img.bg-img(src="./images/home/header.png", alt="")
+
+        // header content
+        .d-flex
+            .container-fluid.text-center.header-container
+                h1( data-aos="fade-down") هل تحتاج لطعام منزلي ؟ كل ما تحتاج موجود لدينا
+                p( data-aos="fade-down") مع اسركم لا تقلق ابداُ
+                .mb-4.header-nav-form
+                    .location.position-relative.mb-sm-0.mb-2
+                        input.form-control.border-0(
+                        type='search',
+                        placeholder='ابحث باسم المدينة',
+                        aria-label='Search')
+                        img.position-absolute.map-icon(src="./images/icons/location.png", alt="location")
+                        img.position-absolute.gps-icon(src="./images/icons/gps.png", alt="location")
+                    .vendor.position-relative.mb-sm-0.mb-2
+                        input.form-control.border-0(
+                        type='search',
+                        placeholder='ابحث باسم الاسرة',
+                        aria-label='Search')
+                        img.position-absolute.user-icon(src="./images/icons/user-dark.png", alt="user")
+                    .search.position-relative.mb-sm-0.mb-2
+                        button.btn.d-color-bg.m-color-bg-hover.text-white بحث
+
+                div.login
+                    a(href="login-with-phone.html") تسجيل الدخول ؟
+                    | لتستطيع الطلب
+
+    // stickers
+    section.stickers.py-lg-5.py-4
+        .container.text-center
+            p.section-p الكثير من الاسر المنتجة
+            h2.section-title الكثير من الاسر المنتجة بمنتجات متنوعة بانتظارك
+            h2.section-title منك موجود لدينا
+            .sticker
+                img.group1( data-aos="fade-left", src="./images/home/group1.png", alt="group 1")
+                img.group2( data-aos="fade-right", src="./images/home/group2.png", alt="group 2")
+
+                img.sticker-img.sticker-4( data-aos="fade-down", src="./images/home/s4.png", alt="sticker img")
+                img.sticker-img.sticker-3( data-aos="fade-down", src="./images/home/s3.png", alt="sticker img")
+                img.sticker-img.sticker-1( data-aos="fade-down", src="./images/home/s1.png", alt="sticker img")
+                img.sticker-img.sticker-2( data-aos="fade-down", src="./images/home/s2.png", alt="sticker img")
+                img.sticker-img.sticker-5( data-aos="fade-down", src="./images/home/s5.png", alt="sticker img")
+
+
+    // why-us
+    section.why-us.py-lg-5.py-4
+        .container.text-center
+            p.section-p لماذا OSRKOM
+            h2.section-title كل ما تحتاجة من الاسر المنتجة القريبة
+            h2.section-title منك موجود لدينا
+            .row.mt-4
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-1.png",  data-aos="fade-down")
+                    h5.item-title افضل الاكلات
+                    p.item-p افضل الاكلات من افضل و اقرب
+                        br
+                        | الاسر المنتجة لك
+
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-2.png",  data-aos="fade-down")
+                    h5.item-title تواصل مباشر
+                    p.item-p تواصل مباشر مع الاسر المنتجة
+                        br
+                        | لدينا بسهولة وامان
+
+                .col-md-4.mb-md-0.mb-3.item.text-center
+                    img(src="./images/home/whay-us-3.png",  data-aos="fade-down")
+                    h5.item-title خدمة سريعة
+                    p.item-p خدمة سريعة و دعم فني لك
+                        br
+                        | 24 ساعة
+
+    // join
+    section.join.py-lg-5.py-4
+        .container
+            .row.justify-content-center
+                .col-md-6.col-xl-5.mb-md-0.mb-3
+                    .join-title.pt-md-5.text-md-start.text-center
+                        h3
+                            span.m-color-text O
+                            span SRKOM
+                        P انضم الى اسركم
+                        h5
+                            span انضم
+                            span.m-color-text  كاسرة منتجة
+                        P لدي  اسركم
+                        a.btn.m-color-bg.text-white.s-color-bg-hover.rounded-pill(href="user-type.html", data-aos="fade-left") انضم الان
+                .col-md-6.col-xl-5
+                    .join-img
+                        img.img-fluid(src="./images/home/join.png",  data-aos="fade-down")
+                        .bg-white( data-aos="fade-up")
+                            p انضم الان
+                            h6 الالاف من الاسر المنتجة
+
+    // try-app
+    section.try-app.py-lg-5.py-4
+        .container
+            .row.justify-content-center
+                .col-md-6.col-xl-6.mb-md-0.mb-3
+                    .try-app-title.pt-md-5.text-md-start.text-center
+                        h3( data-aos="fade-up")
+                            span.m-color-text O
+                            span SRKOM
+                        P انضم الى اسركم
+                        h5
+                            span انضم
+                            span.m-color-text  كاسرة منتجة
+                        P لدي  اسركم
+                        a.btn.m-color-bg.text-white.s-color-bg-hover.rounded-pill(href="user-type.html", data-aos="fade-left") انضم الان
+                .col-md-6.col-xl-4
+                    .try-app-img
+                        img.img-fluid(src="./images/home/try-app3.png",  data-aos="fade-down")
+
+    // download
+    section.download.text-center.py-lg-5.py-4
+        .container
+            .download-container.py-3.py-lg-5.px-2( data-aos="fade-down")
+                p.download-p تحميل التطبيق
+                h2.download-title حمل التطبيق الان لتجربة اسرع ، اسهل
+                div.mt-4
+                    img.mx-1.bg-white.rounded-3.mb-2(src="./images/icons/appstore.png", alt="app store",  data-aos="fade-left")
+                    img.mx-1.bg-white.rounded-3.mb-2(src="./images/icons/play.png", alt="google play",  data-aos="fade-right")
+
+    include ./includes/footer
+    style.
+            footer::after {
+                background-color: #fff
+            }
+
+    include ./includes/scripts

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> الطلبات </title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+      <!--  bootstrap ltr-->
+      <!--  iconfont-->
+      <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick.css">
+      <!-- intlTelInput-->
+      <link rel="stylesheet" href="../css/intlTelInput.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick-theme.css">
+      <!-- AOS-->
+      <link rel="stylesheet" href="../css/aos.css">
+      <!-- plyr-->
+      <link rel="stylesheet" href="../css/plyr.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="../css/main.css">
+      <!--  main style ltr-->
+    </head>
+  <body class="dashboard-body mr-228">
+    <!-- dashboard sidebar-->
+    <aside class="dashboard-sidebar">
+      <div class="text-center mb-3"><img class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar" src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img src="../images/dashboard/logo.png" alt="logo"></a></div>
+      <ul class="list-unstyled px-0">
+        <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+        <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+        <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+        <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+        <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+        <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+        <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+        <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+      </ul>
+    </aside>
+    <div class="dashboard-container">
+        <!-- sart dashboard navbar-->
+        <nav class="navbar navbar-light dashboard-navbar mb-4"><img class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar" src="../images/icons/list.png">
+          <div>
+            <p class="mb-0">الطلبات</p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع للرئيسية</a>
+          </div>
+          <div class="d-md-block d-none">
+            <div class="search"><i class="mbi mbi-magnifier"></i>
+              <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+              <select class="form-select">
+                <option>الطلبات</option>
+                <option>الطلبات</option>
+              </select>
+              <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+            </div>
+          </div>
+          <div class="user">
+            <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png" alt="user">
+              <div class="d-lg-block d-none align-self-center border-end pe-2">
+                <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية المتجر</a>
+              </div>
+              <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i class="mbi mbi-alarm-ringing h3"></i></div>
+            </div>
+          </div>
+        </nav>
+        <!-- sart dashboard navbar-->
+      <div class="d-lg-flex mb-4 justify-content-between mt-5">
+        <h4>اجمالي الطلبات (345)</h4>
+        <div class="align-self-center"><a class="text-white rounded-pill border-0 m-color-bg d-color-bg-hover btn btn-lg" href="add-product-1.html">طلب جديد جديد<i class="fas fa-plus-circle mx-2"></i></a></div>
+      </div>
+      <h4>فلتر النتائج</h4>
+      <div class="d-xl-flex mb-4 justify-content-between">
+        <div class="mb-xl-0 mb-3">
+          <div class="date-filter d-lg-flex">
+            <div class="input-1 mb-lg-0 mb-3">
+              <input class="form-control" type="text" placeholder="MM/LL/DD"><span class="calendar-label"><span>التاريخ من</span><i class="mbi mbi-calendar-full mx-2"></i></span>
+            </div>
+            <div class="input-2 mb-lg-0 mb-3">
+              <input class="form-control" type="text" placeholder="MM/LL/DD"><span class="calendar-label"><span>التاريخ من</span><i class="mbi mbi-calendar-full mx-2"></i></span>
+            </div>
+            <button class="border-0 btn-lg px-4 m-color-bg d-color-bg-hover text-white btn" style="height: 48px">فلترة</button>
+          </div>
+        </div>
+        <div class="search border"><i class="mbi mbi-magnifier"></i>
+          <input class="form-control form-control-lg bg-white" type="search" placeholder="ابحث عن طلب ">
+          <button class="rounded-0 btn-lg px-4 m-color-bg d-color-bg-hover text-white btn" style="height: 48px">بحث</button>
+        </div>
+      </div>
+      <div class="mb-4 myorders">
+        <div class="food">
+          <div class="nav border-0 nav-tabs" id="nav-tab" role="tablist"><span class="nav-link pointer">
+              <div class="progress blue"><span class="progress-left"><span class="progress-bar" style="border-color: #198754; animation: loading-2 1.5s linear forwards 1.8s"></span></span><span class="progress-right"><span class="progress-bar" style="border-color: #198754"></span></span></div><span>تم التجهيز (6)</span></span><span class="nav-link pointer active">
+              <div class="progress blue"><span class="progress-left"><span class="progress-bar" style="border-color: #dee2e6; animation: loading-1 1.5s linear forwards 1.8s"></span></span><span class="progress-right"><span class="progress-bar" style="border-color: #dc3545"></span></span></div><span>مرحلة التوصيل (6)</span><i class="clear-filter fas fa-times-circle m-color-text"></i></span><span class="nav-link pointer">
+              <div class="progress blue"><span class="progress-left"><span class="progress-bar" style="border-color: #ffc40d; animation: loading-1 1.5s linear forwards 1.8s"></span></span><span class="progress-right"><span class="progress-bar" style="border-color: #ffc40d"></span></span></div><span>تم التسليم (6)</span></span></div>
+        </div>
+      </div>
+      <div class="custom-table">
+        <h4>الطلبات الاخيرة</h4>
+        <div class="table-responsive">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th>رقم الطلب</th>
+                <th>العميل</th>
+                <th>عنوان العميل</th>
+                <th>تاريخ الطلب</th>
+                <th>الشحن</th>
+                <th>الدفع</th>
+                <th>حالة الطلب</th>
+                <th>المجموع</th>
+                <th>الاجراءات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>#3456789</td>
+                <td>
+                  <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                </td>
+                <td>
+                  <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء  3:30</small>
+                </td>
+                <td>الى اقرم موقع تسليم</td>
+                <td>كاش</td>
+                <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                <td>9877 ريال</td>
+                <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="../js/slick.js"></script>
+    <!-- intlTelInput-->
+    <script src="../js/intlTelInput.js"></script>
+    <!-- AOS-->
+    <script src="../js/aos.js"></script>
+    <!-- polyfilled-->
+    <script src="../js/plyr.polyfilled.js"></script>
+    <!--  chart-->
+    <script src="../js/chart/chart.min.js"></script>
+    <script src="../js/chart/chart-area-demo.js"></script>
+    <!--  main script-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

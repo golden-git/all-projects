@@ -1,0 +1,239 @@
+// top nav
+.top-nav {
+  @include sm{padding: 0;}
+  @include md{padding: 3px 0;}
+  @include lg{padding: 10px 0;}
+
+  .container {
+    @include sm{max-width: 100%;}
+    @include md{max-width: 960px;}
+    @include lg{max-width: 1320px;}
+  }
+  background-color: var(--d-color);
+  .email-phone {
+    align-self: center;
+    @include xs{display: none;}
+    @include sm{display: none; }
+    @include md{display: block;}
+    ul {
+
+      justify-content: start;
+      li {
+        background-color: transparent;
+        padding-right: 15px;
+        @include xs{padding-right: 10px; padding-left: 10px;}
+        position: relative;
+        padding-left: 15px;
+        border: none;
+        span {
+          i {
+            position: relative;
+            top: 2px;
+            font-size: 17px;
+            margin-left: 8px;
+          }
+          font-weight: 500;
+          font-size: 18px;
+          color: #fff ;
+        }
+      }
+    }
+  }
+  .links {
+    align-self: center;
+    // @include xs{display: none;}
+    // @include sm{display: none; }
+    // @include md{display: block;}
+    ul {
+      @include xs{justify-content: center;}
+      @include sm{justify-content: center; }
+      @include md{justify-content: end;}
+
+      li {
+        background-color: transparent;
+        padding-right: 15px;
+        @include xs{padding-right: 20px; padding-left: 20px;}
+        position: relative;
+        padding-left: 15px;
+        border: none;
+
+        a {
+          font-size: 18px;
+          color: #fff ;
+
+        }
+      }
+    }
+  }
+}
+// top nav
+
+// middle nav
+.middle-nav {
+  @media (max-width: 991px) {
+    .container, .container-sm {
+        max-width:100%;
+    }
+  }
+  .navbar-brand {
+
+    img {
+        @include xs{width: 130px !important;}
+        @include sm{width: 130px !important;}
+        @include lg{width: 155px !important;}
+    }
+}
+  ul {
+    .login-register {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: var(--s-color);
+      border-radius: 8px;
+      padding: 0 2px;
+      .register {
+        position: relative;
+        &::after {
+          content: "";
+          width: 1px;
+          position: absolute;
+          height: 80%;
+          display: inline-block;
+          background-color: #111;
+          top: 5px;
+          left: 0;
+        }
+      }
+      .nav-link {
+        font-size: 17px !important;
+        font-weight: 400 !important;
+        @include xs {width: 50%;}
+        @include md {width: 50%;}
+        @include xl {width: auto;}
+        text-align: center;
+        align-self: center;
+      }
+    }
+    .input {
+      align-self: center;
+      position: relative;
+      input {
+        border-radius: 8px;
+        height: 45px;
+        border: 2px solid #eee;
+        &:focus {
+          border-color: var(--s-color) !important;
+          box-shadow: none;
+        }
+      }
+      .search-icon {
+        left: 25px;
+        position: absolute;
+        color: #eee;
+        top: 14px;
+        font-size: 20px;
+      }
+    }
+    .nav-item {
+      margin: 0 10px;
+      display: flex;
+      ul.dropdown-menu {
+        box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+        border-top: 3px solid var(--m-color) !important;
+        border: 0;
+        padding: 0;
+        min-width: 200px;
+        a.dropdown-item {
+          border-bottom: 1px solid var(--g-color);
+          padding: .5rem 1rem !important;
+          font-size: 17px;
+          &:hover {
+            background-color: var(--g-color);
+            font-weight: 700;
+          }
+        }
+      }
+      .nav-link.active {
+        background-color: var(--g-color) !important;
+      }
+      .nav-link {
+        color: #111 !important;
+        font-size: 20px;
+        font-weight: 500;
+        align-self: center;
+        @include transition;
+        padding: .5rem .5rem !important;
+        border-radius: 5px;
+        &:hover {
+          background-color: var(--g-color);
+        }
+      }
+      .cart {
+        position: relative;
+        color: #222;
+        align-self: center;
+        display: flex;
+        &:hover {
+          color: var(--s-color);
+        }
+        span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-color: var(--s-color);
+          border-radius: 50%;
+          line-height: 1.6;
+          font-size: 15px;
+          color: #222;
+          font-weight: 700;
+          position: absolute;
+          top: -2px;
+          right: -4px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// middle nav
+
+// phone bottom icons
+.phone-bottom-icons {
+  -webkit-box-shadow: 0 -1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    box-shadow: 0 -1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  z-index: 100;
+  width: 100%;
+  .icon-row {
+    .icon {
+      .cart {
+        position: relative;
+        span {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-color: var(--s-color);
+          border-radius: 50%;
+          line-height: 1.6;
+          font-size: 17px;
+          color: #fff;
+          position: absolute;
+          bottom: 1px;
+          right: -9px;
+          text-align: center;
+          text-align: center;
+        }
+      }
+      i {
+        font-size: 25px;
+        color: var(--m-color);
+      }
+      p {
+        font-size: 15px;
+        color: #111;
+        position: relative;
+        top: -5px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+// phone bottom icons

@@ -1,0 +1,58 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الشروط ")
+  body.bg-white
+    // join
+    section.join.mb-5
+        .terms.pb-5
+            include ./includes/navbar
+            .container.pb-lg-5
+                .row
+                    .col-md-6.col-xl-6
+                        .join-title.pt-5.text-md-start.text-center
+                            h3.ms-3
+                                span.m-color-text O
+                                span SRKOM
+                            P.ms-3 سياسة الخصوصية
+                            h5.ms-3
+                                span الرجاء قراءة مع التفاهم  قبل  استخدام الخدمات التى نقدمها
+                            a.px-0.btn.terms-link.text-dark.w-color-text-hover.d-color-bg-hover.rounded-0( data-aos="fade-left")
+                                span.align-self-center.ms-3.m-color-text  اقراء سياسة الخصوصية
+                                i.align-self-center.me-3.mbi.mbi-arrow-down
+                    .col-md-6.col-xl-6
+                        .try-app-img
+                            img.img-fluid(src="./images/about.png",  )
+
+    // conditions
+    section.conditions.py-lg-5.py-4
+        .container.py-3
+            .row.mb-4
+                .col-md-6
+                    .d-flex.justify-content-between
+                        h4.align-self-center
+                            | الرجاء قراءة مع التفاهم  قبل
+                            br
+                            | استخدام الخدمات التى نقدمها
+                        img.ms-3.align-self-center(src="./images/customer/terms.png", alt="terms")
+            .accordion.accordion-flush#terms
+                .row
+                    - for(x=1; x<=10; x++)
+                        .col-md-6.mb-3
+                            .accordion-item.bg-white.rounded-3
+                                h2.accordion-header(id="flush-headingOne"+x)
+                                    button.accordion-button.collapsed(type='button', data-bs-toggle='collapse', data-bs-target='#flush-collapseOne'+x, aria-expanded='false', aria-controls='flush-collapseOne'+x).
+                                        Lorem ipsum dolor sit amet
+                                .accordion-collapse.collapse(id="flush-collapseOne"+x, aria-labelledby='flush-headingOne'+x, data-bs-parent='#terms')
+                                    .accordion-body.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, inventore? Vero dolorem natus quasi? Ipsam.
+
+
+
+    include ./includes/footer
+    style.
+        footer::after {
+            background-color: #fff
+        }
+
+    include ./includes/scripts

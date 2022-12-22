@@ -1,0 +1,69 @@
+extends components/layout.pug
+block title
+  | المستخدمين
+block main
+  +breadcrumb-in-1('المستخدمين ', 'المستخدمين ', 'الرئسية', 'index.html')
+
+  section.content
+    .row
+      .col-12
+        .card.border
+          .card-header.p-2
+            +tabel-header-a("قائمة المستخدمين", 'add-user.html')
+
+          // show modal
+          .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+            .modal-dialog.modal-lg(role="document")
+              .modal-content
+                +modal-header("عرض تفاصيل المستخدم")
+
+                .modal-body
+                  div
+                    h4 ZuajshWQ@12
+                  div.mb-3
+                    p.h5 محمد علي
+                  div.mb-3
+                    span العمل : محاسب
+                  div.mb-3
+                    span الحالة : نشط
+                  div.mb-3
+                    span نوع المستخدم : مدير
+                  div
+                    span.mr-2 الصلاحيات :
+                    a(href="user-show-privilege.html") عرض الصلاحيات
+
+                +modal-footer
+          .card-body
+            include components/single-search
+            table.table.table-bordered.table-striped.text-center
+              thead
+                tr
+                  each value in ['الرقم', 'الاسم ', 'الحالة', 'العمل', 'النوع  ' , 'خيارات']
+                    th= value
+
+              tbody
+                - for (var x = 1; x <= 10; x++)
+                  tr
+                    each value in [x, 'علي محمد', 'نشط', 'محاسب', 'مدير']
+                      td= value
+                    td
+                      a.btn.btn-info.btn-xs(href="#", data-toggle="modal", data-target='#modal1')
+                        i.fa.fa-eye.mr-1
+                        | عرض
+
+                      .dropdown.d-inline-block
+                        button.btn.btn-default.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+                          span المزيد
+                          span.caret
+                        .dropdown-menu
+                          a.dropdown-item.text-info(href="user-show-privilege.html")
+                            i.fa.fa-eye.mr-1
+                            span الصلاحيات
+                          a.dropdown-item.text-warning(href="edit-user.html")
+                            i.fa.fa-edit.mr-1
+                            span تعديل
+                          a.dropdown-item.delete.text-danger(href="#")
+                            i.fa.fa-trash.mr-1
+                            span حذف
+            include components/pagination
+

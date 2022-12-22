@@ -1,0 +1,76 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" العميل ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" العميل ")
+        .d-lg-flex.justify-content-between.mb-5
+          img.align-self-center.rounded-3.me-lg-4(src="../images/icons/user.png", alt="clint", width="120")
+          div.align-self-center.text-center
+            .d-lg-flex
+              div.mx-lg-5
+                span.text-muted اسم العميل
+                h5 Reham mohamed
+              div.mx-lg-5
+                span.text-muted عضو منذ
+                h5 12/21/2021
+          div.align-self-center
+            .d-lg-flex
+              p.mx-lg-5.text-danger.rounded-pill.px-4.py-3.bg-danger-50
+                | Reham.mohamed@gmail.com
+                i.mbi.mbi-envelope.me-2
+
+              p.mx-lg-5.m-color-text.rounded-pill.px-4.py-3.bg-m-50
+                | 98721478587
+                i.mbi.mbi-telephone.me-2
+        .d-lg-flex.mb-4.justify-content-between.mb-5
+          div.align-self-center
+            img.align-self-start.me-2(src="../images/icons/location.png", alt="location",width="20", height="25")
+            div.align-self-start
+                h3.title-font.mb-0 تبوك, السعودية
+                p.mb-0.text-muted.h5 شاعر احمد سعود
+                p.mb-0.text-muted.h5 رقم الشقة 33 -رقم البناية 12
+          div.align-self-center
+            p.mx-lg-5.g-color-bg.rounded-pill.px-4.py-3 الموقع علي الخريطة
+
+        hr
+
+        .d-lg-flex.mb-4.justify-content-between.mt-5
+          div.align-self-center
+              p.text-muted.h5 اجمالي طلبات العميل
+              h3.title-font.mb-0 345 طلب
+          div.align-self-center
+            p.mx-lg-5.m-color-text.rounded-pill.px-4.py-3.bg-m-50 564 ريال سعودي
+
+        .custom-table
+          h4 طلب العميل
+          .table-responsive
+            table.table.table-borderless
+              thead
+                tr
+                  each val in [ "رقم الطلب", "العميل", "عنوان العميل", "تاريخ الطلب", "الشحن", "الدفع", "حالة الطلب", "المجموع", "الاجراءات"]
+                    th=val
+              -for(x=1; x<=12; x++)
+                tbody
+                  tr
+                    td #3456789
+                    td
+                      h6.mb-0 Mohamed ali
+                      small.text-muted عميل منذ 21\21\2020
+                    td
+                      h6.mb-0 مكة المكرمة
+                      small.text-muted السعودية
+                    td
+                      h6.mb-0 21/1/2020
+                      small.text-muted  مساء  3:30
+                    td الى اقرم موقع تسليم
+                    td كاش
+                    td: span.m-color-text بانتظار التاكيد
+                    td 9877 ريال
+                    td.icons
+                      i.mbi.mbi-eye
+                      i.mbi.mbi-download2
+
+    include ./includes/scripts

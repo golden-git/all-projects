@@ -1,0 +1,144 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الاسر المنتجة ")
+  body
+    include ./includes/navbar
+    .customer-home.pb-4
+        // header
+        header.py-4
+            .row
+                .col-lg-4
+                    .d-flex.header-mark.justify-content-center.text-start.h-100
+                        img.me-lg-4.me-3.align-self-center(src="./images/customer/mark.png", alt="mark", width="130", height="130")
+                        div.align-self-center
+                            h5 افضل العروض
+                            p اطلع على افضل العروض
+                .col-lg-8.px-0.position-relative
+                    i.mbi.mbi-ios-arrow-left.prev.pointer.w-color-text-hover.m-color-bg-hover
+                    .customer-home-header
+                        img.ps-4(src="./images/customer/slider1.png", alt="")
+                        img.ps-4(src="./images/customer/slider2.png", alt="")
+                        img.ps-4(src="./images/customer/slider1.png", alt="")
+                        img.ps-4(src="./images/customer/slider2.png", alt="")
+
+        section.filter-container.mt-lg-5.mt-3
+            .container-fluid
+                .categories.mb-md-5.mb-4
+                    span.filter.rounded-pill.filter-title فلتر حسب الاقسام
+                    span.filter.filter-word.rounded-pill
+                        | ماكولات صينية
+                        i.fas.fa-times-circle
+                    .categories-slider.mt-lg-5.mt-4
+                        - for (x=1; x<= 9; x++)
+                            div.text-center
+                                img.ps-2(src="./images/categories/"+x+".png", alt="categories")
+                                h4.mt-3 ماكولات صينية
+                        - for (x=1; x<= 4; x++)
+                            div.text-center
+                                img.ps-2(src="./images/categories/"+x+".png", alt="categories")
+                                h4.mt-3 ماكولات صينية
+                aside
+                    .block.mb-3
+                        h5 ترتيب حسب
+                        .content
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") التقييم
+                                input.form-check-input.check-input.px-0#check1(type="checkbox", checked)
+
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") وقت التوصيل
+                                input.form-check-input.check-input.px-0#check1(type="checkbox")
+
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") سعر التوصيل
+                                input.form-check-input.check-input.px-0#check1(type="checkbox")
+
+                    .block.mb-3
+                        h5.d-flex.justify-content-between
+                            | قيمة الطلب
+                            span.h6.price-val 50
+                        .content.price
+                            input.form-range#price(type='range', min='0', max='200', step='1', value="50")
+                            span.price0 0
+                            span.price50 50
+                            span.price100 100
+                            span.price150 150
+                            span.price200 200
+
+                    .block.mb-3
+                        h5 خيارات التوصيل
+                        .content
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") جميع انواع التوصيل
+                                input.form-check-input.check-input.px-0#check1(type="checkbox", checked)
+
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") توصيل المتجر
+                                input.form-check-input.check-input.px-0#check1(type="checkbox")
+
+                            .form-check.d-flex.justify-content-between.p-0.mb-2
+                                label.form-check-label.text-start(for="check1") أسرع شي
+                                input.form-check-input.check-input.px-0#check1(type="checkbox")
+
+                article
+                    .row
+                        - for (x = 1; x <= 15; x++)
+                            .col-md-4.col-6.mb-3.px-2
+                                .border.rounded.position-relative.product
+                                    span.position-absolute.wish
+                                        i.fas.fa-heart.m-color-text-hover
+                                    span.position-absolute.discount خصم 50% علي جميع الوجبات
+                                    span.position-absolute.km 0.5 كم
+                                    a.text-dark(href="#")
+                                        div.text-center
+                                            img.product-img.mb-md-3.mx-auto.mb-2.img-fluid(src="./images/products/1.png", alt="explore slider img")
+                                        div.px-3
+                                            .d-sm-flex.justify-content-between
+                                                span.category ماكولات صينية
+                                                div.stars
+                                                    span.full
+                                                        i.mbi.mbi-star
+                                                    span.full
+                                                        i.mbi.mbi-star
+                                                    span.full
+                                                        i.mbi.mbi-star
+                                                    span.full
+                                                        i.mbi.mbi-star
+                                                    span.half
+                                                        i.mbi.mbi-star
+
+                                            h5.title.mb-1 ابو مازن للماكولات الصينية
+
+                                            .d-sm-flex.justify-content-between.delivery-tag
+                                                div
+                                                    img.tag.me-2.mt-2(src="./images/icons/tag.png", alt="التوصيل", width="11")
+                                                    span.me-1 12 SR
+                                                    span.text-muted نكلفة توصيل
+
+                                                div
+                                                    img.delivery.me-2.mt-2(src="./images/icons/delivery.png", alt="الزمن", width="25")
+                                                    span.me-1 40-60
+                                                    span.text-muted وقت التوصيل
+
+
+    .s-color-bg
+        .pt-2
+            .d-md-flex.justify-content-between
+                div
+                    .d-flex.header-mark.justify-content-center.text-start.h-100
+                        img.me-lg-4.me-3.align-self-center(src="./images/customer/mark.png", alt="mark", width="150", height="150")
+                        div.align-self-center
+                            h3.text-white افضل العروض
+                            p.text-white.h4 اطلع على افضل العروض
+                div.align-self-center
+                    a.h5.text-decoration-none.text-dark.py-2.bg-white.rounded-pill.px-4(href="#") رؤية جميع العروض
+
+
+        include ./includes/footer
+        style.
+            footer::after {
+                background-color: var(--s-color)
+            }
+
+    include ./includes/scripts

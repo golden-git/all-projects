@@ -1,0 +1,56 @@
+/*========== projects ==========*/
+.projects {
+    h6 {font-size: 20px;}
+}
+
+@media (max-width: 575.98px) {
+    .projects {
+        .project-title {
+            padding-top: 8%;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .projects {
+        .project-title {
+            padding-top: 8%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .projects {
+        .project-title {
+            padding-top: 10%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .projects {
+        .project-title {
+            padding-top: 10%;
+        }
+    }
+}
+ 
+
+@media (min-width: 1200px) and (max-width: 1606px) {
+    .projects {
+        .project-title {
+            padding-top: 10%;
+        }
+    }
+}
+
+@media (min-width: 1607px) {
+    .projects {
+        .project-title {
+            padding-top: 10%;
+        }
+    }
+}
+ 
+
+/*========== projects ==========*/

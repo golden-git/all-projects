@@ -1,0 +1,110 @@
+.product {
+  .btns {
+    .facebook {background-color: #1b4e9b;}
+    .twitter {background-color: #00aeef;}
+    .google {background-color: #d93025;}
+  }
+  .slider {
+    .slick-dots {
+      bottom: -15px;
+      .slick-active {
+        button:before {
+          opacity: 1;
+          color: var(--s-color);
+        }
+      }
+
+      li {
+        button:before {
+          font-family: 'slick';
+          font-size: 14px;
+          line-height: 16px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          content: '•';
+          text-align: center;
+          opacity: 1;
+          color: #D6D6D6;
+        }
+      }
+    }
+    .slick-prev, .slick-next {
+      z-index: 10;
+      width: 35px;
+      height: 35px;
+      border-radius: 2px;
+      background-color: #fff;
+      &:hover {
+        &:before {
+          color: #fff;
+        }
+        color: #fff;
+        background-color: rgba(0, 0, 0, .5);
+      }
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 20px;
+      line-height: 1;
+      opacity: 1;
+      color: var(--s-color);
+    }
+
+    .slick-prev:before {
+      font-family: 'mbicon';
+      content: "\e93c";
+    }
+
+    .slick-next:before {
+      font-family: 'mbicon';
+      content: "\e93b";
+    }
+
+    .slick-prev {
+      right: -20px !important;
+      top: 50%;
+      @include xs-md{right: 0 !important;};
+    }
+    .slick-next {
+      left: -20px !important;
+      top: 50%;
+      @include xs-md{left: 0 !important;};
+    }
+  }
+  .page-tite {font-size: 20px;}
+
+
+  // .nav-tabs  {border-color: var(--s-color);}
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #222 !important;
+    background-color: #fff;
+    border-color: #fff #fff var(--s-color);
+    border-width: 3px;
+    border-radius: 0 !important;
+  }
+
+  .kemia .minus, .kemia .plus {
+    height: 20px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 30px;
+    font-size: 15px;
+}
+
+  .kemia input {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    border: none;
+  }
+}

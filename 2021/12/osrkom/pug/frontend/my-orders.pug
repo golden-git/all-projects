@@ -1,0 +1,107 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" طلباتي   ")
+  body
+    include ./includes/navbar
+    .myorders.py-5
+        // header
+        header
+          .container-fluid
+            .d-flex
+              .me-3.align-self-center
+                img(src="./images/customer/order.png", alt="order")
+              .me-3.align-self-center
+                h1 طلباتي السابقة (24)
+
+
+        .mt-4.food
+            .container-fluid
+              .nav.border-0.nav-tabs#nav-tab(role='tablist')
+                  span.nav-link.pointer#nav-3-tab(
+                      data-bs-toggle='tab',
+                      data-bs-target='#nav-3',
+                      role='tab',
+                      aria-controls='nav-3',
+                      aria-selected='true')
+                      .progress.blue
+                        span.progress-left
+                          span.progress-bar(style="border-color: #198754; animation: loading-2 1.5s linear forwards 1.8s")
+                          |
+                        span.progress-right
+                          span.progress-bar(style="border-color: #198754")
+                      span تم التجهيز (6)
+
+                  span.nav-link.pointer.active#nav-1-tab(
+                      data-bs-toggle='tab',
+                      data-bs-target='#nav-1',
+                      role='tab',
+                      aria-controls='nav-1',
+                      aria-selected='true')
+                      .progress.blue
+                        span.progress-left
+                          span.progress-bar(style="border-color: #dee2e6; animation: loading-1 1.5s linear forwards 1.8s")
+                          |
+                        span.progress-right
+                          span.progress-bar(style="border-color: #dc3545")
+                      span مرحلة التوصيل (6)
+
+                  span.nav-link.pointer#nav-2-tab(
+                      data-bs-toggle='tab',
+                      data-bs-target='#nav-2',
+                      role='tab',
+                      aria-controls='nav-2',
+                      aria-selected='true')
+                      .progress.blue
+                        span.progress-left
+                          span.progress-bar(style="border-color: #ffc40d; animation: loading-1 1.5s linear forwards 1.8s")
+                          |
+                        span.progress-right
+                          span.progress-bar(style="border-color: #ffc40d")
+                      span تم التسليم (6)
+
+              .tab-content.py-lg-5.py-3#nav-tabContent
+                .tab-pane.fade#nav-3(role='tabpane', aria-labelledby='nav-3-tab')
+                   h4.myorders-title.title-font تم التجهيز (6)
+                .tab-pane.fade.show.active(id="nav-1",role='tabpane', aria-labelledby='nav-1-tab')
+                  .row
+                    - for(x=1; x<=10; x++)
+                        .col-md-4.mb-md-4.mb-3.px-md-3
+                          .myorders-info.p-3.rounded-3
+                            p.myorders-p
+                              span.text-danger مرحلة التوصيل
+                              span.text-muted 12/3/2020
+                            h4.mb-0.myorders-title ابو مازن للماكولات الصينية
+                            .d-lg-flex.mb-3
+                                .mb-lg-0.mb-1.me-3.align-self-center
+                                    div.stars
+                                        span.full
+                                            i.mbi.mbi-star
+                                        span.full
+                                            i.mbi.mbi-star
+                                        span.full
+                                            i.mbi.mbi-star
+                                        span.full
+                                            i.mbi.mbi-star
+                                        span.half
+                                            i.mbi.mbi-star
+                            p.mb-1.myorders-p
+                              span.text-muted رقم الطلب
+                              span.text-muted #12345
+                            p.mb-4.myorders-p
+                              span.text-muted إجمالي الطلب
+                              span.text-danger
+                                | 23SR
+                                i.text-success.ms-1.fas.fa-certificate
+                            .d-grid.gap-2
+                              a.rounded-pill.border-0.py-2.btn.m-color-bg.s-color-bg-hover.text-white(href="#") الاطلاع على الطلب
+                .tab-pane.fade(id="nav-2",role='tabpane', aria-labelledby='nav-2-tab')
+                    h4.myorders-title.title-font تم التسليم (6)
+
+    include ./includes/footer
+    style.
+        footer::after {
+            background-color: #fff
+        }
+
+    include ./includes/scripts

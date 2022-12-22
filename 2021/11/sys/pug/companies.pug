@@ -1,0 +1,317 @@
+extends components/layout.pug
+block title
+  | الشركات
+block main
+  +breadcrumb-in-1('الشركات', 'الشركات', 'الرئسية', 'index.html')
+
+  section.content
+    .card.card-primary.card-outline.card-outline-tabs
+      .card-header.p-0.border-bottom-0
+        ul.nav.nav-tabs#tabs-tab(role="tablist")
+          // companies
+          li.nav-item
+            a.nav-link.active#tabs-1-tab(data-toggle="pill", href="#tabs-1", role="tab", aria-controls="tabs-1", aria-selected="true").
+              قائمة الشركات
+
+          // branch
+          li.nav-item
+            a.nav-link#tabs-2-tab(data-toggle="pill", href="#tabs-2", role="tab", aria-controls="tabs-2", aria-selected="false").
+              الفروع
+
+          // departments
+          li.nav-item
+            a.nav-link#tabs-3-tab(data-toggle="pill", href="#tabs-3", role="tab", aria-controls="tabs-3", aria-selected="false").
+               الادارات \ الاقسام
+
+      .card-body
+        .tab-content#tabs-tabContent
+          // companies
+          .tab-pane.fade.active.show#tabs-1(role="tabpanel", aria-labelledby="tabs-1-tab")
+            section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("قائمة الشركات", '#modal1')
+                    // add modal
+                    .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("اضافة شركة  ")
+                          form
+                            .modal-body.row
+                              .form-group.col-lg-6
+                                label اسم الشركة عربي
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label اسم الشركة انجليزي
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label نوع النشاط
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label التلفون
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label فاكس
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label البريد
+                                input.form-control(type="text")
+                              .form-group.col-12
+                                label العنوان
+                                input.form-control(type="text")
+                              .form-group.col-12
+                                label شعار الشركة
+                                input.form-control(type="file")
+                              .form-group.col-12
+                                label ملاحظات
+                                textarea.form-control
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal2(tabindex="-1", role="dialog", aria-labelledby="modal2", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("تعديل بيانات الشركة ")
+                          form
+                            .modal-body.row
+                              .form-group.col-lg-6
+                                label اسم الشركة عربي
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label اسم الشركة انجليزي
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label نوع النشاط
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label التلفون
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label فاكس
+                                input.form-control(type="text")
+                              .form-group.col-lg-6
+                                label البريد
+                                input.form-control(type="text")
+                              .form-group.col-12
+                                label العنوان
+                                input.form-control(type="text")
+                              .form-group.col-12
+                                label شعار الشركة
+                                input.form-control(type="file")
+                              .form-group.col-12
+                                label ملاحظات
+                                textarea.form-control
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal3(tabindex="-1", role="dialog", aria-labelledby="modal3", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل الشركة")
+                          .modal-body
+                            .row
+                              .col-12.mb-4
+                                  .media
+                                    img.align-self-start.mr-3(src="dist/img/default-150x150.png", alt="logo")
+                                    .media-body
+                                      h5.mt-0 المتحدة للخدمات
+                                      p.h5 الامارت \ دبي \ شارع 23 \ مبني رقم 88
+                                      p.h5 +2234567890
+                                      p.h5 jshsa@gmail.com
+                              .col-md-6.mb-3
+                                .form-group
+                                  label الفاكس
+                                  p.h5 35467
+                              .col-md-6.mb-3
+                                .form-group
+                                  label صندوق البريد
+                                  p.h5 654
+                              .col-12.mb-3
+                                .form-group
+                                  label ملاحظات
+                                  p.h5 مثال بسيط علي ملاحظات
+                          +modal-footer
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in [' ','الرقم', 'اسم الشركة', 'الفروع', 'الاقسام\ الإدارات' , 'خيارات']
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              td
+                                img(src="dist/img/default-150x150.png", alt="alt", width="63", height="63")
+                              each value in [ x , "المتحدة للخدامات", "23", "23"]
+                                td= value
+                              +tabel-option-nolink("modal2", "modal3")
+                      include components/pagination
+
+          // branch
+          .tab-pane.fade#tabs-2(role="tabpanel", aria-labelledby="tabs-2-tab")
+              section.content
+                .row
+                  .col-12
+                    // add modal
+                    .modal.fade#modal10(tabindex="-1", role="dialog", aria-labelledby="modal10", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("صلاحيات الفرع")
+                          form
+                            .modal-body
+                              .form-group
+                                label الاسم الفرع
+                                 p.h5 وسط المدينة
+
+                              .form-group
+                                label    المستخدم
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option اسم المستخدم   #{x}
+                            +modal-footer("حفظ")
+                    .card.shadow-none
+                    +tabel-header-a("الفروع", "add-branch.html")
+                    .card-body
+                      +search-2("الشركة" , "الدولة")
+                      include components/single-search
+                      table.table.table-bordered.table-striped
+                        thead
+                          tr
+                            each value in ["الرقم", "الاسم", "الشركة", "التلفون", "العوان", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, "وسط المدينة", "المتحدة للخدامات", "1234567890", "الامارات / دبي / شارع 1 مبني 865"]
+                                td= value
+                              td
+                                a.btn.btn-info.btn-xs(href="show-branch.html")
+                                  i.fa.fa-eye.mr-1
+                                  | عرض
+
+                                .dropdown.d-inline-block
+                                  button.btn.btn-default.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+                                    span المزيد
+                                    span.caret
+                                  .dropdown-menu
+                                    a.dropdown-item.text-info(href="#" , data-toggle="modal", data-target='#modal10')
+                                      i.fa.fa-edit.mr-1
+                                      span صلاحيات الفرع
+                                    a.dropdown-item.text-warning(href="edit-branch.html")
+                                      i.fa.fa-edit.mr-1
+                                      span تعديل
+                                    a.dropdown-item.delete.text-danger(href="#")
+                                      i.fa.fa-trash.mr-1
+                                      span حذف
+                      include components/pagination
+
+
+          // ‫‪SYSTEM_SCREEN
+          .tab-pane.fade#tabs-3(role="tabpanel", aria-labelledby="tabs-3-tab")
+            section.content
+                .row
+                  .col-12
+                    .card.shadow-none
+                    +tabel-header("الإدارات و الاقسام", '#modal7')
+                    // add modal
+                    .modal.fade#modal7(tabindex="-1", role="dialog", aria-labelledby="modal7", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة قسم  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label تاريخ البدء
+                                input.form-control(type="date")
+                              .form-group
+                                label  الفروع
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الفروع #{x}
+                              .form-group
+                                label  مركز التكلفة
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option مركز التكلفة #{x}
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal8(tabindex="-1", role="dialog", aria-labelledby="modal8", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل القسم  ")
+                          form
+                           .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label تاريخ البدء
+                                input.form-control(type="date")
+                              .form-group
+                                label  الفروع
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option الفروع #{x}
+                              .form-group
+                                label  مدير القسم
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option مدير القسم #{x}
+                              .form-group
+                                label  مركز التكلفة
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option مركز التكلفة #{x}
+                          +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal9(tabindex="-1", role="dialog", aria-labelledby="modal9", aria-hidden="true")
+                      .modal-dialog (role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل القسم")
+
+                          .modal-body
+                            div.mb-3
+                              h4 قسم الحسابات
+                            div.mb-3
+                              span الفرع  :
+                                p.h4.d-inline وسط المدينة
+                            div.mb-3
+                              span المدير  :
+                                p.h4.d-inline علي محمد
+                            div.mb-3
+                              span تاريخ البدء  :
+                                p.h4.d-inline 21/12/2021
+                            div.mb-3
+                              span مركز التكلفة  :
+                                p.h4.d-inline 2348
+
+                          +modal-footer
+                    .card-body
+                      +search-2("الفرع" , select2  , datefrom = "تاريخ البدء", dateto = null)
+                      include components/single-search
+                      table.table.table-bordered.table-striped
+                        thead
+                          tr
+                            each value in ["الرقم", "المدير", "الفرع", "الاسم", "تاريخ البدء", "خيارات"]
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, 'محمد علي', 'وسط المدينة', 'الحسابات  ', '21/12/2021  ']
+                                td= value
+                              +tabel-option-nolink("modal8", "modal9")
+                      include components/pagination
+
+

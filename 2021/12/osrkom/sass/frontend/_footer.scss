@@ -1,0 +1,80 @@
+footer {
+  position: relative;
+  padding: 120px 0 40px 0;
+  background-color: var(--m-color);
+  &::after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    right: 0;
+    content: '';
+    background-image: url(../images/footer-up-img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-color: #fff;
+  }
+  .logo {
+    width: 250px;
+  }
+  .sub {
+    position: relative;
+    input {
+      &:focus {
+        box-shadow:0 0 0 .1rem var(--m-color) !important;
+        border-color: var(--m-color) !important;
+      }
+      height: 50px;
+    }
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      padding: 15px 0;
+      border-radius: 30px;
+    }
+  }
+  .download-app {
+    img {
+      width: 200px;
+      display: block;
+      @include xs{display: inline;  width: 150px; margin-left: 5px; margin-right: 5px; margin-bottom: 5px;}
+      @include sm{display: inline;  width: 150px; margin-left: 5px; margin-right: 5px;}
+      @include lg{display: block;  margin: 0 auto  5px auto;}
+
+    }
+  }
+  .list {
+    @include md{ text-align: start; }
+    @include lg{ text-align: center; }
+    @include lg{ text-align: center; }
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    ul {
+      list-style: none;
+      margin-bottom: 0;
+      li {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        @include md{ display: inline; padding-left: 55px;}
+        @include lg{ display: inline; padding-left: 80px;}
+        @include xl{ display: inline; padding-left: 140px;}
+        &::before {
+          content: "";
+          background-color: #fff;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          display: inline-block;
+          position: relative;
+          right: -20px;
+        }
+      }
+    }
+  }
+}

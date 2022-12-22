@@ -1,0 +1,120 @@
+/*.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+
+.headContent {
+    background: #157454;
+    border-radius: 4px;
+    	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+}
+*/
+
+.userMenu {
+	/*width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;*/
+
+}
+
+
+
+.logo img {
+	max-height: 25px;
+	margin-top: 5px;
+}
+
+
+.adxTitle a:link {
+						
+					    font-size: 1rem;
+					   
+			}
+
+			.adx {
+				font-size: 0.7rem;
+			}
+
+
+
+			.hideSmall {
+				display: none;
+			}
+
+
+
+			
+
+
+			.mobileUserMenu {
+					/*font-size: 1rem;
+					margin-bottom: 15px;
+					margin-top: 15px;
+					white-space: nowrap;
+    				overflow-x: scroll;
+     				 -webkit-overflow-scrolling: touch;
+     				 */
+
+     				 display: flex;
+     				 justify-content: space-around;   
+     				 margin-top: 1rem;  				 
+
+
+			}
+
+			.mobileUserMenu a{
+				font-size: 1.5rem;
+				
+				color: #aaa;
+
+
+			}
+
+			.mobileUserMenu.notLoggedIn a i {
+				color: #eee;
+
+			}
+			.notLoggedIn a i.marks {
+				color: #aaa;
+
+			}
+			.mobileUserMenu a.active{
+				
+				color: #d03333;
+			}
+
+			#searchBoxContent {
+					/*padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+					padding-right: 0.5rem;
+					padding-left: 0.5rem;*/
+				}
+
+/*
+			#searchBoxContent input {
+				width:100%;
+				
+			}
+
+			*/
+
+			.adxTitle {
+				white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+			}
+
+			ul li {
+				margin-top: 0.8rem;
+			}
+
+
+

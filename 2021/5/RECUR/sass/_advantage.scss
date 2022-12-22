@@ -1,0 +1,99 @@
+/* .advantage */
+.advantage {
+  padding: 80px 0;
+  h2 {
+    font-size: 50px;
+    line-height: 1;
+
+  }
+
+  p {
+    font-size: 27px;
+    line-height: 1;
+
+  }
+
+  .advantage-div {
+    -webkit-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+    padding: 22px 32px 20px;
+    border-radius: 10px;
+    &:hover {
+      -webkit-box-shadow: 0 3px 43px 0 rgb(0 0 0 / 13%);
+      box-shadow: 0 3px 43px 0 rgb(0 0 0 / 13%);
+      .left-border-hover-color {
+        width: 6px;
+      }
+    }
+    h4 {
+      font-size: 33px;
+    }
+    p {
+      font-size: 25px;
+      line-height: 1;
+    }
+    .left-border-hover-color {
+      right: 0;
+      top: 30px;
+      height: 80px;
+      width: 0;
+      border-radius: 50px;
+      -webkit-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+    }
+
+    @each $colorname, $color in
+    (left-border-hover-color-green, #049507),
+    (left-border-hover-color-indigo, #6c2b95),
+    (left-border-hover-color-purple, #d912dc)
+    {
+        /* background-color */
+        .#{$colorname} {
+            background-color:#{$color};
+        }
+    }
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+  .advantage {
+    padding: 50px 0;
+
+
+    h2 {
+      font-size: 33px;
+    }
+
+
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .advantage {
+    padding: 60px 0;
+
+    h2 {
+      font-size: 37px;
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .advantage {
+    padding: 80px 0;
+
+    h2 {
+      font-size: 45px;
+    }
+
+  }
+}
+
+/* .advantage */

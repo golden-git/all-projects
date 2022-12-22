@@ -1,0 +1,38 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" العملاء ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" العملاء ")
+        .row
+            .col-12.mb-3: h4 العملاء (250)
+            .col-md-6.mb-3
+                .search
+                    i.mbi.mbi-magnifier
+                    input.form-control(type="search", placeholder="ابحث عن طلب ")
+                    button.rounded-0.px-4.m-color-bg.d-color-bg-hover.text-white.btn بحث
+            .col-md-6.mb-3.text-md-end: span.px-5.me-3.btn-lg.border-0.btn.text-white.rounded-pill.m-color-bg.s-color-bg-hover(data-bs-toggle="modal" data-bs-target="#sendModal") إرسال تنبيه للكل
+            -for(x=1; x<=12; x++)
+              .col-md-3.mb-3: +user-card()
+    include ./includes/scripts
+//  Modal
+.modal.fade#sendModal(tabindex='-1', aria-labelledby='sendModalLabel', aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .modal-header.border-0
+        h5.modal-title#sendModalLabel ارسال تنبية
+        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+      .modal-body.border-0
+        .mb-2: +dash-select(
+          "طريقة الارسال ",
+          "  اختر طريقة ارسال التنبية",
+          "ارسال اشعار عبر الطبيق"
+          )
+        div
+         label.form-label.fw-bolder نص الاشعار
+         textarea.form-control(cols="10", rows="5")
+      .modal-footer.border-0
+        button.px-5.btn-lg.border-0.btn.rounded-pill.w-color-text-hover.d-color-bg-hover(type='button', data-bs-dismiss='modal') الغاء
+        +action-btn("ارسال", "#" , "")

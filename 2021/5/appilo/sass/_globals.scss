@@ -1,0 +1,149 @@
+// sass --watch /media/roger/roger/F/web/projects/golden/2021/5/appilo/sass:/media/roger/roger/F/web/projects/golden/2021/5/appilo/css
+
+
+/*========== start globals ==========*/
+:root {
+    --m-color: #73299a;
+    --d-color: #d10edd;
+    --g-color: #EBEDF2;
+}
+
+@font-face {
+    font-family: 'lightfont';
+    src: url('../fonts/Somar-Light.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: 'boldfont';
+    src: url('../fonts/Somar-Bold.otf') format('opentype'),
+}
+
+body {
+    font-family: 'lightfont', sans-serif !important;
+    color: #212529;
+}
+
+/* title-font */
+.title-font {
+    font-family: 'boldfont', sans-serif;
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1200px;
+    }
+
+}
+
+@each $colorname, $color in
+(m-color-text, var(--m-color)),
+(d-color-text, var(--d-color)),
+(g-color-text, var(--g-color))
+{
+    /* color-text */
+    .#{$colorname} {
+        color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-text-hover, var(--m-color)),
+(d-color-text-hover, var(--d-color)),
+(g-color-text-hover, var(--g-color))
+{
+    /* color-text-hover */
+    .#{$colorname}:hover {
+        color:#{$color} !important;
+    }
+}
+
+
+@each $colorname, $color in
+(m-color-bg, var(--m-color)),
+(d-color-bg, var(--d-color)),
+(g-color-bg, var(--g-color))
+{
+    /* background-color */
+    .#{$colorname} {
+        background-color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-bg-hover, var(--m-color)),
+(d-color-bg-hover, var(--d-color)),
+(g-color-bg-hover, var(--g-color))
+{
+    /* background-color-hover */
+    .#{$colorname}:hover {
+        background-color:#{$color} !important;
+    }
+}
+
+/* pointer */
+.pointer {
+    cursor: pointer;
+}
+
+/* indigo box */
+.indigo-box {
+    color: #951fb3;
+    font-size: 22px;
+    padding: 3px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #ede0f4;
+}
+
+/* linear-gradient-btn */
+.linear-gradient-btn {
+    border: 2px solid #6c2b95 !important;
+    font-size: 23px;
+
+    &:hover {
+      -webkit-transition: 0.3s all ease-in-out;
+      -o-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out;
+      background-color: #6c2b95;
+      color: #fff;
+
+      i {
+        background: -webkit-linear-gradient(-135deg, #fff 32%, #fff 100%);
+        background: -o-linear-gradient(-135deg, #fff 32%, #fff 100%);
+        background: linear-gradient(45deg, #fff 32%, #fff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    ;
+
+    i {
+      background: -webkit-linear-gradient(-135deg, #6b2c94 32%, #fc01fd 100%);
+      background: -o-linear-gradient(-135deg, #6b2c94 32%, #fc01fd 100%);
+      background: linear-gradient(45deg, #6b2c94 32%, #fc01fd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+
+  /* under-line-hover */
+  .under-line-hover-container {
+      position: relative;
+      &:hover {
+        .under-line-hover {
+            width: 100%;
+            transition: .5s;
+         }
+    }
+
+  }
+.under-line-hover {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    right: 0;
+    background-color: var(--d-color);
+}

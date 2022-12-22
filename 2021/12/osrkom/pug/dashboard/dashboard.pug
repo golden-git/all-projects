@@ -1,0 +1,191 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" لوحة التحكم ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" لوحة التحكم ")
+        .row 
+            .col-xl-8.mb-3 
+                .border.rounded-3.p-3.mb-3
+                    h5 إعدادات المتجر السريعة
+                    .row 
+                        .col-md-6.col-sm-6.mb-3
+                            .shadow.rounded-3.p-3  
+                                .d-md-flex.justify-content-between 
+                                    .align-self-center
+                                        i.fas.fa-circle.s-color-text.me-2(style="font-size:7px") 
+                                        small.text-muted خطتي الشهرية
+                                        h6.mb-0 خطة برونزية 
+                                        small.text-muted 250 ريال شهريا 
+
+                                    .align-self-center
+                                        small.d-block.text-muted(style="font-size:12px") تاريخ التجديد 20 مارس 2021 
+                                        a.s-color-text.text-decoration-none.m-color-text-hover(href="plans.html", style="font-size:14px")  
+                                            | إدارة خطتك
+                                            i.mbi.mbi-arrow-left.text-muted.ms-2(style="font-size:12px") 
+                        .col-md-5.col-sm-6.mb-3
+                            .border.rounded-3.p-3  
+                                .d-md-flex.justify-content-between 
+                                    .align-self-center
+                                        i.fas.fa-circle.m-color-text.me-2(style="font-size:7px") 
+                                        small.text-muted نطاقات التغطية 
+                                        h6.mb-0 5 مناطق مغطاة  
+                                        small.text-muted من مناطق المملكة 
+
+                                    .align-self-center
+                                        a.s-color-text.text-decoration-none.m-color-text-hover(href="ranges.html", style="font-size:14px")  
+                                            | نطاقات التغطية 
+                                            i.mbi.mbi-arrow-left.text-muted.ms-2(style="font-size:12px")    
+                        .col-md-1.mb-3 
+                            a.s-color-text.text-decoration-none.m-color-text-hover(href="#")
+                                .border.rounded-3.p-3.s-color-border.h-100.d-flex.align-items-center.justify-content-center 
+                                    i.mbi.mbi-arrow-left(style="font-size:15px")    
+                .row
+                    .col-xl-3.col-6.mb-3
+                         .border.rounded-3.p-2  
+                            .d-flex.mb-3
+                                img.rounded-circle.align-self-start.me-1(src="../images/icons/bag.png", alt="user", width="45", height="40")
+                                div.align-self-center
+                                    span.h6.mb-0  الطابات  
+                                    small.badge.s-color-bg.rounded-pill.px-3  2
+                            span.h3.mb-0  352  
+                            small.text-muted طلب
+                            p.text-success.mt-3
+                                img.me-2(src="../images/icons/scall-up.png", alt="scall up", width="20")
+                                span.h5 26%
+                            a.s-color-text.text-decoration-none.m-color-text-hover(href="#", style="font-size:14px") المزيد
+
+                    .col-xl-3.col-6.mb-3
+                         .border.rounded-3.p-2  
+                            .d-flex.mb-3
+                                img.rounded-circle.align-self-start.me-1(src="../images/icons/cash.png", alt="user", width="45", height="40")
+                                div.align-self-center
+                                    span.h6.mb-0  الارباح  
+                            span.h3.mb-0  352  
+                            small.text-muted ريال سعودي
+                            p.text-danger.mt-3
+                                img.me-2(src="../images/icons/scall-down.png", alt="scall down", width="20")
+                                span.h5 26%
+                            a.s-color-text.text-decoration-none.m-color-text-hover(href="#", style="font-size:14px") المزيد
+
+                    .col-xl-3.col-6.mb-3
+                         .border.rounded-3.p-2  
+                            .d-flex.mb-3
+                                img.rounded-circle.align-self-start.me-1(src="../images/icons/users.png", alt="user", width="45", height="40")
+                                div.align-self-center
+                                    span.h6.mb-0  العملاء  
+                            span.h3.mb-0  352  
+                            small.text-muted عميل
+                            p.text-success.mt-3
+                                img.me-2(src="../images/icons/scall-up.png", alt="scall up", width="20")
+                                span.h5 26%
+                            a.s-color-text.text-decoration-none.m-color-text-hover(href="#", style="font-size:14px") المزيد
+
+                    .col-xl-3.col-6.mb-3
+                         .border.rounded-3.p-2  
+                            .d-flex.mb-3
+                                img.rounded-circle.align-self-start.me-1(src="../images/icons/box.png", alt="user", width="45", height="40")
+                                div.align-self-center
+                                    span.h6.mb-0  المنتجات  
+                            span.h3.mb-0  352  
+                            small.text-muted منتج
+                            p.text-success.mt-3
+                                img.me-2(src="../images/icons/scall-up.png", alt="scall up", width="20")
+                                span.h5 26%
+                            a.s-color-text.text-decoration-none.m-color-text-hover(href="#", style="font-size:14px") المزيد
+
+            .col-xl-4.mb-3
+                .border.rounded-3
+                    .d-md-flex.justify-content-between.py-2.px-3.border-bottom
+                        h5 الاشعارات   
+                        a.s-color-text.m-color-text-hover(href="#") حذف الاشعارات
+                    .d-md-flex.mb-3.py-3.px-3
+                        img.rounded-circle.align-self-start.me-2(src="../images/icons/users-m-color.png", alt="user", width="70", height="70")
+                        div.align-self-center
+                            small.text-muted منذ ساعة واحدة
+                            h5.mb-0 اشترك في عروض التخفيضات هذا الشهر
+                            span.text-dark  زد مبيعاتك
+                            small.text-muted  عن طريق توفير عروض لعملائك
+                            div.mt-3 
+                                a.d-color-bg-hover.px-5.text-white.py-2.text-decoration-none.rounded-pill.m-color-bg(href="#") اشتراك 
+                    .px-3: hr
+
+                    .d-md-flex.mb-3.py-3.px-3
+                        img.rounded-circle.align-self-start.me-2(src="../images/icons/users-red-color.png", alt="user", width="70", height="70")
+                        div.align-self-center
+                            small.text-muted منذ ساعة واحدة
+                            h5.mb-0 لديك طلب جديد
+                            span.text-dark  طلب جديد 
+                            small.text-muted  اطلع عليه الان
+            .col-xl-8.mb-3.my-sales
+                .border.rounded-3.h-100.p-3 
+                    .d-xl-flex.justify-content-between 
+                        h5 مبيعاتي  
+                        div
+                            ul.justify-content-center.nav.nav-pills.mb-3.g-color-bg.px-4.py-2.rounded-pill#pills-tab(role='tablist')
+                                li.nav-item(role='presentation')
+                                    span.rounded-pill.px-4.pointer.nav-link#pills-wek-tab(data-bs-toggle='pill', data-bs-target='#pills-wek', role='tab', aria-controls='pills-wek', aria-selected='false') اسبوعيا
+                                li.nav-item(role='presentation')
+                                    span.rounded-pill.px-4.pointer.nav-link.active#pills-month-tab(data-bs-toggle='pill', data-bs-target='#pills-month', role='tab', aria-controls='pills-month', aria-selected='true') شهريا
+                            
+                    .tab-content#pills-tabContent
+                        .tab-pane.fade.show.active#pills-month(role='tabpanel', aria-labelledby='pills-month-tab')
+                            .chart-area(style="position: relative; height:50vh; width:auto")
+                                canvas#myAreaChart
+                        .tab-pane.fade#pills-wek(role='tabpanel', aria-labelledby='pills-wek-tab') 
+                            .chart-area(style="position: relative; height:50vh; width:auto")
+                                canvas#myAreaChart
+            .col-xl-4.mb-3
+                    .border.rounded-3.p-3
+                        .d-md-flex.justify-content-between.mb-3
+                            h5 اكثر العملاء طلبا 
+                            a.s-color-text.m-color-text-hover(href="clints.html") رؤية المذيد
+                        .row 
+                            -for(x=1; x<=6; x++)
+                                .col-xl-12.col-md-6
+                                    .d-flex.justify-content-between.mb-2
+                                        div.align-self-center 
+                                            .d-flex.mb-3
+                                                img.rounded-circle.align-self-center.me-2(src="../images/icons/user.png", alt="user", width="50", height="50")
+                                                div.align-self-center
+                                                    h6.mb-0  Mohamed Ali 
+                                                    small.text-muted  عميل منذ 28/1/2020  
+                                        div.align-self-center 
+                                            small.text-muted اجمالي الشراء  
+                                            h6.m-color-text  360 SR 
+            .col-12
+                .custom-table
+                    .d-md-flex.justify-content-between.mb-3
+                        h5 الطلب الاخيرة 
+                        a.s-color-text.m-color-text-hover(href="orders.html") رؤية المزيد 
+                    .table-responsive
+                        table.table.table-borderless
+                            thead
+                                tr
+                                each val in [ "رقم الطلب", "العميل", "عنوان العميل", "تاريخ الطلب", "الشحن", "الدفع", "حالة الطلب", "المجموع", "الاجراءات"]
+                                    th=val
+                            -for(x=1; x<=6; x++)
+                                tbody
+                                    tr
+                                        td #3456789
+                                        td
+                                            h6.mb-0 Mohamed ali
+                                            small.text-muted عميل منذ 21\21\2020
+                                        td
+                                            h6.mb-0 مكة المكرمة
+                                            small.text-muted السعودية
+                                        td
+                                            h6.mb-0 21/1/2020
+                                            small.text-muted  مساء  3:30
+                                        td الى اقرم موقع تسليم
+                                        td كاش
+                                        td: span.m-color-text بانتظار التاكيد
+                                        td 9877 ريال
+                                        td.icons
+                                            i.mbi.mbi-eye
+                                            i.mbi.mbi-download2
+
+        
+    include ./includes/scripts

@@ -1,0 +1,54 @@
+
+// footer main
+footer {
+  .logo {
+    background-image: url(../images/footer-fade.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .logoin {
+      background-image: url(../images/logo-footer.png);
+      height: 32px;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+}
+
+.links {
+  div {
+    @include xs { width: 50% }
+    @include sm { width: 50% }
+    @include lg { width: 12.5% }
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.footer2 {
+  color: white;
+  z-index: 10;
+  background-color: #ee2569;
+
+  .footer2_1 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .footer2_3 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+.icons {
+  font-size: 19px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+}
+
+}

@@ -1,0 +1,70 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head("اتمام الدفع")
+  body
+    include ./includes/navbar
+    .check-out.py-md-5.py-3
+      .container
+        // order complete
+        .order-complete
+          div
+            p.mb-0.h4.text-muted تواصل معنا
+            h2  هل لديك أسئلة؟ اقتراحات؟ لا تتردد في
+            h2 الاتصال بنا
+          div.mb-4
+            div(style='width: 100%')
+              iframe(width='100%', height='400', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed')
+              //- img.img-fluid(src="./images/customer/map.png", alt="map")
+          div.map
+            .d-flex.mb-4
+              img.align-self-start.me-2(src="./images/icons/res.png", alt="res", width="40", height="45")
+              div.align-self-start
+                h3.title-font.mb-0 مقر اسركم
+                p.mb-0.text-muted.h5 شاعر احمد سعود
+                p.mb-0.text-muted.h5 رقم الشقة 33 -رقم البناية 12
+
+            .row
+              .col-lg-6
+                h4 الموضوع
+                .row
+                  each val, index in ["استفسار", "شكوي", "اراء", "مشاكل فنية"]
+                    .col-md-3.col-6.mb-3
+                      .form-check.location.pointer
+                        label.form-check-label.pointer(for=index)=val
+                        input.g-color-bg.rounded-pill.form-check-input.m-0.p-0.pointer(name="name", id=index, type="radio",)
+            .row
+              .col-lg-6
+                h4 من انت
+                .row
+                  each val, index in ["أسرة منتجة", " عميل"]
+                    .col-md-3.col-6.mb-3
+                      .form-check.location.pointer
+                        label.form-check-label.pointer(for=index + "1")=val
+                        input.g-color-bg.rounded-pill.form-check-input.m-0.p-0.pointer(id=index + "1", type="radio", name="type")
+
+            .row
+              .col-lg-4.col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='الاسم')
+              .col-lg-4.col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='رقم الجوال')
+              .col-lg-4.col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='البريد الالكتروني ')
+              .col-md-12.mb-3: textarea.set-input.shadow-none.form-control.border-0.rounded-3.g-color-bg(style="height:150px", placeholder='الرسالة')
+              .col-12.h5.mb-4
+                |  من خلال اتخاذ هذا الاجراء فانك توافق على
+                a.m-color-text.mx-2.text-decoration-none.md-color-text-hover(href="#") الشروط و الاحكام
+              .col-12
+                a.m-color-bg.px-5.py-2.text-decoration-none.text-white.rounded-pill.s-color-bg-hover(href="#") ارسال
+
+
+
+    div.text-center.pt-3(style="background-color:#EEF7ED")
+        h5.text-success او يمكنك الاتصال بالرقم
+          a.mx-2.text-decoration-none.text-success(href="#") 1234567890
+
+
+        include ./includes/footer
+        style.
+            footer::after {
+                background-color: #EEF7ED
+            }
+
+    include ./includes/scripts

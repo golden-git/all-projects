@@ -1,0 +1,71 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("الكورسات")
+  body
+    include ./includes/navbar
+    style.
+      .top-nav { background-color: var(--g-color); }
+      .top-nav span, .top-nav a { color: #666 !important; }
+    main.courses
+      // header
+      header.d-flex
+        .container.align-self-center.text-center
+          .section-sm-title الكورسات
+          h1.section-lg-title(id="courses-info") قائمة الكورسات المتوفرة
+          nav(aria-label="breadcrumb")
+            ol.breadcrumb.d-inline-flex
+              li.breadcrumb-item
+                a(href="index.html") الرئيسية
+              li.breadcrumb-item.active(aria-current="page") الكورسات
+          a.link(href="#courses-info")  إكتشف
+
+      section.pt-5
+        .container
+           .row
+              .main-wrap.col-12.col-lg-8.col-xl-9.order-2.order-md-3
+                .d-lg-none.toolbar.rounded-3.py-2.px-3.d-flex.justify-content-between.mb-1.show-filter
+                  span عرض الفلتر
+                  i.mbi.mbi-funnel.h3
+                .toolbar.rounded-3.py-2.px-3.d-flex.justify-content-between
+                  span.align-self-center 9 كورسات
+
+
+                  select.form-select.d-inline-block.w-auto
+                    option ترتيب حسب
+                    option الاسم
+                    option السعر
+
+                .products.py-3
+                  .row
+                    - for (x = 1; x <= 9; x++)
+                      .col-xl-4.col-6.mb-md-4.px-md-3.mb-3
+                        +course()
+
+                    .col-12
+                      nav(aria-label="...")
+                        ul.pagination.justify-content-center
+                          li.page-item.disabled
+                            a.page-link(href="#", tabindex="-1", aria-disabled="true") السابق
+                          li.page-item
+                            a.page-link(href="#") 1
+                          li.page-item.active(aria-current="page")
+                            a.page-link(href="#") 2
+                          li.page-item
+                            a.page-link(href="#") 3
+                          li.page-item
+                            a.page-link(href="#") التالي
+
+              aside.col-12.col-lg-4.col-xl-3.order-1.order-md-2
+                .filters
+                  span.close-filters.show-filter.d-lg-none
+                  h5.mb-3 بحث في الكورسات
+                  div
+                    input.form-control(type="text", placeholder="بحث")
+                  +accordion-filter("2", "2", "2", "التصنيف", "تصميم  ")
+                  +accordion-filter("3", "3", "3", "الاشارات ", "  تطوير  ")
+                  +accordion-filter("4", "4", "4", "المستوي  ", "متوسط    ")
+                  +accordion-filter("5", "5", "5", "السعر  ", "مدفوع")
+
+
+    include ./includes/footer

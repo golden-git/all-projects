@@ -1,0 +1,116 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head("اتمام الدفع")
+  body
+    include ./includes/navbar
+    .check-out.py-md-5.py-3
+      .container-fluid
+        // order complete
+        .order-complete
+          .row
+            .col-12
+              p.mb-0 ماكولات صينية
+              h2 ابو ماون للماكولات الصينية
+            .col-lg-6.order-lg-1.order-2.map
+                div(style='width: 100%')
+                  iframe(width='100%', height='300', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed')
+                //- img.img-fluid(src="./images/customer/map.png", alt="map")
+                .code.my-3.d-flex.justify-content-between
+                  div
+                    .d-flex.mb-3
+                      img.align-self-center.me-2(src="./images/icons/location.png", alt="location", width="20", height="25")
+                      div.align-self-center
+                        h4.title-font.mb-0 تبوك, السعودية
+                        p.mb-0.text-muted السعودية
+                  div
+                    button.border-0.btn-lg.px-4.rounded-pill.btn.g-color-bg.m-color-bg-hover.text-dark تغيير
+
+                .row
+                  .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='الشارع')
+                  .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='البناية')
+                  .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='رقم الشقة')
+                  .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='الطابق')
+                  .col-md-6.mb-3
+                    .row
+                      .col.mb-3
+                        .form-check.location.pointer
+                          label.form-check-label.pointer(for="check11")
+                            i.fas.fa-home.me-2
+                            | منزل
+                          input.form-check-input.m-0.p-0.pointer#check11(type="radio", name="location")
+                      .col.mb-3
+                        .form-check.location.pointer
+                          label.form-check-label.pointer(for="check22")
+                            i.fas.fa-building.me-2
+                            | عمل
+                          input.form-check-input.m-0.p-0.pointer#check22(type="radio", name="location")
+
+                .pay
+                  .d-flex.mb-3
+                      img.align-self-center.me-2(src="./images/icons/pay/pay.png", alt="pay", width="30", height="30")
+                      div.align-self-center
+                        h4.title-font.mb-0 طريقة الدفع
+                        p.mb-0.text-muted اختر طريقة الدفع المناسبة لك
+
+                  each val, index in ["فيزا \ ماستر كارد", "مدي", "STC", "الدفع عند الاستلام"]
+                    .form-check.pay-methods
+                      label.form-check-label.text-start(for="check"+index)=val
+                      input.form-check-input.p-0.m-0( name="paytype" id="check"+index, type="radio")
+                      img(src="./images/icons/pay/"+index+".png", alt="pay")
+
+            .col-lg-6.order-lg-2.order-1
+              .order-container
+                .order-details
+                  .order-block.mb-5
+                      - for (x=1; x <= 5; x++)
+                        // order item
+                        .d-flex.justify-content-between.mb-2.border-bottom.py-3.order-item
+                            div
+                              .d-flex
+                                span.text-success.me-2 1x
+                                div
+                                  h4.title-font.mb-0 Vegan Quinoa Salad
+                                  p.mb-0.text-muted سبايسي - بيبسي كبير - صلصة بيضاء
+                                  p.mb-0.text-muted - صوص اضافة +1.5 SR
+                            span.text-dark 31 SR
+
+                  .code.mb-5
+                    .d-flex.mb-3
+                      img.align-self-center.me-2(src="./images/icons/code.png", alt="code", width="30", height="30")
+                      div.align-self-center
+                        h4.title-font.mb-0 لديك كوبون خصم
+                        p.mb-0.text-muted من فضلك ادخل كوبون الخصم
+                    form.code
+                      input.set-input.form-control.border-0.rounded-pill(
+                        type='text',
+                        placeholder='ادخل بريدك هنا')
+                      button.btn.d-color-bg.m-color-bg-hover.text-white تفعيل
+
+                  .order-block
+                    // order detail
+                    .d-flex.justify-content-between.mb-2
+                      h4.title-font إجمالي الطلب
+                      span.text-dark 31 SR
+
+                    .d-flex.justify-content-between.mb-2
+                      h4.title-font التوصيل
+                      span.text-dark 2.5 SR
+
+                    .d-flex.justify-content-between
+                      h4.title-font إجمالي
+                      span.m-color-text 32.5 SR
+
+
+                  .actions.my-4
+                    a.link.m-color-bg.s-color-bg-hover.me-2(href="order-complete.html")
+                      | إتمام الطلب
+                      i.mbi.mbi-arrow-left
+
+    include ./includes/footer
+    style.
+        footer::after {
+            background-color: #fff
+        }
+
+    include ./includes/scripts

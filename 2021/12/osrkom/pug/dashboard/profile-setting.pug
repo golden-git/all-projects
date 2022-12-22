@@ -1,0 +1,44 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اعدادات الحساب ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اعدادات الحساب ")
+        .row.profile-setting
+          .col-12.mt-4.text-center
+            img.rounded-circle.shadow.mb-3(src="../images/icons/user.png", alt="user", width="100", height="100")
+            
+            .mb-3.position-relative.input-style-container.input-file(style="width: 100%")
+                input.input-style.form-control.mb-0(type="file", style="height: 25px")
+                div.chang-image 
+                    span.input-label  تغير الصورة
+                    span.file-name.rounded-pill
+        .auth.text-center.mt-4(style="max-width: 100%;")
+            div.type-container.shadow-none
+                
+                +input-font-icon("text", "mbi-store", "اسم المتجر")
+                div.text-start
+                    label.form-label رقم الجوال
+                .mb-3.position-relative.input-style-container.form-floating.input-style-container-with-icon(style="width: 100%")
+                    span.form-icon
+                        i.mbi.mbi-telephone
+                    button.px-4.icon.text-muted.border-0.btn +958
+                    input.input-style.form-control(type="phone")
+                +input-font-icon("emain", "mbi-envelope", "البريد الالكتروني")
+                +input-img-icon("password", "lock.png", "كلمة المرور", "إعادة تعين")
+                +input-font-icon("text", "mbi-map-marker", "الموقع ", " تحديد من الخريطة")
+                +action-btn("حفظ", "#" , "رجوع")
+                div.text-start.mt-5
+                    h4.mb-0 عن المنشأة 
+                    label.form-label شهادة الصحة 
+                .mb-3.position-relative.input-style-container.input-file(style="width: 100%")
+                    input.input-style.form-control.mb-0(type="file", style="height: 60px")
+                    div 
+                        span.input-label الشهادة الصحية
+                        span.file-name.rounded-pill
+                        button.px-4.d-color-bg.icon.lef-0.m-color-bg-hover.text-white.btn تحديث الشهادة
+                +action-btn("حفظ", "#" , "رجوع")
+              
+    include ./includes/scripts

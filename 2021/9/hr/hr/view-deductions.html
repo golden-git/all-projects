@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>دف جرافكس</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/style1.css">
+
+  <link rel="stylesheet" href="dist/css/bootstrap-rtl.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/myEdit.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/style.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">الرئيسية</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="accountingSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            class="nav-link dropdown-toggle">
+            <i class="fa fa-magic"></i>
+            <span>روابط سريعة</span>
+          </a>
+          <ul aria-labelledby="accountingSubMenu" class="dropdown-menu">
+
+
+            <li><a href="index.html" class="dropdown-item">
+                <span> النظام </span>
+              </a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <div id="app">
+          <div>
+            <li class="navbar-link"><a href="/mail" class="nav-link"><i class="fa fa-bell"></i> <span
+                  class="badge badge-primary">0</span></a></li>
+          </div>
+        </div>
+
+        <li class="nav-item dropdown">
+          <a id="mainSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            class="nav-link dropdown-toggle">
+            <i class="fa fa-th"></i>
+
+          </a>
+          <ul aria-labelledby="transactionsSubMenu" class="dropdown-menu">
+            <li><a href="#/tutorial/tutorials" class="dropdown-item">
+                <i class="fa fa-question-circle"></i>
+                <span>مركز المعرفة</span>
+              </a></li>
+            <li><a href="#/lines" class="dropdown-item">
+                <i class="fa fa-phone-square"></i>
+                <span>دليل الهاتف</span>
+              </a></li>
+            <li><a href="#/profile" class="dropdown-item">
+                <i class="fa fa-user"></i>
+                <span> الملف الشخصي </span>
+              </a></li>
+            <li><a href="#/tasks" class="dropdown-item">
+                <i class="fa fa-check-square"></i>
+                <span> المهام </span>
+              </a></li>
+            <li><a href="#/suggestions" class="dropdown-item">
+                <i class="fa fa-exclamation-circle"></i>
+                <span> الاقتراحات </span>
+              </a></li>
+            <li><a href="#/logs" class="dropdown-item">
+                <i class="fa fa-list"></i>
+                <span> السجلات </span>
+              </a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="mainSubMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            class="nav-link dropdown-toggle">
+            <i class="fa fa-language"></i>
+
+          </a>
+          <ul aria-labelledby="transactionsSubMenu" class="dropdown-menu">
+            <li><a href="#/translate?lang=ar" class="dropdown-item">
+                <i class="fa fa-language"></i>
+                <span>العربية</span>
+              </a></li>
+            <li><a href="#/translate?lang=en" class="dropdown-item">
+                <i class="fa fa-language"></i>
+                <span>English</span>
+              </a></li>
+            <li><a href="#/translate?lang=ur" class="dropdown-item">
+                <i class="fa fa-language"></i>
+                <span>ur</span>
+              </a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="navbar-link"><a href="#" class="nav-link logout">
+            <i class="fa fa-power-off"></i>
+          </a></li>
+
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-light-primary elevation-4">
+
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+
+        <span class="brand-text font-weight-light text-capitalize">المصمم الذكي</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <h3 class="text-center"> نظام الموارد البشرية</h3>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link ">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>الرئيسية</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="qualifications.html" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>المؤهلات</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="specialization.html" class="nav-link ">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>التخصصات</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="categories.html" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p> الفئات </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="job-titles.html" class="nav-link ">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p> المسميات الوظيفية </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="job-grades.html" class="nav-link ">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p> الدرجات الوظيفية </p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="employees.html" class="nav-link ">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>الموظفين</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="jobs.html" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>الوظائف</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="benefits-deductions.html" class="nav-link active">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>الاستقطاع | الاستحقاق</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contract.html" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p> العقود </p>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 757px;">
+      <!-- Main content -->
+      <div class="content">
+        <div class="container-fluid">
+
+          <!-- Content Header (Page header) -->
+          <div class="content-header">
+            <div class="container-fluid">
+              <div class="row mb-2">
+                <div class="col-sm-12">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html">نظام
+                        نظام الموارد البشرية
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="benefits-deductions.html">
+                        الاستقطاع | الاستحقاق
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <span> الاستقطاع</span>
+                    </li>
+                  </ol>
+                </div><!-- /.col -->
+                <div class="col-sm-12">
+                  <h1> تفاصيل الاستقطاع </h1>
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+          </div>
+          <!-- /.content-header -->
+          <div class="col-md-12">
+          </div>
+          <section class="content">
+            <div class="card card-primary card-outline card-outline-tabs">
+              <div class="card-header p-0 border-bottom-0">
+                <ul class="nav nav-tabs" id="tabs-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tabs-stores-tab" data-toggle="pill" href="#tabs-stores" role="tab"
+                      aria-controls="tabs-stores" aria-selected="true">
+                      التفاصيل
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="tabs-shelve-tab" data-toggle="pill" href="#tabs-shelve" role="tab"
+                      aria-controls="tabs-shelve" aria-selected="false">
+                      الموظف
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="card-body ">
+                <div class="tab-content" id="tabs-tabContent">
+                  <div class="tab-pane fade active show" id="tabs-stores" role="tabpanel"
+                    aria-labelledby="tabs-stores-tab">
+                    <section class="content">
+
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card text-right shadow-none">
+
+                            <div class="modal-body">
+                              <table class="table table-striped">
+                                <tbody>
+
+                                  <tr>
+                                    <td style="width: 20%;"> الموظف </td>
+                                    <td> محمد علي </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td> البند </td>
+                                    <td> 233333 </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>العملة </td>
+                                    <td> USD </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td> المبلغ</td>
+                                    <td> 3574 </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td> نوع الاستقطاع</td>
+                                    <td> نوع الاستقطاع </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td> التاريخ</td>
+                                    <td> 1/3/2021 </td>
+                                  </tr>
+
+
+
+                                  <tr>
+                                    <td> حالة البند</td>
+                                    <td> حالة البند </td>
+                                  </tr>
+
+
+                                  <tr>
+                                    <td>سبب الاستقطاع</td>
+                                    <td> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                      إلى زيادة عدد الحروف التى يولدها التطبيق. </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>ملاحظات</td>
+                                    <td> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                      إلى زيادة عدد الحروف التى يولدها التطبيق. </td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                      <!-- /.row -->
+                    </section>
+                  </div>
+
+                  <div class="tab-pane fade" id="tabs-shelve" role="tabpanel" aria-labelledby="tabs-shelve-tab">
+                    <section class="content">
+
+                    </section>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+
+      </div>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    document.querySelector(".delete").addEventListener('click', function () {
+      Swal.fire({
+        title: 'تأكيد الحذف',
+        text: "سوف تتم عملية الحذف هل انت متأكد؟",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'إلغاء',
+        confirmButtonText: 'تأكيد'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'تم الحذف',
+            'تم الحذف بنجاح',
+            'success'
+          )
+        }
+      })
+    });
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>

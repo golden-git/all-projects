@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html dir="rtl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>المدرب</title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+      <!--  iconfont-->
+      <link rel="stylesheet" href="./css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="./css/slick.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="./css/slick-theme.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="./css/main.css">
+    </head>
+  <body>
+    <!-- top nav-->
+    <div class="top-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 email-phone">
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"><span><i class="fas fa-envelope"></i><span>support@example.com</span></span></li>
+              <li class="list-group-item"><span><i class="fas fa-mobile-alt"></i><span>98 012345 6789</span></span></li>
+            </ul>
+          </div>
+          <div class="col-md-5 links">
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-group-item"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top nav-->
+    <!-- middle nav-->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light middle-nav bg-white">
+      <div class="container"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/logo.png" alt="logo"></a><span class="navbar-toggler border-0 p-0" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><img class="rounded-3" src="./images/icons/list.png" alt="list" width="40"></span>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">الكورسات</a></li>
+            <li class="nav-item"><a class="nav-link" href="trainer.html">المعلم</a></li>
+            <li class="nav-item"><a class="nav-link" href="course.html">الكورس</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">الصفحات</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">الرئيسية</a></li>
+                <li><a class="dropdown-item" href="trainer.html">المعلم</a></li>
+                <li><a class="dropdown-item" href="courses.html">الكورسات</a></li>
+                <li><a class="dropdown-item" href="course.html">الكورس</a></li>
+                <li><a class="dropdown-item" href="cart.html">السلة</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link cart" href="cart.html"><i class="fas fa-shopping-cart"></i><span>9</span></a></li>
+            <li class="nav-item login-register"><a class="nav-link register" href="#">إنشاء حساب</a><a class="nav-link" href="#">تسجيل دخول</a></li>
+            <li class="nav-item input">
+              <input class="form-control" placeholder="إبحث عن درس"><i class="fas fa-search search-icon"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- middle nav-->
+    <!-- phone bottom icons-->
+    <div class="phone-bottom-icons position-fixed bottom-0 start-50 translate-middle-x bg-white bg pt-2 d-xl-none d-block">
+      <div class="icon-row d-flex justify-content-around"><a class="icon text-center text-decoration-none text-dark" href="index.html"><i class="mbi mbi-home3"></i>
+          <p class="m-0"> الرئيسية</p></a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-user"></i>
+          <p class="m-0"> بياناتي</p></a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-alarm"></i>
+          <p class="m-0"> الإشعارات</p></a><a class="icon text-center text-decoration-none text-dark" href="#"><i class="mbi mbi-papers"></i>
+          <p class="m-0"> دوراتي</p></a></div>
+    </div>
+    <!-- phone bottom icons-->
+    <style>
+      .top-nav { background-color: var(--g-color); }
+      .top-nav span, .top-nav a { color: #666 !important; }
+    </style>
+    <main class="course">
+      <!-- header-->
+      <header class="d-flex">
+        <div class="container align-self-center text-center">
+          <div class="section-sm-title">التفاصيل</div>
+          <h1 class="section-lg-title" id="course-data-info">استراتيجيات تسويق المنتجات</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb d-inline-flex">
+              <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+              <li class="breadcrumb-item"><a href="courses.html">الكورسات</a></li>
+              <li class="breadcrumb-item"><a href="courses.html">الاعمال</a></li>
+              <li class="breadcrumb-item active" aria-current="page">استراتيجيات تسويق المنتجات</li>
+            </ol>
+          </nav><a class="link" href="#course-data-info"> إكتشف</a>
+        </div>
+      </header>
+      <section class="course-data-info pb-0">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-lg-5">
+              <div class="team mb-md-0 mb-4">
+                <div class="position-relative team-div text-start">
+                  <div class="text-center"><img class="img-fluid" src="./images/course/2.jpg" alt="team"></div>
+                  <div class="my-3">
+                    <h1 class="section-lg-title">كورس مجاني</h1>
+                    <ul class="list-unstyled ul-info">
+                      <li class="py-3 d-flex border-bottom justify-content-between"><span><i class="tutor-icon-fav-line"></i>المستوي</span><span>متوسط</span></li>
+                      <li class="py-3 d-flex border-bottom justify-content-between"><span><i class="tutor-icon-clock"></i>المدة</span><span>22h 30m</span></li>
+                      <li class="py-3 d-flex border-bottom justify-content-between"><span><i class="tutor-icon-user"></i>المسجلين</span><span>100 طالب</span></li>
+                      <li class="py-3 d-flex border-bottom justify-content-between"><span><i class="tutor-icon-user"></i>الدروس</span><span>8 دروس</span></li>
+                    </ul>
+                  </div>
+                  <div class="mb-4">
+                    <h1 class="section-lg-title">تشمل المواد</h1>
+                    <ul class="course-benefits list-unstyled">
+                      <li>4 ساعات فيديو حسب الطلب</li>
+                      <li>4 مقالات</li>
+                      <li>3 موارد قابلة للتنزيل</li>
+                      <li>شهادة إتمام</li>
+                    </ul>
+                  </div>
+                  <div class="my-4"><a class="section-link" href="#">إشترك الآن</a></div>
+                  <div class="my-3">
+                    <h1 class="section-lg-title">شارك الكورس</h1>
+                    <ul class="list-group list-group-horizontal">
+                      <li class="list-group-item px-0"><a class="text-decoration-none s-color-text-hover p-3 pointer" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li class="list-group-item px-0"><a class="text-decoration-none s-color-text-hover p-3 pointer" href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-group-item px-0"><a class="text-decoration-none s-color-text-hover p-3 pointer" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-group-item px-0"><a class="text-decoration-none s-color-text-hover p-3 pointer" href="#"><i class="fab fa-dribbble"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="team mb-md-0 my-4">
+                <div class="position-relative team-div text-start">
+                  <div class="my-3">
+                    <h1 class="section-lg-title">الاقسام</h1>
+                    <ul class="course-benefits list-unstyled">
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">قسم 1</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">قسم 2</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">قسم 3</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">قسم 4</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">قسم 5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="team mb-md-0 my-4">
+                <div class="position-relative team-div text-start">
+                  <div class="my-3">
+                    <h1 class="section-lg-title">الاشارات</h1>
+                    <ul class="course-benefits list-unstyled">
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">Tag 1</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">Tag 2</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">Tag 3</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">Tag 4</a></li>
+                      <li class="mb-3 d-inline-block border rounded-8 me-2 pe-2"><a class="pt-1 d-inline-block text-decoration-none text-dark s-color-text-hover" href="#">Tag 5</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 course-info-data">
+              <div class="mb-4">
+                <h1 class="section-lg-title">عن الكورس</h1>
+                <p class="ps-2">لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.</p>
+              </div>
+              <div>
+                <h1 class="section-lg-title">ماذا سوف تتعلم</h1>
+                <div class="row">
+                  <div class="col-lg-6 mb-lg-0 mb-0">
+                    <ul class="course-benefits list-unstyled">
+                      <li>حان الوقت لبدء العمل على الضحك.</li>
+                      <li>مؤلف البروتين</li>
+                      <li>الآن تلك الابتسامة هي خوف صعب.</li>
+                      <li>العيش عند مدخل لا شيء على الإطلاق.</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 mb-lg-0 mb-0">
+                    <ul class="course-benefits list-unstyled">
+                      <li>حان الوقت لبدء العمل على الضحك.</li>
+                      <li>مؤلف البروتين</li>
+                      <li>الآن تلك الابتسامة هي خوف صعب.</li>
+                      <li>العيش عند مدخل لا شيء على الإطلاق.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <h1 class="section-lg-title">الوصف</h1>
+                <p class="ps-2">لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.</p>
+                <p class="ps-2">لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.</p>
+                <p class="ps-2">لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.</p>
+                <p class="ps-2">لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.</p>
+                <div class="mb-4 experiences">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="experience">
+                        <h6>2000+</h6>
+                        <p>الطلاب المسجلين</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <h1 class="section-lg-title">محتويات الكورس</h1>
+                <div class="accordion accordion-flush" id="accordion-1">
+                    <div class="accordion-item border mb-3 rounded-8">
+                      <h2 class="accordion-header" id="flush-1">
+                        <div class="accordion-button pointer collapsed bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">مقدمة الكورس</div>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="flush-collapse-1" aria-labelledby="flush-1" data-bs-parent="#accordion-1">
+                        <div class="accordion-body accordion-body-scroll p-0">
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>مقدمة</span><span class="align-self-center">00:03:00</span></h6>
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>مقدمة</span><span class="align-self-center">00:03:00</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-8">
+                      <h2 class="accordion-header" id="flush-2">
+                        <div class="accordion-button pointer collapsed bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">اساليب تسويق المنتجات</div>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="flush-collapse-2" aria-labelledby="flush-2" data-bs-parent="#accordion-1">
+                        <div class="accordion-body accordion-body-scroll p-0">
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>اسلوب التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>اسلوب التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-8">
+                      <h2 class="accordion-header" id="flush-3">
+                        <div class="accordion-button pointer collapsed bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">اساليب تسويق المنتجات</div>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="flush-collapse-3" aria-labelledby="flush-3" data-bs-parent="#accordion-1">
+                        <div class="accordion-body accordion-body-scroll p-0">
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>اسلوب التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>اسلوب التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-8">
+                      <h2 class="accordion-header" id="flush-4">
+                        <div class="accordion-button pointer collapsed bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4">استراتيجيات تسويق المنتجات</div>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="flush-collapse-4" aria-labelledby="flush-4" data-bs-parent="#accordion-1">
+                        <div class="accordion-body accordion-body-scroll p-0">
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>استراتيجية التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>استراتيجية التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border mb-3 rounded-8">
+                      <h2 class="accordion-header" id="flush-5">
+                        <div class="accordion-button pointer collapsed bg-transparent border-0" data-bs-toggle="collapse" data-bs-target="#flush-collapse-5" aria-expanded="false" aria-controls="flush-collapse-5">استراتيجيات تسويق المنتجات</div>
+                      </h2>
+                      <div class="accordion-collapse collapse" id="flush-collapse-5" aria-labelledby="flush-5" data-bs-parent="#accordion-1">
+                        <div class="accordion-body accordion-body-scroll p-0">
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>استراتيجية التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                          <h6 class="d-flex border-top text-muted mb-0 justify-content-between p-3"><span class="align-self-center"><i class="fab fa-youtube me-2"></i>استراتيجية التسويق</span><span class="align-self-center">00:03:00</span></h6>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <h1 class="section-lg-title">مقدم الكورس
+                  <div class="team mt-3">
+                    <div class="team-div text-start position-static">
+                      <div class="d-flex">
+                        <div class="me-3">
+                          <div class="text-center" style="width:100px"><img class="img-fluid" src="./images/team/team.jpg" alt="team"></div>
+                        </div>
+                        <div>
+                          <h5 class="mb-2 mt-0">مارك أنتوني</h5>
+                          <div class="team-reviews">
+                            <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 half"></i></span></div>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <div class="text-start"><span class="d-block"><i class="fas fa-users me-2 m-color-text "></i>19 طالب</span><span class="d-block"><i class="fas fa-graduation-cap  me-2 m-color-text"></i>45 كورس</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </h1>
+              </div>
+              <div class="mb-4 students-reviews">
+                <h1 class="section-lg-title">اراء الطلاب</h1>
+                <!-- reviews-->
+                <div class="tutor-course-reviews-wrap">
+                  <div class="tutor-course-student-rating-wrap">
+                    <div class="course-avg-rating-wrap">
+                      <div class="tutor-row tutor-align-items-center">
+                        <div class="tutor-col-auto">
+                          <!-- reviews avg-->
+                          <p class="course-avg-rating">5.0</p>
+                          <div class="tutor-star-rating-group"><i class="mbi mbi-star2 full" data-rating-value="1"></i><i class="mbi mbi-star2 full" data-rating-value="2"></i><i class="mbi mbi-star2 full" data-rating-value="3"></i><i class="mbi mbi-star2 full" data-rating-value="4"></i><i class="mbi mbi-star2 full" data-rating-value="5"></i></div>
+                          <p class="tutor-course-avg-rating-total"> كل التقيمات<span> 2</span></p>
+                        </div>
+                        <div class="tutor-col">
+                          <div class="course-ratings-count-meter-wrap">
+                            <div class="course-rating-meter">
+                              <div class="rating-meter-col"><i class="mbi mbi-star2 full"></i></div>
+                              <div class="rating-meter-col">5</div>
+                              <div class="rating-meter-col rating-meter-bar-wrap">
+                                <div class="rating-meter-bar">
+                                  <div class="rating-meter-fill-bar" style="width: 100%;"></div>
+                                </div>
+                              </div>
+                              <div class="rating-meter-col rating-text-col">2 تقيم</div>
+                            </div>
+                            <div class="course-rating-meter">
+                              <div class="rating-meter-col"><i class="mbi mbi-star2 full"></i></div>
+                              <div class="rating-meter-col">4</div>
+                              <div class="rating-meter-col rating-meter-bar-wrap">
+                                <div class="rating-meter-bar">
+                                  <div class="rating-meter-fill-bar" style="width: 0%;"></div>
+                                </div>
+                              </div>
+                              <div class="rating-meter-col rating-text-col">0 تقيم</div>
+                            </div>
+                            <div class="course-rating-meter">
+                              <div class="rating-meter-col"><i class="mbi mbi-star2 full"></i></div>
+                              <div class="rating-meter-col">3</div>
+                              <div class="rating-meter-col rating-meter-bar-wrap">
+                                <div class="rating-meter-bar">
+                                  <div class="rating-meter-fill-bar" style="width: 0%;"></div>
+                                </div>
+                              </div>
+                              <div class="rating-meter-col rating-text-col">0 تقيم</div>
+                            </div>
+                            <div class="course-rating-meter">
+                              <div class="rating-meter-col"><i class="mbi mbi-star2 full"></i></div>
+                              <div class="rating-meter-col">2</div>
+                              <div class="rating-meter-col rating-meter-bar-wrap">
+                                <div class="rating-meter-bar">
+                                  <div class="rating-meter-fill-bar" style="width: 0%;"></div>
+                                </div>
+                              </div>
+                              <div class="rating-meter-col rating-text-col">0 تقيم</div>
+                            </div>
+                            <div class="course-rating-meter">
+                              <div class="rating-meter-col"><i class="mbi mbi-star2 full"></i></div>
+                              <div class="rating-meter-col">1</div>
+                              <div class="rating-meter-col rating-meter-bar-wrap">
+                                <div class="rating-meter-bar">
+                                  <div class="rating-meter-fill-bar" style="width: 0%;"></div>
+                                </div>
+                              </div>
+                              <div class="rating-meter-col rating-text-col">0 تقيم</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tutor-course-reviews-list">
+                    <!-- reviews-list-->
+                    <div class="tutor-review-individual-item">
+                      <div class="review-left">
+                        <div class="review-avatar">
+                          <!-- avatar--><img class="img-fluid" src="./images/team/team.jpg" alt="team">
+                        </div>
+                        <div class="tutor-review-user-info">
+                          <div class="review-time-name">
+                            <!-- name-->
+                            <p>علي محمد</p>
+                            <!-- date-->
+                            <p class="review-meta">12/1/2022</p>
+                          </div>
+                          <!-- rating stars-->
+                          <div class="individual-review-rating-wrap">
+                            <div class="tutor-star-rating-group"><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- review content-->
+                      <div class="review-content review-right">
+                        <p>ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط. ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.</p>
+                      </div>
+                    </div>
+                    <div class="tutor-review-individual-item">
+                      <div class="review-left">
+                        <div class="review-avatar">
+                          <!-- avatar--><img class="img-fluid" src="./images/team/team.jpg" alt="team">
+                        </div>
+                        <div class="tutor-review-user-info">
+                          <div class="review-time-name">
+                            <!-- name-->
+                            <p>علي محمد</p>
+                            <!-- date-->
+                            <p class="review-meta">12/1/2022</p>
+                          </div>
+                          <!-- rating stars-->
+                          <div class="individual-review-rating-wrap">
+                            <div class="tutor-star-rating-group"><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- review content-->
+                      <div class="review-content review-right">
+                        <p>ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط. ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.</p>
+                      </div>
+                    </div>
+                    <div class="tutor-review-individual-item">
+                      <div class="review-left">
+                        <div class="review-avatar">
+                          <!-- avatar--><img class="img-fluid" src="./images/team/team.jpg" alt="team">
+                        </div>
+                        <div class="tutor-review-user-info">
+                          <div class="review-time-name">
+                            <!-- name-->
+                            <p>علي محمد</p>
+                            <!-- date-->
+                            <p class="review-meta">12/1/2022</p>
+                          </div>
+                          <!-- rating stars-->
+                          <div class="individual-review-rating-wrap">
+                            <div class="tutor-star-rating-group"><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- review content-->
+                      <div class="review-content review-right">
+                        <p>ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط. ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.</p>
+                      </div>
+                    </div>
+                    <div class="tutor-review-individual-item">
+                      <div class="review-left">
+                        <div class="review-avatar">
+                          <!-- avatar--><img class="img-fluid" src="./images/team/team.jpg" alt="team">
+                        </div>
+                        <div class="tutor-review-user-info">
+                          <div class="review-time-name">
+                            <!-- name-->
+                            <p>علي محمد</p>
+                            <!-- date-->
+                            <p class="review-meta">12/1/2022</p>
+                          </div>
+                          <!-- rating stars-->
+                          <div class="individual-review-rating-wrap">
+                            <div class="tutor-star-rating-group"><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i><i class="mbi mbi-star2 full"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- review content-->
+                      <div class="review-content review-right">
+                        <p>ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط. ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h1 class="section-lg-title">كورسات مشابهة</h1>
+                <div class="row mb-4">
+                  <!-- course-->
+                  <div class="col-6 mb-md-4 mb-3">
+                      <!-- course-->
+                      <div class="course">
+                        <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid" src="./images/course/2.jpg" alt=""></a>
+                        <div class="course-info">
+                          <!-- course price--><span class="course-price">150 رس</span>
+                          <!-- course title-->
+                          <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                          <!-- course reviews-->
+                          <div class="course-reviews">
+                            <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div><span class="number">(4 مراجعات)</span>
+                          </div>
+                          <hr>
+                          <!-- icons-->
+                          <div class="d-flex justify-content-between icons">
+                            <div><span>0</span><i class="mbi mbi-user"></i></div>
+                            <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- course-->
+                  <div class="col-6 mb-md-4 mb-3">
+                      <!-- course-->
+                      <div class="course">
+                        <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid" src="./images/course/2.jpg" alt=""></a>
+                        <div class="course-info">
+                          <!-- course price--><span class="course-price">150 رس</span>
+                          <!-- course title-->
+                          <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                          <!-- course reviews-->
+                          <div class="course-reviews">
+                            <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div><span class="number">(4 مراجعات)</span>
+                          </div>
+                          <hr>
+                          <!-- icons-->
+                          <div class="d-flex justify-content-between icons">
+                            <div><span>0</span><i class="mbi mbi-user"></i></div>
+                            <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- course-->
+                  <div class="col-6 mb-md-4 mb-3">
+                      <!-- course-->
+                      <div class="course">
+                        <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid" src="./images/course/2.jpg" alt=""></a>
+                        <div class="course-info">
+                          <!-- course price--><span class="course-price">150 رس</span>
+                          <!-- course title-->
+                          <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                          <!-- course reviews-->
+                          <div class="course-reviews">
+                            <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div><span class="number">(4 مراجعات)</span>
+                          </div>
+                          <hr>
+                          <!-- icons-->
+                          <div class="d-flex justify-content-between icons">
+                            <div><span>0</span><i class="mbi mbi-user"></i></div>
+                            <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- course-->
+                  <div class="col-6 mb-md-4 mb-3">
+                      <!-- course-->
+                      <div class="course">
+                        <!-- img course--><a class="img-course" href="course.html"><img class="img-fluid" src="./images/course/2.jpg" alt=""></a>
+                        <div class="course-info">
+                          <!-- course price--><span class="course-price">150 رس</span>
+                          <!-- course title-->
+                          <h4 class="course-title"><a href="course.html">التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات</a></h4>
+                          <!-- course reviews-->
+                          <div class="course-reviews">
+                            <div class="d-inline"><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star2 full"></i></span><span><i class="mbi mbi-star-outline half"></i></span></div><span class="number">(4 مراجعات)</span>
+                          </div>
+                          <hr>
+                          <!-- icons-->
+                          <div class="d-flex justify-content-between icons">
+                            <div><span>0</span><i class="mbi mbi-user"></i></div>
+                            <div><span>22h 30m</span><i class="mbi mbi-clock3"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div><a class="section-link" href="courses.html">تصفح جميع الدورات</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white">
+      <!-- footer main-->
+      <div class="footer-main pt-lg-0 pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-3 col-lg-4">
+              <div class="mb-3 footer-contact">
+                <div class="title"><img class="img-fluid" src="./images/logo.png" alt="logo"></div>
+                <div class="textwidget">
+                  <p>نحن نقدم دورات عالية الجودة عبر الإنترنت لمدة عشر سنوات تقريبًا. لدينا جميع المدربين خبراء وذوي خبرة عالية. نحن نقدم جميع أنواع المواد الدراسية لطلابنا</p>
+                </div>
+                <div class="title mt-1"> تابعنا</div>
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="list-group-item border-0 me-2"><a class="text-decoration-none s-color-text-hover" href="#"><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 mb-3 col-md-3 col-lg-2 col-sm-4">
+              <div>
+                <div class="title"><span>التصنيفات</span></div>
+                <div class="list">
+                  <ul class="list-unstyled">
+                    <li><a href="#">اعمال</a></li>
+                    <li><a href="#">تصميم</a></li>
+                    <li><a href="#">تطوير</a></li>
+                    <li><a href="#">تسويق</a></li>
+                    <li><a href="#">التصوير</a></li>
+                    <li><a href="#">البرمجة</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3 col-md-5 col-lg-3 col-sm-8">
+              <div>
+                <div class="title"><span>المشاركات الاخيرة</span></div>
+                <div class="list">
+                  <ul class="list-unstyled">
+                    <li class="d-flex last-nows mb-3"><span class="me-3 last-nows-span-image"><img class="img-fluid" src="./images/footer/news.png" alt=""></span><span><a href="#">تعلم تطوير تطبيقات الويب من الخبراء</a><span>أبريل 1, 2021</span></span></li>
+                    <li class="d-flex last-nows mb-3"><span class="me-3 last-nows-span-image"><img class="img-fluid" src="./images/footer/news.png" alt=""></span><span><a href="#">تعلم تطوير تطبيقات الويب من الخبراء</a><span>أبريل 1, 2021</span></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3 col-md-4 col-lg-3">
+              <div>
+                <div class="title"><span>اتصل بنا</span></div>
+                <div class="list contact">
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><i class="me-2 fas fa-map-marker-alt"></i><span>شارع أوفال ، ماونت فيو ، لندن ، المملكة المتحدة</span></li>
+                    <li class="mb-2"><i class="me-2 fas fa-envelope"></i><span>support@example.com</span></li>
+                    <li class="mb-2"><i class="me-2 fas fa-mobile-alt"></i><span>1234567890</span></li>
+                    <li>لا تتردد في الاتصال بنا</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center border-top mt-4 pt-4">
+              <p>جميع الحقوق محفوظة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer main-->
+    </footer>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="./js/slick.js"></script>
+    <!--  main script-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

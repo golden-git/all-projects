@@ -1,0 +1,168 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("عرض منتجات القسم")
+  body.bg-white
+    .container.py-lg-5.py-3
+      .row
+        .col-12.mb-3.text-center
+          a(href="index.html")
+            img.img-fluid(src="./images/logo.png", alt="logo")
+        .col-12.mb-3
+          a.text-dark(href="cart.html")
+            i.mbi.mbi-ios-arrow-right.me-2
+            | العودة إلى عربة التسوق
+        .col-lg-4
+          .g-color-bg.p-3
+            h5.px-3 ملخص الطلب
+            .accordion#accordionExample
+              .accordion-item
+                h2.accordion-header#headingThree
+                  button.accordion-button.border-0(type="button", data-bs-toggle="collapse", data-bs-target="#collapseThree", aria-expanded="true", aria-controls="collapseThree").
+                      3 منتجات في سلة التسوق
+                  #collapseThree.accordion-collapse.show.border-0.collapse(aria-labelledby="headingThree", data-bs-parent="#accordionExample")
+                    .accordion-body
+                        - for (x = 1; x <= 3; x++)
+                          .row.border-bottom.py-3
+                            .my-auto.col-lg-12
+                              .d-flex.justify-content-lg-between
+                                img.align-self-start.img-fluid.me-3(src="./images/products/"+x+".webp", alt="explore slider img", width="64", height="64")
+                                .row.align-self-start
+                                  .col-md-6
+                                    p.h6 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                                    p.h6.fw-bold العدد  2
+                                  .col-md-6
+                                    span.h6 749.00 SAR
+        .col-lg-8.shoping
+          .row
+            .col-md-6.mb-5
+              .position-relative.m-4.text-center
+                .progress(style="height: 4px;")
+                  .progress-bar(role="progressbar", style="width: 50%;", aria-valuenow="50", aria-valuemin="0", aria-valuemax="100")
+                button.position-absolute.top-0.translate-middle.btn.btn-sm.btn-primary.rounded-pill(type="button", style="width: 2rem ; right: 10%; height:2rem;") 1
+                span.position-absolute.translate-middle(style=" right: 10%; top: 30px") الشحن
+                button.position-absolute.top-0.translate-middle.btn.btn-sm.btn-secondary.rounded-pill(type="button", style="width: 2rem; height:2rem;; left:10%") 2
+                span.position-absolute.translate-middle(style=" top: 30px; left:10%") الدفع
+            .col-12
+              h5  عنوان توصيل الطلب
+            .col-12.mb-3
+              label.form-label البريد الالكتروني
+              input.form-control(type="email")
+              small يمكنك إنشاء حساب بعد إنهاء طلبك.
+            .col-md-6.mb-3
+              label.form-label رقم الهاتف
+              input.form-control(type="phone")
+            .col-md-6.mb-3
+              label.form-label الأسم الأول
+              input.form-control(type="text")
+            .col-md-6.mb-3
+              label.form-label أسم العائلة
+              input.form-control(type="text")
+            .col-md-6.mb-3
+              label.form-label العنوان
+              input.form-control(type="text")
+            .col-md-6.mb-3
+              label.form-label المدينة
+              select.form-select
+                - for (x=1; x<=10; x++)
+                  option المدينة #{x}
+            .col-md-6.mb-3
+              label.form-label البلد
+              input.form-control(type="text")
+            .col-md-12.my-3
+              h5.my-4 طرق الشحن والتوصيل
+              .form-check
+                input.form-check-input#shoptype(type="radio")
+                label.form-check-label(for="shoptype") SAR 30.00		خدمة التوصيل محلياً
+            .col-12.text-end
+              button.show-pay.btn.m-color-bg.s-color-bg-hover.w-color-text-hover.py-2.px-3 التالي
+
+        .col-lg-8.pay(style="display: none")
+          .row
+            .col-md-6.mb-5
+              .position-relative.m-4.text-center
+                .progress(style="height: 4px;")
+                  .progress-bar(role="progressbar", style="width: 100%;", aria-valuenow="100", aria-valuemin="0", aria-valuemax="100")
+                button.show-pay.position-absolute.top-0.translate-middle.btn.btn-sm.btn-primary.rounded-pill(type="button", style="width: 2rem ; right: 10%; height:2rem;") 1
+                span.position-absolute.translate-middle(style=" right: 10%; top: 30px") الشحن
+                button.position-absolute.top-0.translate-middle.btn.btn-sm.btn-primary.rounded-pill(type="button", style="width: 2rem; height:2rem;; left:10%") 2
+                span.position-absolute.translate-middle(style=" top: 30px; left:10%") الدفع
+            .col-lg-7
+              .accordion#accordion2
+                .accordion-item
+                  h2.accordion-header#heading1
+                    button.accordion-button.border-0.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse1", aria-expanded="false", aria-controls="collapse1").
+                      هل لديك كود للخصم أو رمز بطاقة الهدية؟
+                  #collapse1.accordion-collapse.border-0.collapse(aria-labelledby="heading1", data-bs-parent="#accordion2")
+                    .accordion-body
+                        h6 استعمل كود الخصم
+                        form.row.g-3
+                          .col-9
+                            input.form-control#des(type="text", value="ادخل كود الخصم هنا")
+                          .col-auto
+                            button.btn.s-color-bg.m-color-bg-hover.text-white(type="submit") تطبيق
+            .col-md-8.my-3
+              h5.my-4 طريقة الدفع
+              .form-check.mb-2
+                input.form-check-input#shoptype(type="radio", checked)
+                label.form-check-label(for="shoptype")
+                  | بطاقة الإئتمان
+                  img(src="./images/icons/checkout-payment-methods-icons.webp", alt, width="153", height="20")
+              .row.mb-2
+                .pe-0.col
+                  input.form-control.rounded-0(type="numer", placeholder="MM/YY")
+                .px-0.col
+                  input.form-control.rounded-0(type="numer", placeholder="CVV")
+                .ps-0.col-8
+                  input.form-control.rounded-0(type="numer", placeholder="Card number")
+              .form-check
+                input.form-check-input#sameloc(type="checkbox", name="samelocation", checked)
+                label.form-check-label(for="sameloc") عنوان الفواتير والشحن هو نفسه
+              .row.otherlocation(style="display:none")
+                .col-md-6.mb-3
+                  label.form-label رقم الهاتف
+                  input.form-control(type="phone")
+                .col-md-6.mb-3
+                  label.form-label الأسم الأول
+                  input.form-control(type="text")
+                .col-md-6.mb-3
+                  label.form-label أسم العائلة
+                  input.form-control(type="text")
+                .col-md-6.mb-3
+                  label.form-label العنوان
+                  input.form-control(type="text")
+                .col-md-6.mb-3
+                  label.form-label المدينة
+                  select.form-select
+                    - for (x=1; x<=10; x++)
+                      option المدينة #{x}
+                .col-md-6.mb-3
+                  label.form-label البلد
+                  input.form-control(type="text")
+              .accordion#accordion3
+                .accordion-item
+                  h2.accordion-header#heading3
+                    button.accordion-button.border-0.collapsed(type="button", data-bs-toggle="collapse", data-bs-target="#collapse3", aria-expanded="false", aria-controls="collapse3").
+                      هل لديك أي تعليقات بخصوص الطلب؟
+                  #collapse3.accordion-collapse.border-0.collapse(aria-labelledby="heading3", data-bs-parent="#accordion3")
+                    .accordion-body
+                        form
+                          textarea(placeholder="Enter your comment...").form-control
+
+            .col-12.text-end
+              a.btn.m-color-bg.s-color-bg-hover.w-color-text-hover.py-3(href="success.html") أتمم عملية الدفع
+
+    .container.footer-checkout
+      hr
+      .py-3
+        .row.align-items-center
+          .footer-copyright.col-md-3.col-sm-12#cko-ssl-footer
+            img(src="./images/icons/ssl-arabic.webp")
+          .footer-copyright.col-md-6.col-sm-12#cko-payment-footer
+            ul.list-unstyled
+              li.d-inline.title ادفع بأمان بإستخدام:
+              li.d-inline
+                img(src="./images/icons/checkout-payment-methods-icons.webp", alt, width="153", height="20")
+          .footer-copyright.col-md-3.col-sm-12#cko-copyright-footer
+            .text-copyright-new ® صفا. جميع الحقوق محفوظة
+    include ./includes/scripts

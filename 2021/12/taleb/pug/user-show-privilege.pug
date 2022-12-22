@@ -1,0 +1,214 @@
+extends components/layout.pug
+block title
+  |  عرض صلاحيات
+block main
+  +breadcrumb-in-1(' عرض صلاحيات محمد علي  ', ' اضافة صلاحية محمد علي  ', 'الرئسية', 'index.html')
+
+
+
+
+  each sys, sysindex in ["الاعدادات", "الصلاحيات", "لموظفين", "المخازن", "الحسابات"]
+    div.accordion(id="accordion"+sysindex)
+      .card
+        .card-header.border-0(id="heading"+sysindex)
+          h5.mb-0
+            button.btn.btn-link.collapsed(type="button", data-toggle="collapse", data-target="#collapse"+sysindex, aria-expanded="false", aria-controls="collapse"+sysindex).
+
+              نظام #{sys}
+
+        .collapse(id="collapse"+sysindex, aria-labelledby="heading"+sysindex, data-parent="#accordion"+sysindex)
+          .card-body
+            table.table.table-bordered.table-centered.table-responsive
+              thead
+                tr
+                  th #
+                  th.text-right
+                    label
+                      input(type="checkbox")
+                      br
+                      span المجموعة
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span انشاء
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span قراءة
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span تعديل
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span حذف
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span طباعه
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span إرسال
+                  th
+                    label
+                      input(type="checkbox")
+                      br
+                      span لوحة التحكم
+              tbody
+                tr
+                  th 1
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      | الحضور | #{sys}
+
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 2
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |   الاقسام | #{sys}
+
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 3
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  الموظفين | #{sys}
+
+                  td
+                    input(type="checkbox")
+                  td
+                    inputs(type="checkbox")
+                  td
+                    inputs(type="checkbox")
+                  td
+                    inputs(type="checkbox")
+                  td
+                    inputs(type="checkbox")
+                  td -
+                  td
+                    input(type="checkbox")
+                tr
+                  th 4
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  الخطوط | #{sys}
+
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 5
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  الوظائف | #{sys}
+
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 6
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  العهد | #{sys}
+
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 7
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  الاجازات | #{sys}
+
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox", checked)
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                tr
+                  th 8
+                  td.text-right
+                    label
+                      input(type="checkbox")
+                      |  الهواتف الخاصة | #{sys}
+
+                  td -
+                  td
+                    input(type="checkbox")
+                  td -
+                  td -
+                  td -
+                  td -
+                  td -

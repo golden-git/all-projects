@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4c4355">
+    <link rel="icon" href="" type="image/x-icon">
+    <meta name="title" content="stucy">
+    <meta name=" description" content="stucy website description">
+    <meta name="keywords" content="job, work">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="stucy-url">
+    <meta property="og:title" content="stucy">
+    <meta property=" og:description" content="stucy website description">
+    <meta property="og:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="stucy-url">
+    <meta property="twitter:title" content="stucy">
+    <meta property=" twitter:description" content="stucy website description">
+    <meta property="twitter:image" content="">
+
+    <!-- Styles -->
+    <title>stucy</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+    integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/skitter.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/intlTelInput.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="">
+
+    <header class="main-header text-center">
+        <!-- navbar -->
+         <nav class="navbar main-navbar mx-auto navbar-expand-md fixed-top bg-transparent navbar-light">
+    
+                <div class="container">
+                    <div class="  px-2  ">
+                        <a class=" text-decoration-none text-white h4" href="index.html">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler border-0 pt-2" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="{{ __('Toggle navigation') }}">
+                        <i class="fas text-white h6 fa-stream"></i>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav text-center ml-auto text-capitalize ">
+                            <li class="nav-item collapse-navbar py-2 px-2 h6">
+                                <a class="nav-link main-color-dark-hover text-white" href="index.html">
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="nav-item collapse-navbar py-2 px-2 h6 dropdown">
+                                <a class="nav-link main-color-dark-hover text-white dropdown-toggle" href="#"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    الصفحات
+                                </a>
+                                <div class="dropdown-menu dark-light-color-bg border-0" aria-labelledby="navbarDropdown">
+    
+                                    <a class="dropdown-item text-white main-color-text-hover" href="about.html">عنا</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="portfolio.html">الاعمال</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="portfolio-detail.html">تفاصيل العمل</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services.html">الخدمات</a><a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">تفاصيل الخدمة</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="contact.html">تواصل معنا</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="404.html">404</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="blog.html">المدونة</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="blog-detail.html">تفاصيل المدونة</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="login.html">حسابي</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="terms.html">الشروط</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="team.html">الفريق</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="privacy-policy.html">الخصوصية</a>
+                                </div>
+                            </li>
+                            <li class="nav-item collapse-navbar py-2 px-2 h6 dropdown">
+                                <a class="nav-link main-color-dark-hover text-white dropdown-toggle" href="#"
+                                    id="shop" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    الخدمات
+                                </a>
+                                <div class="dropdown-menu dark-light-color-bg border-0" aria-labelledby="shop">
+    
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">web dev</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">web design</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">seo</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">smm services</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">hosting</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">services 1</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="services-detail.html">services 2</a>
+                                     
+                                </div>
+                            </li>
+                            <li class="nav-item collapse-navbar py-2 px-2 h6 dropdown">
+                                <a class="nav-link main-color-dark-hover text-white dropdown-toggle" href="#"
+                                    id="shop" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    التسوق
+                                </a>
+                                <div class="dropdown-menu dark-light-color-bg border-0" aria-labelledby="shop">
+    
+                                    <a class="dropdown-item text-white main-color-text-hover" href="shop.html">تسوق</a>
+                                    <a class="dropdown-item text-white main-color-text-hover" href="product.html">المنتج</a>
+                                     
+                                </div>
+                            </li>
+                            <li class="nav-item collapse-navbar py-2 px-2 h6">
+                                <a class="nav-link main-color-dark-hover text-white" href="contact.html">
+                                    تواصل معنا
+                                </a>
+                            </li>
+
+                            <li class="nav-item collapse-navbar py-2 px-2 h6">
+                                <a class="nav-link main-color-dark-hover text-white" href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item collapse-navbar py-2 px-2 h6">
+                                <a class="nav-link main-color-dark-hover text-white" href="../stucy-en/index.html">
+                                    EN
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!-- navbar -->
+        <h1 class="title-font text-white mb-lg-5  text-capitalize">تواصل معنا</h1>
+        <div class="ssc-breadcrumbs kc-elm kc-css-733596 ">
+            <a class="text-white" href="index.html">الرئيسية</a>
+            <span class="main-color-text mx-1">■</span>
+            <span class="text-white-50">تواصل معنا</span>
+        </div>
+    </header>
+
+     <!-- line-up -->
+     <div class="text-center py-lg-5 py-3">
+        <svg width="5" height="80" viewBox="0 0 5 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M2 80H3V0H2V80Z" fill="black"></path>
+                <path d="M0 5H5V0H0V5Z" fill="black"></path>
+            </g>
+        </svg>
+    </div>
+    <!-- line-up -->
+
+    <main class=" ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="media">
+                        <svg version="1.1" class="align-self-start mr-3" width="60" height="60"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 508 508"
+                            style="enable-background:new 0 0 508 508;"
+                            xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path fill="var(--main-color)" d="M254,0C113.9,0,0,113.9,0,254s113.9,254,254,254c34.1,0,67.2-6.6,98.3-19.7c14.9-6.3,24.6-21,24.6-37.6v-30.4
+                                        c1.6-1.4,16.3-15.9,16.3-15.9c12.8-12.8,12.8-33.6,0-46.3L370,334.9c-12.4-12.4-34-12.4-46.3,0l-21.4,21.4
+                                        c-7.3,7.3-19.3,7.3-26.6,0L163.2,243.9c-7.3-7.3-7.3-19.3,0-26.6l21.4-21.4c6.2-6.2,9.6-14.4,9.6-23.2c0-8.8-3.4-17-9.6-23.2
+                                        l-34.8-34.8c-12.8-12.8-33.6-12.8-46.3,0L92,126.3c-47.9,47.9-47.9,125.9,0,173.8L207.9,416c24,24,55.4,35.9,86.9,35.9
+                                        c22.9,0,45.8-6.4,65.8-19.1v17.8c0,9.9-5.7,18.8-14.5,22.5c-29.1,12.3-60.1,18.5-92,18.5C123,491.6,16.4,385,16.4,254
+                                        S123,16.4,254,16.4S491.6,123,491.6,254H508C508,113.9,394.1,0,254,0z M358.5,346.5l23.2,23.2c6.4,6.4,6.4,16.8,0,23.2l-46.4-46.4
+                                        C341.5,340.3,352.3,340.3,358.5,346.5z M126.7,121.5c4.2,0,8.4,1.6,11.6,4.8l34.8,34.8c3.1,3.1,4.8,7.2,4.8,11.6
+                                        s-1.7,8.5-4.8,11.6l-57.9-57.9C118.4,123.1,122.5,121.5,126.7,121.5z M219.4,404.4L103.6,288.6C62,247,62,179.5,103.6,137.9
+                                        l57.9,57.9l-9.9,9.9c-13.7,13.7-13.7,36.1,0,49.8L264,367.9c13.7,13.7,36.1,13.7,49.8,0l9.9-9.9l46.4,46.4
+                                        C328.5,446,261,446,219.4,404.4z" />
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="media-body">
+                          <h6 class="text-muted mt-0">اتصل بنا</h6>
+                          <p class="text-dark font-weight-bolder">+1 800-310-1010<br />+1 800-310-1515</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="media">
+                        <svg version="1.1"  class="align-self-start mr-3" width="60" height="60"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px" y="0px" viewBox="0 0 60 60"
+                                style="enable-background:new 0 0 60 60;"
+                                xml:space="preserve">
+                                <g>
+                                <path  fill="var(--main-color)"  d="M30,26c3.86,0,7-3.141,7-7s-3.14-7-7-7s-7,3.141-7,7S26.14,26,30,26z M30,14c2.757,0,5,2.243,5,5s-2.243,5-5,5
+                                s-5-2.243-5-5S27.243,14,30,14z" />
+                                <path fill="var(--main-color)"  d="M29.823,54.757L45.164,32.6c5.754-7.671,4.922-20.28-1.781-26.982C39.761,1.995,34.945,0,29.823,0
+                                s-9.938,1.995-13.56,5.617c-6.703,6.702-7.535,19.311-1.804,26.952L29.823,54.757z M17.677,7.031C20.922,3.787,25.235,2,29.823,2
+                                s8.901,1.787,12.146,5.031c6.05,6.049,6.795,17.437,1.573,24.399L29.823,51.243L16.082,31.4
+                                C10.882,24.468,11.628,13.08,17.677,7.031z" />
+                                <path  fill="var(--main-color)"  d="M42.117,43.007c-0.55-0.067-1.046,0.327-1.11,0.876s0.328,1.046,0.876,1.11C52.399,46.231,58,49.567,58,51.5
+                                c0,2.714-10.652,6.5-28,6.5S2,54.214,2,51.5c0-1.933,5.601-5.269,16.117-6.507c0.548-0.064,0.94-0.562,0.876-1.11
+                                c-0.065-0.549-0.561-0.945-1.11-0.876C7.354,44.247,0,47.739,0,51.5C0,55.724,10.305,60,30,60s30-4.276,30-8.5
+                                C60,47.739,52.646,44.247,42.117,43.007z" />
+                                </g>
+                                </svg>
+                        <div class="media-body">
+                          <h6 class="text-muted mt-0">موقعنا</h6>
+                          <p class="text-dark font-weight-bolder">الرياض<br />س 10014,</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="media">
+                        <svg enable-background="new 0 0 512 512"   class="align-self-start mr-3" width="60" height="60"
+                        height="512" viewBox="0 0 512 512"
+                        width="512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path  fill="var(--main-color)" 
+                                d="m247.986 408.822h-216.438c-9.125 0-16.548-7.423-16.548-16.548v-273.064h385.807v120.756c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-168.337c0-17.396-14.152-31.548-31.548-31.548h-8.533v-8.532c0-12.976-10.557-23.532-23.532-23.532s-23.532 10.556-23.532 23.532v8.532h-216.953c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h216.952v8.533c0 12.976 10.557 23.532 23.532 23.532s23.532-10.557 23.532-23.532v-8.533h8.533c9.125 0 16.548 7.423 16.548 16.548v32.581h-385.806v-32.581c0-9.125 7.423-16.548 16.548-16.548h8.532v8.533c0 12.976 10.557 23.532 23.532 23.532s23.532-10.557 23.532-23.532v-32.066c0-12.976-10.557-23.532-23.532-23.532s-23.531 10.556-23.531 23.532v8.532h-8.532c-17.397.001-31.549 14.153-31.549 31.549v320.646c0 17.396 14.152 31.548 31.548 31.548h216.438c4.142 0 7.5-3.357 7.5-7.5 0-4.142-3.358-7.501-7.5-7.501zm104.207-336.676c-4.705 0-8.532-3.828-8.532-8.532v-32.066c0-4.705 3.828-8.532 8.532-8.532s8.532 3.828 8.532 8.532v32.065c.001 4.704-3.827 8.533-8.532 8.533zm-297.112-40.598c0-4.705 3.828-8.532 8.532-8.532s8.532 3.828 8.532 8.532v32.065c0 4.704-3.828 8.532-8.532 8.532s-8.532-3.828-8.532-8.532z" />
+                            <path  fill="var(--main-color)" 
+                                d="m392.274 264.532c-66.017 0-119.726 53.709-119.726 119.726s53.709 119.726 119.726 119.726 119.726-53.709 119.726-119.726-53.708-119.726-119.726-119.726zm0 224.452c-57.746 0-104.726-46.98-104.726-104.726s46.98-104.726 104.726-104.726 104.726 46.98 104.726 104.726-46.979 104.726-104.726 104.726z" />
+                            <path  fill="var(--main-color)" 
+                                d="m471.535 357.838c-1.311-3.93-5.558-6.054-9.487-4.743l-50.996 16.999c-4.3-5.686-11.116-9.368-18.777-9.368-3.758 0-7.309.89-10.464 2.463l-40.346-40.347c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l40.346 40.347c-1.573 3.154-2.463 6.706-2.463 10.463 0 12.976 10.557 23.532 23.533 23.532 12.955 0 23.497-10.523 23.531-23.47l50.986-16.995c3.929-1.31 6.052-5.557 4.743-9.487zm-79.261 34.952c-4.705 0-8.533-3.827-8.533-8.532 0-4.704 3.828-8.532 8.533-8.532s8.532 3.828 8.532 8.532c.001 4.705-3.827 8.532-8.532 8.532z" />
+                            <path  fill="var(--main-color)" 
+                                d="m235.571 344.193c.982.432 2.006.636 3.014.636 2.884 0 5.635-1.674 6.87-4.484l66.843-152.059c1.02-2.319.799-4.997-.585-7.118s-3.747-3.4-6.28-3.4h-83.652c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h72.162l-62.219 141.542c-1.667 3.792.055 8.216 3.847 9.883z" />
+                            <path  fill="var(--main-color)" 
+                                d="m168.765 257.282c-24.202 34.58-38.655 53.504-46.419 63.671-8.966 11.74-10.832 14.183-9.366 18.949.791 2.569 2.771 4.551 5.434 5.439 1.008.336 2.981.995 31.65.995 11.368 0 26.937-.104 48.303-.372 4.142-.052 7.457-3.452 7.405-7.594s-3.485-7.439-7.594-7.405c-23.977.302-50.216.449-64.822.285.298-.392.603-.79.91-1.192 7.831-10.253 22.407-29.339 46.788-64.174 9-12.859 14.83-24.842 17.328-35.617.057-.246.102-.494.133-.744l.751-5.882c.041-.315.061-.633.061-.951 0-25.59-20.819-46.409-46.409-46.409-22.127 0-41.279 15.738-45.538 37.421-.798 4.064 1.85 8.006 5.914 8.805 4.063.798 8.006-1.85 8.805-5.914 2.881-14.667 15.842-25.313 30.819-25.313 17.168 0 31.163 13.846 31.406 30.957l-.638 4.995c-2.113 8.814-7.131 18.921-14.921 30.05z" />
+                        </g>
+                    </svg>
+                        <div class="media-body">
+                          <h6 class="text-muted mt-0">ساعات العمل</h6>
+                          <p class="text-dark font-weight-bolder">الاحد — الخميس:<br />8.00 am - 6.00 pm</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+ <!-- line down -->
+ <div class=" text-center py-lg-5 py-3">
+    <svg width="5" height="80" viewBox="0 0 5 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <path d="M2 0H3V80H2V0Z" fill="black"></path>
+            <path d="M0 75H5V80H0V75Z" fill="black"></path>
+        </g>
+    </svg>
+</div>
+<!-- line down -->
+
+        <!-- contact -->
+        <section class="contact">
+    
+            <div class="row mt-5 mx-0">
+                <div class="col-xl-6 text-left counter text-white">
+                    <div class="dark-light-color-bg">
+                        <div id="map2" style="height:775px"></div>
+                        <script>
+                            function initMap2() {
+                                // Styles a map in night mode.
+                                var map = new google.maps.Map(document.getElementById('map2'), {
+                                    center: {
+                                        lat: 40.674,
+                                        lng: -73.945
+                                    },
+                                    zoom: 12,
+                                    styles: [{
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#212121"
+                                            }]
+                                        },
+                                        {
+                                            "elementType": "labels.icon",
+                                            "stylers": [{
+                                                "visibility": "off"
+                                            }]
+                                        },
+                                        {
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#757575"
+                                            }]
+                                        },
+                                        {
+                                            "elementType": "labels.text.stroke",
+                                            "stylers": [{
+                                                "color": "#212121"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#757575"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "administrative.country",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#9e9e9e"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "administrative.land_parcel",
+                                            "stylers": [{
+                                                "visibility": "off"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "administrative.locality",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#bdbdbd"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "poi",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#757575"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#181818"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#616161"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "labels.text.stroke",
+                                            "stylers": [{
+                                                "color": "#1b1b1b"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [{
+                                                "color": "#2c2c2c"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#8a8a8a"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road.arterial",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#373737"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#3c3c3c"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road.highway.controlled_access",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#4e4e4e"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "road.local",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#616161"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "transit",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#757575"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "water",
+                                            "elementType": "geometry",
+                                            "stylers": [{
+                                                "color": "#171717"
+                                            }]
+                                        },
+                                        {
+                                            "featureType": "water",
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [{
+                                                "color": "#171717"
+                                            }]
+                                        }
+                                    ]
+                                });
+                                
+                                var beachMarker = new google.maps.Marker({
+                                    position: {
+                                        lat: 40.674,
+                                        lng: -73.945
+                                    },
+                                    map: map,
+                                    
+                                });
+                                var beachMarker2 = new google.maps.Marker({
+                                    position: {
+                                        lat: 40.627,
+                                        lng: -73.906
+                                    },
+                                    map: map,
+                                    icon: image
+                                });
+                            }
+                        </script>
+    
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJGtQbYjs914nYtcIV8EHEjwzAYO4KvQ0&callback=initMap2" ></script>
+
+                    </div>
+                </div>
+                <div class="col-xl-6 text-md-left text-center pt-lg-5 mt-lg-5 mt-4 pl-md-5">
+                    <div class="pl-md-5">
+                        <h2 class=" text-dark title-font text-capitalize">
+                            تواصل معنا
+                        </h2>
+                        <p class=" text-dark h5 mb-md-5 mb-3">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس 
+                        </p>
+    
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-8">
+    
+                                <form>
+    
+                                    <div class="form-group">
+                                        <input type="text" placeholder="الاسم"
+                                            class="form-control rounded-0 mb-md-4 mb-2 form-control-lg" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="البريد الالكتروني"
+                                            class="form-control rounded-0 mb-md-4 mb-2 form-control-lg" id="email"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" placeholder="الهاتف"
+                                            class="form-control d-block rounded-0 mb-md-4 mb-2 form-control-lg">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control rounded-0 mb-md-5 mb-2 form-control-lg"
+                                            placeholder="الرساله" rows="4" cols="4"></textarea>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn main-color-bg text-white btn-lg main-color-dark-hover rounded-0">ارسال رساله</button>
+                                </form>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <!-- line-up -->
+        <div class="text-center py-lg-5 py-3">
+            <svg width="5" height="80" viewBox="0 0 5 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path d="M2 80H3V0H2V80Z" fill="black"></path>
+                    <path d="M0 5H5V0H0V5Z" fill="black"></path>
+                </g>
+            </svg>
+        </div>
+        <!-- line-up -->
+
+        <section class="py-lg-5 py-md-3 py-2" style="background-image: url(./images/home/services.png); background-position: left; background-size: cover;">
+            <div class="container text-center py-lg-5 py-md-3 py-2">
+                <div class=" bg-white shadow-sm">
+                    <h2 class="text-dark mb-md-2 font-weight-bolder h1">النشرة البريدية</h2>
+                    <p class="mb-md-4 h5">هذا النص العربي هو مثال.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-md-8">
+                            <div class="input-group mb-3">
+     
+                                <input type="text" class="form-control border-right-0 form-control-lg" placeholder="بريدك الالكتروني">
+                                <div class="input-group-append ">
+                                  <span class="input-group-text  bg-white text-dark">
+                                    <i class="fas fa-paper-plane pr-2"></i>
+                                  </span>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+         
+    </main>
+
+    <!-- line down -->
+    <div class=" text-center py-lg-5 py-3">
+        <svg width="5" height="80" viewBox="0 0 5 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M2 0H3V80H2V0Z" fill="black"></path>
+                <path d="M0 75H5V80H0V75Z" fill="black"></path>
+            </g>
+        </svg>
+    </div>
+    <!-- line down -->
+
+    <!-- footer -->
+    <footer class="dark-light-color-bg pt-5">
+        <div class="container py-md-5 py-2">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-12 mb-xl-0 mb-3">
+                    <img src="./images/logo.png" class="mb-lg-4 mb-3" alt="">
+                    <p class=" text-white-50">
+                         النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                    </p>
+                    <div>
+                        <h6 class=" text-white mb-3 font-weight-bold">تابعنا: </h6>
+                        <a href="#" class="text-decoration-none main-color-text-hover text-white-50">
+                            <i class="fab h5 mr-3 fa-facebook-f"></i>
+
+                        </a>
+                        <a href="#" class="text-decoration-none main-color-text-hover text-white-50">
+                            <i class="fab h5 mr-3 fa-instagram"></i>
+
+                        </a>
+                        <a href="#" class="text-decoration-none main-color-text-hover text-white-50">
+                            <i class="fab h5 mr-3 fa-linkedin-in"></i>
+
+                        </a>
+                        <a href="#" class="text-decoration-none main-color-text-hover text-white-50">
+                            <i class="fab h5 mr-3 fa-twitter"></i>
+
+                        </a>
+                        <a href="#" class="text-decoration-none main-color-text-hover text-white-50">
+                            <i class="fab h5 mr-3 fa-youtube"></i>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 col-12 mb-xl-0 mb-3">
+                    <h5 class="text-white font-weight-bold mb-md-4 footer-title position-relative">اكتشف</h5>
+                    <p>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="index.html">الرئيسية</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="services.html">الخدمات</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="portfolio.html">الاعمال</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="/">العناصر</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="about.html">عنا</a>
+                    </p>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-12 mb-xl-0 mb-3">
+                    <h5 class="text-white font-weight-bold mb-md-4 footer-title position-relative">معلومات</h5>
+                    <p>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="contact.html">تواصل معنا</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="blog.html">المدونة</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="/">حريطة الموقع</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="terms.html">سياسة الاستخدام</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="privacy-policy.html">الخصوصية</a>
+                    </p>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-12 mb-xl-0 mb-3">
+                    <h5 class="text-white font-weight-bold mb-md-4 footer-title position-relative">المساعدة و الدعم</h5>
+                    <p>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="index.html">تواصل</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="faq.html">الاسئلة</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="#">رابط</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="privacy-policy.html">سياسة الاستخدام</a>
+                        <a class="text-white-50 main-color-text-hover text-decoration-none mb-2 d-block" href="contact.html">تواصل معنا</a>
+                    </p>
+                </div>
+                 
+            </div>
+        </div>
+        <section class="copy py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-md-0 mb-2 text-md-left text-center text-white-50">
+                        <p>© 2020 كل الحقوق محفوظة
+                            <a href="#" class="text-white main-color-text-hover ">golden</a>
+                            , theme 
+                            <a href="#" class="text-white main-color-text-hover ">stucy</a>
+                            صمم بواسطة
+                            <a href="#" class="text-white main-color-text-hover ">TEQ</a>.
+                        </p>
+                    </div>
+                    <div class="col-md-6 mb-md-0 text-md-right text-center">
+                        <div class="kc-elm kc-css-509832 kc-multi-icons-wrapper">
+                            <a href="#" target="_blank" title="visa" class="text-white-50 main-color-text-hover text-decoration-none mr-3">
+                            <span></span>
+                            <i class="fab h3 fa-cc-visa"></i>
+                        </a>
+                
+                            <a href="https://www.behance.net/secretlab/ " target="_blank" title="" class="text-white-50 main-color-text-hover text-decoration-none mr-3">
+                            <span></span>
+                            <i class="fab h3 fa-cc-mastercard"></i>
+                        </a>
+                
+                            <a href="https://www.deviantart.com/seopromo/" target="_blank" title="" class="text-white-50 main-color-text-hover text-decoration-none mr-3">
+                            <span></span>
+                            <i class="fab h3 fa-cc-paypal"></i>
+                        </a>
+                
+                            <a href="https://twitter.com/atiframe" target="_blank" title="" class="text-white-50 main-color-text-hover text-decoration-none mr-3">
+                            <span></span>
+                            <i class="fab h3 fa-cc-stripe"></i>
+                        </a>
+                
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer -->
+ 
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/poper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.skitter.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+    </script>
+</body>
+
+</html>

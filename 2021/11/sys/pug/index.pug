@@ -1,0 +1,60 @@
+extends components/layout.pug
+block title
+  | إحصاءات النظام
+block main
+  // content-header
+  .content-header
+    .container-fluid
+      .row.mb-2
+        .col-sm-12
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href="index.html").
+                الرئيسية
+            li.breadcrumb-item
+              span إحصاءات النظام
+        .col-sm-12
+          h1 إحصاءات النظام
+  .row
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-info
+          i.fas.fa-th-large
+        .info-box-content
+          span.info-box-text الفئات
+          span.info-box-number 10
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-success
+          i.fas.fa-minus
+        .info-box-content
+          span.info-box-text الاستقطاعات
+          span.info-box-number 5871
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-warning
+          i.fas.fa-users
+        .info-box-content
+          span.info-box-text الموظفين
+          span.info-box-number 720
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-primary
+          i.fas.fa-list
+        .info-box-content
+          span.info-box-text الدرجات الوظيفية
+          span.info-box-number 35
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-danger
+          i.fas.fa-language
+        .info-box-content
+          span.info-box-text اللغات
+          span.info-box-number 100
+    .col-md-4.col-sm-6.col-12
+      .info-box
+        span.info-box-icon.bg-secondary
+          i.fas.fa-sticky-note
+        .info-box-content
+          span.info-box-text العقود
+          span.info-box-number 847

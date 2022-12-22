@@ -1,0 +1,38 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اعدادات الحساب ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" اعدادات الحساب ")
+        .border.rounded-3 
+            img.img-fluid.rounded-top.mb-4(src="../images/dashboard/plan.png", alt="")
+            div.px-4 
+                span معلومة الخطة
+                h4.mb-1 خطة برونزية
+                p.mb-0 الخطة السنوية, المدفوعة شهرياً
+                p.mb-1 يتم التجديد تلقائياً في 27/مارس/2022
+         
+                h5.mb-1 مشمول الخطة 
+                .row 
+                    -for(x=1;x<=3; x++)
+                        .col-lg-4   
+                            p 
+                                i.fas.fa-check-circle.m-color-text.me-3 
+                                | عدد منتجات لا محدود
+                            p 
+                                i.fas.fa-check-circle.m-color-text.me-3 
+                                | تقارير شاملة لمتجرك
+                            p 
+                                i.fas.fa-check-circle.m-color-text.me-3 
+                                | اضافة كوبونات خصم لعملاءك
+                hr
+                .d-md-flex.justify-content-md-between.pb-5.pt-4 
+                    div.align-self-center.mb-md-0.mb-4 
+                        p.mb-0 معلومات السداد
+                        h5.mb-1 250 ريال شهرياً
+                        span.text-muted تاريخ السداد التالي 25/8/2022 (متبقي 12 يوم)
+                    div.align-self-center
+                        a.m-color-shadow.w-color-text-hover.m-color-bg-hover.px-5.py-2.text-decoration-none.rounded-pill.border.m-color-border.m-color-text(href="#") ترقية الباقة
+    include ./includes/scripts

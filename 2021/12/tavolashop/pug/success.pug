@@ -1,0 +1,51 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("عرض منتجات القسم")
+  body
+    include ./includes/navbar
+    .container.py-lg-5.py-2
+      .column.main
+        #zero1-advanced-success
+          .content-block.intro
+            h3.my-4.text-center شكراً لك لطلبك
+          .row.mb-3
+            .col-md-4.mb-3.text-center
+              .bg-white.p-3
+                h5 تفاصيل الطلب
+                p.mb-1
+                  | رقم طلب الشراء:
+                  span 15000005339
+                p.mb-1
+                  | المجموع الكلي:
+                  span 3,266.00
+                p.mb-1
+                  | تاريخ الطلب:
+                  span 2021-12-11 12:12:52
+                p
+            .col-md-4.mb-3.text-center
+              .bg-white.p-3
+                h5 عنوان التوصيل
+                p.mb-1 Aliquid amet dolor
+                p.mb-1 City
+                p.mb-1 الرياض
+                p.mb-1 11222
+            .col-md-4.mb-3.text-center
+              .bg-white.p-3
+                h5 عنوان الفاتورة
+                p.mb-1 Aliquid amet dolor
+                p.mb-1 City
+                p.mb-1 الرياض
+                p.mb-1 11222
+          .text-center
+            div
+              p.mb-1 يمكنك تعقب حالة طلبك عن طريق إنشاء حساب.
+              p.mb-1
+                span(data-bind="i18n: \'Email Address\'") البريد الإلكتروني
+                | :
+                span(data-bind="text: getEmailAddress()") tekudixab@mailinator.com
+              a(href="#")
+                span انشاء حساب
+
+
+    include ./includes/footer

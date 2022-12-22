@@ -1,0 +1,192 @@
+// top nav
+.top-nav
+  .container
+    .row
+      .col-lg-6.col-md-4.word.py-1
+        p.m-0.text-md-start.text-center.text-dark متجر متكامل لكل لوازم مطبخك!
+      .col-lg-6.col-md-8.links
+        ul.list-group.list-group-horizontal
+          li.list-group-item
+            a.text-decoration-none(href="#")
+              img.location.me-1(src="./images/icons/shop-location.webp", alt="location", width="10", height="15")
+              | موقع المتجر
+          li.list-group-item
+             a.text-decoration-none(href="#")
+              img.gps.me-1(src="./images/icons/gps.webp", alt="gps", width="17", height="17")
+              |   متابعة الطلب
+          li.list-group-item
+             a.text-decoration-none(href="#", data-bs-toggle="modal" data-bs-target="#country-change")
+              img.me-1(src="./images/flags/6.webp", alt="sa-ar", width="20", height="20")
+              span.country-change  تغيير
+              | البلد
+              i.mbi.mbi-ios-arrow-down
+          li.list-group-item
+            .dropdown
+              a.title-font.text-decoration-none#lang(type="button", data-bs-toggle="dropdown", aria-expanded="false")
+                | عربي
+                i.mbi.mbi-ios-arrow-down
+              ul.border-0.shadow.dropdown-menu-end.dropdown-menu(aria-labelledby="lang")
+                li
+                  a.dropdown-item(href="#") English
+  //  Modal
+  .modal.fade#country-change(tabindex="-1", aria-labelledby="country-changeLabel", aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-header.border-0.pb-0
+          h5.h4.modal-title.title-font#country-changeLabel اختر البلد
+          button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+        .modal-body
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/1.webp", width="30", height="30")
+                span الامارات العربية المتحدة
+
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/2.webp", width="30", height="30")
+                span مملكة البحرين
+
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/3.webp", width="30", height="30")
+                span الكويت
+
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/4.webp", width="30", height="30")
+                span عمان
+
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/5.webp", width="30", height="30")
+                span قطر
+
+          div.mb-2
+            a.text-dark.h5.text-decoration-none(href="#")
+                img.me-1(src="./images/flags/6.webp", width="30", height="30")
+                span المملكة العربية السعودية
+// top nav
+
+// middle nav
+.middle-nav.bg-white.py-3
+  .container
+    .row
+      .col-xl-2.col-3
+        a(href="index.html")
+          img.img-fluid(src="./images/logo.png", alt="logo")
+      .col-xl-7.order-xl-2.my-xl-auto.mt-3.order-3
+        form.row.mx-0.justify-content-center
+          .col.px-0
+            input.rounded-0.form-control(type="search", placeholder="ابحث في قائمة المنتجات هنا")
+          .col-auto.px-0
+            button.search.btn.m-color-bg-hover.text-white.s-color-bg(type="submit") بحث
+      .col-xl-3.col-9.order-xl-3.order-2.icons.my-auto.text-end
+        a.wish(href="#")
+          i.mbi.mbi-heart
+        a.cart(href="cart.html")
+          span 9
+          i.mbi.mbi-bag2
+        a.user
+          i.mbi.mbi-user
+          ul.d-sm-inline-block.d-none.list-unstyled.text-start.ps-1.m-0
+            li
+              a.text-dark.s-color-text-hover(href="#") دخول
+            li
+              a.text-dark.s-color-text-hover(href="#") تسجيل
+// middle nav
+
+// bottom nav
+.bottom-nav.bg-white
+  .container
+    .row
+      .col-xl-3.col-lg-4.my-auto
+        // dropdown in larg
+        .dropdown.dropdown-parent.d-lg-block.d-none
+          div.toggler#category(data-bs-toggle="dropdown", aria-expanded="false")
+            i.mbi.mbi-menu
+            span التسوق حسب الأقسام
+            i.mbi.mbi-ios-arrow-down
+          ul.rounded-0.dropdown-menu.dropdown-menu-parent(aria-labelledby="category")
+            - for(x = 1; x <= 10; x++)
+              li
+                .dropdown.dropdown-item.dropdown-sub.py-2
+                  span(id="#dropdown"+x, data-bs-toggle="dropdown", aria-expanded="false")
+                    img.img-fluid(src="./images/category/"+x+".webp", alt="category")
+                    | إسم التصنيف الرئيسي #{x}
+                    i.mbi.mbi-ios-arrow-left
+                  ul.dropdown-menu.rounded-0.dropdown-menu-sub(aria-labelledby="dropdown"+x)
+                    - for(y = 1; y <= 10; y++)
+                        li
+                          .dropdown.dropdown-item.dropdown-sub-sub.py-2
+                            span(id="#dropdown"+y, data-bs-toggle="dropdown", aria-expanded="false")
+                              |  إسم التصنيف الفرعي #{y}
+                              i.mbi.mbi-ios-arrow-left
+                            ul.dropdown-menu.rounded-0.dropdown-menu-sub-sub(aria-labelledby="dropdown"+y)
+                              - for(z = 1; z <= 10; z++)
+                                li
+                                  a.py-2.dropdown-item(href="category.html") إسم المنتج #{z}
+        // dropdown in phone
+        .accordion.d-lg-none.d-block(id="accordionMain")
+          .text-center.mb-4
+            img.img-fluid(src="./images/logo.png", alt="logo")
+          - for(x = 1; x <= 10; x++)
+            .accordion-item
+              h2.accordion-header(id="heading"+x)
+                .accordion-button.ps-0.collapsed.rounded-0( data-bs-toggle="collapse", data-bs-target="#collapse"+x, aria-expanded="false", aria-controls="collapse"+x)
+                  img.me-3(src="./images/category/"+x+".webp", width="20", height="20", alt="category")
+                  span تصنيف رئيسي #{x}
+              .accordion-collapse.border-0.collapse(id="collapse"+x, aria-labelledby="heading"+x, data-bs-parent="#accordionMain")
+                .accordion-body.shadow-none
+                  .accordion.d-lg-none.d-block(id="accordionSub")
+                    - for(y = 1; y <= 5; y++)
+                      .accordion-item
+                        h2.accordion-header(id="heading"+x+y)
+                          .accordion-button.px-0.collapsed.rounded-0( data-bs-toggle="collapse", data-bs-target="#collapse"+x+y, aria-expanded="false", aria-controls="collapse"+x+y)
+                            span تصنيف فرعي #{y}
+                        .accordion-collapse.border-0.collapse(id="collapse"+x+y, aria-labelledby="heading"+x+y, data-bs-parent="#accordionSub")
+                          .accordion-body.shadow-none.ps-0
+                            - for(z = 1; z <= 5; z++)
+                              div
+                                a.text-dark.s-color-text-hover(href="category.html")
+                                | إسم المنتج #{z}
+
+
+      .col-lg-6.my-auto.links
+         ul.list-group.list-group-horizontal-lg
+            li.border-0.list-group-item
+              a.text-dark.s-color-text-hover(href="category.html") جديد
+            li.border-0.list-group-item
+              a.text-dark.s-color-text-hover(href="category.html") عروض
+            li.border-0.list-group-item
+              a.text-dark.s-color-text-hover(href="#") ماركات
+            li.border-0.list-group-item
+              a.text-dark.s-color-text-hover(href="#") نصائح ووصفات
+
+      .col-xl-3.col-lg-2.mt-3.text-lg-end
+        a.text-decoration-none.s-color-text(href="tel:0122635080")
+          i.mbi.mbi-telephone.ms-2
+          | 01 2263 5080
+// bottom nav
+
+// phone bottom icons
+.phone-bottom-icons.position-fixed.bottom-0.start-50.translate-middle-x.bg-white.bg.pt-2.d-lg-none.d-block
+  .icon-row.d-flex.justify-content-around
+    .icon.text-center.show-menu
+      i.mbi.mbi-menu
+      p.m-0 القائمة
+
+    a.icon.text-center.text-decoration-none.text-dark(href="index.html")
+      i.mbi.mbi-home3
+      p.m-0 الصفحة الرئيسية
+
+    a.icon.text-center.text-decoration-none.text-dark(href="cart.html")
+      span.cart
+        i.mbi.mbi-bag2
+        span 9
+      p.m-0 سلة التسوق
+
+    .icon.text-center
+      i.mbi.mbi-user
+      p.m-0 حسابي
+
+// phone bottom icons

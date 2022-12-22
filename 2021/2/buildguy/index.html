@@ -1,0 +1,1422 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buildguy</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="position-relative bg-white d-lg-block d-none py-2" style="z-index: 1200 !important;">
+        <div class="container px-lg-0 text-center">
+
+            <dir class="row">
+                <div class="col-lg-3 text-white text-lg-right">
+                    <a class=" text-decoration-none text-dark h4" href="index.html">
+                        <img src="./images/logo.png" width="170" height="45" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-3 text-white d-flex justify-content-end px-0">
+                    <div class="media">
+
+                        <svg class="align-self-start ml-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+                            height="35" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="var(--m-color)">
+                                    <path
+                                        d="M32.25,26.875c-9.675,0 -17.46875,7.79375 -17.46875,17.46875c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-5.24063 4.16563,-9.40625 9.40625,-9.40625h107.5c5.24062,0 9.40625,4.16562 9.40625,9.40625c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-9.675 -7.79375,-17.46875 -17.46875,-17.46875zM18.8125,57.78125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v65.84375c0,9.675 7.79375,17.46875 17.46875,17.46875h107.5c9.27187,0 17.46875,-7.525 17.46875,-16.125v-67.1875c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v67.1875c0,3.7625 -4.16563,8.0625 -9.40625,8.0625h-107.5c-5.24062,0 -9.40625,-4.16563 -9.40625,-9.40625v-65.84375c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM39.15247,64.6181c-1.02461,-0.0168 -2.06497,0.35273 -2.87122,1.0918c-1.6125,1.47813 -1.61197,4.0302 -0.13385,5.6427c13.03438,13.84063 30.77135,21.36615 49.8526,21.36615c19.08125,0 36.8177,-7.52605 49.98645,-21.2323c1.47813,-1.6125 1.47865,-4.16458 -0.13385,-5.6427c-1.6125,-1.47813 -4.16458,-1.47865 -5.6427,0.13385c-11.69063,11.95937 -27.41303,18.67865 -44.2099,18.67865c-16.79687,0 -32.5198,-6.71875 -44.07605,-18.8125c-0.73906,-0.80625 -1.74688,-1.20885 -2.77148,-1.22565z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <div class="media-body text-right">
+                            <small class="my-0 title-font m-color-text  d-block">24 X 7 online support</small>
+                            <small class="s-color-text title-font font-weight-bold">info@handimix.com</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 text-white d-flex justify-content-end px-0">
+                    <div class="media">
+                        <svg class="align-self-start ml-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35"
+                            height="35" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="var(--m-color)">
+                                    <path
+                                        d="M79.83765,18.8125c-2.22525,0 -4.24885,1.22336 -5.15454,3.11267l-2.91846,8.60315c-14.25409,3.3104 -25.42774,15.09547 -27.30542,30.00342l-5.03906,37.03711c-0.41388,3.26262 -1.97951,6.33901 -3.29639,8.65564l-10.59778,18.64978c-1.634,2.43219 -1.78862,5.43144 -0.38843,8.0625c1.40019,2.58537 4.00127,4.12573 6.9602,4.12573h35.30493c1.31115,9.10144 9.13849,16.125 18.59729,16.125c9.4588,0 17.28614,-7.02356 18.59729,-16.125h35.30493c2.95894,0 5.55939,-1.54204 6.98645,-4.16772c1.376,-2.59075 1.22474,-5.58966 -0.30444,-7.85254l-10.70276,-18.823c-1.31688,-2.31394 -2.87983,-5.38982 -3.29639,-8.67664l-5.03381,-36.98462c-1.88261,-14.93142 -13.0628,-26.72682 -27.32117,-30.03491l-2.79773,-8.29871l-0.12598,-0.29919c-0.903,-1.88931 -2.92404,-3.11267 -5.14929,-3.11267zM79.84289,24.1875h12.31946c0.14244,0 0.23788,0.03905 0.2782,0.05249l1.83191,5.42224c-0.71444,-0.04267 -1.4281,-0.09973 -2.1521,-0.09973h-12.24072c-0.72337,0 -1.43302,0.05713 -2.14685,0.09973l1.82141,-5.40649c0.05107,-0.02956 0.14895,-0.06824 0.2887,-0.06824zM13.53198,24.198c-1.0417,-0.10532 -2.09562,0.41018 -2.62976,1.38574c-14.09862,25.75431 -14.13923,57.63596 -0.09973,83.20752c0.48644,0.88956 1.40544,1.39624 2.35681,1.39624c0.43806,0 0.88532,-0.10763 1.29651,-0.33069c1.30075,-0.71487 1.77518,-2.34732 1.0603,-3.64807c-13.16337,-23.97787 -13.12546,-53.88185 0.09973,-78.04248c0.71487,-1.30075 0.23789,-2.93588 -1.06555,-3.64807c-0.32519,-0.17872 -0.67108,-0.28508 -1.01831,-0.32019zM158.49426,24.198c-0.34736,0.03498 -0.69245,0.1408 -1.01831,0.32019c-1.30075,0.71219 -1.78299,2.34463 -1.0708,3.64807c13.34613,24.42669 13.3638,54.32311 0.04724,78.02148c-0.72831,1.29269 -0.26913,2.92501 1.02356,3.65332c0.41656,0.23381 0.87138,0.34643 1.31751,0.34643c0.94063,0 1.84925,-0.49387 2.34106,-1.37c14.21688,-25.30013 14.20919,-57.19202 -0.01575,-83.22851c-0.53414,-0.97556 -1.58243,-1.49593 -2.62451,-1.39099zM27.32117,32.26575c-1.04258,-0.10569 -2.09361,0.40493 -2.62976,1.38049c-5.60344,10.22594 -8.56641,21.82376 -8.56641,33.54126c0,11.7175 2.96297,23.31532 8.56641,33.54126c0.48913,0.88956 1.41069,1.39624 2.36206,1.39624c0.43806,0 0.88276,-0.10763 1.29126,-0.33069c1.30075,-0.71487 1.77518,-2.34732 1.0603,-3.64807c-5.17075,-9.43581 -7.90503,-20.14155 -7.90503,-30.95874c0,-10.81719 2.73428,-21.52293 7.90503,-30.95874c0.71488,-1.30075 0.24045,-2.9332 -1.0603,-3.64807c-0.32653,-0.17805 -0.67603,-0.27971 -1.02356,-0.31494zM144.67883,32.26575c-0.3474,0.03523 -0.6977,0.1369 -1.02356,0.31494c-1.30075,0.71487 -1.77518,2.34732 -1.0603,3.64807c5.17075,9.43581 7.90503,20.14155 7.90503,30.95874c0,10.81719 -2.73428,21.52293 -7.90503,30.95874c-0.71488,1.30075 -0.24045,2.9332 1.0603,3.64807c0.41119,0.22306 0.8532,0.33069 1.29126,0.33069c0.94869,0 1.87025,-0.50399 2.36206,-1.39624c5.60344,-10.22594 8.56641,-21.82376 8.56641,-33.54126c0,-11.7175 -2.96297,-23.31532 -8.56641,-33.54126c-0.53616,-0.97556 -1.58756,-1.48619 -2.62976,-1.38049zM79.87964,34.9375h12.24072c15.26769,0 28.20321,11.30623 30.0979,26.3186l5.03381,36.98462c0.53213,4.20056 2.39364,7.89583 3.95777,10.63977l10.80774,18.98572c0.51331,0.76863 0.56148,1.68666 0.12073,2.50903c-0.45419,0.83581 -1.26858,1.31226 -2.23608,1.31226h-107.80445c-0.97019,0 -1.77933,-0.47913 -2.23083,-1.31226c-0.43806,-0.82506 -0.3951,-1.73638 0.22571,-2.677l9.98364,-17.55798c0.0819,0.00753 0.15236,0.04724 0.23621,0.04724h56.4375c1.4835,0 2.6875,-1.204 2.6875,-2.6875c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875h-53.91272c0.86345,-1.97815 1.61083,-4.16996 1.91065,-6.54553l5.03906,-37.03711c1.88931,-14.98819 14.82496,-26.29236 30.09265,-26.29236zM91.375,43c-1.4835,0 -2.6875,1.204 -2.6875,2.6875c0,1.4835 1.204,2.6875 2.6875,2.6875h0.74536c3.03956,0 6.02496,0.81687 8.63989,2.35681c0.42731,0.25263 0.89725,0.36743 1.3595,0.36743c0.92181,0 1.82019,-0.47082 2.32007,-1.32276c0.75519,-1.27656 0.32918,-2.92706 -0.95007,-3.67956c-3.44,-2.02637 -7.37307,-3.09692 -11.36938,-3.09692zM109.46314,53.75525c-0.34887,0.02339 -0.70148,0.11548 -1.03406,0.28345c-1.32494,0.6665 -1.86071,2.27845 -1.19153,3.60608c0.68262,1.3545 1.18179,2.91757 1.48547,4.63489c0.23112,1.30344 1.36626,2.22034 2.64551,2.22034c0.15587,0 0.31398,-0.01512 0.46716,-0.04199c1.462,-0.258 2.44159,-1.65067 2.18359,-3.11267c-0.39506,-2.236 -1.05976,-4.2903 -1.97888,-6.11511c-0.49786,-0.9937 -1.53066,-1.54514 -2.57727,-1.47498zM107.5,104.8125c-1.4835,0 -2.6875,1.204 -2.6875,2.6875c0,1.4835 1.204,2.6875 2.6875,2.6875h13.4375c1.4835,0 2.6875,-1.204 2.6875,-2.6875c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM45.6875,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM59.125,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM72.5625,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM86,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM99.4375,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM112.875,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM126.3125,115.5625c-1.4835,0 -2.6875,1.204 -2.6875,2.6875v5.375c0,1.4835 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.204 2.6875,-2.6875v-5.375c0,-1.4835 -1.204,-2.6875 -2.6875,-2.6875zM72.83545,137.0625h26.3291c-1.24926,6.12507 -6.67595,10.75 -13.16455,10.75c-6.4886,0 -11.91529,-4.62493 -13.16455,-10.75z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <div class="media-body  text-right">
+                            <small class="my-0 title-font m-color-text  d-block">Contact Us Free</small>
+                            <small class="s-color-text title-font font-weight-bold">+1 (088) 456 888 (24/7)
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 text-right">
+
+                    <p class=" pt-2">
+                        <span class="mx-1 text-white py-2 px-3  fa-fw s-color-bg m-color-bg-hover"><i
+                                class="fab fa-facebook-f"></i></span>
+                        <span class="mx-1 text-white p-2   s-color-bg m-color-bg-hover"><i
+                                class="fab fa-twitter "></i></span>
+                        <span class="mx-1 text-white p-2  s-color-bg m-color-bg-hover"><i
+                                class="fab fa-youtube    "></i></span>
+                    </p>
+                </div>
+        </div>
+        </dir>
+
+    </div>
+
+    <nav class="navbar position-relative main-navbar navbar-expand-lg navbar-light  py-0">
+        <div class="container position-relative" style="z-index: 3;">
+            <a class="navbar-brand d-lg-none d-inline" href="index.html"><img src="./images/logo2.png" alt=""></a>
+            <p class="navbar-toggler mb-0 d-lg-none d-inline text-white d-inline" type="button">
+                <i class="fas fa-search  text-white"></i>
+                <i class="fas fa-bars ml-4" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+            </p>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center ml-auto text-capitalize ">
+                    <li class="nav-item mb-0 myactive   collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="index.html">
+                            home1
+                        </a>
+                    </li>
+                    <li class="nav-item mb-0   collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="index2.html">
+                            home2
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-0 collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="blog.html">
+                            blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-0 collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="contact-us.html">
+                            contact
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item mb-0 collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="project.html">
+                            project
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item mb-0 collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="service.html">
+                            service
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-0 collapse-navbar px-2 ">
+                        <a class="nav-link  title-font main-color-text-hover text-white" href="team.html">
+                            team
+                        </a>
+                    </li>
+
+
+
+                </ul>
+                <div class="form-inline my-2 my-lg-0 justify-content-center">
+                    <!-- <button class="btn border-right rounded-0 my-2 my-sm-0 text-white s-color-bg-hover" type="submit"><i class="fas fa-search "></i></button> -->
+                    <a href="#" class=" btn s-color-text-hover rounded-0 py-3 text-white border-right px-4"> <i
+                            class="fas fa-search "></i></a>
+                    <a href="#" class="s-color-bg btn m-color-bg-hover rounded-0 py-3 text-white px-4"> <i
+                            class="fas fa-envelope mr-1"></i> Get a quote</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <section class="overflow-hidden gray-bg ">
+        <div class="position-relative ">
+            <ul class="nav nav-pills mb-3 position-absolute bg-transparent align-content-end"
+                style="bottom: 0; right: 3%; z-index: 4;" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link mx-2 m-color-text active" id="pills-home-tab" data-toggle="pill"
+                        href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <i class="fas fa-dot-circle    "></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 m-color-text" id="pills-profile-tab" data-toggle="pill"
+                        href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <i class="fas fa-dot-circle    "></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2 m-color-text" id="pills-contact-tab" data-toggle="pill"
+                        href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <i class="fas fa-dot-circle    "></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class=" py-lg-5 py-3 "
+                        style="background-image: url(./images/header1.jpg); background-size: cover; background-position: right;">
+                        <div class="container text-right m-color-text py-lg-5 py-3">
+                            <div
+                                class=" header-title-size mb-3 title-font   animate__animated animate__fadeInLeft animate__delay-1s">
+                                <span class="s-color-text">Fair </span>
+                                &
+                                <span class="s-color-text">honest </span>
+                                <br>
+                                handyman on-time &
+                                <br>
+                                done right.
+                            </div>
+                            <div>
+                                <ul class="list-unstyled title-font">
+                                    <li class="mb-2 h5 animate__animated animate__fadeInLeft animate__delay-2s"><i
+                                            class="fas fa-check-circle mb-2 mr-2 s-color-text"></i> Lorem ipsum dolor.
+                                    </li>
+                                    <li class="mb-2 h5 animate__animated animate__fadeInLeft animate__delay-3s"><i
+                                            class="fas fa-check-circle mb-2 mr-2 s-color-text"></i> Lorem ipsum dolor
+                                        sit.</li>
+                                    <li class="mb-2 h5 animate__animated animate__fadeInLeft animate__delay-4s"><i
+                                            class="fas fa-check-circle mb-2 mr-2 s-color-text"></i>Lorem ipsum dolor sit
+                                        amet.</li>
+                                    <li class="mb-2 h5 animate__animated animate__fadeInLeft animate__delay-5s"><i
+                                            class="fas fa-check-circle mb-2 mr-2 s-color-text"></i> Lorem ipsum dolor
+                                        sit amet ipsum.</li>
+                                </ul>
+                                <button
+                                    class="animate__animated animate__fadeInLeft animate__delay-5s btn rounded-0 bg-white m-color-text s-color-bg-hover">
+                                    Reademore <i class="fas fa-arrow-left  ml-2 "></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class=" pt-lg-5 pt-3 ">
+                        <div class="container m-color-text  ">
+
+                            <div class="row justify-content-between text-right">
+                                <div class="col-lg-5 d-lg-block d-none p-0"
+                                    style="background-image: url(./images/header2.png); background-size: cover; background-position: left;">
+                                    <!-- <img class="img-fluid" src="./images/header2.png"  alt=""> -->
+                                    <img class=" d-lg-block d-none " src="./images/header21.png" alt="">
+
+                                </div>
+                                <div class="col-lg-6 py-lg-5 py-3">
+                                    <div
+                                        class="header-title-size mb-3 title-font   animate__animated animate__fadeInLeft animate__delay-1s">
+                                        <span class="s-color-text">Fair </span>
+                                        &
+                                        <span class="s-color-text">honest </span>
+                                        <br>
+                                        handyman on-time &
+                                        done right.
+                                    </div>
+                                    <div>
+                                        <ul class="list-unstyled title-font">
+                                            <li class="mb-2 animate__animated animate__fadeInLeft animate__delay-2s">
+                                                <i
+                                                    class="fas rounded py-2 pl-4 pr-2 text-white fa-fw fa-thumbs-up mb-2 ml-2 s-color-bg"></i>
+                                                Lorem ipsum dolor.
+                                            </li>
+                                            <li class="mb-2 animate__animated animate__fadeInLeft animate__delay-3s"><i
+                                                    class="fas rounded py-2 pl-3 pr-3 text-white fa-fw fa-dollar-sign mb-2 ml-2 s-color-bg"></i>
+                                                Lorem ipsum dolor sit.</li>
+                                            <li class="mb-2 animate__animated animate__fadeInLeft animate__delay-4s"><i
+                                                    class="fas rounded py-2 pl-4 pr-2 text-white fa-fw fa-cogs mb-2 ml-2 s-color-bg"></i>Lorem
+                                                ipsum dolor sit amet.</li>
+
+                                        </ul>
+
+                                        <button
+                                            class="animate__animated animate__fadeInLeft animate__delay-5s btn rounded-0 bg-white m-color-text s-color-bg-hover">
+                                            Reademore <i class="fas fa-arrow-left   ml-2 "></i>
+                                        </button>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="py-lg-5 py-3  "
+                        style="background-image: url(./images/header3.png); background-repeat: no-repeat; background-position: left;">
+                        <div class="container text-right m-color-text  py-lg-5 py-3">
+                            <div class=" header-title-size mb-3 title-font   animate__animated animate__fadeInLeft ">
+
+                                <span class="s-color-text">Fair & honest </span>
+                                <br>
+                                handyman on-time &
+                                <br>
+                                done right.
+                            </div>
+                            <div>
+                                <p class="title-font h5 mb-4 animate__animated animate__fadeInLeft ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eius repellat quod
+                                    odit incidunt illo, <br>
+                                    fuga voluptatem quaerat dicta consectetur tempora.
+                                </p>
+                                <button
+                                    class="animate__animated animate__fadeInLeft  btn rounded-0 bg-white m-color-text s-color-bg-hover">
+                                    Reademore <i class="fas fa-arrow-left  ml-2 "></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="py-5 why-us position-relative overflow-hidden">
+
+        <div class="container pt-lg-5 text-right position-relative" style="z-index: 3;">
+            <div class="row">
+                <div class="col-lg-6 mb-3 pt-3">
+                    <h6 class="s-color-text title-font">Why choose Us</h6>
+                    <p class="title-font m-color-text h3">20 years of experience in the repairing <br> <span
+                            class="s-color-text">&</span> <br> maintenance
+                    </p>
+                </div>
+                <div class="col-lg-6 mb-3 pt-3">
+                    <p class="text-muted">
+                        <img src="./images/logo.png" width="170" height="45" alt="" class="mb-3"> <br>
+                        If you want easy and stress free property maintenance, <br> you needn’t look any further. We can
+                        provide you with a reliable handyman in London. All you need to do is call us up today.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-right pb-lg-5 position-relative" style="z-index: 3;">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-lg-0 mb-3">
+                    <img src="./images/header3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3 pt-lg-5 mt-lg-5">
+                    <p class="title-font m-color-text h5">
+                        Quis ipsum suspendisse ultrices gravida. <br> Risus commodo viverra maecenas <br> vel facilisis.
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                        <div class=" text-muted mb-2"><i
+                                class="fas s-color-text fa-check-double fa-fw mr-2"></i>Experienced Services
+                            Staff</div>
+                    </p>
+                </div>
+                <div class="col-lg-2 rounded-sm  mb-3 pt-lg-3 mt-lg-3">
+                    <div class="m-color-bg text-white p-4">
+                        <div>
+                            <i class="fas s-color-text fa-building fa-3x"></i>
+                        </div>
+                        <br>
+                        <h3 class="title-font">
+                            Lorem ipsum dolor <br> sit amet.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Expedita, consequuntur
+                            dicta? <br> Nobis dolorum aperiam iusto!
+                        </p>
+                        <a href="#" class="s-color-text title-font">
+                            read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 awesome-services mb-5 position-relative">
+        <div class="container text-center position-relative" style="z-index: 2;">
+            <p class="s-color-text title-font">Awesome Services</p>
+            <h2 class="m-color-text title-font mb-4">We have different types of repairing & <br>
+                maintenance services</h2>
+
+            <div class="projects">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project1.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project2.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project3.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project1.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project2.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="position-relative overflow-hidden rounded-sm">
+                            <div class="bg-white p-3">
+                                <i class="fas fa-cogs s-color-text mr-2"></i>
+                                <span class="title-font m-color-text h5">
+                                    Painting & Decorating</span>
+                            </div>
+                            <img class="img-fluid project-img " src="./images/Projects/Project3.jpg" alt="project">
+
+                            <div class="px-md-5 project ">
+                                <div
+                                    class="text-white m-color-bg py-3 px-md-4 px-2 text-right position-absolute project-dec">
+                                    <span class="s-color-text title-font"><i class="fas fa-cogs s-color-text fa-2x"></i>
+                                    </span>
+                                    <br>
+                                    <br>
+                                    <h5 class="text-white title-font">Painting & Decorating</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        text ever since…</p>
+                                    <a href="#" class=" s-color-text title-font">Read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5 text-right">
+                    <span class="title-font s-color-text">Who We Are</span>
+                    <h3 class="title-font m-color-text">We are the solutions provider <br> for all home services</h3>
+                    <br>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt
+                        ut labore et dolore magna aliqua. Quis ipsum <br> suspendisse ultrices gravida.
+                    </p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class="title-font text-dark h4">
+                        “Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore”
+                    </p>
+                    <br>
+                    <div class="media">
+                        <a class="d-flex" href="#">
+                            <img src="./images/Projects/Project1.jpg" height="55" width="55" class="rounded-circle ml-2"
+                                alt="user">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="s-color-text title-font mb-0">Striven Smith</h5>
+                            Ceo of buildguy
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 te">
+                    <div class="m-color-bg px-5 pt-5 position-relative position-to-top" style=" z-index: 3;">
+                        <ul class="list-unstyled">
+                            <li style="border-color: #15285C !important;"
+                                class="border-bottom pb-3 mb-3 d-flex justify-content-between text-white ">
+                                <span class="">Pipeline installed by the <br> our plumbers </span>
+                                <span class="h2 ">
+                                    <span class="title-font ">500+</span>
+                                    <i class="fas fa-draw-polygon s-color-text ml-3"></i>
+                                </span>
+                            </li>
+
+                            <li style="border-color: #15285C !important;"
+                            class="border-bottom pb-3 mb-3 d-flex justify-content-between text-white ">
+                            <span class="">Pipeline installed by the <br> our plumbers </span>
+                            <span class="h2 ">
+                                <span class="title-font ">500+</span>
+                                <i class="fas fa-draw-polygon s-color-text ml-3"></i>
+                            </span>
+                        </li>
+
+                        <li style="border-color: #15285C !important;"
+                                class="border-bottom pb-3 mb-3 d-flex justify-content-between text-white ">
+                                <span class="">Pipeline installed by the <br> our plumbers </span>
+                                <span class="h2 ">
+                                    <span class="title-font ">500+</span>
+                                    <i class="fas fa-draw-polygon s-color-text ml-3"></i>
+                                </span>
+                            </li>
+
+                            <li style="border-color: #15285C !important;"
+                                class="border-bottom pb-3 mb-3 d-flex justify-content-between text-white ">
+                                <span class="">Pipeline installed by the <br> our plumbers </span>
+                                <span class="h2 ">
+                                    <span class="title-font ">500+</span>
+                                    <i class="fas fa-draw-polygon s-color-text ml-3"></i>
+                                </span>
+                            </li>
+
+                            <li style="border-color: #15285C !important;"
+                                class="border-bottom pb-3 mb-3 d-flex justify-content-between text-white ">
+                                <span class="">Pipeline installed by the <br> our plumbers </span>
+                                <span class="h2 ">
+                                    <span class="title-font ">500+</span>
+                                    <i class="fas fa-draw-polygon s-color-text ml-3"></i>
+                                </span>
+                            </li>
+                            <img src="./images/img-03-new.png" class="img-fluid" alt="">
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <span class="title-font s-color-text d-block">How it works</span>
+            <h3 class="title-font m-color-text">Get amazing handyman service in 4 simple <br>
+                steps process that we follow</h3>
+            <br>
+            <br>
+
+            <div class="position-relative">
+                <div class="icon-line">
+
+                </div>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="m-color-text s-color-text-hover text-center">
+                                <p class="title-font h6 mb-3">Step 01</p>
+                                <div class="position-relative" style="z-index: 3;"><i class="fas fa-dot-circle h5"></i>
+                                </div>
+                                <br>
+                                <div>
+                                    <img src="./images/Projects/Project1.jpg" width="180" height="180"
+                                        class="rounded-circle " alt="">
+                                    <h4 class="title-font m-color-text mt-3">Choose a service</h4>
+                                    <p class="text-muted">
+                                        Quis ipsum suspendisse ultrices viverra maecenas vel facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="m-color-text s-color-text-hover text-center">
+                                <p class="title-font h6 mb-3">Step 01</p>
+                                <div class="position-relative" style="z-index: 3;"><i class="fas fa-dot-circle h5"></i>
+                                </div>
+                                <br>
+                                <div>
+                                    <img src="./images/Projects/Project2.jpg" width="180" height="180"
+                                        class="rounded-circle " alt="">
+                                    <h4 class="title-font m-color-text mt-3">Choose a service</h4>
+                                    <p class="text-muted">
+                                        Quis ipsum suspendisse ultrices viverra maecenas vel facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="m-color-text s-color-text-hover text-center">
+                                <p class="title-font h6 mb-3">Step 01</p>
+                                <div class="position-relative" style="z-index: 3;"><i class="fas fa-dot-circle h5"></i>
+                                </div>
+                                <br>
+                                <div>
+                                    <img src="./images/Projects/Project3.jpg" width="180" height="180"
+                                        class="rounded-circle " alt="">
+                                    <h4 class="title-font m-color-text mt-3">Choose a service</h4>
+                                    <p class="text-muted">
+                                        Quis ipsum suspendisse ultrices viverra maecenas vel facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="m-color-text s-color-text-hover text-center">
+                                <p class="title-font h6 mb-3">Step 01</p>
+                                <div class="position-relative" style="z-index: 3;"><i class="fas fa-dot-circle h5"></i>
+                                </div>
+                                <br>
+                                <div>
+                                    <img src="./images/Projects/Project1.jpg" width="180" height="180"
+                                        class="rounded-circle " alt="">
+                                    <h4 class="title-font m-color-text mt-3">Choose a service</h4>
+                                    <p class="text-muted">
+                                        Quis ipsum suspendisse ultrices viverra maecenas vel facilisis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="mb-lg-5 mb-3">
+        <div class=" position-relative px-3">
+            <div class="row position-relative" style="z-index: 3;">
+                <div class="col-lg-5 bg-warning">
+                    <img src="./images/contact/contact.png"
+                        class="img-fluid  pt-2 animate__animated animate__fadeInRight animate__delay-1s" alt="">
+
+                    <span class="position-absolute p-3 m-color-bg  text-white text-center" style="bottom: 0; left: 0;">
+                        <p class="title-font display-4">25</p>
+                        <p class="title-font h5">years of Experience</p>
+                    </span>
+                </div>
+
+                <div class="col-lg-7 m-color-bg text-right">
+                    <div class="px-lg-5 px-3 py-2 ">
+                        <div class="row">
+                            <div class="col-lg-6 mb-3 pt-lg-5 mt-lg-5">
+                                <span class="title-font s-color-text">
+                                    What we offer for you</span>
+                                <h3 class="title-font text-white">Respectful of you, Whether it’s a small or Critical
+                                    Project</h3>
+                                <p class="text-white">
+                                    Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod
+                                    tempor incididunt simply free ut labore et dolore magna aliqua simhy free text
+                                    available adndnh qkhhn.
+                                </p>
+                                <br>
+                                <p class="d-flex mb-2 justify-content-between align-content-between">
+                                    <span class="text-white h6 mb-0 title-font">Commercial plumbers</span>
+                                    <span class="text-white title-font">90%</span>
+                                </p>
+                                <div class="progress bg-white rounded-0" style="height: 10px;">
+                                    <div class="progress-bar s-color-bg" role="progressbar" style="width: 90%;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <br>
+                                <p class="d-flex mb-2 justify-content-between align-content-between">
+                                    <span class="text-white h6 mb-0 title-font">Residential carpenters</span>
+                                    <span class="text-white title-font">80%</span>
+                                </p>
+                                <div class="progress bg-white rounded-0" style="height: 10px;">
+                                    <div class="progress-bar s-color-bg" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <br>
+
+                                <p class="d-flex mb-2 justify-content-between align-content-between">
+                                    <span class="text-white h6 mb-0 title-font">Residential carpenters</span>
+                                    <span class="text-white title-font">80%</span>
+                                </p>
+                                <div class="progress bg-white rounded-0" style="height: 10px;">
+                                    <div class="progress-bar s-color-bg" role="progressbar" style="width: 70%;"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <br>
+
+
+                                <p class="d-flex mb-2 justify-content-between align-content-between">
+                                    <span class="text-white h6 mb-0 title-font">Service and Repair</span>
+                                    <span class="text-white title-font">55%</span>
+                                </p>
+                                <div class="progress bg-white rounded-0" style="height: 10px;">
+                                    <div class="progress-bar s-color-bg" role="progressbar" style="width: 55%;"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                                <br>
+                                <br>
+                                <button
+                                    class="btn px-5 py-3 rounded-0 border-0 s-color-bg text-white m-color-bg-hover">Get
+                                    Project</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="text-center">
+        <span class="title-font s-color-text">Who We Are</span>
+        <h3 class="title-font m-color-text">We are the solutions provider <br> for all home services</h3>
+        <br>
+
+        <ul class="nav nav-tabs justify-content-center mb-3" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link title-font text-muted text-capitalize active" id="a-tab" data-toggle="tab" href="#a"
+                    role="tab" aria-controls="a" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link title-font text-muted text-capitalize" id="b-tab" data-toggle="tab" href="#b"
+                    role="tab" aria-controls="b" aria-selected="false">Carpentry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link title-font text-muted text-capitalize" id="c-tab" data-toggle="tab" href="#c"
+                    role="tab" aria-controls="c" aria-selected="false">designing</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link title-font text-muted text-capitalize" id="d-tab" data-toggle="tab" href="#d"
+                    role="tab" aria-controls="d" aria-selected="false">Electrical</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link title-font text-muted text-capitalize" id="e-tab" data-toggle="tab" href="#e"
+                    role="tab" aria-controls="e" aria-selected="false">Remodeling</a>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">
+                <div class="row mx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project1.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project2.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project3.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project1.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab">
+                <div class="row mx-0">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project3.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project1.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">
+                <div class="row mx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project3.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="d-tab">
+                <div class="row mx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project1.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project2.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="e" role="tabpanel" aria-labelledby="e-tab">
+                <div class="row mx-0">
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3 px-md-0">
+                        <div class="solutions position-relative">
+                            <img src="./images/Projects/Project3.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute text-white ">
+                                <br> <br> <br> <br> <br>
+                                <span class="h3">loreem</span>
+                                <h2 class="title-font">Lorem, ipsum dolor</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container ">
+            <div>
+                <div class="text-center">
+                    <p class="title-font s-color-text">Customer say</p>
+                    <h2 class="title-font m-color-text">We are trusted 15+ countries <br>
+                        worldwide customers say</h2>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 mb-5 text-right">
+                        <div
+                            class="t-color-bg px-3 py-4 position-relative animate__animated animate__fadeInRight animate__delay-1s">
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas m-color-text fa-star    "></i>
+                            <br>
+                            <br>
+                            <p class="text-muted">
+                                There are many variations of passages of Lorem Ipsum available, the majority have
+                                suffered alteration in some form, injected randomized words which don’t look even
+                                slightly believable.
+                            </p>
+
+                            <h6 class="s-color-text title-font">Amanda Pryor</h6>
+                            <img src="./images/contact/teame.jpg" class="rounded-circle position-absolute" width="50"
+                                height="50" alt="" style="bottom: -30px;">
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 mb-5 text-right">
+                        <div
+                            class="t-color-bg px-3 py-4 position-relative animate__animated animate__fadeInUp animate__delay-1s">
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <br>
+                            <br>
+                            <p class="text-muted">
+                                There are many variations of passages of Lorem Ipsum available, the majority have
+                                suffered alteration in some form, injected randomized words which don’t look even
+                                slightly believable.
+                            </p>
+
+                            <h6 class="s-color-text title-font">Amanda Pryor</h6>
+                            <img src="./images/contact/teame.jpg" class="rounded-circle position-absolute" width="50"
+                                height="50" alt="" style="bottom: -30px;">
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 mb-5 text-right">
+                        <div
+                            class="t-color-bg px-3 py-4 position-relative animate__animated animate__fadeInLeft animate__delay-1s">
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <i class="fas text-warning fa-star    "></i>
+                            <br>
+                            <br>
+                            <p class="text-muted">
+                                There are many variations of passages of Lorem Ipsum available, the majority have
+                                suffered alteration in some form, injected randomized words which don’t look even
+                                slightly believable.
+                            </p>
+
+                            <h6 class="s-color-text title-font">Amanda Pryor</h6>
+                            <img src="./images/contact/teame.jpg" class="rounded-circle position-absolute" width="50"
+                                height="50" alt="" style="bottom: -30px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class=" text-white text-center py-3"
+            style="background-image: url(./images/blog.jpg); background-size: cover">
+            <div class=" pt-sm-5 pt-5 pb-sm-5 pb-2">
+                <span class="s-color-text title-font">We’re Leading a Various Handyman's Company</span>
+                <h2 class=" title-font pb-3 pb-sm-5">With over 20 years of experience in repairs and <br>
+                    maintenance for all home services</h2>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="bg-white position-relative mb-5 " style="top: -50px;">
+                <div class="row position-relative" style="z-index: 3;">
+                    <div class="col-lg-5 mb-lg-0 mb-3 ">
+                        <div class="m-color-bg">
+                            <img src="./images/img-04.jpg" data-aos="fade-right"
+                                class="img-fluid pt-2 m-color-bg animate__animated animate__fadeInRight animate__delay-1s"
+                                alt="">
+                            <div class="m-color-bg p-3">
+                                <div class="media">
+
+                                   
+                                    <div class="media-body text-right pt-1">
+                                        <span class="my-0 title-font s-color-text  d-block">
+                                            Contact Us Free</span>
+                                        <span class="text-white title-font h4">info@handimix.com</span>
+                                    </div>
+
+                                    <svg class="align-self-start p-2 ml-3 bg-white rounded-circle"
+                                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
+                                    viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                        font-weight="none" font-size="none" text-anchor="none"
+                                        style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g fill="var(--s-color)">
+                                            <path
+                                                d="M32.25,26.875c-9.675,0 -17.46875,7.79375 -17.46875,17.46875c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-5.24063 4.16563,-9.40625 9.40625,-9.40625h107.5c5.24062,0 9.40625,4.16562 9.40625,9.40625c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-9.675 -7.79375,-17.46875 -17.46875,-17.46875zM18.8125,57.78125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v65.84375c0,9.675 7.79375,17.46875 17.46875,17.46875h107.5c9.27187,0 17.46875,-7.525 17.46875,-16.125v-67.1875c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v67.1875c0,3.7625 -4.16563,8.0625 -9.40625,8.0625h-107.5c-5.24062,0 -9.40625,-4.16563 -9.40625,-9.40625v-65.84375c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM39.15247,64.6181c-1.02461,-0.0168 -2.06497,0.35273 -2.87122,1.0918c-1.6125,1.47813 -1.61197,4.0302 -0.13385,5.6427c13.03438,13.84063 30.77135,21.36615 49.8526,21.36615c19.08125,0 36.8177,-7.52605 49.98645,-21.2323c1.47813,-1.6125 1.47865,-4.16458 -0.13385,-5.6427c-1.6125,-1.47813 -4.16458,-1.47865 -5.6427,0.13385c-11.69063,11.95937 -27.41303,18.67865 -44.2099,18.67865c-16.79687,0 -32.5198,-6.71875 -44.07605,-18.8125c-0.73906,-0.80625 -1.74688,-1.20885 -2.77148,-1.22565z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="pr-lg-5 text-right pr-3 py-lg-5 py-3">
+                            <span class="s-color-text title-font">Customer say</span>
+
+                            <h3 class="m-color-text title-font mt-3">Get Quote For Services</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12 mb-1">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control form-control-lg rounded-0 border-0 t-color-bg"
+                                            placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-1">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control form-control-lg rounded-0 border-0 t-color-bg"
+                                            placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-1">
+                                    <div class="form-group">
+                                        <input type="text"
+                                            class="form-control form-control-lg rounded-0 border-0 t-color-bg"
+                                            placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-1">
+                                    <div class="form-group">
+                                        <select class="form-control  form-control-lg rounded-0 border-0 t-color-bg">
+                                            <option>service1</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <div class="form-group">
+                                        <textarea class="form-control form-control-lg  rounded-0 border-0 t-color-bg"
+                                            placeholder="Message" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <button
+                                        class="btn px-3 py-2 rounded-0 border-0 s-color-bg text-white m-color-bg-hover">Send
+                                        message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="text-center">
+                <p class="title-font s-color-text">Latest News</p>
+                <h2 class="title-font m-color-text">We provide best advices for all types of <br>
+                    repairs & installation</h2>
+            </div>
+
+            <br>
+
+            <div class="row">
+
+
+                <!-- blog -->
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-5">
+
+                        <span class="bg-white py-2 px-4 text-center position-absolute" style="top:5%; right: 5%;">
+                            <span class="s-color-text title-font mb-0 d-block h3">05</span>
+                            <span class="d-block title-font text-dark">Jun</span>
+                        </span>
+                        <img class="img-fluid" src="./images/blog/blog1.jpg" alt="Renovation">
+                        <div class="bg-white py-2 px-2 text-right position-absolute"
+                            style="bottom:-10%; width: 95%; right: 0;">
+                            <span class="s-color-text title-font">Renovation</span>
+                            <h4 class="m-color-text title-font">Benefits of Home & office Inception?</h4>
+                            <a href="#" class="text-muted s-color-text-hover">Read more </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- blog -->
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-5">
+
+                        <span class="bg-white py-2 px-4 text-center position-absolute" style="top:5%; right: 5%;">
+                            <span class="s-color-text title-font mb-0 d-block h3">05</span>
+                            <span class="d-block title-font text-dark">Jun</span>
+                        </span>
+                        <img class="img-fluid" src="./images/blog/blog1.jpg" alt="Renovation">
+                        <div class="bg-white py-2 px-2 text-right position-absolute"
+                            style="bottom:-10%; width: 95%; right: 0;">
+                            <span class="s-color-text title-font">Renovation</span>
+                            <h4 class="m-color-text title-font">Benefits of Home & office Inception?</h4>
+                            <a href="#" class="text-muted s-color-text-hover">Read more </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- blog -->
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-5">
+
+                        <span class="bg-white py-2 px-4 text-center position-absolute" style="top:5%; right: 5%;">
+                            <span class="s-color-text title-font mb-0 d-block h3">05</span>
+                            <span class="d-block title-font text-dark">Jun</span>
+                        </span>
+                        <img class="img-fluid" src="./images/blog/blog1.jpg" alt="Renovation">
+                        <div class="bg-white py-2 px-2 text-right position-absolute"
+                            style="bottom:-10%; width: 95%; right: 0;">
+                            <span class="s-color-text title-font">Renovation</span>
+                            <h4 class="m-color-text title-font">Benefits of Home & office Inception?</h4>
+                            <a href="#" class="text-muted s-color-text-hover">Read more </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="overflow-hidden position-relative ">
+        <section class="overflow-hidden  newsletter position-relative">
+            <div class="position-relative p-3 container" style="z-index: 5 ;">
+                <div class="row ">
+                    <div class="col-lg-4 col-sm-6 order-lg-1 order-1 mb-lg-0 mb-3 ">
+                        <div class="media">
+                            <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#fff">
+                                        <path
+                                            d="M18.8125,10.75c-4.44067,0 -8.0625,3.62183 -8.0625,8.0625v123.625c0,10.37207 8.44043,18.8125 18.8125,18.8125h118.25c10.37207,0 18.8125,-8.44043 18.8125,-18.8125v-67.1875c0,-5.9314 -4.8186,-10.75 -10.75,-10.75h-21.5v-45.6875c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625zM18.8125,16.125h107.5c1.48022,0 2.6875,1.20728 2.6875,2.6875v123.625c0,5.3645 2.02612,10.07813 5.396,13.4375h-104.8335c-7.41162,0 -13.4375,-6.02588 -13.4375,-13.4375v-8.0625h83.3125c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875h-83.3125v-110.1875c0,-1.48022 1.20728,-2.6875 2.6875,-2.6875zM34.9375,32.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h43c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM88.6875,32.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h16.125c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,43c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM72.5625,43c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h32.25c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,64.5c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM77.9375,64.5c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM134.375,69.875h12.25122c-0.93433,1.58521 -1.50122,3.41186 -1.50122,5.375v45.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-45.6875c0,-2.96045 2.41455,-5.375 5.375,-5.375c2.96045,0 5.375,2.41455 5.375,5.375v67.1875c0,7.41162 -6.02588,13.4375 -13.4375,13.4375c-7.78955,0 -13.4375,-5.64795 -13.4375,-13.4375zM34.9375,75.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM77.9375,75.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,86c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM77.9375,86c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,96.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM77.9375,96.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,107.5c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM110.1875,129c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h10.75c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM26.875,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM40.3125,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM53.75,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM67.1875,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM80.625,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM94.0625,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM107.5,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM120.9375,139.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <div class="media-body pt-2 text-right">
+                                <h5 class=" title-font my-0 text-white title-font font-weight-bold d-block">Subscribe
+                                    your email </h5>
+                                <h5 class="text-white title-font font-weight-bold">for Newsletter </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-2 order-3 mb-lg-0 mb-3 text-right">
+                        <div>
+                            <div class="input-group mb-3 rounded-sm bg-white p-2">
+                                <input type="text" class="form-control border-0" placeholder="Enter your email"
+                                    aria-label="Enter your email" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span
+                                        class="input-group-text border-0 border-0 s-color-bg-hover rounded-0 m-color-bg"
+                                        id="basic-addon2">
+                                        <i class="fas fa-paper-plane text-white"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 order-lg-3 order-2 mb-lg-0 mb-3 text-center">
+                        <p class=" pt-3">
+                            <span class="mx-1 s-color-text rounded-sm py-2 px-3  fa-fw bg-white  m-color-bg-hover "><i
+                                    class="fab fa-facebook-f"></i></span>
+                            <span class="mx-1 s-color-text rounded-sm p-2  fa-fw bg-white  m-color-bg-hover "><i
+                                    class="fab fa-twitter "></i></span>
+                            <span class="mx-1 s-color-text rounded-sm p-2 fa-fw bg-white  m-color-bg-hover "><i
+                                    class="fab fa-youtube    "></i></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container text-right position-relative px-lg-5 py-md-5 py-3" style="z-index: 3;">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3">
+                    <h6 class="title-font text-white mb-3">Handyman info</h6>
+                    <div>
+                        <h5 class="title-font s-color-text mb-3">+1 (088) 456 888 (24/7)</h5>
+
+                        <ul class="list-group border-0 px-0 ">
+                            <li
+                                class="list-group-item mb-2 bg-transparent text-white p-0 border-0 d-flex justify-content-between align-items-center">
+                                Monday – Friday
+                                <span class="badge badge-pill">8:00 AM – 5:00 PM</span>
+                            </li>
+
+                            <li
+                                class="list-group-item mb-2 bg-transparent text-white p-0 border-0 d-flex justify-content-between align-items-center">
+                                Saturday
+                                <span class="badge badge-pill">9:00 AM – 4:00 PM</span>
+                            </li>
+
+                            <li
+                                class="list-group-item mb-2 bg-transparent text-white p-0 border-0 d-flex justify-content-between align-items-center">
+                                Sunday
+                                <span class="badge badge-pill">Closed</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3 text-white pl-lg-5">
+                    <h6 class="title-font text-white mb-3">Information</h6>
+                    <ul class="list-unstyled px-0">
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Pipeline
+                                Leaking</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Pipeline
+                                Leaking</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Pipeline
+                                Leaking</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Pipeline
+                                Leaking</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-lg-0 mb-3  text-white">
+                    <h6 class="title-font text-white mb-3">Popular Services</h6>
+                    <ul class="list-unstyled px-0">
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Wooden
+                                Furniture</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Wooden
+                                Furniture</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Wooden
+                                Furniture</small>
+                        </li>
+
+                        <li class="mb-2">
+                            <small class="s-color-text-hover"><i class="fas mr-1 fa-angle-right"></i> Wooden
+                                Furniture</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <img src="./images/footer-offer-img.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-top   text-white  position-relative"
+            style="z-index: 3; border-color: rgb(255 255 255 / 13%) !important;">
+            <div class="container position-relative   py-lg-4 py-3">
+                <div class="row">
+                    
+                    <div class="col-md-4 text-center mb-md-0 mb-3"><img src="./images/logo2.png" class="img-fluid"
+                            alt=""></div>
+                    <div class="col-md-4 text-center mb-md-0 mb-3">
+                        <p class=" pt-2">
+                            <span class="mx-1 text-white py-3 px-4  fa-fw  s-color-text-hover"><i
+                                    class="fab fa-facebook-f"></i></span>
+                            <span class="mx-1 text-white p-3  fa-fw  s-color-text-hover"><i
+                                    class="fab fa-twitter "></i></span>
+                            <span class="mx-1 text-white p-3 fa-fw  s-color-text-hover"><i
+                                    class="fab fa-youtube    "></i></span>
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mb-md-0 mb-3 pt-md-3"><small>Copyright © 2021 All Rights
+                        Reserved.</small></div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/poper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+
+button.btn.rounded-pill.m-color-bg.py-2.px-3.title-font.w-color-text-hover.s-color-bg-hover.position-fixed.help-btn(data-bs-toggle="modal" data-bs-target="#help")
+  span
+    svg(width="20", height="20", viewBox="0 0 20 20", aria-hidden="true")
+      g#Layer_4
+        path(d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z")
+        circle(cx="10", cy="15", r="1")
+        path(d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z")
+  span.ms-2 مساعدة
+
+// help Modal
+.modal.fade#help(data-bs-backdrop="static", data-bs-keyboard="false", tabindex="-1", aria-labelledby="helpLabel", aria-hidden="true")
+  .modal-dialog
+    .modal-content
+      .modal-header.m-color-bg.border-0
+        h5.modal-title.title-font#helpLabel أترك لنا رسالة
+        button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+      .modal-body
+        .form-floating.mb-3
+          input.form-control#name(type="text", placeholder="إسمك")
+          label(for="name") الاسم
+        .form-floating.mb-3
+          input.form-control#email(type="email", placeholder="name@example.com")
+          label(for="email") البريد الالكتروني
+        .form-floating
+          textarea.form-control#message(placeholder="كيف يمكننا مساعدتك?", style="height: 100px")
+          label(for="message") كيف يمكننا مساعدتك?
+      .modal-footer.g-color-bg.border-0.justify-content-start
+        button.btn.m-color-bg.d-color-bg-hover(type="button") إرسال
+        button.btn.btn-secondary(type="button", data-bs-dismiss="modal") إلغاء
+
+footer.bg-white.py-lg-0.py-4
+  // news
+  .news
+    .container
+      .row
+        .col-lg-6.mb-lg-0.mb-3
+          h4.title
+            span اشترك في نشرتنا الإخبارية
+          p انضم إلى قائمة المراسلة الخاصة بنشرتنا الإلكترونية لتحصل على آخر المستجدات والعروض الحصرية.
+        .col-lg-6.my-auto
+          form.row.mx-0.justify-content-lg-end.justify-content-center
+            .col.px-0
+              input.rounded-0.form-control(type="text", placeholder="أدخل بريدك الإلكتروني هنا")
+            .col-auto.px-0
+              button.search.btn.s-color-bg-hover.text-dark.w-color-text-hover.m-color-bg(type="submit") إشترك الان
+  // news
+
+  // footer main
+  .footer-main
+    .container
+      .row
+        .col-12.col-md-6.col-lg-4
+          .mb-3.footer-contact
+            .title
+              span خدمة الزبائن
+            .textwidget
+              div 10 صباحاً - 6 مساءً
+              div
+                a(href="tel:+9834567877") 01 2263 5080
+              div
+                a(href="mailto:test@test.ae")  test@test.com
+          .mb-3
+            ul.list-unstyled
+              li.d-inline.mx-2
+                a(title="twitter", href="https://twitter.com")
+                  img(src="./images/icons/footer-tw-icon.webp", alt="twitter icon")
+              li.d-inline.mx-2
+                a(title="facebook", href="https://www.facebook.com/")
+                  img(src="./images/icons/footer-fb-icon.webp", alt="facebook icon")
+              li.d-inline.mx-2
+                a(title="instagram", href="https://www.instagram.com/")
+                  img(src="./images/icons/footer-ig-icon.webp", alt="instagram icon")
+              li.d-inline.mx-2
+                a(title="youtube", href="https://www.youtube.com")
+                  img(src="./images/icons/footer-yt-icon.webp", alt="youtube icon")
+          .mb-3
+              img(src="./images/icons/ssl-arabic.webp", alt="SSL secured certificate")
+
+          div
+            ul.list-unstyled
+              li.d-inline.mx-2
+                img(src="./images/icons/footer-visa-payment.webp", alt="visa payment icon")
+              li.d-inline.mx-2
+                img(src="./images/icons/footer-mastercard-payment.webp", alt="mastercard payment icon")
+              li.d-inline.mx-2
+                img(src="./images/icons/footer-applepay-payment.webp", alt="apple pay payment icon")
+              li.d-inline.mx-2
+                img(src="./images/icons/footer-madacard-payment.webp" alt="mada card payment icon")
+
+          div.d-flex
+            div.align-self-center
+              a(href="#")
+                img(src="./images/icons/ImageCr.png", width="120")
+
+            div
+              a(href="#")
+                img#licenceImage(src="./images/icons/OnlineStore.png", width="130")
+
+        .col-12.col-md-6.col-lg-2
+          div
+            .title
+              span معلومات
+            .list
+              ul.list-unstyled
+                li
+                  a(href="#") أسئلة متكررة
+                li
+                  a(href="#") الشحن والتوصيل
+                li
+                  a(href="#") الإرجاع والتبديل
+                li
+                  a(href="#") وعد تافولا
+                li
+                  a(href="#") Tavola Reward Terms
+                li
+                  a(href="#") شروط الخدمة
+                li
+                  a(href="#") سياسة الخصوصية
+                li
+                  a(href="#") خريطة الموقع
+        .col-12.col-md-6.col-lg-2
+          div
+            .title
+              span متاجر إلكترونية
+            .list
+              ul.list-unstyled
+                li
+                  a(href="/ae-en/") الإمارات
+                li
+                  a(href="/sa-en/") السعودية
+                li
+                  a(href="/kw-en/") الكويت
+                li
+                  a(href="/bh-en/") البحرين
+                li
+                  a(href="/qa-en/") قطر
+                li
+                  a(href="/om-en/") عُمان
+        .col-12.col-md-6.col-lg-2
+          div
+            .title
+              span حسابي
+            .list
+              ul.list-unstyled
+                li
+                  a(href="#account/login/") دخول
+                li
+                  a(href="#account/create/") تسجيل
+                li
+                  a(href="#guest/form/") تتبع الطلب
+                // <li><a href="#">Rewards</a></li>
+        .col-12.col-md-6.col-lg-2
+          div
+            .title
+              span الشركة
+            .list
+              ul.list-unstyled
+                li
+                  a(href="#us/") من نحن
+                li
+                  a(href="#us/") اتصل بنا
+                li
+                  a(href="#locator/") مواقع المتاجر
+        .col-12.text-center.border-top.mt-4.pt-4
+          p جميع الحقوق محفوظة
+  // footer main
+
+include scripts

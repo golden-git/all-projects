@@ -1,0 +1,152 @@
+mixin tabel-header(title, id)
+  .d-lg-flex.bg-gray-light.justify-content-lg-between.px-4.py-3
+    h4.align-self-center= title
+    .align-self-center
+      button.btn.btn-primary.departments(data-toggle="modal", data-target=id)
+        i.fa.fa-plus
+        |  اضافة
+      button.btn.btn-tool(type="button", data-card-widget="maximize")
+        i.fas.fa-expand
+
+
+mixin tabel-header-a(title, link)
+  .d-lg-flex.bg-gray-light.justify-content-lg-between.px-4.py-3
+    h4.align-self-center= title
+    .align-self-center
+      a.btn.btn-primary.departments(href=link)
+        i.fa.fa-plus
+        |  اضافة
+
+      button.btn.btn-tool(type="button", data-card-widget="maximize")
+        i.fas.fa-expand
+
+
+mixin breadcrumb-in-1(title, span, link, href)
+  .content-header
+    .container-fluid
+      .row.mb-2
+        .col-sm-12.mb-3
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href=href)=link
+            li.breadcrumb-item
+              span=span
+        .col-sm-12
+          h1=title
+
+mixin breadcrumb-in-2(title, span, link1, href1, link2, href2)
+  .content-header
+    .container-fluid
+      .row.mb-2
+        .col-sm-12.mb-3
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href=href1)=link1
+            li.breadcrumb-item
+              a(href=href2)=link2
+            li.breadcrumb-item
+              span=span
+        .col-sm-12
+          h1=title
+
+mixin modal-header(title)
+  .modal-header
+    h5.modal-title=title
+    button.close(type="button", data-dismiss="modal", aria-label="Close")
+      span(aria-hidden="true") ×
+
+mixin modal-footer(action)
+   .modal-footer.justify-content-start
+      button.btn.btn-secondary(type="button", data-dismiss="modal") اغلاق
+      if action
+        button.btn.btn-primary.add(type="button")=action
+
+
+mixin tabel-option-link(showlink, editlink)
+  td
+    a.btn.btn-info.btn-xs(href=showlink)
+      i.fa.fa-eye.mr-1
+      | عرض
+
+    .dropdown.d-inline-block
+      button.btn.btn-default.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        span المزيد
+        span.caret
+      .dropdown-menu
+        a.dropdown-item.text-info(href=showlink)
+          i.fa.fa-eye.mr-1
+          span تفاصيل
+        a.dropdown-item.text-warning(href=editlink)
+          i.fa.fa-edit.mr-1
+          span تعديل
+        a.dropdown-item.delete.text-danger(href="#")
+          i.fa.fa-trash.mr-1
+          span حذف
+
+mixin tabel-option-nolink(editid ,showid)
+  td
+    a.btn.btn-info.btn-xs(href="#", data-toggle="modal", data-target='#'+showid)
+      i.fa.fa-eye.mr-1
+      | عرض
+
+    .dropdown.d-inline-block
+      button.btn.btn-default.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-expanded="false")
+        span المزيد
+        span.caret
+      .dropdown-menu
+        a.dropdown-item.text-info(href="#", data-toggle="modal", data-target='#'+showid)
+          i.fa.fa-eye.mr-1
+          span تفاصيل
+        a.dropdown-item.text-warning(href="#", data-toggle="modal", data-target="#"+editid)
+          i.fa.fa-edit.mr-1
+          span تعديل
+        a.dropdown-item.delete.text-danger(href="#")
+          i.fa.fa-trash.mr-1
+          span حذف
+
+mixin tabel-option-nolink-sm(editid ,showid)
+  td
+    if showid
+      a.btn.btn-info.btn-xs.mx-1(href="#", data-toggle="modal", data-target='#'+showid)
+        i.fa.fa-eye.mr-1
+        | عرض
+    if editid
+      a.btn.btn-warning.btn-xs.mx-1(href="#", data-toggle="modal", data-target='#'+editid)
+        i.fa.fa-edit.mr-1
+        | تعديل
+    a.btn.btn-danger.btn-xs.mx-1(href="#")
+      i.fa.fa-trash.mr-1
+      | خذف
+
+mixin  btn-save
+  button.btn.btn-primary.btn-lg(type="button") حفظ
+
+mixin search-2(select1 , select2  , datefrom = null, dateto = null)
+  .card-extra.clearfix.mb-3
+    form.form-inline.guide-advanced-search.mb-3
+      .form-group.mr-2
+        label
+          i.fa.fa-cogs.mr-1
+          span بحث متقدم
+      if select1
+        .form-group.mr-2
+          label.mr-1=select1
+          select.form-control
+            option الكل
+            option 1-الاصول
+      if select2
+        .form-group.mr-2
+          label.mr-1=select2
+          select.form-control
+            option الكل
+      if datefrom
+        .form-group.mr-2
+          label.mr-1=datefrom
+          input.form-control(type="date", value="2021-11-28")
+      if dateto
+        .form-group.mr-2
+          label.mr-1=dateto
+          input.form-control(type="date", value="2021-11-28")
+      button.btn.btn-primary(type="button")
+        i.fa.fa-search.ml-2
+        span بحث

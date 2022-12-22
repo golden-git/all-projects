@@ -1,0 +1,33 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" نطاقات التغطية ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("نطاقات التغطية  ")
+        .d-lg-flex.mb-4.justify-content-between.mt-5
+          h4
+          div.align-self-center
+            a.text-white.rounded-pill.border-0.m-color-bg.d-color-bg-hover.btn.btn-lg(href="add-range.html")
+              | اضافة منطقة
+              i.fas.fa-plus-circle.mx-2
+        .custom-table
+          h4 نطاقات التغطية
+          .table-responsive
+            table.table.table-borderless
+              thead
+                tr
+                  each val in [ "المنطقة  ",   "عدد المناطق المغطاه", "  حالة المنطقة", "الاجراءات"]
+                    th=val
+              -for(x=1; x<=5; x++)
+                tbody
+                  tr
+                    td الفروانية
+                    td 5 مناطق
+                    td: span.m-color-text مفعل
+                    td
+                      .form-check.form-switch
+                        input.form-check-input.custom-switch(id=x, type="checkbox", checked)
+
+    include ./includes/scripts

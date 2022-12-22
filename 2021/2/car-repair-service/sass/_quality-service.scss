@@ -1,0 +1,303 @@
+/*========== quality-service ==========*/
+
+.quality-service {
+    padding: 5% 0;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    
+    li {
+        font-size: 20px;
+        i {
+            font-size: 15px;
+        }
+    }
+
+    .img-fixed {
+        background-image: url(../imgaes/quality-service/slide1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 10%;
+
+        .promo01 {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            width: 340px;
+            bottom: -100px;
+            right: -100px;
+    
+            .promo01-header {
+                background-color: var(--m-color);
+                text-align: center;
+                padding: 22px 15px 31px;
+    
+                .text-01 {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+    
+                .text-02 {
+                    font-size: 60px;
+                    line-height: 51px;
+                    color: #ff4200;
+                    font-weight: bold;
+                    margin-top: 7px;
+                    letter-spacing: -0.04em;
+                    span {
+                        font-size: 40px;
+                    }
+                }
+    
+                .text-03 {
+                    font-size: 29px;
+                    line-height: 28px;
+                    font-weight: 600;
+                }
+            }
+    
+            .promo01-content {
+                position: relative;
+                text-align: center;
+                background: #2d2d2d url(../imgaes/quality-service/promo01-bg01.png) 0 0 repeat-x;
+                padding: 46px 20px 46px;
+    
+                
+                .text-01 {
+                    font-size: 27px;
+                    line-height: 28px;
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+    
+                .text-02 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: var(--m-color);
+                    margin-top: 8px;
+                }
+    
+                a {
+                    margin-top: 17px;
+                    padding-left: 23px;
+                    padding-right: 23px;
+                    border: 2px solid #fede00;
+                }
+                
+            }
+        }
+    }
+     
+
+}
+
+
+@media (max-width: 575.98px) {
+    .quality-service {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+
+        li {
+            font-size: 18px;
+            i {
+                font-size: 10px;
+            }
+        }
+
+        .img-fixed {
+            padding: 10%;
+            margin-bottom: 15%;
+    
+            .promo01 {
+                width: 340px;
+                bottom: -80px;
+                right: -30px;
+        
+                .promo01-header {
+        
+                    .text-01 {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+        
+                    .text-02 {
+                        font-size: 40px;
+                        line-height: 51px;
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+        
+                    .text-03 {
+                        font-size: 25px;
+                        line-height: 28px;
+                    }
+                }
+        
+                .promo01-content {
+                    padding: 46px 20px 46px;
+        
+                    
+                    .text-01 {
+                        font-size: 25px;
+                    }
+        
+                    .text-02 {
+                        font-size: 16px;
+                        margin-top: 8px;
+                    }
+        
+                    
+                }
+            }
+        }
+     
+    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .quality-service {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+        
+        li {
+            font-size: 18px;
+            i {
+                font-size: 10px;
+            }
+        }
+
+        .img-fixed {
+            padding: 10%;
+            margin-bottom: 15%;
+    
+            .promo01 {
+                width: 440px;
+                bottom: -100px;
+                right: -30px;
+        
+                .promo01-header {
+        
+                    .text-01 {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+        
+                    .text-02 {
+                        font-size: 40px;
+                        line-height: 51px;
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+        
+                    .text-03 {
+                        font-size: 25px;
+                        line-height: 28px;
+                    }
+                }
+        
+                .promo01-content {
+                    padding: 46px 20px 46px;
+        
+                    
+                    .text-01 {
+                        font-size: 25px;
+                    }
+        
+                    .text-02 {
+                        font-size: 16px;
+                        margin-top: 8px;
+                    }
+        
+                    
+                }
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px)  {
+    .quality-service {
+        padding-top: 10%;
+    
+        
+
+        .img-fixed {
+            padding: 10%;
+            margin-bottom: 15%;
+    
+            .promo01 {
+                width: 440px;
+                bottom: -100px;
+                right: -30px;
+        
+                .promo01-header {
+        
+                    .text-01 {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+        
+                    .text-02 {
+                        font-size: 40px;
+                        line-height: 51px;
+                        span {
+                            font-size: 30px;
+                        }
+                    }
+        
+                    .text-03 {
+                        font-size: 25px;
+                        line-height: 28px;
+                    }
+                }
+        
+                .promo01-content {
+                    padding: 46px 20px 46px;
+        
+                    
+                    .text-01 {
+                        font-size: 25px;
+                    }
+        
+                    .text-02 {
+                        font-size: 16px;
+                        margin-top: 8px;
+                    }
+        
+                    
+                }
+            }
+        }
+    
+    }
+}
+/*========== quality-service ==========*/

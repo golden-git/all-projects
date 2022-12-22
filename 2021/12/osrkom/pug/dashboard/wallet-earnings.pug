@@ -1,0 +1,84 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" المحفظة و الأرباح ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("محفظتي/ارباحي")
+        .row.mt-5
+          .col-md-7.mb-4
+            .border.rounded-3.px-3.text-center.py-5
+              img.mb-4(src="../images/icons/cash.png", alt="cash", width="130", height="103")
+              h3 الأرباح \ رصيد محفظتي
+              h1 324
+              p.text-muted.h4 ريال سعودي
+              p.text-danger.mb-5
+                img(src="../images/icons/scall-down.png", alt="scall down", width="40")
+                span.h3.mx-1 +
+                span.h4 20%
+              span.mx-auto.mb-4.m-color-bg.text-white.d-color-bg-hover.pointer.py-3.px-4.rounded-pill.w-50.d-block(data-bs-toggle="modal" data-bs-target="#payModal") طلب سحب رصيد
+              span.mx-auto.m-color-bg-hover.m-color-text.m-color-border.border.d-color-bg-hover.pointer.py-3.px-5.rounded-pill.w-50.d-block طلب ايداع
+          .col-md-5.mb-4
+            .border.rounded-3.p-3
+              h3 حساباتي البنكية
+              .wallet-card.mb-4
+                img.mb-2.img-fluid(src="../images/icons/card.png", alt="card")
+                span.wallet $2,234,765
+                span.date 24/6
+                span.number 4212
+              img.mb-2.pointer(src="../images/icons/plus.png", alt="plus", width="100", data-bs-toggle="modal" data-bs-target="#cardModal")
+          .col-md-12.mb-4
+            .border.rounded-3.p-4
+              h3.mb-4 مدفوعاتي السابقة
+              .d-lg-flex.justify-content-between
+                div.mb-lg-0.mb-3
+                  .d-flex
+                    img.align-self-start(src="../images/icons/prevpay.png", width="80")
+                    div.align-self-center
+                      h4 اشتراك شهري مستحق
+                      span.text-muted 22/5/2021
+
+                p.text-danger.mb-5
+                  img(src="../images/icons/minus.png", alt=" minus", width="45")
+                  span.h3 342 ريال
+
+    include ./includes/scripts
+//  Modal
+.modal.fade#payModal(tabindex='-1', aria-labelledby='payModalLabel', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header.border-0.pb-0
+        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+      .modal-body.border-0.pt-0
+        h3.text-center سحب رصيد
+        .row.py-4
+          .col-12: +dash-input("ادخل المبلغ الذى تريد سحبه", "", "number", "")
+
+          .col-12 اختر الحساب البنكي الذى تريد التحويل اليه
+          .col-md-6
+            .check-out
+              .pay
+                  .form-check.pay-methods
+                      label.form-check-label.text-start(for="check1") ****3456789
+                      input.form-check-input.p-0.m-0( name="paytype" id="check1", type="radio")
+                      img(src="../images/icons/pay/0.png", alt="pay")
+
+          .col-md-6
+            input.form-control.form-select-lg.dash-input.rounded-pill(type="text")
+          .col-12: +action-btn("إضافة", "#" , "الغاء")
+
+//  Modal
+.modal.fade#cardModal(tabindex='-1', aria-labelledby='cardModalLabel', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header.border-0.pb-0
+        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+      .modal-body.border-0.pt-0
+        h3.text-center اضافة بطاقة بنكية
+        .row.py-4
+          .col-12: +dash-input("رقم البطاقة", "", "number", "")
+          .col-lg-4: +dash-input("اسم صاحب البطاقة", "", "number", "")
+          .col-lg-4: +dash-input("تاريخ الانتهاء ", "", "number", "")
+          .col-lg-4: +dash-input("CVV", "", "number", "")
+          .col-12: +action-btn("إضافة", "#" , "الغاء")

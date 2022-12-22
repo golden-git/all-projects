@@ -1,0 +1,110 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("المدرب")
+  body
+    include ./includes/navbar
+    style.
+      .top-nav { background-color: var(--g-color); }
+      .top-nav span, .top-nav a { color: #666 !important; }
+    main.trainer
+      // header
+      header.d-flex
+        .container.align-self-center.text-center
+          .section-sm-title المعلمين
+          h1.section-lg-title(id="trainer-info") الملف الشخصي للمدرب
+          nav(aria-label="breadcrumb")
+            ol.breadcrumb.d-inline-flex
+              li.breadcrumb-item
+                a(href="index.html") الرئيسية
+              li.breadcrumb-item.active(aria-current="page") المعلم
+          a.link(href="#trainer-info")  إكتشف
+
+      section.trainer-info.pb-0
+        .container
+          .row.mx-0
+            .col-lg-5
+              .team.mb-md-0.mb-4
+                div(class="position-relative team-div text-start")
+                  .text-center: img.img-fluid(src="./images/team/team.jpg" alt="team" )
+                  h5(class="mb-2") مارك أنتوني
+                  p(class="mb-2") معلم
+                  div(class="d-flex justify-content-between")
+                    div(class="text-start")
+                      span(class="d-block")
+                        i(class="fas fa-mobile-alt me-2 m-color-text ")
+                        | 121-3245-214
+                      span(class="d-block")
+                        i(class="fas fa-envelope  me-2 m-color-text")
+                        | sample@mail.com
+                    div(class=" position-relative")
+                      i(class="fas fa-share-alt s-color-bg rounded-circle fa-fw")
+                  span(class="position-absolute link text-center py-2")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-facebook-f")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-youtube")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-linkedin-in")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-twitter")
+                    a(href="#" class="d-block")
+                      i(class="fab fa-app-store-ios")
+                  div.mt-4
+                    a.section-link(href="#") اتصل الآن
+
+              .trainer-info-data.p-0
+                span.section-sm-title المدونة
+                h2.section-lg-title مقالاتي
+                .row.mb-4
+                  -for(x=1; x<=2; x++)
+                    // course
+                    .col-lg-12.col-6.mb-4
+                      +blog()
+                  .col-12.mt-3
+                    a.section-link(href="#") تصفح جميع المقالات
+
+            .col-lg-7.trainer-info-data
+              div.mb-4
+                h1.section-lg-title عني
+                p لكن الفقر ، قبل وبعد عطلة نهاية الأسبوع الأولمبية ، القدم دائمًا هي أيروس ، الخوف من الحياة هو الحداد على كرة القدم المجانية المرض النقي للحر ، حلق الرجل ، راحة الرجل ، أي الحامل. لكن السرير. إنه عنصر من عناصر عذاب المكتب.
+
+              div.skills.mb-4
+                h1.section-lg-title مهاراتي
+                .row.mb-4
+                  -for(x=1; x<=6; x++)
+                    // course
+                    .col-md-6.mb-3
+                      .skill
+                        span تفاعل
+                        span 60%
+                      .progress
+                        .progress-bar(role="progressbar", style="width: 60%;", aria-valuenow="60", aria-valuemin="0", aria-valuemax="100")
+
+              div.mb-4.experiences
+                h1.section-lg-title خبراتي
+                p أنا أعمل كمطور ويب أقدم لنحو 10 سنوات ( 2010 – الحالي ) at CodeMex. علاوة على ذلك ، عملت كمدرب أول في WebCode لمدة تزيد عن 5 سنوات ( 2005 – 2010 ).
+                .row
+                  .col-6
+                    .experience
+                      h6 20+
+                      p دروس مباشرة
+                  .col-6
+                    .experience
+                      h6 200+
+                      p الطلاب المسجلين
+
+              div
+                h1.section-lg-title دوراتي
+                .row.mb-4
+                  -for(x=1; x<=4; x++)
+                    // course
+                    .col-6.mb-md-4.mb-3
+                      +course()
+                div
+                  a.section-link(href="courses.html") تصفح جميع الدورات
+
+
+
+
+    include ./includes/footer

@@ -1,0 +1,89 @@
+aside.main-sidebar.sidebar-light-primary.elevation-4
+    a.brand-link(href="#")
+      span.brand-text.font-weight-light.text-capitalize المصمم الذكي
+    .sidebar
+      nav.mt-2
+        ul.nav.nav-pills.nav-sidebar.flex-column(data-widget="treeview", role="menu", data-accordion="false")
+          li.nav-item
+            h3.text-center اسم النظام
+          // index
+          li.nav-item
+            a.nav-link(href="index.html")
+              i.fas.fa-chart-pie.nav-icon
+              p الرئيسية
+          // sys
+          li.nav-item
+            a.nav-link(href="sys.html")
+              i.fas.fa-cogs.nav-icon
+              p  ادخالات النظام
+
+          // users
+          li.nav-item
+            a.nav-link(href="#")
+              i.nav-icon.fas.fa-users
+              p  المستخدمين
+                i.right.fas.fa-angle-left
+            ul.nav.nav-treeview
+              // add
+              li.nav-item
+                  a.nav-link(href="add-user.html")
+                    i.far.fa-circle.nav-icon
+                    p اضافة مستخدم
+              // users
+              li.nav-item
+                a.nav-link(href="users.html")
+                  i.far.fa-circle.nav-icon
+                  p قائمة المستخدمين
+              // privilege
+              li.nav-item
+                a.nav-link(href="users-privilege.html")
+                  i.far.fa-circle.nav-icon
+                  p الصلاحيات
+              // add privilege
+              li.nav-item
+                a.nav-link(href="user-add-privilege.html")
+                  i.far.fa-circle.nav-icon
+                  p اضافة صلاحية لمستخدم
+
+          // companies + bank
+          li.nav-item
+            a.nav-link(href="#")
+              i.nav-icon.fas.fa-building
+              p  الشركات و البنوك
+                i.right.fas.fa-angle-left
+            ul.nav.nav-treeview
+              // companies
+              li.nav-item
+                  a.nav-link(href="companies.html")
+                    i.far.fa-circle.nav-icon
+                    p الشركات
+              // banks
+              li.nav-item
+                a.nav-link(href="banks.html")
+                  i.far.fa-circle.nav-icon
+                  p البنوك
+
+          // companies + bank
+          li.nav-item
+            a.nav-link(href="#")
+              i.nav-icon.fas.fa-globe
+              p  اللغات و المناطق
+                i.right.fas.fa-angle-left
+            ul.nav.nav-treeview
+              // language
+              li.nav-item
+                  a.nav-link(href="language.html")
+                    i.far.fa-circle.nav-icon
+                    p اللغات
+              // locations
+              li.nav-item
+                a.nav-link(href="locations.html")
+                  i.far.fa-circle.nav-icon
+                  p المناطق
+
+          // license
+          li.nav-item
+            a.nav-link(href="license.html")
+              i.fas.fa-id-badge.nav-icon
+              p  التراخيص
+

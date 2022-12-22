@@ -1,0 +1,122 @@
+doctype html
+html(dir="rtl")
+  include ./mixins/all.pug
+  +head("عرض منتجات القسم")
+  body
+    include ./includes/navbar
+    .container.py-2
+      +breadcrumb-2-links("الرئيسية", "index.html", "التصنيف الرئيسي", "category.html", "موسم الشتاء  ")
+    section.category.bg-white.py-lg-4.py-3
+      .container
+        h1 موسم الشتاء
+        .row
+          .main-wrap.col-12.col-lg-8.col-xl-9.order-2.order-md-3
+            .toolbar.py-2.px-3.g-color-bg.d-flex.justify-content-between.mb-1.show-filter
+              span تسوق عن طريق
+              i.mbi.mbi-io-add.h3
+            .toolbar.py-2.px-3.g-color-bg.d-md-flex.justify-content-between
+              div.text-center
+                span.me.lg-5 منتجات 1-25 من 455
+                a.action.sorter-action.position-relative(href="#")
+                select.form-select.d-inline-block.w-auto.ms-3
+                  option ترتيب حسب
+                  option الاسم
+                  option السعر
+
+              select.form-select.d-lg-inline-block.d-none.w-auto
+                option اظهر 25
+                option اظهر 50
+                option اظهر 70
+
+            .products.py-lg-5.py-3
+              .row
+                - for (x = 1; x <= 5; x++)
+                  .col-lg-3.col-md-4.col-6
+                    .text-center.p-2.position-relative.product
+                      span.position-absolute -25%
+                      a.s-color-text-hover.text-dark(href="product.html")
+                        img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                        h5 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                        p 29 SAR
+                - for (x = 1; x <= 5; x++)
+                  .col-lg-3.col-md-4.col-6
+                    .text-center.p-2.position-relative.product
+                      span.position-absolute -25%
+                      a.s-color-text-hover.text-dark(href="product.html")
+                        img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                        h5 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                        p 29 SAR
+                - for (x = 1; x <= 5; x++)
+                  .col-lg-3.col-md-4.col-6
+                    .text-center.p-2.position-relative.product
+                      span.position-absolute -25%
+                      a.s-color-text-hover.text-dark(href="product.html")
+                        img.img-fluid(src="./images/products/"+x+".webp", alt="explore slider img")
+                        h5 كيس تزيين فاذروييت، 10 بوصة، ويلتون #{x}
+                        p 29 SAR
+                .col-12
+                  nav(aria-label="...")
+                    ul.pagination.justify-content-center
+                      li.page-item.disabled
+                        a.page-link(href="#", tabindex="-1", aria-disabled="true") السابق
+                      li.page-item
+                        a.page-link(href="#") 1
+                      li.page-item.active(aria-current="page")
+                        a.page-link(href="#") 2
+                      li.page-item
+                        a.page-link(href="#") 3
+                      li.page-item
+                        a.page-link(href="#") التالي
+
+          aside.col-12.col-lg-4.col-xl-3.order-1.order-md-2
+            .filters
+              span.close-filters.show-filter
+              h5 تسوق عن طريق
+              +accordion-filter("1", "1", "1", "الاقسام", "لوازم الخبز للشتاء")
+              .accordion.accordion-flush(id="accordion-7")
+                .accordion-item
+                  h2.accordion-header(id="flush-7")
+                    .accordion-button.px-0.border-0.pointer.show(
+                      data-bs-toggle="collapse",
+                      data-bs-target="#flush-collapse-7",
+                      aria-expanded="true",
+                      aria-controls="flush-collapse-7") السعر
+
+                  div(id="flush-collapse-7").border-top-0.pb-3.rounded-0.accordion-collapse(aria-labelledby="flush-7", data-bs-parent="#accordion-7")
+                    div.accordion-body.py-0
+                      .row
+                        .col-12.text-center
+                          | بين
+                        .col
+                          input.form-control(type="number", value="5")
+                        .col
+                          input.form-control(type="number", value="345")
+                        .col-12.text-center.mt-2
+                          button.btn.m-color-bg.px-4.d-color-bg-hover تطبيق
+
+              .accordion.accordion-flush(id="accordion-8")
+                .accordion-item
+                  h2.accordion-header(id="flush-8")
+                    .accordion-button.px-0.border-0.show.pointer(
+                      data-bs-toggle="collapse",
+                      data-bs-target="#flush-collapse-8",
+                      aria-expanded="true",
+                      aria-controls="flush-collapse-8") اللون
+
+                  div(id="flush-collapse-8").border-top-0.pb-3.rounded-0.accordion-collapse(aria-labelledby="flush-8", data-bs-parent="#accordion-8")
+                    div.accordion-body.py-0
+                      .colors
+                        span.pointer.color(style="background-color:#0d6efd")
+                        span.pointer.color(style="background-color:#dc3545")
+                        span.pointer.color(style="background-color:#198754")
+                        span.pointer.color(style="background-color:#0d6efd")
+                        span.pointer.color(style="background-color:#dc3545")
+
+              +accordion-filter("2", "2", "2", "ماركات", "بورتميريون  ")
+              +accordion-filter("3", "3", "3", "المادة الأساسية", "ألمنيوم مصبوب  ")
+              +accordion-filter("4", "4", "4", "المجموعة  ", "Airplus    ")
+              +accordion-filter("5", "5", "5", "الشكل  ", "دائري")
+              +accordion-filter("6", "6", "6", "الاصدار  ", "جديد")
+
+
+    include ./includes/footer

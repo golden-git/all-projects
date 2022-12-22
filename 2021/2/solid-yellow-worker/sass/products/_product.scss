@@ -1,0 +1,28 @@
+/*========== product ==========*/
+ .product {
+    padding: 5% 0;
+    .fa-star {font-size: 13px;}
+    h1 {font-size: 50px;}
+    .description {line-height: 2;}
+    .active-img {border-color: var(--m-color) !important;}
+    .nav-pills .nav-link.active{
+        color: var(--m-color);
+        background-color: var(--d-color);
+    }
+
+    .icons {
+        i {font-size: 20px;}
+    }
+ }
+@media (max-width: 575.98px) {
+    .product {
+        .fa-star {font-size: 11px;}
+        h1 {font-size: 30px;}
+    
+        .icons {
+            i {font-size: 15px;}
+        }
+     }
+}
+ 
+/*========== product ==========*/

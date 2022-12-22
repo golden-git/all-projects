@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      
+    <title>برنامج إدارة الموردين - دفترة</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/fontello.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;800&display=swap" rel="stylesheet">
+
+    <!-- Styles Tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       
+</head>
+
+<body cz-shortcut-listen="true">
+    
+    <div class="layout">
+
+        <div class="header-fixed pd">
+            <header class="header fixed">
+                <div class="container">
+                    <a class="logo" href="#">
+                        <img src="assets/img/daftra-ar.svg" alt="دفترة">
+                    </a>
+
+                    <ul class="list-unstyled nav-links">
+                        <li>
+                            <a class="open-modules">البرامج</a>
+                        </li>
+                        <li>
+                            <a class="industry-menu-link">مجالات العمل</a>
+                        </li>
+                        <li>
+                            <a href="#">الأسعار</a>
+                        </li>
+                        <li>
+                            <a href="#">اتصل بنا</a>
+                        </li>
+
+                        <li class="bars-icon open-modules order-lg-1 order-3">
+                            <a>
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                        <li class="lang-btn order-lg-2 order-1">
+                            <div class="menu-item-dropdown">
+                                <button class="dropbtn"> EN <i class="dropbtn-icon fa fa-angle-down"></i> </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#" class="ar-lang">English</a>
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li class="login-link order-lg-2 order-1 ">
+                            <a href="#"
+                                class="login sub-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                    class="btn-content hover-effect-text">دخول</span><span
+                                    class="btn-ripple"></span></a>
+                        </li>
+                        <li class="get-stated-free-link order-lg-3 order-1">
+                            <a href="#"
+                                class="register main-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                    class="btn-content hover-effect-text"> ابدأ الاستخدام مجاناً </span><span
+                                    class="btn-ripple"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div><!-- Module Menu -->
+        <div class="mega-menu">
+            <img src="assets/img/lines.png" alt="" class="m-lines">
+            <span class="close-icon">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="sides">
+                <div class="left-side">
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">المبيعات <i class="fa fa-arrow-right"></i></h2>
+                        <div><a
+                                href="#">
+                                <i class="icon fas fa-badge-percent "></i>المبيعات</a><a
+                                href="#">
+                                <i class="icon fas fa-receipt "></i>الفواتير وعروض الأسعار</a><a
+                                href="#">
+                                <i class="icon fas fa-laptop "></i>نقاط البيع</a><a
+                                href="#"> <i
+                                    class="icon fas fa-ad "></i>العروض</a><a
+                                href="#">
+                                <i class="icon far fa-money-bill-alt "></i>الأقساط</a><a
+                                href="#">
+                                <i class="icon fas fa-usd-circle "></i>المبيعات المستهدفة والعمولات</a><a
+                                href="#">
+                                <i class="icon fas fa-user-shield "></i>التأمينات</a><a
+                                href="#">
+                                <i class="icon fas fa-file-invoice-dollar "></i>الفاتورة الإلكترونية السعودية - هيئة
+                                الزكاة والدخل</a><a
+                                href="#">
+                                <i class="icon fas fa-file-invoice-dollar "></i>الفاتورة الإلكترونية المصرية - مصلحة
+                                الضرائب</a></div>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">العملاء <i class="fa fa-arrow-right"></i></h2>
+                        <div><a
+                                href="#">
+                                <i class="icon fas fa-user-tie "></i> إدارة العملاء</a><a
+                                href="#">
+                                <i class="icon fas fa-user-clock "></i>متابعة العملاء</a><a
+                                href="#">
+                                <i class="icon fas fa-hand-holding-usd "></i>نقاط الولاء للعملاء</a><a
+                                href="#">
+                                <i class="icon fas fa-layer-group "></i>النقاط والأرصدة</a><a
+                                href="#">
+                                <i class="icon fas fa-id-card "></i>الاشتراكات والعضويات</a></div>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">المخزون <i class="fa fa-arrow-right"></i></h2>
+                        <div><a
+                                href="#">
+                                <i class="icon fas fa-inventory "></i>المخزون والمستودعات</a><a
+                                href="#">
+                                <i class="icon fas fa-box-open "></i>إدارة المنتجات</a><a
+                                href="#"> <i
+                                    class="icon fas fa-shopping-cart "></i>المشتريات</a><a
+                                href="#">
+                                <i class="icon fas fa-repeat "></i>دورة المشتريات</a><a
+                                href="#">
+                                <i class="icon fas fa-truck-moving "></i>إدارة الموردين</a><a
+                                href="#">
+                                <i class="icon fas fa-clipboard-list "></i>الأذون المخزنية</a><a
+                                href="#">
+                                <i class="icon fas fa-boxes "></i>إدارة الجرد</a></div>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">الحسابات <i class="fa fa-arrow-right"></i></h2>
+                        <div><a href="# "> <i
+                                    class="icon fas fa-money-bill-wave-alt "></i>المصروفات</a><a
+                                href="# ">
+                                <i class="icon fas fa-calculator "></i>برنامج محاسبي</a><a
+                                href="# ">
+                                <i class="icon fas fa-clipboard-list-check "></i>دليل الحسابات</a><a
+                                href="# ">
+                                <i class="icon fas fa-briefcase "></i>إدارة الأصول</a><a
+                                href="# ">
+                                <i class="icon fas fa-sack-dollar "></i>مراكز التكلفة</a><a
+                                href="# ">
+                                <i class="icon fas fa-money-check-edit "></i>دورة الشيكات</a></div>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">شؤون الموظفين <i class="fa fa-arrow-right"></i></h2>
+                        <div><a
+                                href="# ">
+                                <i class="icon fas fa-users "></i>شؤون الموظفين</a><a
+                                href="# ">
+                                <i class="icon fas fa-sitemap "></i>إدارة الهيكل التنظيمى</a><a
+                                href="# ">
+                                <i class="icon fas fa-calendar-week "></i>الحضور والانصراف</a><a
+                                href="# ">
+                                <i class="icon fas fa-address-card "></i>إدارة العقود</a><a
+                                href="# ">
+                                <i class="icon fas fa-money-bill "></i>إدارة المرتبات</a><a
+                                href="# "> <i
+                                    class="icon fas fa-file-alt "></i>إدارة الطلبات</a></div>
+                    </div>
+                    <div class="menu-item">
+                        <h2 class="menu-item-title">التشغيل <i class="fa fa-arrow-right"></i></h2>
+                        <div><a href="# ">
+                                <i class="icon fas fa-cogs "></i>دورة العمل</a><a
+                                href="# ">
+                                <i class="icon fas fa-file-invoice "></i>أوامر الشغل</a><a
+                                href="# ">
+                                <i class="icon fad fa-calendar-alt "></i>الحجوزات</a><a
+                                href="# ">
+                                <i class="icon fas fa-clock "></i>تتبع الوقت</a></div>
+                    </div>
+                </div>
+
+                <!-- module_left_cloumn -->
+                <p>
+                </p>
+                <div class="right-side">
+                    <a href="#"> <span> الصفحة الرئيسية </span> <i class="fa fa-angle-left"> </i>
+                    </a>
+                    <a href="# "
+                        class="industry-menu-link"> <span> مجالات العمل </span> <i class="fa fa-angle-right"> </i> </a>
+                    <a href="# " style="direction: ltr;"><i
+                            class="fa fa-arrow-right"></i> المزايا </a>
+                    <a class="show-modules-menu d-block d-lg-none"><span>البرامج </span><i
+                            class="fa fa-arrow-right"></i> </a>
+                    <a href="#"> <span> الأسعار </span> <i class="fa fa-arrow-right"></i>
+                    </a>
+                    <a href="#"><span> دليل الاستخدام </span> <i class="fa fa-arrow-right"></i>
+                    </a>
+                    <div class="right-side-col">
+                        <div class="menu-item" style="    line-height: 2;">
+                            <p></p>
+                            <h2>المزيد</h2> 
+                            <p>
+                                <a href="#">وكلاء دفترة </a>
+                                <a href="#"> عملائنا </a>
+                                <a href="#"> عن دفترة </a>
+                                <a href="#"> المدونة </a>
+                                <a href="#"> تواصل معنا </a>
+                                <a href="#"> المركز التعليمي</a>
+                            </p>
+                            <div class="menu-item d-flex d-lg-none align-items-center"><a
+                                    href="#" class="register btn"
+                                    style="background:#42b72a;color:#fff"> تسجيل حساب </a> <a
+                                    href="#" class="login btn mx-1"
+                                    style="background:#0053BD;color:#fff"> تسجيل الدخول </a></div>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </div><!-- Industry Menu -->
+        <div class="industry-menu">
+            <div class="container-fluid">
+                <div class="menu__layer">
+                    <div>
+                        <span class="back-icon">
+                            <i class="fa fa-angle-left"></i>
+                        </span>
+                        <h2 class="tab-title">مجالات العمل</h2>
+                    </div>
+                    <form id="industries_form"
+                        action="#">
+                        <div class="form-item">
+                            <i class="fa fa-search"></i>
+                            <input id="search_term" type="text" name="industry" placeholder="ابحث عن مجال عملك">
+                        </div>
+                    </form>
+                    <span class="close-icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <div class="menu__content">
+                    <a href="#"
+                        class="menu__item"><img src="assets/img/6138bf1a326e0_perfume.svg" alt=""><span>محلات
+                            العطور</span></a><a
+                        href="#"
+                        class="menu__item"><img src="assets/img/6138bf16aba7a_HAVC.svg" alt=""><span>مراكز تركيب وصيانة
+                            أجهزة التكييف</span></a><a
+                        href="#"
+                        class="menu__item"><img src="assets/img/6138bf0c5bd4c_furnture.svg" alt=""><span>ورش
+                            الموبيليا</span></a><a
+                        href="# "
+                        class="menu__item"><img src="assets/img/6138bf08b67b9_Jewelry.svg" alt=""><span>محلات الذهب
+                            والمجوهرات</span></a><a
+                        href="# "
+                        class="menu__item"><img src="assets/img/6138bf111b020_computer_shop.svg" alt=""><span>محلات
+                            الكمبيوتر</span></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        <main>
+             
+            <!-- section-intro -->
+            <section class="section-intro module">
+                <div class="container">
+                    <!-- section intro content -->
+                    <div class="section-intro-content">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="section-intro-info">
+                                    <h2 class="intro__title">برنامج إدارة الموردين</h2>
+                                    <p class="intro__desc">
+                                        نظم مورديك باحترافية مع الأدوات المتقدمة التي يوفرها برنامج دفترة
+                                        في واجهة سهلة الاستخدام تدعم اللغة العربية، حيث يمكنك إنشاء ملف
+                                        خاص لكل مورد يتضمن كافة بياناته بما في ذلك معلومات التواصل
+                                        ومعلومات شركته، مما يسهل عملية إصدار فواتير الشراء وإرسالها إلى
+                                        مورديك متضمنة البيانات اللازمة في تصميم احترافي، بالإضافة إلى
+                                        إدارة فعالة لرصيد حساب المورد والمدفوعات ذات الصلة وتتبعها بدقة.
+                                    </p>
+                                    <div class="intro__actions">
+                                        <a href="#"
+                                            class="main-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                                class="btn-content hover-effect-text">ابدأ الاستخدام مجانًا</span><span
+                                                class="btn-ripple"></span></a>
+                                        <a href="#"
+                                            class="sub-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                                class="btn-content hover-effect-text">جولة سريعة</span><span
+                                                class="btn-ripple"></span></a>
+                                    </div>
+                                    <ul class="list-unstyled intro__options">
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="option-txt">تجربة مجانية</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="option-txt">من دون بطاقة ائتمانية</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span class="option-txt">جاهز للعمل فورًا</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="intro-img">
+                                    <img src="assets/img/page-banner.webp" alt="برنامج إدارة الموردين - دفترة">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="banner__layer">
+                        <div class="row">
+                            <div class="col-md-7 col-12">
+                                <div class="banner__layer-info">
+                                    <h2>نظام متكامل قابل للتخصيص ليناسب أكثر من 50 مجالًا مختلفًا</h2>
+                                    <p>
+                                        إمكانية تخصيص نظام دفترة حسب مجال عملك بما في ذلك التطبيقات
+                                        المضمَّنة وتصميمات الواجهة لتحقيق أهداف أعمالك.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12">
+                                <div class="banner__layer-btn">
+                                    <a href="#"
+                                        class="free-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                            class="btn-content hover-effect-text">ابدأ الاستخدام مجانًا</span><span
+                                            class="btn-ripple"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Boost Sales Section -->
+            <section class="section boost-sales">
+                <div class="container">
+                    <h2>أدِر <span>المخزون</span> وراقب حركة المستودعات بفاعلية</h2>
+
+                    <div class="boost-sales-items">
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-1.png" alt="">
+                            </div>
+                            <span>تتبع المخزون</span>
+                        </div>
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-5.png" alt="">
+                            </div>
+                            <span>أجهزة الباركود</span>
+                        </div>
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-2.png" alt="">
+                            </div>
+                            <span>الأذون المخزنية</span>
+                        </div>
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-3.png" alt="">
+                            </div>
+                            <span>المنتجات المجمعة </span>
+                        </div>
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-4.png" alt="">
+                            </div>
+                            <span>وحدات القياس</span>
+                        </div>
+                        <div class="boost-sales-item">
+                            <div>
+                                <img src="assets/img/sales-5.png" alt="">
+                            </div>
+                            <span>الجرد</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Track Sales Section -->
+            <section class="section section-ltr track-sales">
+                <div class="circles d-none d-lg-block">
+                    <img src="assets/img/circles.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="section__header">
+                                <h2 class="section__title">
+                                    أدِر تدفق أعمال الموردين وعمليات الشراء بكفاءة
+                                </h2>
+                                <p class="section__desc">
+                                    أنشئ ملفًا لكل مورد لديك يتضمن بيانات التواصل معه وبيانات شركته وطرق
+                                    الدفع المتفق عليها وغيرها من البيانات المطلوبة لتسهيل المعاملات فيما
+                                    بينكما، كما يتيح لك دفترة إضافة رصيد افتتاحي في حساب المورد وإصدار
+                                    كشف حساب مفصل له والحصول على رؤية أوضح حول المعاملات التي تتم فيما
+                                    بينكما، بالإضافة إلى تسهيل عمليات التواصل مع الموردين لإرسال فواتير
+                                    الشراء وإتمام المعاملات حسب حاجة العمل.
+                                </p>
+
+                                <div class="sales__actions">
+                                    <a href="#"
+                                        class="main-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                            class="btn-content hover-effect-text">ابدأ الاستخدام مجانًا</span><span
+                                            class="btn-ripple"></span></a>
+                                    <a href="#"
+                                        class="sub-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                            class="btn-content hover-effect-text">الميزات <span
+                                                class="d-none d-sm-inline-block"></span></span><span
+                                            class="btn-ripple"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12 bg-layer">
+                            <div class="section-image text-center">
+                                <img src="assets/img/manage-purchases.webp" class=""
+                                    alt="أدِر تدفق أعمال الموردين وعمليات الشراء بكفاءة">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Quotes Section -->
+            <section class="section section-rtl section-quotes">
+                <div class="circles small-size d-none d-lg-block">
+                    <img src="assets/img/circles-r.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 order-1 bg-layer">
+                            <div class="section-image text-center">
+                                <img src="assets/img/track-pis.webp" class="" alt="أصدر فواتير الشراء لكل مورد لديك">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="section__header">
+                                <h2 class="section__title">أصدر فواتير الشراء لكل مورد لديك</h2>
+                                <p class="section__desc">
+                                    يوفر لك دفترة الأدوات اللازمة لإصدار فواتير الشراء وإرسالها إلى
+                                    المورد سواء عبر البريد الإلكتروني أو في حسابه على النظام، بالإضافة
+                                    إلى تتبع دقيق للمدفوعات والكميات المستلمة وتأكيدها وتسجيلها في حسابك
+                                    وذلك لكل مورد على حدة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Create sales Section -->
+            <section class="section section-ltr create-sales">
+                <div class="circles small-size d-none d-lg-block">
+                    <img src="assets/img/circles.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="section__header">
+                                <h2 class="section__title">تتبع المدفوعات من خلال كشف حساب مفصل</h2>
+                                <p class="section__desc">
+                                    أصدر كشف حساب لكل مورد لديك على حدة، سواء كشف حساب ملخص أو مفصل حسب
+                                    حاجة أعمالك لتتبع حالة كل فواتير شراء تم إصدارها والمدفوعات ذات
+                                    الصلة، بالإضافة إلى إمكانية مراجعة رصيد كل مورد بدقة.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 bg-layer">
+                            <div class="section-image text-center">
+                                <img src="assets/img/track-payments.webp" class=""
+                                    alt="تتبع المدفوعات من خلال كشف حساب مفصل">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Register Customer Section -->
+            <section class="section section-rtl register-customer">
+                <div class="circles small-size d-none d-lg-block">
+                    <img src="assets/img/circles-r.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 order-1 bg-layer">
+                            <div class="section-image text-center">
+                                <img src="assets/img/keep-informed.webp" class=""
+                                    alt="كن على اطلاع دائم بمجريات أعمالك مع التقارير المفصلة">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="section__header">
+                                <h2 class="section__title">
+                                    كن على اطلاع دائم بمجريات أعمالك مع التقارير المفصلة
+                                </h2>
+                                <p class="section__desc">
+                                    أصدر تقارير مفصلة لتتبع مشترياتك من كل مورد، وكذا الرصيد وفواتير
+                                    الشراء وحالات الدفع وأنشطة الموظفين ذوي الصلة. راقب حالة مدفوعاتك
+                                    واحصل على نظرة عامة عن فواتير الشراء المدفوعة سواء جزئيًا أو بالكامل
+                                    وغير المدفوعة، بالإضافة إلى عمليات الشراء سواء المستلمة أو غير
+                                    مستلمة لكل مورد على حدة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ 
+            <!--Pricing Section-->
+            <section class="section section-rtl pricing-group ta-centre">
+                <div class="container">
+                    <h2 class="section__title mb-30">أسعار برنامج إدارة الموردين</h2>
+
+                    <div id="price">
+                        <div class="plans-panels">
+                            <div data-attr="free-plan" class="price-box  ">
+                                <div class="price-box-title">
+                                    <span>الأساسية</span>
+                                </div>
+
+                                <div class="price plan_box d-none monthly" id="price_23">
+                                    <span class="number">
+                                        <span class="">$</span>14</span>
+                                    <span class="number fraction"><span>.</span>95 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+                                <div class="price plan_box  yearly" id="price_23">
+                                    <span class="number">
+                                        <span class="">$</span>9</span>
+                                    <span class="number fraction"><span>.</span>99 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+
+                                <p class="billed d-block">
+                                    يُدفع <span><strong>$120 </strong></span>سنوياً </p>
+                                <span class="dollar-mob">
+                                    <span class="currency">$</span>
+                                    120/y </span>
+                            </div>
+                            <div data-attr="" class="price-box best-val ">
+                                <div class="price-box-title">
+                                    <span>المتقدمة</span>
+                                </div>
+
+                                <div class="price plan_box d-none monthly" id="price_25">
+                                    <span class="number">
+                                        <span class="">$</span>24</span>
+                                    <span class="number fraction"><span>.</span>99 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+                                <div class="price plan_box  yearly" id="price_25">
+                                    <span class="number">
+                                        <span class="">$</span>19</span>
+                                    <span class="number fraction"><span>.</span>95 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+
+                                <p class="billed d-block">
+                                    يُدفع <span><strong>$239 </strong></span>سنوياً </p>
+                                <span class="dollar-mob">
+                                    <span class="currency">$</span>
+                                    239/y </span>
+                            </div>
+                            <div data-attr="" class="price-box  unlimited-val">
+                                <div class="price-box-title">
+                                    <span>الشاملة</span>
+                                    <span class="unlimit">القيمة <br class="d-block d-md-none"> الأفضل</span> </div>
+
+                                <div class="price plan_box d-none monthly" id="price_27">
+                                    <span class="number">
+                                        <span class="">$</span>49</span>
+                                    <span class="number fraction"><span>.</span>95 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+                                <div class="price plan_box  yearly" id="price_27">
+                                    <span class="number">
+                                        <span class="">$</span>40</span>
+                                    <span class="number fraction"><span>.</span>00 </span>
+                                    <span class="month">
+                                        شهرياً </span>
+                                </div>
+
+                                <p class="billed d-block">
+                                    يُدفع <span><strong>$480 </strong></span>سنوياً </p>
+                                <span class="dollar-mob">
+                                    <span class="currency">$</span>
+                                    480/y </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="register-bow mt-30 mb-30">
+                        <span>
+                            <a href="#"
+                                class="register main-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                    class="btn-content hover-effect-text"><span class="btn-content hover-effect-text">
+                                        <span class="btn-content hover-effect-text">
+                                            ابدأ الاستخدام مجاناً
+                                        </span>
+                                        <span class="btn-ripple" style="top: 40.6673px; left: 75px">
+                                        </span> </span><span class="btn-ripple"></span></span><span
+                                    class="btn-ripple"></span></a>
+                        </span>
+                    </div>
+                    <div class="right-column free-trial">
+                        <h2 class="">14 يوم فترة تجريبية</h2>
+                        <h2 class="">
+                            <p style="color: rgb(85, 85, 85); font-size: 14px" class="">
+                                لا حاجة لبطاقة ائتمان ، قم بإلغاء الحساب في أي وقت.
+                            </p>
+                            <p style="color: rgb(85, 85, 85); font-size: 14px" class="">
+                                ستمنحك نسخة تجريبية مدتها&nbsp; 14 يومًا حسابًا مجانيًا ، وعندما تنتهي
+                                الفترة التجريبية ، يمكنك ترقية نفس الحساب إلى الباقة المناسبة لك.
+                            </p>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- Promises Section -->
+            <section class="section promises promises-modules">
+                <div class="container">
+                     
+                    <section class="section promises">
+                        <div class="promises__header">
+                            <div class="container">
+                                <h2 class="special-mf27">لماذا يُعَدُّ <span>دفترة</span> <br class="d-none d-md-block">
+                                    شريكًا مثاليًا لأعمالك؟</h2>
+                                <p>
+                                    اكتشف كيف يساعدك نظام دفترة في إدارة أعمالك بكفاءة وفعالية
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="promises__content">
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon1.svg" alt="">
+                                    <h2>دعم فني <br class="d-none d-md-block"> متوفر مجانًا</h2>
+                                    <p class="d-none d-md-block p-custom">احصل على دعم فني مجاني من فريق مكرَّس للرد على
+                                        استفساراتكم ومساعدتكم في حال واجهتم أي مشكلات؛ عبر التواصل من خلال الهاتف أو
+                                        البريد الإلكتروني على مدار اليوم، وذلك لضمان حصولكم على تجربة مثالية عند استخدام
+                                        نظام دفترة.</p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon3.svg" alt="">
+                                    <h2>الأمان <br class="d-none d-md-block"> والحماية</h2>
+                                    <p class="d-none d-md-block p-custom">يولي نظام دفترة اهتمامًا بالغًا بسلامة
+                                        بياناتكم على خوادمنا، لذا نستخدم خوادم مؤمنة بالكامل ومشفرة بتقنية SSL 256 bit
+                                        مع عدة طبقات من الحماية، إلى جانب وجود الخوادم في قارتين مختلفتين مع إجراءات
+                                        سلامة إضافية لمواقعها وقيود قوية على صلاحية الوصول إلى البيانات، بالإضافة إلى
+                                        عمليات نسخ احتياطي دورية.
+
+                                    </p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon2.svg" alt="">
+                                    <h2>تجربة مخصصة <br class="d-none d-md-block">بالكامل</h2>
+                                    <p class="d-none d-md-block p-custom"> خصِّص النظام بما يتوافق مع مجال عملك من خلال
+                                        تفعيل التطبيقات المطلوبة فقط، وخصِّص واجهة الاستخدام لتلائم هوية علامتك التجارية
+                                        وألوانها، إلى جانب التعديل في قوالب الفواتير وعروض الأسعار وغيرها من المطبوعات
+                                        للحصول على تجربة مثالية مخصصة لاحتياجاتك.</p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon4.svg" alt="">
+                                    <h2>واجهة سهلة <br class="d-none d-md-block"> الاستخدام</h2>
+                                    <p class="d-none d-md-block p-custom">أدِر أعمالك بسهولة مع العديد من الخصائص
+                                        والأدوات المضمّنة في واجهة سهلة الاستخدام بخطوات بسيطة، إذ لا تحتاج إلى امتلاك
+                                        معرفة عميقة بأنظمة تخطيط الموارد المؤسسية أو طرق المحاسبة المعقدة من أجل العمل
+                                        على أي من تطبيقات النظام.
+                                    </p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon5.svg" alt="">
+                                    <h2>توفير الوقت <br class="d-none d-md-block">والجهد</h2>
+                                    <p class="d-none d-md-block p-custom">تابع مؤشرات أعمالك بدقة وأدِر عملياتك بفعالية
+                                        في خطوات بسيطة من دون استغراق الكثير من الوقت أو بذل مجهود كبير في تنفيذها، وذلك
+                                        بفضل واجهة المستخدم البسيطة والعمليات المؤتمتة التي يتميز بها نظام دفترة.</p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon6.svg" alt="">
+                                    <h2> من أي مكان <br class="d-none d-md-block"> وفي أي وقت</h2>
+                                    <p class="d-none d-md-block p-custom">لكونه نظامًا سحابيًا على خوادم مؤمنة بالكامل،
+                                        فستجد دفترة في متناول يديك دائماً لمساعدتك في إدارة أعمالك بفعالية على مدار
+                                        الساعة وطوال أيام الأسبوع، مع إمكانية إصدار الفواتير عبر تطبيق سطح المكتب في حال
+                                        انقطاع الاتصال بالإنترنت. قم بمتابعة أعمالك وأدِرها من أي مكان وفي أي وقت عبر أي
+                                        جهاز متاح لديك.</p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon7.svg" alt="">
+                                    <h2>تحديثات <br class="d-none d-md-block"> دورية مجانًا</h2>
+                                    <p class="d-none d-md-block p-custom">يعمل دفترة باستمرار على تطوير النظام بأكمله
+                                        وتحديث تطبيقاته وميزاته لمواكبة متطلبات الأعمال بما في ذلك إضافة الخصائص
+                                        والأدوات الجديدة التي من شأنها تسهيل إدارة أعمالك على نحو فعال، فيما ستحصل على
+                                        كل هذه التحديثات مجانًا.</p>
+                                </div>
+                                <div class="promises__content_card div-custom">
+                                    <img src="assets/img/p_icon8.svg" alt="">
+                                    <h2>سعر <br class="d-none d-md-block"> اقتصادي</h2>
+                                    <p class="d-none d-md-block p-custom">احصل على نظام متكامل يتضمن كل ما تحتاجه من
+                                        تطبيقات لتلبية كل احتياجات أعمالك باشتراك شهري بسيط من دون الحاجة إلى مدفوعات
+                                        إضافية لكل تطبيق على حدة، إلى جانب دعم فني من متخصصين وتحديثات متواصلة مجانًا.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div style="margin-top: 50px" class="banner__layer">
+                        <div class="row">
+                            <div class="col-md-7 col-12">
+                                <div class="banner__layer-info">
+                                    <h2 class="special-mf25">
+                                        لا حاجة لامتلاك معرفة عميقة في المحاسبة للعمل على البرنامج
+                                    </h2>
+                                    <p>
+                                        دفترة مصمم بواجهة سهلة الاستخدام تناسب كل المستخدمين من دون الحاجة
+                                        لمعرفة كبيرة بالمحاسبة، إلى جانب أدوات متقدمة لمساعدة الخبراء في
+                                        إتمام أعمالهم باحترافية.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12">
+                                <div class="banner__layer-btn">
+                                    <a href="#"
+                                        class="free-btn btn-shadow btn-hover-translate btn-hover-ripple translate-effect hover-effect"><span
+                                            class="btn-content hover-effect-text">ابدأ الاستخدام مجانًا</span><span
+                                            class="btn-ripple"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             
+        </main>
+
+
+        <!-- / section -->
+         
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p></p>
+        <footer class="section desktop-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="footer__item">
+                            <p class="special_p">البرامج</p> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج المبيعات والفواتير </span> </a> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج إدارة المخزون </span> </a> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج الحسابات العامة </span> </a> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج دورة العمل </span> </a> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج إدارة علاقات العملاء </span> </a> 
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="footer__item">
+                            <p class="special_p">دليل الموقع</p> <a href="#"> <i
+                                    class="fa fa-angle-right"></i> <span> تسجيل حساب </span> </a> <a
+                                href="#"> <i class="fa fa-angle-right"></i> <span>تسجيل
+                                    الدخول </span> </a> <a href="#"> <i
+                                    class="fa fa-angle-right"></i> <span> الأسعار </span> </a> <a
+                                href="#"> <i class="fa fa-angle-right"></i> <span> تواصل
+                                    معنا </span> </a>
+ 
+                            <div class="footer__item mobile_app" style="margin-top:20px">
+                                <p class="special_p">تطبيق الهواتف الذكية</p> <a class="mobile_app_icon apple_store"
+                                    href="#"
+                                    target="_blank" style="color: #000000; "> <span> <img title="متجر تطبيقات آبل"
+                                            alt="متجر-تطبيقات-آبل-آيفون" src="assets/img/6124e4f8cab7a_Apple_White.svg"
+                                            style="width: 30%;" loading="lazy" rel="nofollow"></span> </a> <a
+                                    class="mobile_app_icon play_store"
+                                    href="#" target="_blank"
+                                    style="color: #000000;"> <span> <img title="متجر تطبيقات جوجل"
+                                            alt="متجر-تطبيقات-جوجل-أندرويد"
+                                            src="assets/img/6124e51285536_PlayStore_White.svg" style=" width: 30%;"
+                                            loading="lazy" rel="nofollow"></span> </a> <a
+                                    class="mobile_app_icon huawei_store"
+                                    href="#" target="_blank"
+                                    style="color: #000000; "> <span> <img title="متجر تطبيقات هواوي"
+                                            alt="متجر-تطبيقات-هواوي-أندرويد"
+                                            src="assets/img/6124e53289d2e_Huawei_white.svg" style="width: 30%;"
+                                            loading="lazy" rel="nofollow"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="footer__item">
+                            <p class="special_p">مجالات العمل</p> <a
+                                href="#">
+                                <i class="fa fa-angle-right"></i> <span>برنامج إدارة المحلات التجارية </span> </a> <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج المؤسسات التجارية والتوريد</span> </a>
+                            <a
+                                href="# ">
+                                <i class="fa fa-angle-right"></i> <span> برنامج إدارة صالونات ومراكز التجميل </span>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <div class="terms"><a href="#terms-conditions">الشروط والأحكام </a> | <a
+                            href="#privacy-policy">سياسة الخصوصية</a></div>
+                </div>
+            </div>
+        </footer> <!--  Mobile Footer-->
+        <footer class="section mobile-footer">
+            <div class="container">
+                <div class="row" >
+                    <div class="col-12" >
+                        <div class="footer__item" style="position: relative;"><a
+                                href="#"
+                                class="logo d-block d-md-none" style="display: inline !important;"> <img
+                                    src="assets/img/logo-w-ar.svg" alt="" loading="lazy"></a></div>
+                        <div class="footer__item">
+                            <div class="footer__item mobile_app" style="margin-top: 30px;">
+                                <p style=" margin-bottom: 10px; font-size: 21px; color: #fff;">احصل على تطبيق الهاتف</p>
+                                <a class="mobile_app_icon apple_store"
+                                    href="#"
+                                    target="_blank" style="color: #000000; "> <span > <img
+                                            title="متجر تطبيقات آبل" alt="متجر-تطبيقات-آبل-آيفون"
+                                            src="assets/img/6124e4f8cab7a_Apple_White.svg" style="width: 25%;"
+                                            loading="lazy" rel="nofollow"></span> </a> <a
+                                    class="mobile_app_icon play_store"
+                                    href="#" target="_blank"
+                                    style="color: #000000;"> <span> <img title="متجر تطبيقات جوجل"
+                                            alt="متجر-تطبيقات-جوجل-أندرويد"
+                                            src="assets/img/6124e51285536_PlayStore_White.svg" style="width: 25%;"
+                                            loading="lazy" rel="nofollow"></span> </a> <a
+                                    class="mobile_app_icon huawei_store"
+                                    href="#" target="_blank"
+                                    style="color: #000000; "> <span> <img title="متجر تطبيقات هواوي"
+                                            alt="متجر-تطبيقات-هواوي-أندرويد"
+                                            src="assets/img/6124e53289d2e_Huawei_white.svg" style="width: 25%;"
+                                            loading="lazy" rel="nofollow"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <div class="copyright"><i class="fa fa-unlock"> </i> <span
+                            style="display: inline-block;margin-right: 5px;direction: rtl;font-size:14px"> جميع الحقوق محفوظة © 2022</span></div>
+                    <div class="terms"><a href="#">الشروط والأحكام </a> | <a
+                            href="#">سياسة الخصوصية</a></div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(function () {
+                $('#price').load('#plans .plans-panels');
+            });
+        </script>
+        <p></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <div class="scrollTop"> <i class="fa fa-angle-up"></i> </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            jQuery('[href="/contact_whatsapp.php"]').click(function () {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-847451904/5lFeCILz9KIBEICujJQD'
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function () {
+            $('.removeTopBar').click(function () {
+                var height = $('#quickInvoiceBar').outerHeight();
+                $('#quickInvoiceBar').animate({
+                    marginTop: -height,
+                    opacity: 0
+                }, {
+                    duration: 'slow'
+                }, function () {
+                    $(this).remove();
+                });
+                document.cookie = 'hidebar=1; path=/; expires=';
+                return false;
+            });
+        });
+
+
+
+        //]]>
+    </script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
+
+
+    <div id="__REC__-container"></div>
+</body>
+<div id="vimeo-record-extension"></div>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> اضافة كوبون - 1 </title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+      <!--  bootstrap ltr-->
+      <!--  iconfont-->
+      <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick.css">
+      <!-- intlTelInput-->
+      <link rel="stylesheet" href="../css/intlTelInput.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick-theme.css">
+      <!-- AOS-->
+      <link rel="stylesheet" href="../css/aos.css">
+      <!-- plyr-->
+      <link rel="stylesheet" href="../css/plyr.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="../css/main.css">
+      <!--  main style ltr-->
+    </head>
+  <body class="dashboard-body mr-228">
+    <!-- dashboard sidebar-->
+    <aside class="dashboard-sidebar">
+      <div class="text-center mb-3"><img class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar" src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img src="../images/dashboard/logo.png" alt="logo"></a></div>
+      <ul class="list-unstyled px-0">
+        <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+        <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+        <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+        <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+        <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+        <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+        <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+        <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+      </ul>
+    </aside>
+    <div class="dashboard-container">
+        <!-- sart dashboard navbar-->
+        <nav class="navbar navbar-light dashboard-navbar mb-4"><img class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar" src="../images/icons/list.png">
+          <div>
+            <p class="mb-0">  اضافة كوبون - 1 </p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع للرئيسية</a>
+          </div>
+          <div class="d-md-block d-none">
+            <div class="search"><i class="mbi mbi-magnifier"></i>
+              <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+              <select class="form-select">
+                <option>الطلبات</option>
+                <option>الطلبات</option>
+              </select>
+              <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+            </div>
+          </div>
+          <div class="user">
+            <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png" alt="user">
+              <div class="d-lg-block d-none align-self-center border-end pe-2">
+                <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية المتجر</a>
+              </div>
+              <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i class="mbi mbi-alarm-ringing h3"></i></div>
+            </div>
+          </div>
+        </nav>
+        <!-- sart dashboard navbar-->
+      <div class="row">
+        <div class="col-12 mb-4">
+            <div class="circle-number"><span>1</span>
+              <h3>تفاصيل الكوبون</h3>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label fw-bolder">اسم الكود</label><span class="mb-2 d-block text-muted">اسم الكود يجب ان يحتوي على حروف و ارقام</span>
+              <input class="form-control form-select-lg dash-input rounded-pill" type="text" placeholder="مثلا : 32Asrm">
+            </div>
+        </div>
+        <div class="col-12 mb-2">
+            <div class="mb-3">
+              <label class="mb-1 form-label fw-bolder"> نوع الخصم </label><br>
+              <select class="form-select form-select-lg dash-select rounded-pill">
+                <option selected value=" مبلغ ثابت من مجموع المشتريات "> مبلغ ثابت من مجموع المشتريات </option>
+              </select>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3 dash-input-price">
+              <label class="form-label fw-bolder">ادخل مبلغ الخصم</label>
+              <input class="form-control form-select-lg rounded-pill" type="number"><span class="price-label">ريال</span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+              <div class="form-check form-switch dash-switch-between pointer">
+                <label class="pointer form-check-label" for="1">مع شحن مجاني</label>
+                <input class="pointer form-check-input" type="checkbox" id="1" checked>
+              </div>
+            </div>
+        </div>
+        <div class="col-12">
+          <hr>
+        </div>
+        <div class="col-12">
+            <div class="mb-3 dash-input-price">
+              <label class="form-label fw-bolder">  المبلغ الاقصي للخصم</label>
+              <input class="form-control form-select-lg rounded-pill" type="number"><span class="price-label">ريال</span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3 dash-input-calendar">
+              <label class="form-label fw-bolder">تاريخ ووقت انتهاء الكوبون</label><span class="mb-2 d-block text-muted">اختر اليوم و الوقت الذى ستنتهي به صلاحية الكوبون</span>
+              <input class="form-control form-select-lg rounded-pill" type="text"><span class="calendar-label"><i class="mbi mbi-calendar-full me-2 icon"></i><span>وقت الانتهاء</span></span>
+            </div>
+        </div>
+        <div class="col-12 mb-2">
+            <div class="mb-3">
+              <label class="mb-1 form-label fw-bolder">استثناء المنتجات المخفضة</label><br>
+              <select class="form-select form-select-lg dash-select rounded-pill">
+                <option selected value=" نعم "> نعم </option>
+              </select>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label fw-bolder">عدد مرات الاستخدام للجميع</label>
+              <input class="form-control form-select-lg dash-input rounded-pill" type="number" placeholder="">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+              <label class="form-label fw-bolder">عدد مرات الاستخدام للعميل الواحد</label>
+              <input class="form-control form-select-lg dash-input rounded-pill" type="number" placeholder="">
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3 d-flex"><a class="px-5 me-3 btn-lg border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="add-coupon-2.html">التالي</a><a class="px-5 btn-lg border-0 btn rounded-pill w-color-text-hover d-color-bg-hover" href="#">الغاء</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="../js/slick.js"></script>
+    <!-- intlTelInput-->
+    <script src="../js/intlTelInput.js"></script>
+    <!-- AOS-->
+    <script src="../js/aos.js"></script>
+    <!-- polyfilled-->
+    <script src="../js/plyr.polyfilled.js"></script>
+    <!--  chart-->
+    <script src="../js/chart/chart.min.js"></script>
+    <script src="../js/chart/chart-area-demo.js"></script>
+    <!--  main script-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

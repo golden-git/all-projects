@@ -1,0 +1,26 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اضافة كوبون - 2 ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اضافة كوبون - 2 ")
+        .row
+          .col-12.mb-4: +circle-number("2", "مشمول الكوبون")
+          .col-12.mb-2: +dash-select(
+            " طرق الدفع المشمولة في الكوبون ",
+            "",
+            "كل الطرق"
+            )
+          .col-12.mb-2: +dash-select(
+            "تصنيفات المشمول",
+            "",
+            "كل الطرق"
+            )
+          .col-12: +dash-input("منتجات مشمولة", "يمكنك البحث في النتجات", "text", "")
+          .col-12: +dash-input("عملاء مشمولين", "يمكنك البحث في قائمة العملاء", "text", "")
+
+          .col-12: +action-btn("التالي", "add-coupon-3.html" , "الغاء")
+
+    include ./includes/scripts

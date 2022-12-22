@@ -1,0 +1,42 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اضافة منتج - 1 ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("  اضافة منتج - 2 ")
+        .row
+          .col-12.mb-4: +circle-number("2", "خيارات و اضافات المنتج")
+          .col-12.mb-4
+            h4
+              | خيارات المنتج
+              span.s-color-text  (الاجبارية)
+            .row
+              .col-12.options-element-1.options-element
+                .row
+                  .col-lg-3.col-6: +dash-select("", "اختر الصفة", "مثلا : الحجم    " )
+                  .col-lg-3.col-6: +dash-input("اكتب الحجم", "", "text", "")
+                  .col-lg-3.col-6: +dash-input-price('سعر هذا الاختيار', 'ريال')
+                  .col-lg-3.col-6: +dash-input('الكمية', "", 'number', "")
+           
+              .col-12.add-option.pointer: +dashed-btn('اضافة خيار جديد')
+              .options-container
+
+          .col-12
+            h4
+              | اضافات مع المنتج
+              span.s-color-text  (الاختيارية)
+            .row
+              .col-12.options-element-1.options-element
+                .row
+                  .col-lg-4.col-6: +dash-input(' اسم الاضافة', "",'text' , "")
+                  .col-lg-4.col-6: +dash-input-price('سعر الاضافة ', 'ريال')
+                  .col-lg-4.col-6: +dash-input('الكمية', "", 'number', "")
+           
+              .col-12.add-option.pointer: +dashed-btn('اضافة جديدة')
+              .options-container
+
+              .col-12: +action-btn("اضافة", "#" , "الغاء")
+    
+    include ./includes/scripts

@@ -1,0 +1,321 @@
+/*========== start globals ==========*/
+:root {
+    --m-color: #239EDC;
+    --d-color: #0062A9;
+    --s-color: #39EECE;
+    --g-color: #F3F3F3;
+}
+
+// @font-face {
+//     font-family: 'lightfont';
+//     src: url('../fonts/Somar-Light.otf') format('opentype'),
+// }
+
+// @font-face {
+//     font-family: 'boldfont';
+//     src: url('../fonts/Somar-Bold.otf') format('opentype'),
+// }
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    @include xs {padding-bottom: 65px;}
+    @include sm {padding-bottom: 65px;}
+    @include xl {padding-bottom: 0;}
+}
+
+/* title-font */
+.title-font {
+    font-weight: 700;
+}
+
+@each $colorname, $color in
+(m-color-text, var(--m-color)),
+(d-color-text, var(--d-color)),
+(s-color-text, var(--s-color)),
+(g-color-text, var(--g-color))
+{
+    /* color-text */
+    .#{$colorname} {
+        color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-text-hover, var(--m-color)),
+(d-color-text-hover, var(--d-color)),
+(s-color-text-hover, var(--s-color)),
+(w-color-text-hover, #fff),
+(g-color-text-hover, var(--g-color))
+{
+    /* color-text-hover */
+    .#{$colorname}:hover {
+        color:#{$color} !important;
+    }
+}
+
+
+@each $colorname, $color in
+(m-color-bg, var(--m-color)),
+(d-color-bg, var(--d-color)),
+(s-color-bg, var(--s-color)),
+(g-color-bg, var(--g-color))
+{
+    /* background-color */
+    .#{$colorname} {
+        background-color:#{$color};
+    }
+}
+
+@each $colorname, $color in
+(m-color-bg-hover, var(--m-color)),
+(d-color-bg-hover, var(--d-color)),
+(s-color-bg-hover, var(--s-color)),
+(g-color-bg-hover, var(--g-color))
+{
+    /* background-color-hover */
+    .#{$colorname}:hover {
+        background-color:#{$color} !important;
+    }
+}
+
+/* pointer */
+.pointer {
+    cursor: pointer;
+}
+
+.my-shadow {
+    box-shadow: 0 0 30px rgb(51 51 51 / 10%);
+}
+
+@mixin transition {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+/* course block design*/
+.course {
+    box-shadow: 0px 0px 15px 0px rgb(51 51 51 / 10%);
+    background-color: #fff;
+    border-radius: 8px;
+    @include transition;
+    &:hover {
+      box-shadow: 0px 10px 30px 0px rgb(51 51 51 / 10%);
+    }
+    .course-info {
+        @include xs {padding: 10px 10px 5px 10px;}
+        @include sm {padding: 15px 15px 10px 15px;}
+        @include xl {padding: 20px 20px 15px 20px;}
+        .course-price {
+            color: var(--s-color);
+            @include xs {font-size: 15px;}
+            @include sm {font-size: 19px;}
+            @include lg {font-size: 25px;}
+        }
+        .course-title {
+            @include xs {font-size: 15px; margin-bottom: 5px;}
+            @include sm {font-size: 19px; margin-bottom: 5px}
+            @include lg {font-size: 25px; margin-bottom: 10px}
+            a {
+              text-decoration: none;
+              color: #111;
+              &:hover {
+                color: var(--d-color);
+              }
+            }
+        }
+        .course-reviews {
+            display: flex;
+            span.number {
+                @include xs {font-size: 12px;}
+                @include sm {font-size: 14px;}
+                @include lg {font-size: 18px;}
+            }
+            i{
+                @include xs {font-size: 12px;}
+                @include sm {font-size: 14px;}
+                @include lg {font-size: 18px;}
+                margin-left: 3px;
+            }
+            i.full {
+                color: #ffc107;
+            }
+
+            i.half {
+                color: #ccc;
+            }
+        }
+        hr {
+            background-color: #aaa;
+            @include xs {margin: .2rem 0 .7rem 0}
+            @include sm {margin: .3rem 0 .8rem 0}
+            @include lg {margin: 1rem 0 1rem 0}
+        }
+        .icons {
+            i {
+                margin-left: 4px;
+            }
+            span {
+                @include xs {font-size: 12px;}
+                @include sm {font-size: 14px;}
+                @include lg {font-size: 18px;}
+            }
+        }
+    }
+    .img-course {
+        width: 100%;
+        @include xs {height: 75px;}
+        @include sm {height: 140px;}
+        @include lg {height: 200px;}
+        background-size: cover;
+        background-position: center center;
+        border-radius: 8px 8px 0 0;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+/* blog block design*/
+.blog {
+    box-shadow: 0px 0px 15px 0px rgb(51 51 51 / 10%);
+    background-color: #fff;
+    border-radius: 8px;
+    @include transition;
+    &:hover {
+      box-shadow: 0px 10px 30px 0px rgb(51 51 51 / 10%);
+      transform: scale(1.06);
+      .blog-info {
+        .blog-title { a { color: var(--d-color); } }
+      }
+    }
+    .blog-info {
+        @include xs {padding: 10px 10px 5px 10px;}
+        @include sm {padding: 15px 15px 10px 15px;}
+        @include xl {padding: 20px 20px 15px 20px;}
+        .blog-desc {
+            @include xs {font-size: 12px;}
+            @include sm {font-size: 14px;}
+            @include lg {font-size: 18px;}
+            margin-bottom: 0;
+        }
+        .blog-title {
+            @include xs {font-size: 14px; margin-bottom: 5px;}
+            @include sm {font-size: 16px; margin-bottom: 5px}
+            @include lg {font-size: 23px; margin-bottom: 10px}
+            a {
+              text-decoration: none;
+              color: #111;
+              &:hover {
+                color: var(--d-color);
+              }
+            }
+        }
+
+        hr {
+            background-color: #bbb;
+            @include xs {margin: .2rem 0 .5rem 0}
+            @include sm {margin: .3rem 0 .6rem 0}
+            @include lg {margin: 1rem 0 1rem 0}
+        }
+        .icons {
+            i {
+                margin-left: 4px;
+                color: var(--d-color);
+                position: relative;
+                top: 3px;
+                @include xs {font-size: 12px; top: 0;}
+                @include sm {font-size: 15px; top: 0}
+                @include lg {font-size: 20px;}
+            }
+            span {
+                @include xs {font-size: 13px;}
+                @include sm {font-size: 15px;}
+                @include lg {font-size: 20px;}
+            }
+        }
+    }
+    .img-blog {
+        width: 100%;
+        @include xs {height: 75px;}
+        @include sm {height: 140px;}
+        @include lg {height: 200px;}
+        background-size: cover;
+        background-position: center center;
+        border-radius: 8px 8px 0 0;
+        display: block;
+        overflow: hidden;
+    }
+}
+ /* updownanimation animation code */
+ @keyframes updownanimation {
+    0% {
+      top: -10px;
+    }
+
+    25% {
+      top: 10px;
+    }
+
+    50% {
+      top: -10px;
+    }
+
+    75% {
+      top: 10px;
+    }
+
+    100% {
+      top: -10px;
+    }
+  }
+
+
+  /* section title style*/
+  .section-sm-title {
+    color: var(--s-color);
+    font-weight: 600;
+    @include xs {font-size: 17px;}
+    @include sm {font-size: 18px;}
+    @include lg {font-size: 20px}
+  }
+
+  .section-lg-title {
+    color: #111;
+    font-weight: 700;
+    @include xs {font-size: 20px;}
+    @include sm {font-size: 25px;}
+    @include lg {font-size: 30px}
+  }
+  .section-link {
+    background-color: var(--s-color);
+    color: #111;
+    text-decoration: none;
+    @include xs {padding: 10px 10px; font-size: 15px;}
+    @include sm {padding: 10px 15px;}
+    @include lg {padding: 15px 25px;}
+    border-radius: 8px;
+    font-size: 18px;
+    @include transition;
+    position: relative;
+    z-index: 3;
+    &:hover{
+      background-color: var(--m-color);
+      color: #fff;
+    }
+  }
+  section {
+    @include xs {padding: 40px 0;}
+    @include sm {padding: 60px 0;}
+    @include lg {padding: 80px 0;}
+  }
+
+
+.menu-opn-to-body {
+    overflow: hidden;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+  }

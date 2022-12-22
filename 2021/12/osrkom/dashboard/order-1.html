@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> الطلب </title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+      <!--  bootstrap ltr-->
+      <!--  iconfont-->
+      <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick.css">
+      <!-- intlTelInput-->
+      <link rel="stylesheet" href="../css/intlTelInput.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick-theme.css">
+      <!-- AOS-->
+      <link rel="stylesheet" href="../css/aos.css">
+      <!-- plyr-->
+      <link rel="stylesheet" href="../css/plyr.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="../css/main.css">
+      <!--  main style ltr-->
+    </head>
+  <body class="dashboard-body mr-228">
+    <!-- dashboard sidebar-->
+    <aside class="dashboard-sidebar">
+      <div class="text-center mb-3"><img class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar" src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img src="../images/dashboard/logo.png" alt="logo"></a></div>
+      <ul class="list-unstyled px-0">
+        <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+        <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+        <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+        <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+        <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+        <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+        <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+        <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+      </ul>
+    </aside>
+    <div class="dashboard-container">
+        <!-- sart dashboard navbar-->
+        <nav class="navbar navbar-light dashboard-navbar mb-4"><img class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar" src="../images/icons/list.png">
+          <div>
+            <p class="mb-0"> الطلب </p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع للرئيسية</a>
+          </div>
+          <div class="d-md-block d-none">
+            <div class="search"><i class="mbi mbi-magnifier"></i>
+              <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+              <select class="form-select">
+                <option>الطلبات</option>
+                <option>الطلبات</option>
+              </select>
+              <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+            </div>
+          </div>
+          <div class="user">
+            <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png" alt="user">
+              <div class="d-lg-block d-none align-self-center border-end pe-2">
+                <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية المتجر</a>
+              </div>
+              <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i class="mbi mbi-alarm-ringing h3"></i></div>
+            </div>
+          </div>
+        </nav>
+        <!-- sart dashboard navbar-->
+      <div class="check-out py-md-5 py-3">
+        <!-- order complete-->
+        <div class="order-complete">
+          <div class="row">
+            <div class="col-12">
+                <div class="d-md-flex mb-4 justify-content-between border px-3 py-2">
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">رقم الطلب</p>
+                    <h5 class="text-dark">#5434566</h5>
+                  </div>
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">تاريخ ووقت الطلب</p>
+                    <h5 class="text-dark">12/8/2021 - 2 مساء</h5>
+                  </div>
+                  <div class="text-center mb-md-0 mb-3">
+                    <p class="mb-0 text-muted">حالة الطلب الطلب</p>
+                    <h5 class="text-dark">مرحلة التوصيل</h5>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1 order-2 map">
+              <div class="border rounded-2 py-4 px-2 mb-4">
+                <div class="d-md-flex justify-content-between"> 
+                  <div>
+                    <p class="mb-0 text-muted">حالة الطلب</p>
+                    <h3 class="mb-5">مرحلة التوصيل  </h3>
+                  </div>
+                  <div class="mb-3"> <a class="text-decoration-none rounded-pill m-color-bg d-color-bg-hover text-white py-2 px-3" href="#">تغير الحالة </a></div>
+                </div>
+                <div class="stages mb-lg-4 mb-3">
+                  <div class="stage-1 active"><i class="fas fa-check"></i>
+                    <h6>يتم تجهيز الطلب</h6>
+                  </div>
+                  <div class="stage-2"><i class="fas fa-circle"></i>
+                    <h6>الطلب فى الطريق</h6>
+                  </div>
+                  <div class="stage-3"><i class="fas fa-circle"></i>
+                    <h6>تم التسليم</h6>
+                  </div>
+                </div>
+                <div style="width: 100%">
+                  <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="in-rood">
+                  <div class="code my-3 d-flex justify-content-between">
+                    <div>
+                      <div class="d-flex mb-3"><img class="align-self-start me-2" src="../images/icons/in-rood.png" alt="in-rood" width="25" height="27"><img class="align-self-start me-2" src="../images/icons/res.png" alt="res" width="20" height="25">
+                        <div class="align-self-start">
+                          <h4 class="title-font mb-0">ابو مازن للماكولات الصينية</h4>
+                          <p class="mb-0 text-muted">شاعر احمد سعود</p>
+                          <p class="mb-0 text-muted">رقم الشقة 33 -رقم البناية 12</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="border-0 btn-lg px-4 rounded-pill btn g-color-bg m-color-bg-hover text-dark">2.5 كم</button>
+                    </div>
+                  </div>
+                  <div class="code mt-5 d-flex justify-content-between">
+                    <div>
+                      <div class="d-flex mb-3"><img class="align-self-start me-2" src="../images/icons/in-rood.png" alt="in-rood" width="25" height="27"><img class="align-self-start me-2" src="../images/icons/location.png" alt="location" width="20" height="25">
+                        <div class="align-self-start">
+                          <h4 class="title-font mb-0">تبوك, السعودية</h4>
+                          <p class="mb-0 text-muted">شاعر احمد سعود</p>
+                          <p class="mb-0 text-muted">رقم الشقة 33 -رقم البناية 12</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="border-0 btn-lg px-4 rounded-pill btn g-color-bg m-color-bg-hover text-dark">منزل</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vendor w-100 py-3 rounded-3 border">
+                <div class="d-md-flex vendor-info justify-content-between mb-4 px-4">
+                  <div class="mb-lg-0 mb-3">
+                    <h5 class="vendor-title m-0">Mohamed Ali</h5><small class="text-dark">عميل منذ 20/2/2020</small>
+                  </div>
+                  <div class="vendor-fet pt-0 align-self-center">
+                    <div class="d-lg-flex vendor-fet-container justify-content-end"><a class="align-self-center message-toggle text-white m-color-bg-hover text-dark fet-element rounded-pill" href="#"><i class="fas fa-comments me-3"></i>مراسلة</a></div>
+                  </div>
+                </div>
+                <div class="text-center border-top px-4 pt-3"><a class="s-color-text text-decoration-none" href="#">الاطلاع على جميع طلبات العميل  <i class="mbi mbi-arrow-left ms-2 arrow"></i></a></div>
+              </div>
+              <div class="actions my-4 d-block">
+                  <div class="mb-3 d-flex"><a class="px-5 me-3 btn-lg border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="#">طباعة الطلب</a><a class="px-5 btn-lg border-0 btn rounded-pill w-color-text-hover d-color-bg-hover" href="#">رجوع</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 vendor mb-lg-0 mb-4">
+              <div class="order-container">
+                <div class="order-details w-100">
+                  <div class="order-block shadow-none mb-3 border">
+                    <!-- order item-->
+                    <div class="d-flex justify-content-between mb-2 border-bottom py-3 order-item">
+                      <div>
+                        <div class="d-flex"><span class="text-success me-2">1x</span>
+                          <div>
+                            <h4 class="title-font mb-0">Vegan Quinoa Salad</h4>
+                            <p class="mb-0 text-muted">سبايسي - بيبسي كبير - صلصة بيضاء</p>
+                            <p class="mb-0 text-muted">- صوص اضافة +1.5 SR</p>
+                          </div>
+                        </div>
+                      </div><span class="text-dark">31 SR</span>
+                    </div>
+                    <!-- order item-->
+                    <div class="d-flex justify-content-between mb-2 border-bottom py-3 order-item">
+                      <div>
+                        <div class="d-flex"><span class="text-success me-2">1x</span>
+                          <div>
+                            <h4 class="title-font mb-0">Vegan Quinoa Salad</h4>
+                            <p class="mb-0 text-muted">سبايسي - بيبسي كبير - صلصة بيضاء</p>
+                            <p class="mb-0 text-muted">- صوص اضافة +1.5 SR</p>
+                          </div>
+                        </div>
+                      </div><span class="text-dark">31 SR</span>
+                    </div>
+                    <!-- order item-->
+                    <div class="d-flex justify-content-between mb-2 border-bottom py-3 order-item">
+                      <div>
+                        <div class="d-flex"><span class="text-success me-2">1x</span>
+                          <div>
+                            <h4 class="title-font mb-0">Vegan Quinoa Salad</h4>
+                            <p class="mb-0 text-muted">سبايسي - بيبسي كبير - صلصة بيضاء</p>
+                            <p class="mb-0 text-muted">- صوص اضافة +1.5 SR</p>
+                          </div>
+                        </div>
+                      </div><span class="text-dark">31 SR</span>
+                    </div>
+                    <!-- order item-->
+                    <div class="d-flex justify-content-between mb-2 border-bottom py-3 order-item">
+                      <div>
+                        <div class="d-flex"><span class="text-success me-2">1x</span>
+                          <div>
+                            <h4 class="title-font mb-0">Vegan Quinoa Salad</h4>
+                            <p class="mb-0 text-muted">سبايسي - بيبسي كبير - صلصة بيضاء</p>
+                            <p class="mb-0 text-muted">- صوص اضافة +1.5 SR</p>
+                          </div>
+                        </div>
+                      </div><span class="text-dark">31 SR</span>
+                    </div>
+                    <!-- order item-->
+                    <div class="d-flex justify-content-between mb-2 border-bottom py-3 order-item">
+                      <div>
+                        <div class="d-flex"><span class="text-success me-2">1x</span>
+                          <div>
+                            <h4 class="title-font mb-0">Vegan Quinoa Salad</h4>
+                            <p class="mb-0 text-muted">سبايسي - بيبسي كبير - صلصة بيضاء</p>
+                            <p class="mb-0 text-muted">- صوص اضافة +1.5 SR</p>
+                          </div>
+                        </div>
+                      </div><span class="text-dark">31 SR</span>
+                    </div>
+                  </div>
+                  <div class="order-block shadow-none mb-3 border">
+                    <!-- order detail-->
+                    <div class="d-flex justify-content-between mb-2">
+                      <h4 class="title-font">إجمالي الطلب</h4><span class="text-dark">31 SR</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <h4 class="title-font">التوصيل</h4><span class="text-dark">2.5 SR</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <h4 class="title-font">إجمالي</h4><span class="m-color-text">32.5 SR</span>
+                    </div>
+                  </div>
+                  <div class="border rounded-3 px-2 py-3 bg-white">
+                    <div class="code">
+                      <div class="d-md-flex justify-content-between mb-3"> 
+                        <div class="d-flex mb-3"><img class="align-self-center me-2" src="../images/icons/location.png" alt="location" width="25" height="30">
+                          <div class="align-self-center">
+                            <h4 class="title-font mb-0">طريقة التوصيل</h4>
+                            <p class="mb-0 text-muted">الي باب المنزل</p>
+                          </div>
+                        </div>
+                        <div> <a class="text-decoration-none rounded-pill m-color-bg d-color-bg-hover text-white py-2 px-3" href="#">اختيار مندوب توصيل </a></div>
+                      </div>
+                      <div class="d-flex mb-3 justify-content-between">
+                        <div class="d-flex"><img class="align-self-center me-2" src="../images/icons/code.png" alt="code" width="30" height="30">
+                          <div class="align-self-center">
+                            <h4 class="title-font mb-0">كود خصم</h4>
+                            <p class="mb-0 text-muted">DSErty45</p>
+                          </div>
+                        </div>
+                        <div class="h5">-3.4SR</div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex"><img class="align-self-center me-2" src="../images/icons/pay/pay.png" alt="pay" width="30" height="30">
+                          <div class="align-self-center">
+                            <h4 class="title-font mb-0">طريقة الدفع</h4>
+                            <p class="mb-0 text-muted">فيزا \ ماستر كارد</p>
+                          </div>
+                        </div><img src="../images/icons/pay/0.png" alt="pay" width="70">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="../js/slick.js"></script>
+    <!-- intlTelInput-->
+    <script src="../js/intlTelInput.js"></script>
+    <!-- AOS-->
+    <script src="../js/aos.js"></script>
+    <!-- polyfilled-->
+    <script src="../js/plyr.polyfilled.js"></script>
+    <!--  chart-->
+    <script src="../js/chart/chart.min.js"></script>
+    <script src="../js/chart/chart-area-demo.js"></script>
+    <!--  main script-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/* cart page start */
+main.cart {
+  /* header */
+  header {
+    background-color: var(--s-color);
+    @include xs {padding: 30px 0 70px 0;}
+    @include sm {padding: 30px 0 60px 0;}
+    @include md {padding: 40px 0 80px 0;}
+    @include lg {padding: 40px 0 130px 0;}
+    .container {
+      position: relative;
+      z-index: 3;
+    }
+    .section-sm-title {
+      color: var(--d-color);
+    }
+    .breadcrumb-item {
+      a {
+        color: #239edc;
+        text-decoration: none;
+        @include xs {font-size: 16px;}
+        @include sm {font-size: 18px;}
+        @include lg {font-size: 20px;}
+      }
+    }
+    .breadcrumb-item.active {
+      color: #111;
+      @include xs {font-size: 16px;}
+      @include sm {font-size: 18px;}
+      @include lg {font-size: 20px;}
+      &::before {
+        color: #111;
+      }
+    }
+    a.link {
+      background-color: var(--m-color);
+      color: #fff;
+      text-decoration: none;
+      @include xs {padding: 10px 10px; font-size: 15px;}
+      @include sm {padding: 10px 15px;}
+      @include lg {padding: 15px 25px;}
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 18px;
+      @include transition;
+      &:hover{
+        background-color: var(--d-color);
+      }
+    }
+  }
+
+  /* cart row */
+  .cart-row {
+    position: relative;
+    @include xs {padding: 10px; top: -45px;}
+    @include sm {padding: 15px; top: -50px;}
+    @include lg {padding: 25px; top: -100px;}
+
+    .cart-content {
+      position: relative;
+      background-color: #fff;
+      .remove {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 22px;
+        padding: 5px;
+        &:hover {
+          color: #fff !important;
+          background-color: #dc3545;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,135 @@
+// sart main navbar
+nav.navbar.navbar-expand-sm.navbar-light.bg-white.main-navbar
+  .container-fluid
+    img.me-3.toggle-frontend-sidebar.pointer(src="./images/icons/list.png")
+    a.navbar-brand.pb-0.mx-0(href='index.html')
+      img(src="./images/logo1.png", alt="logo")
+    .collapse.navbar-collapse#navbarSupportedContent
+      ul.navbar-nav.navbar-nav-form.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          form.search
+            input.form-control(
+              type='search',
+              value="تبوك , السعودية",
+              placeholder='المنطقة',
+              aria-label='Search')
+            i.fas.fa-map-marker-alt.map-icon
+      ul.navbar-nav.nav-links.mb-2.mb-lg-0
+        li.nav-item
+          a.nav-link.search-icon(href='#')
+            i.fas.fa-search
+        li.nav-item.cart
+          a.nav-link.cart-toggle#cart(href='#')
+            img.me-2(src="./images/icons/shopping-cart.png", alt="")
+            |السلة
+            | (1)
+        li.nav-item
+          a.nav-link(href='login-with-phone-password.html')
+            span.d-lg-inline.d-none تسجيل
+            |  دخول
+        li.nav-item
+          a.nav-link(href='#') EN
+      .card-content
+        .text-end.px-4.pt-3
+          i.fas.fa-times.h5.pointer.cart-toggle
+        h6.text-center منتجات السلة
+        h6.title-font.text-center ابو مازن للماكولات الصينية
+        .cart-order
+          .order-container
+            .order-details
+              .order-block.mb-0
+                  - for (x=1; x <= 5; x++)
+                    // order item
+                    .d-flex.justify-content-between.mb-2.border-bottom.py-3.order-item
+                        div
+                          .d-flex
+                            span.text-success.me-2
+                              span.px-3.py-1.rounded-pill(style="background-color:#EEF7ED") 1x
+                            div
+                              h4.title-font.mb-0 Vegan Quinoa Salad
+                              p.mb-0.text-muted سبايسي - بيبسي كبير - صلصة بيضاء
+                              p.mb-0.text-muted - صوص اضافة +1.5 SR
+                        span.text-dark 31 SR
+
+              // order detail
+              .order-block.g-color-bg
+                .d-flex.justify-content-between
+                  h4.title-font إجمالي الطلب
+                  span.text-dark 31 SR
+              .order-block
+                .d-flex.justify-content-between
+                  h4.title-font التوصيل
+                  span.text-dark 2.5 SR
+              .order-block.g-color-bg
+                .d-flex.justify-content-between
+                  h4.title-font إجمالي
+                  span.m-color-text 32.5 SR
+
+
+              .actions.my-4.px-3
+                a.link.m-color-bg.s-color-bg-hover(href="order-track.html")
+                  | تتبيع الطلب
+                  span.text-white 31 SR
+
+// sidebar
+.front-sidebar-container
+  .front-sidebar.py-4.px-md-5.px-3
+    i.fas.fa-times.toggle-frontend-sidebar.pointer
+    .d-flex.my-4.user
+      img.me-2.align-self-start.user-img(src="./images/icons/user.png", alt="user")
+      .align-self-center
+        h5.mb-0 Rahma mohamed
+        a.profile-link.s-color-text-hover(href="profile.html") تعديل الملف الشخصي
+
+    .d-flex.mb-4.action
+      img.me-3.align-self-start(src="./images/icons/order.png", alt="order")
+      .align-self-start
+        h5.mb-1 طلباتي
+        a.s-color-text-hover(href="my-orders.html") جميع طلباتك السابقة
+
+    .d-flex.mb-4.action
+      img.me-3.align-self-start(src="./images/icons/message.png", alt="message")
+      .align-self-start
+        h5.mb-1 الرسائل
+        a.s-color-text-hover(href="chat.html") جميع استفساراتك للتجار
+
+
+    .d-flex.mb-4.action
+      img.me-3.align-self-start(src="./images/icons/wish.png", alt="wish")
+      .align-self-start
+        h5.mb-1 المفضلة
+        a.s-color-text-hover(href="#") جميع المنتجات و التجار المفضلين
+
+    .d-flex.mb-4.action
+      img.me-3.align-self-start(src="./images/icons/call.png", alt="call")
+      .align-self-start
+        h5.mb-1 مساعدة
+        a.s-color-text-hover(href="#") تحدث مع الدعم الفني لدينا
+    .action
+      a.logout-link.s-color-text-hover(href="#") تسجيل خروج
+
+    div.download-app
+      img(src="./images/icons/play.png", alt="google play")
+      img(src="./images/icons/appstore.png", alt="app store")
+
+// phone bottom icons
+.phone-bottom-icons.position-fixed.bottom-0.start-50.translate-middle-x.bg-white.bg.pt-2.d-md-none.d-block
+  .icon-row.d-flex.justify-content-around
+    a.icon.text-center.text-decoration-none.text-dark(href="index.html")
+      i.mbi.mbi-home3
+      p.m-0 الرئيسية
+    a.icon.text-center.text-decoration-none.text-dark.cart-toggle(href="#")
+      span.cart
+        i.mbi.mbi-bag2
+        span 9
+      p.m-0 السلة
+
+    a.icon.text-center.text-decoration-none.text-dark(href="profile.html")
+      i.mbi.mbi-user
+      p.m-0 حسابي
+ 
+    .icon.text-center.show-menu
+      img(src="https://img.icons8.com/ios/50/000000/globe--v2.png")
+      p.m-0 EN
+
+// end main navbar

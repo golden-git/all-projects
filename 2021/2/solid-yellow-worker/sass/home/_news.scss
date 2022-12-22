@@ -1,0 +1,28 @@
+/* news */
+
+.news {
+    padding: 5% 0;
+      /* new */
+      .new {
+        h4 {font-size: 18px;}
+        p {font-size: 16px;}
+    }
+
+    .form {
+        padding: 3%;
+        background-image: url('../imgaes/home/news/cell-background-quote.jpg');
+        h4 {font-size: 15px;}
+        p {font-size: 12px;}
+         
+        input {
+            border: 1px solid #aaa;
+            &::placeholder {
+                color: #fff;
+            }
+
+        }
+        
+    }
+}
+
+/* news */

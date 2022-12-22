@@ -1,0 +1,93 @@
+/*========== service ==========*/
+/* service */
+.service {
+    padding: 5% 0 6% 0;
+    background-image: url('../imgaes/home/service/background-factory-verydark.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* service-users */
+    .service-users{
+        
+    }
+     
+} 
+
+@media (max-width: 575.98px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 11px;}
+            h3 {font-size: 22px;}
+            p {font-size: 12px;}
+        }
+    } 
+
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 12px;}
+            h3 {font-size: 23px;}
+            p {font-size: 14px;}
+        }
+    } 
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 13px;}
+            h3 {font-size: 25px;}
+            p {font-size: 15px;}
+        }
+    } 
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 15px;}
+            h3 {font-size: 28px;}
+            p {font-size: 18px;}
+        }
+    } 
+
+    
+}
+ 
+
+@media (min-width: 1200px) and (max-width: 1606px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 18px;}
+            h3 {font-size: 30px;}
+            p {font-size: 20px;}
+        }
+    } 
+ 
+}
+
+@media (min-width: 1607px) {
+    /* service */
+    .service {
+        .title {
+            span {font-size: 18px;}
+            h3 {font-size: 30px;}
+            p {font-size: 20px;}
+        }
+    } 
+     
+}
+ 
+
+/*========== service ==========*/

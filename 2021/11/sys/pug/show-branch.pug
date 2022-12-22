@@ -1,0 +1,61 @@
+extends components/layout.pug
+block title
+  |  تفاصيل الفرع
+block main
+  +breadcrumb-in-2(' تفاصيل الفرع ', ' تفاصيل الفرع ', 'الرئسية', 'index.html',' الشركات' , 'companies.html')
+
+  form
+    .row
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | البيانات الاساسية
+
+            .card-body
+              .row
+                .col-12.mb-4
+                    .media
+                      img.align-self-start.mr-3(src="dist/img/default-150x150.png", alt="logo")
+                      .media-body
+                        h5.mt-0 المتحدة للخدمات
+                        p.h4 الامارت \ دبي \ شارع 23 \ مبني رقم 88
+                        p.h4 www.website.net
+                        p.h4 jshsa@gmail.com
+                .col-md-6.mb-3
+                  .form-group
+                    label  مركز التكلفة
+                    p.h4  اسم مركز التكلفة
+                .col-md-6.mb-3
+                  .form-group
+                    label   التلفون
+                    p.h4 +2234567890
+                .col-md-6.mb-3
+                  .form-group
+                    label الفاكس
+                    p.h4 35467
+                .col-md-6.mb-3
+                  .form-group
+                    label صندوق البريد
+                    p.h4 654
+
+
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | تذييل و ملاحظات
+            .card-body
+              .row
+                each value in ["نذييل يمين 1", "نذييل يمين 2", "نذييل يمين 3", "نذييل يسار 1", "نذييل يسار 2", "نذييل يسار 3"]
+                  .col-md-6.mb-3
+                    .form-group
+                      label=value
+                      p.h4=value
+                .col-12.mb-3
+                  .form-group
+                    label ملاحظات
+                    p.h4 مثال بسيط علي ملاحظات
+        +btn-save

@@ -1,0 +1,89 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الكوبونات ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar("الكوبونات")
+        .d-lg-flex.mb-4.justify-content-between.mt-5
+          h4 اجمالي الكوبونات (345)
+          div.align-self-center
+            a.text-white.rounded-pill.border-0.m-color-bg.d-color-bg-hover.btn.btn-lg(href="add-coupon-1.html")
+              | الكوبون جديد
+              i.fas.fa-plus-circle.mx-2
+        h4 فلتر النتائج
+        .d-lg-flex.mb-4.justify-content-between
+          div.mb-3
+            a.text-dark.mx-2.rounded.fw-bolder.border-0.shadow-sm.btn.btn-lg(href="#") مفعلة (6)
+            a.text-dark.mx-2.rounded.fw-bolder.border-0.shadow-sm.btn.btn-lg(href="#") منتهية (6)
+          .search
+            i.mbi.mbi-magnifier
+            input.form-control(type="search", placeholder="ابحث عن طلب ")
+            button.rounded-0.px-4.m-color-bg.d-color-bg-hover.text-white.btn بحث
+        .custom-table
+          h4 الطلبات الاخيرة
+          .table-responsive
+            table.table.table-borderless
+              thead
+                tr
+                  each val in [ "كوبون الخصم ", "تاريخ الانشاء",  "تاريخ الانتهاء", "حالة الكوبون", "الاحصاءات", "الاجراءات"]
+                    th=val
+              -for(x=1; x<=5; x++)
+                tbody
+                  tr
+                    td #3456789
+                    td
+                      h6.mb-0 21/1/2020
+                      small.text-muted  مساء  3:30
+                    td
+                      h6.mb-0 21/1/2020
+                      small.text-muted  مساء  3:30
+                    td: span.m-color-text مفعل
+                    td: span.m-color-text.rounded-pill.px-3.py-2.bg-m-50.pointer(data-bs-toggle="modal" data-bs-target="#dataModal") الاحصاءات
+                    td
+                      .form-check.form-switch
+                        input.form-check-input.custom-switch(id=x, type="checkbox", checked)
+
+    include ./includes/scripts
+//  Modal
+.modal.fade#dataModal(tabindex='-1', aria-labelledby='dataModalLabel', aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0.pb-0
+        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+      .modal-body.border-0.pt-0
+        h3.text-center الاحصاءات كوبون الخصم
+        .row.py-4
+          .col-md-4
+            .border.rounded-3.p-3
+              h4.mb-2 مرات الاستخدام
+              p.mb-2
+                span.h3.mx-2 234
+                span.h4.text-muted مرة
+              p.text-success
+                img(src="../images/icons/scall-up.png", alt="scall up", width="40")
+                span.h3.mx-1 +
+                span.h4 20%
+
+          .col-md-4
+            .border.rounded-3.p-3
+              h4.mb-2 عدد العملاء
+              p.mb-2
+                span.h3.mx-2 234
+                span.h4.text-muted عميل
+              p.text-success
+                img(src="../images/icons/scall-up.png", alt="scall up", width="40")
+                span.h3.mx-1 +
+                span.h4 20%
+
+          .col-md-4
+            .border.rounded-3.p-3
+              h4.mb-2 مبيعات الكوبون
+              p.mb-2
+                span.h3.mx-2 234
+                span.h4.text-muted ريال
+              p.text-success
+                img(src="../images/icons/scall-up.png", alt="scall up", width="40")
+                span.h3.mx-1 +
+                span.h4 20%

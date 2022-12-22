@@ -1,0 +1,128 @@
+.category {
+  overflow: hidden;
+  h1 {font-size: 25px;}
+  a {text-decoration: none;}
+  .show-aside-filters {
+    transition: .5s;
+    right: 0 !important;
+  }
+  aside {
+    @include xs-md{
+      background-color: #fff;
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      right: -1000px;
+      z-index: 98;
+      top: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .filters {
+      border: solid 1px #c8102e;
+      padding: 20px;
+      position: relative;
+      .close-filters {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        &:before {
+          content: "\e92a";
+          font-family: mbicon;
+          font-size: 26px;
+        }
+      }
+      .colors {
+        .color {
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          margin: 0 5px 5px 5px;
+        }
+      }
+      .accordion {
+        .accordion-button:not(.collapsed) {
+          color: #222;
+          background-color: #fff;
+        }
+        .accordion-body {
+          padding: 1rem .7rem;
+          ul  li a{
+            font-weight: 700;
+            font-size: 15px;
+          }
+        }
+        .accordion-body-scroll {
+          height: 300px;
+          overflow-y: scroll;
+
+        }
+
+      }
+    }
+  }
+  .main-wrap {
+    .toolbar {
+        .sorter-action {
+          right: 10px;
+        &:before {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-size: 20px;
+          line-height: 31px;
+          color: #000;
+          content: "\e9b5";
+          font-family: 'mbicon';
+          vertical-align: middle;
+          display: inline-block;
+          font-weight: normal;
+          overflow: hidden;
+          speak: none;
+          text-align: center;
+        }
+      }
+
+    }
+    .products {
+      .product {
+        span {
+          padding: 2px 4px;
+          border-radius: 4px;
+          background-color: var(--s-color);
+          color: #fff;
+          top: 15px;
+          left: 15px;
+        }
+        a {
+          text-decoration: none;
+          img {
+            margin-bottom: 15px;
+          }
+          h5 {
+            text-align: right;
+            font-size: 14px;
+          }
+          p {
+            text-align: right;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .page-item {
+        margin: 0 5px;
+        .page-link {border-radius: 3px; border: none; background-color: var(--g-color); color: #222;}
+      }
+      .page-item.active {
+        .page-link {
+          z-index: 3;
+          color: #222;
+          background-color: var(--m-color);
+          border-color: var(--m-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+/*========== repair-statistics ==========*/
+
+.repair-statistics {
+    padding: 5% 0;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .play {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background: var(--m-color);
+        border-radius: 50%;
+        cursor: pointer;
+        i {
+            font-size: 30px;
+            line-height: 80px;
+            color: #ffffff;
+        }
+     }
+
+    
+    .larg-number {
+        font-size: 55px;
+        position: relative;
+        &:after {
+            position: absolute;
+            right: -14px;
+            width: 3px;
+            height: 56px;
+            background-color: var(--m-color);
+            content: "";
+        }
+    }
+    
+
+}
+
+
+@media (max-width: 575.98px) {
+    .repair-statistics {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 20px;
+        }
+
+        
+
+         
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .repair-statistics {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+        
+        
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px)  {
+    .repair-statistics {
+        padding-top: 10%;
+     
+        
+    }
+}
+/*========== repair-statistics ==========*/

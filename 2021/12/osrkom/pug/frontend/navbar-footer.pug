@@ -1,0 +1,10 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" navbar and footer ")
+  body.g-color-bg
+    include ./includes/navbar
+    - for(x=1; x<=30; x++)
+      br
+    include ./includes/footer
+    include ./includes/scripts

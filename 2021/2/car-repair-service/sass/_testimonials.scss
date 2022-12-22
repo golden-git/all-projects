@@ -1,0 +1,125 @@
+/*========== testimonials ==========*/
+
+.testimonials {
+    padding: 5% 0;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .section__text-background {
+        font-size: 180px;
+        opacity: .02;
+        color: #fff;
+    }
+
+    .testimonial {
+        .comment{
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            transform:translate(160%,1%)!important;
+            i {
+                font-size: 20px;
+                line-height: 60px;
+            }
+        }
+
+        .bio {
+            font-size: 20px;
+            span  {
+                font-size: 25px
+            };
+        }
+    }
+    
+     
+
+}
+
+
+@media (max-width: 575.98px) {
+    .testimonials {
+        padding-top: 10%;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+
+        .testimonial {
+            img {
+                width: 107px;
+                height: 107px;
+            }
+            .comment{
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                i {
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+            }
+    
+            .bio {
+                font-size: 18px;
+                span  {
+                    font-size: 20px
+                };
+            }
+        }
+    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .testimonials {
+        padding-top: 10%;
+        img {
+            width: 107px;
+            height: 107px;
+        }
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 19px;
+        }
+
+        .testimonial {
+            .comment{
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                i {
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+            }
+    
+            .bio {
+                font-size: 18px;
+                span  {
+                    font-size: 20px
+                };
+            }
+        }
+        
+    
+    }
+}
+
+/*========== testimonials ==========*/

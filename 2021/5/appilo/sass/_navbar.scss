@@ -1,0 +1,41 @@
+/*========== main-navbar ==========*/
+
+.main-navbar{
+    position: relative;
+    z-index: 200;
+    // nav-link
+    .nav-link {
+        font-size: 23px;
+        font-weight: 600;
+
+    }
+
+    .dropdown-item {
+        font-size: 24px;
+    }
+
+    .nav-btn-link {
+        i {font-size: 13px;}
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .main-navbar {
+        .logo {
+            width: 75px;
+        }
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-navbar {
+        .logo {
+            width: 75px;
+        }
+    }
+}
+
+
+/*========== main-navbar ==========*/

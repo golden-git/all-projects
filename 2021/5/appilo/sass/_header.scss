@@ -1,0 +1,193 @@
+/* header */
+header {
+  background-color: #FAFAFA;
+  padding-top: 150px;
+
+  .container {
+    z-index: 3;
+
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .uper-image {
+    z-index: 2;
+    left: 5%;
+    top: -60px;
+    animation: uperimage infinite 10s;
+  }
+
+
+  .left-image {
+    z-index: 2;
+    left: -179px;
+    top: -179px;
+    transform: rotate(90deg);
+    animation: leftimage infinite 3s;
+
+  }
+
+
+
+  &:after {
+    left: 0;
+    width: 80%;
+    content: "";
+    top: -176px;
+    height: 115%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../imgaes/header/header1.png);
+    z-index: 1;
+
+  }
+
+  &:before {
+    right: 0;
+    width: 361px;
+    content: "";
+    top: -2px;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../imgaes/header/header2.png);
+    z-index: 1;
+
+  }
+
+
+  /* uper-image animation code */
+  @keyframes uperimage {
+    0% {
+      left: 10%;
+    }
+
+    25% {
+      left: 15%;
+    }
+
+    50% {
+      left: 20%;
+    }
+
+    75% {
+      left: 15%;
+    }
+
+    100% {
+      left: 10%;
+    }
+  }
+
+
+  /* left-image animation code */
+  @keyframes leftimage {
+    0% {
+      top: -179px;
+    }
+
+    25% {
+      top: -169px;
+    }
+
+    50% {
+      top: -159px;
+    }
+
+    75% {
+      top: -169px;
+    }
+
+    100% {
+      top: -179px;
+    }
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+  header {
+    padding-top: 50px;
+
+    &:after,
+    .left-image {
+      display: none;
+
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    padding-top: 60px;
+
+    &:after,
+    .left-image {
+      display: none;
+
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    padding-top: 90px;
+
+    h1 {
+      font-size: 70px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    padding-top: 100px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1606px) {
+  header {}
+}
+
+@media (min-width: 1607px) {
+  header {}
+}
+
+/* header */

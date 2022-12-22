@@ -1,0 +1,277 @@
+extends components/layout.pug
+block title
+  | ادخالات النظام
+block main
+  +breadcrumb-in-1('ادخالات النظام', 'ادخالات النظام', 'الرئسية', 'index.html')
+
+  section.content
+    .card.card-primary.card-outline.card-outline-tabs
+      .card-header.p-0.border-bottom-0
+        ul.nav.nav-tabs#tabs-tab(role="tablist")
+          // ‫‪SYSTEM‬‬
+          li.nav-item
+            a.nav-link.active#tabs-1-tab(data-toggle="pill", href="#tabs-1", role="tab", aria-controls="tabs-1", aria-selected="true").
+              الانظمة
+
+          // ‫‪SYSTEM_B‬‬
+          li.nav-item
+            a.nav-link#tabs-2-tab(data-toggle="pill", href="#tabs-2", role="tab", aria-controls="tabs-2", aria-selected="false").
+              القوائم الفرعية
+
+          // ‫‪SYSTEM_SCREEN‬‬
+          li.nav-item
+            a.nav-link#tabs-3-tab(data-toggle="pill", href="#tabs-3", role="tab", aria-controls="tabs-3", aria-selected="false").
+              الشاشات و الصفحات
+
+      .card-body
+        .tab-content#tabs-tabContent
+          // ‫‪SYSTEM‬‬
+          .tab-pane.fade.active.show#tabs-1(role="tabpanel", aria-labelledby="tabs-1-tab")
+            section.content
+              .row
+                .col-12
+                  .card.shadow-none
+                    +tabel-header("الانظمة", '#modal1')
+                    // add modal
+                    .modal.fade#modal1(tabindex="-1", role="dialog", aria-labelledby="modal1", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة نظام جديد")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم النظام عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم النظام انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label وصف النظام
+                                textarea.form-control
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal2(tabindex="-1", role="dialog", aria-labelledby="modal2", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل النظام ")
+                          form
+                            .modal-body
+                              .form-group
+                                label اسم النظام عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label اسم النظام انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label وصف النظام
+                                textarea.form-control
+                            +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal3(tabindex="-1", role="dialog", aria-labelledby="modal3", aria-hidden="true")
+                      .modal-dialog.modal-lg(role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل النظام")
+
+                          .modal-body
+                            div
+                              h4 اسم النظام
+                            div.mb-4
+                              p.h5 هنا يظهر وصف النظام
+                            .row
+                              .col-md-6
+                                 ul.list-group
+                                  li.list-group-item.bg-primary القوائم الفرعية للنظام
+                                  - for (var x = 1; x <= 5; x++)
+                                    li.list-group-item قائمة #{x}
+                              .col-md-6
+                                ul.list-group
+                                  li.list-group-item.bg-success الشاشات
+                                  - for (var x = 1; x <= 5; x++)
+                                    li.list-group-item شاشة #{x}
+
+                          +modal-footer
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped.text-center
+                        thead
+                          tr
+                            each value in ['الرقم', 'اسم النظام', 'الوصف', 'الشاشات', 'القوائم الفرعية' , 'خيارات']
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, 'اسم النظام', 'هنا وصف للنظام', '20', '50']
+                                td= value
+                              +tabel-option-nolink("modal2", "modal3")
+                      include components/pagination
+
+          // ‫‪SYSTEM_B‬‬
+          .tab-pane.fade#tabs-2(role="tabpanel", aria-labelledby="tabs-2-tab")
+              section.content
+                .row
+                  .col-12
+                    .card.shadow-none
+                    +tabel-header("القوائم الفرعية", '#modal4')
+                    // add modal
+                    .modal.fade#modal4(tabindex="-1", role="dialog", aria-labelledby="modal4", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة قائمة فرعية")
+                          form
+                            .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  النظام
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النظام #{x}
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal5(tabindex="-1", role="dialog", aria-labelledby="modal5", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل القائمة الفرعية")
+                          form
+                           .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  النظام
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النظام #{x}
+                          +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal6(tabindex="-1", role="dialog", aria-labelledby="modal6", aria-hidden="true")
+                      .modal-dialog (role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل التبويب")
+
+                          .modal-body
+                            div
+                              h4 اسم التبويب
+                            div.mb-4
+                              p.h5  اسم النظام
+                            .row
+                              .col-md-12
+                                ul.list-group
+                                  li.list-group-item.bg-success الشاشات
+                                  - for (var x = 1; x <= 5; x++)
+                                    li.list-group-item
+                                      span.pr-3.border-left شاشة #{x}
+                                      span.pl-3 اسم النظام
+
+                          +modal-footer
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped
+                        thead
+                          tr
+                            each value in ['الرقم', 'اسم التبويب', 'اسم النظام', 'الشاشات', 'خيارات']
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, 'اسم التبويب', 'اسم النظام', '50']
+                                td= value
+                              +tabel-option-nolink("modal5", "modal6")
+                      include components/pagination
+
+
+          // ‫‪SYSTEM_SCREEN
+          .tab-pane.fade#tabs-3(role="tabpanel", aria-labelledby="tabs-3-tab")
+            section.content
+                .row
+                  .col-12
+                    .card.shadow-none
+                    +tabel-header("الشاشات و الصفحات", '#modal7')
+                    // add modal
+                    .modal.fade#modal7(tabindex="-1", role="dialog", aria-labelledby="modal7", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("اضافة شاشة  ")
+                          form
+                            .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  النظام
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النظام #{x}
+                              .form-group
+                                label  التبويب
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option التبويب #{x}
+                            +modal-footer("حفظ")
+                    // edit modal
+                    .modal.fade#modal8(tabindex="-1", role="dialog", aria-labelledby="modal8", aria-hidden="true")
+                      .modal-dialog(role="document")
+                        .modal-content
+                          +modal-header("تعديل الشاشة  ")
+                          form
+                           .modal-body
+                              .form-group
+                                label الاسم عربي
+                                input.form-control(type="text")
+                              .form-group
+                                label الاسم انجليزي
+                                input.form-control(type="text")
+                              .form-group
+                                label  النظام
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option النظام #{x}
+                              .form-group
+                                label  التبويب
+                                select.form-control
+                                  - for (var x = 1; x <= 5; x++)
+                                    option التبويب #{x}
+                          +modal-footer("حفظ")
+                    // show modal
+                    .modal.fade#modal9(tabindex="-1", role="dialog", aria-labelledby="modal9", aria-hidden="true")
+                      .modal-dialog (role="document")
+                        .modal-content
+                          +modal-header("عرض تفاصيل الشاشة")
+
+                          .modal-body
+                            div.mb-3
+                              h4 اسم الشاشة
+                            div.mb-3
+                              p.h5  اسم النظام
+                            div
+                              p.h5  اسم التبويب
+                          +modal-footer
+                    .card-body
+                      include components/single-search
+                      table.table.table-bordered.table-striped
+                        thead
+                          tr
+                            each value in ['الرقم', 'اسم الشاشة', 'اسم النظام', 'اسم التبويب', 'خيارات']
+                              th= value
+
+                        tbody
+                          - for (var x = 1; x <= 10; x++)
+                            tr
+                              each value in [x, 'اسم الشاشة', 'اسم النظام', 'اسم التبويب']
+                                td= value
+                              +tabel-option-nolink("modal8", "modal9")
+                      include components/pagination
+
+

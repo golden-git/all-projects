@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <!-- PAGE TITLE HERE -->
+  <title>Shapen</title>
+
+  <!-- MOBILE SPECIFIC -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- BOOTSTRAP STYLE SHEET -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- FONTAWESOME STYLE SHEET -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+  <!-- OWL CAROUSEL STYLE SHEET -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    integrity="sha512-GqP/pjlymwlPb6Vd7KmT5YbapvowpteRq9ffvufiXYZp0YpMTtR9tI6/v3U3hFi1N9MQmXum/yBfELxoY+S1Mw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- MAGNIFIC POPUP STYLE SHEET -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- LOADER STYLE SHEET -->
+  <link rel="stylesheet" type="text/css" href="css/loader.min.css">
+
+  <!-- MAIN STYLE SHEET -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- RTL STYLE SHEET -->
+  <link rel="stylesheet" type="text/css" href="css/rtl.css">
+
+  <!-- Color Theme Change Css -->
+  <link rel="stylesheet" class="skin" type="text/css" href="css/skin/skin-1.css">
+
+  <!-- Side Switcher Css-->
+  <link rel="stylesheet" type="text/css" href="css/switcher.css">
+
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="page-wraper">
+
+    <!-- HEADER START -->
+    <header class="site-header header-style-1">
+      <div class="top-bar bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="mt-topbar-left clearfix">
+              <ul class="list-unstyled e-p-bx pull-right">
+                <li><i class="fa fa-envelope"></i> devhelp@gmail.com</li>
+                <li><i class="fa fa-phone"></i>(075) 123-7654</li>
+                <li><i class="fa fa-clock-o"></i>الأحد-السبت 9.45 ص</li>
+              </ul>
+            </div>
+            <div class="mt-topbar-right clearfix">
+              <div class="appint-btn"><a href="#" class="site-button">إحجز موعد</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-header main-bar-wraper">
+        <div class="main-bar bg-white">
+          <div class="container">
+            <div class="logo-header">
+              <div class="logo-header-inner logo-header-one">
+                <a href="index.html">
+                  <img src="images/logo-light.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- NAV Toggle Button -->
+            <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- ETRA Nav -->
+            <div class="extra-nav">
+              <div class="extra-cell">
+                <a href="#search">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+              <div class="extra-cell">
+                <a href="#" class="contact-slide-show"><i class="fa fa-angle-left arrow-animation"></i></a>
+              </div>
+            </div>
+            <!-- ETRA Nav -->
+
+            <!-- Contact Nav -->
+            <div class="contact-slide-hide " style="background-image:url(images/background/bg-5.png)">
+              <div class="contact-nav">
+                <a href="javascript:void(0)" class="contact_close">&times;</a>
+                <div class="contact-nav-form p-a30">
+                  <div class="contact-info   m-b30">
+
+                    <div class="mt-icon-box-wraper center p-b30">
+                      <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i></div>
+                      <div class="icon-content">
+                        <h5 class="m-t0 font-weight-500">رقم الهاتف</h5>
+                        <p>(075) 123-7654</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-icon-box-wraper center p-b30">
+                      <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i></div>
+                      <div class="icon-content">
+                        <h5 class="m-t0 font-weight-500">عنوان بريد الكتروني</h5>
+                        <p>devhelp@gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-icon-box-wraper center p-b30">
+                      <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-map-marker"></i></div>
+                      <div class="icon-content">
+                        <h5 class="m-t0 font-weight-500">معلومات العنوان</h5>
+                        <p>201 شارع ليفربول ، جناح 721 ، لندن</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="full-social-bg">
+                    <ul>
+                      <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
+                      <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a></li>
+                      <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="text-center">
+                    <h4 class="font-weight-600">&copy; 2019 dev</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SITE Search -->
+            <div id="search">
+              <span class="close"></span>
+              <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
+                <div class="input-group">
+                  <input value="" name="q" type="search" placeholder="اكتب للبحث" />
+                  <span class="input-group-btn"><button type="button" class="search-btn"><i
+                        class="fa fa-search arrow-animation"></i></button></span>
+                </div>
+              </form>
+            </div>
+            <!-- MAIN Vav -->
+            <div class="header-nav navbar-collapse collapse">
+              <ul class=" nav navbar-nav">
+                <li class="active">
+                  <a href="javascript:;">الصفحة الرئيسية</a>
+                  <ul class="sub-menu">
+
+                    <li>
+                      <a href="index.html">الصفحة الرئيسية -1</a>
+                    </li>
+                    <li>
+                      <a href="#">الصفحة الرئيسية -2</a>
+                    </li>
+                    <li>
+                      <a href="#">لصفحة الرئيسية أسلوب محاصر -3 </a>
+                    </li>
+                    <li>
+                      <a href="#">الصفحة الرئيسية -4</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">معلومات عنا</a>
+                </li>
+                <li>
+                  <a href="#">خدمات</a>
+                </li>
+                <li>
+                  <a href="javascript:;">الصفحات</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="javascript:;">مدونة</a>
+                      <ul class="sub-menu has-child">
+                        <li><a href="#">شبكة المدونة</a></li>
+                        <li><a href="#">قائمة المدونات</a></li>
+                        <li><a href="#">مدونة البناء</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">التعليمات</a>
+                    </li>
+                    <li>
+                      <a href="#">خطأ 404</a>
+                    </li>
+                    <li>
+                      <a href="#">اتصل بنا</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">تفاصيل المشاركة</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">نشر الصورة</a></li>
+                    <li><a href="#">معرض البريد</a></li>
+                    <li><a href="#">انشر الفيديو</a></li>
+                    <li><a href="#">نشر الشريط الجانبي الأيمن</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javascript:;">المشاريع</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">شبكة المشروع</a></li>
+                    <li><a href="#">مشروع الماسونية</a></li>
+                    <li><a href="#">مشروع كاروسيل</a></li>
+                    <li><a href="#">مشروع كلاسيكي -1</a></li>
+                    <li><a href="#">مشروع كلاسيكي -2</a></li>
+                    <li><a href="#">تفاصيل المشروع</a></li>
+                  </ul>
+                </li>
+                <li class="submenu-direction">
+                  <a href="javascript:;">الرموز القصيرة</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">أكورديان</a></li>
+                    <li><a href="#">زر</a></li>
+                    <li><a href="#">نمط مربع الرمز</a></li>
+                    <li><a href="#">مجموعة القوائم</a></li>
+                    <li><a href="#">انبثاق مشروط</a></li>
+                    <li><a href="#">نوافذ التبويب</a></li>
+                    <li><a href="#">الطاولة</a></li>
+                    <li><a href="#">فيديو </a></li>
+                    <li><a href="#">خط الرمز </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content ">
+      <!-- INNER PAGE BANNER -->
+      <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5"
+        style="background-image:url(images/banner/1.jpg);">
+        <div class="overlay-main bg-black opacity-07"></div>
+        <div class="container">
+          <div class="mt-bnr-inr-entry">
+            <div class="banner-title-outer">
+              <div class="banner-title-name">
+                <h2 class="m-b0">جعل رؤيتك تتحقق، وهذا هو ما نقوم به.</h2>
+              </div>
+            </div>
+            <!-- BREADCRUMB ROW -->
+
+            <div>
+              <ul class="mt-breadcrumb breadcrumb-style-2">
+                <li><a href="javascript:void(0);">الصفحة الرئيسية</a></li>
+                <li>المشاركات</li>
+              </ul>
+            </div>
+
+            <!-- BREADCRUMB ROW END -->
+          </div>
+        </div>
+      </div>
+      <!-- INNER PAGE BANNER END -->
+
+      <!-- SECTION CONTENT START -->
+      <div class="section-full p-tb80 square_shape1 square_shape3 inner-page-padding">
+        <div class="container">
+          <!-- BLOG START -->
+          <div class="blog-post date-style-3 blog-detail text-black">
+            <div class="mt-post-media">
+              <!--Fade slider-->
+              <div class="owl-carousel owl-fade-slider-one owl-btn-vertical-center owl-dots-bottom-right m-b30">
+
+                <div class="item">
+                  <div class="aon-thum-bx">
+                    <img src="images/blog/default/thum1.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="aon-thum-bx">
+                    <img src="images/blog/default/thum2.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="aon-thum-bx">
+                    <img src="images/blog/default/thum3.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <!--fade slider END-->
+            </div>
+
+            <div class="mt-post-meta ">
+              <ul>
+                <li class="post-date"><strong>20 </strong> <span>يونيو 2019</span> </li>
+                <li class="post-author"><a href="javascript:void(0);">بواسطة <span>عضو</span></a> </li>
+                <li class="post-category"><a href="javascript:void(0);"><span>تقليدي</span></a> </li>
+              </ul>
+            </div>
+
+            <div class="mt-post-title ">
+              <h2 class="post-title"><a href="javascript:void(0);" class="font-weight-600">من مفتاح بدوره كاملا لمدير
+                  المشروع. مغادرة المبنى للمهنيين.</a></h2>
+            </div>
+
+            <div class="mt-post-text">
+              <p>ومن الحقائق الراسخة أن القارئ سوف يصرف من محتوى مقروء من صفحة عند النظر في تخطيطها. وجهة استخدام أبجد
+                هوز هو أن لديها أو أكثر أقل التوزيع الطبيعي من الرسائل، بدلا من استخدام 'المحتوى هنا، محتوى هنا "، مما
+                جعلها تبدو مثل اللغة الإنجليزية للقراءة. النشر المكتبي العديد من حزم والمحررين صفحة الويب الآن استخدام
+                أبجد هوز كنص نموذج الافتراضية الخاصة بهم، والبحث عن 'أبجد هوز' سوف العديد من كشف المواقع على شبكة
+                الإنترنت لا تزال في مهدها. الإصدارات المختلفة قد تطورت على مر السنين، وأحيانا عن طريق الصدفة، وأحيانا عن
+                قصد (حقن الفكاهة وما شابه ذلك). بل هو حقيقة ثابتة منذ فترة طويلة أن القارئ سوف يصرف من محتوى مقروء من
+                صفحة عند النظر في تخطيطها. وجهة استخدام أبجد هوز هو أن لديها أو أكثر أقل التوزيع الطبيعي من الرسائل،
+                بدلا من استخدام 'المحتوى هنا، محتوى هنا "، مما جعلها تبدو مثل اللغة الإنجليزية للقراءة. النشر المكتبي
+                العديد من حزم والمحررين صفحة الويب الآن استخدام أبجد هوز كنص نموذج الافتراضية الخاصة بهم، والبحث عن
+                'أبجد هوز' سوف العديد من كشف المواقع على شبكة الإنترنت لا تزال في مهدها. الإصدارات المختلفة قد تطورت على
+                مر السنين، وأحيانا عن طريق الصدفة، وأحيانا عن قصد (النكتة حقن وما شابه ذلك).
+              </p>
+              <h4>وقال "عندما يتعلق الأمر منزلك، لا تعبث مع بقية، والثقة الأفضل."</h4>
+              <p>المطورين الميكروويف تيلوس ميلان بورتا عطلة نهاية الأسبوع. وكالات التصنيف الائتماني ماتيس التخطيط جائزة
+                هذا الشراب. أكبر مجانا للأعضاء. ماك العشاء الاتحاد الأوروبي الجزر للطبقة. هنا، إذن، هو ما 1 أريد أن أقول
+                لكم العمارة بلدي. 1 إنشاؤه مع الشجاعة والمثالية، ولكن أيضا مع إدراك حقيقة أن ما هو مهم هو الحياة،
+                والأصدقاء، ومحاولة لجعل هذا العالم الظالم مكانا أفضل للعيش فيه.</p>
+              <blockquote class="bg-dark text-white author-quote">
+                <h4 class="m-b0">تركنا عملنا الجودة والالتزام رضا العملاء يكون شعارنا. أنت تستحق الجودة والاعتمادية
+                  يمكنك الاعتماد عليه.<i class="fa fa-quote-right"></i> </h4>
+                <div class="p-t15  text-white">
+                  <strong class="text-primary">جيسيكا ماكديد</strong>
+                  <span>المقاولين</span>
+                </div>
+
+              </blockquote>
+              <p>هناك العديد من الاختلافات من مقاطع من أبجد هوز المتاحة، ولكن الغالبية عانت تغيير في شكل ما، من خلال
+                النكتة حقن، أو عشوائية الكلمات التي لا تبدو حتى تصديق قليلا. إذا كنت تسير على استخدام مرور أبجد هوز،
+                تحتاج للتأكد من أنه لا يوجد أي شيء محرج مخبأة في منتصف النص. أبجد هوز جميع المولدات على الإنترنت تميل
+                إلى تكرار قطع محددة مسبقا حسب الضرورة، مما يجعل هذه أول المولد الحقيقي على شبكة الإنترنت.</p>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <div class="mt-box m-b30">
+                    <div class="mt-media">
+                      <img src="images/blog/large-blog.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="mt-box m-b30">
+                    <div class="mt-media">
+                      <img src="images/blog/large-blog2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="mt-box m-b30">
+                    <div class="mt-media">
+                      <img src="images/blog/large-blog3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>ولا بد لي أن أشرح لك كيف أن كل ولدت هذه الفكرة الخاطئة من طبعة تندد المتعة ومشيدا الألم، سردا كاملا
+                للنظام، وشرح تعاليم الفعلي للالمستكشف كبير من الحقيقة وسوف تتكشف في الماجستير-باني السعادة البشرية. للا
+                أحد ترفض، يكره، أو يتجنب متعة في حد ذاته، لأنه هو المتعة، ولكن لأنهم لا يعرفون كيفية متابعة متعة
+                بعقلانية العواقب اللقاء التي هي أحزان أولئك الذين لديهم. وليس هناك أي شخص ينتمي، والحسرة المؤلمة وحدها،
+                وأنه هو الكثير من الألم، والتكريس كان يرغب في الحصول عليها، ولكن في العمل والألم لأنها لم يكن لديك بعض
+                عظيم لا يمكن أبدا أن تكون مرفقة للحصول على المتعة، وطريقة أوقات الخريف.</p>
+
+
+
+
+            </div>
+
+            <div class="autor-post-tag-share bdr-t-1 bdr-solid bdr-gray p-t20">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="widget widget_tag_cloud">
+                    <h4 class="tagcloud">العلامات</h4>
+                    <div class="tagcloud">
+                      <a href="javascript:void(0);">العلامة الأولى</a>
+                      <a href="javascript:void(0);">العلامة الثانية</a>
+                      <a href="javascript:void(0);">العلامة ثلاثة</a>
+                      <a href="javascript:void(0);">أربعة العلامة</a>
+                      <a href="javascript:void(0);">العلامة خمسة</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="mt-box">
+
+                    <div class="clearfix">
+                      <h4>حصة هذا المنصب:</h4>
+                      <div class="widget_social_inks">
+                        <ul class="social-icons social-md social-square social-dark m-b0">
+                          <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                          <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                          <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                          <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                          <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TITLE START -->
+          <div class="section-head ">
+            <div class="mt-separator-outer separator-left">
+              <div class="mt-separator">
+                <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">آخر</span> بلوق</h2>
+              </div>
+            </div>
+          </div>
+          <!-- TITLE END -->
+
+          <!-- IMAGE CAROUSEL START -->
+          <div class="section-content">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                  <div class="mt-post-media mt-img-overlay7">
+                    <a href="javascript:;"><img src="images/blog/latest-blog/pic1.jpg" alt=""></a>
+                  </div>
+                  <div class="mt-post-info p-a30 bg-gray">
+                    <div class="post-overlay-position">
+                      <div class="mt-post-meta ">
+                        <ul>
+                          <li class="post-date"><strong class="text-primary">14</strong> <span>يناير 2019</span></li>
+                          <li class="post-author">بواسطة <a href="javascript:;">المشرف</a> </li>
+                          <li class="post-comment"><a href="javascript:;">2 تعليق</a> </li>
+                        </ul>
+                      </div>
+                      <div class="mt-post-title ">
+                        <h4 class="post-title m-b0">التصميم التجاري للمشروع</h4>
+                      </div>
+                      <div class="mt-post-text">
+                        <p>وهو نفس القول من خلال التقلص من الكدح والألم. هذه الحالات مثالية.</p>
+                      </div>
+                      <div class="readmore-line">
+                        <span><a href="#" class="site-button-link" data-hover="اقرأ المزيد">اقرأ المزيد <i
+                              class="fa fa-angle-right arrow-animation"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                  <div class="mt-post-media mt-img-overlay7">
+                    <a href="javascript:;"><img src="images/blog/latest-blog/pic2.jpg" alt=""></a>
+                  </div>
+                  <div class="mt-post-info p-a30 bg-gray">
+                    <div class="post-overlay-position">
+                      <div class="mt-post-meta ">
+                        <ul>
+                          <li class="post-date"><strong class="text-primary">16</strong> <span>يناير 2019</span></li>
+                          <li class="post-author">بواسطة <a href="javascript:;">المشرف</a> </li>
+                          <li class="post-comment"><a href="javascript:;">2 تعليق</a> </li>
+                        </ul>
+                      </div>
+                      <div class="mt-post-title ">
+                        <h4 class="post-title m-b0">توقعات التصميم الداخلي لدينا</h4>
+                      </div>
+                      <div class="mt-post-text">
+                        <p>اليوم يمكننا أن نخبرك ، بفضل شغفك وإبداع العمل الجاد والخبرة.</p>
+                      </div>
+                      <div class="readmore-line">
+
+                        <span><a href="#" class="site-button-link" data-hover="اقرأ المزيد">اقرأ المزيد <i
+                              class="fa fa-angle-right arrow-animation"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                  <div class="mt-post-media mt-img-overlay7">
+                    <a href="javascript:;"><img src="images/blog/latest-blog/pic3.jpg" alt=""></a>
+                  </div>
+                  <div class="mt-post-info p-a30 bg-gray">
+                    <div class="post-overlay-position">
+                      <div class="mt-post-meta ">
+                        <ul>
+                          <li class="post-date"><strong class="text-primary">18</strong> <span>يناير 2019</span></li>
+                          <li class="post-author">بواسطة <a href="javascript:;">المشرف</a> </li>
+                          <li class="post-comment"><a href="javascript:;">2 تعليق</a> </li>
+                        </ul>
+                      </div>
+                      <div class="mt-post-title ">
+                        <h4 class="post-title m-b0">أفكار التصميم الداخلي منخفضة التكلفة</h4>
+                      </div>
+                      <div class="mt-post-text">
+                        <p>كل السرور هو الترحيب بكل آلام يتم تجنبها. في ظروف معينة الالتزامات.</p>
+                      </div>
+                      <div class="readmore-line">
+                        <span><a href="#" class="site-button-link" data-hover="اقرأ المزيد">اقرأ المزيد <i
+                              class="fa fa-angle-right arrow-animation"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="clear" id="comment-list">
+            <div class="comments-area" id="comments">
+              <h2 class="comments-title">4 تعليق</h2>
+              <div class="p-tb30">
+                <!-- COMMENT LIST START -->
+                <ol class="comment-list">
+                  <li class="comment">
+                    <!-- COMMENT BLOCK -->
+                    <div class="comment-body">
+                      <div class="comment-meta">
+                        <a href="javascript:void(0);">20 يونيو 2019 الساعة 8:15 صباحًا</a>
+                      </div>
+                      <div class="comment-author vcard">
+                        <img class="avatar photo" src="images/testimonials/pic1.jpg" alt="">
+                        <cite class="fn">فيديريكو</cite>
+                        <span class="says">يقول:</span>
+                      </div>
+
+                      <p>هناك العديد من الاختلافات من مقاطع من أبجد هوز المتاحة، ولكن الغالبية عانت تغيير في شكل ما، من
+                        خلال النكتة حقن، أو عشوائية الكلمات التي لا تبدو حتى تصديق قليلا. إذا كنت تسير على استخدام مرور
+                        أبجد هوز، تحتاج للتأكد من أنه لا يوجد أي شيء محرج مخبأة في منتصف النص.</p>
+                      <div class="reply">
+                        <a href="javscript:;" class="comment-reply-link letter-spacing-2 text-uppercase">رد</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="comment">
+                    <!-- COMMENT BLOCK -->
+                    <div class="comment-body">
+                      <div class="comment-meta">
+                        <a href="javascript:void(0);">20 يونيو 2019 في 08:15</a>
+                      </div>
+                      <div class="comment-author vcard">
+                        <img class="avatar photo" src="images/testimonials/pic4.jpg" alt="">
+                        <cite class="fn"> بولوكر </cite>
+                        <span class="says">يقول:</span>
+                      </div>
+
+                      <p>هناك العديد من الاختلافات من مقاطع من أبجد هوز المتاحة، ولكن الغالبية عانت تغيير في شكل ما، من
+                        خلال النكتة حقن، أو عشوائية الكلمات التي لا تبدو حتى تصديق قليلا. إذا كنت تسير على استخدام مرور
+                        أبجد هوز، تحتاج للتأكد من أنه لا يوجد أي شيء محرج مخبأة في منتصف النص.</p>
+                      <div class="reply">
+                        <a href="javscript:;" class="comment-reply-link letter-spacing-2 text-uppercase">رد</a>
+                      </div>
+                    </div>
+                    <!-- SUB COMMENT BLOCK -->
+                    <ol class="children">
+                      <li class="comment odd parent">
+
+                        <div class="comment-body">
+                          <div class="comment-meta">
+                            <a href="javascript:void(0);">20 يونيو 2019 في 08:15</a>
+                          </div>
+                          <div class="comment-author vcard">
+                            <img class="avatar photo" src="images/testimonials/pic3.jpg" alt="">
+                            <cite class="fn">برايدن</cite>
+                            <span class="says">يقول:</span>
+                          </div>
+
+                          <p>هناك العديد من الاختلافات من مقاطع من أبجد هوز المتاحة، ولكن الغالبية عانت تغيير في شكل ما،
+                            من خلال النكتة حقن، أو عشوائية الكلمات التي لا تبدو حتى تصديق قليلا. إذا كنت تسير على
+                            استخدام مرور أبجد هوز، تحتاج للتأكد من أنه لا يوجد أي شيء محرج مخبأة في منتصف النص.</p>
+                          <div class="reply">
+                            <a href="javscript:;" class="comment-reply-link letter-spacing-2 text-uppercase">رد</a>
+                          </div>
+
+                        </div>
+
+                        <ol class="children">
+                          <li class="comment odd parent">
+                            <div class="comment-body">
+                              <div class="comment-meta">
+                                <a href="javascript:void(0);">20 يونيو 2019 في 08:15</a>
+                              </div>
+                              <div class="comment-author vcard">
+                                <img class="avatar photo" src="images/testimonials/pic2.jpg" alt="">
+                                <cite class="fn">دييغو</cite>
+                                <span class="says">يقول:</span>
+                              </div>
+
+                              <p>هناك العديد من الاختلافات من مقاطع من أبجد هوز المتاحة، ولكن الغالبية عانت تغيير في شكل
+                                ما، من خلال النكتة حقن، أو عشوائية الكلمات التي لا تبدو حتى تصديق قليلا. إذا كنت تسير
+                                على استخدام مرور أبجد هوز، تحتاج للتأكد من أنه لا يوجد أي شيء محرج مخبأة في منتصف النص.
+                              </p>
+                              <div class="reply">
+                                <a href="javscript:;" class="comment-reply-link letter-spacing-2 text-uppercase">رد</a>
+                              </div>
+
+                            </div>
+                          </li>
+                        </ol>
+
+                      </li>
+                    </ol>
+                  </li>
+
+                </ol>
+                <!-- COMMENT LIST END -->
+
+                <!-- LEAVE A REPLY START -->
+                <div class="comment-respond m-t30" id="respond">
+
+                  <h2 class="comment-reply-title" id="reply-title">ترك تعليق
+                    <small>
+                      <a style="display:none;" href="#" id="cancel-comment-reply-link" rel="nofollow">إلغاء الرد</a>
+                    </small>
+                  </h2>
+
+                  <form class="comment-form bdr-1 bdr-solid bdr-gray p-a20" id="commentform" method="post">
+
+                    <p class="comment-form-author">
+                      <label for="author">اسم <span class="required">*</span></label>
+                      <input class="form-control" type="text" value="" name="user-comment" placeholder="اسم"
+                        id="author">
+                    </p>
+
+                    <p class="comment-form-email">
+                      <label for="email">البريد الإلكتروني <span class="required">*</span></label>
+                      <input class="form-control" type="text" value="" name="email" placeholder="البريد الإلكتروني"
+                        id="email">
+                    </p>
+
+                    <p class="comment-form-url">
+                      <label for="url">الموقع</label>
+                      <input class="form-control" type="text" value="" name="url" placeholder="الموقع" id="url">
+                    </p>
+
+                    <p class="comment-form-comment">
+                      <label for="comment">تعليق</label>
+                      <textarea class="form-control" rows="8" name="comment" placeholder="تعليق"
+                        id="comment"></textarea>
+                    </p>
+
+                    <p class="form-submit">
+                      <button class="site-button button-sm radius-no text-uppercase font-weight-600"
+                        type="button">عرض</button>
+                    </p>
+
+                  </form>
+
+                </div>
+                <!-- LEAVE A REPLY END -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION CONTENT END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer class="site-footer footer-large  footer-dark	footer-wide">
+      <div class="container call-to-action-wrap bg-no-repeat bg-center"
+        style="background-image:url(images/background/bg-site.png);">
+        <div class="p-a30 bg-primary ">
+          <div class="row">
+            <div class="col-md-8 col-sm-8">
+              <div class="call-to-action-left text-black">
+                <h4 class="text-uppercase m-b10 m-t0">اشترك في نشرتنا الإخبارية!</h4>
+                <span>لا تفوت أي شيء من الشكل بالتسجيل في النشرة الإخبارية.</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+              <div class="call-to-action-right">
+                <div class="widget_newsletter">
+                  <div class="newsletter-bx">
+                    <form role="search" method="post">
+                      <div class="input-group">
+                        <input name="news-letter" class="form-control" placeholder="أدخل بريدك الإلكتروني" type="text">
+                        <span class="input-group-btn">
+                          <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER BLOCKES START -->
+      <div class="footer-top overlay-wraper">
+        <div class="overlay-main"></div>
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT COMPANY -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="widget widget_about">
+                <!--<h4 class="widget-title">About Company</h4>-->
+                <div class="logo-footer clearfix p-b15">
+                  <a href="index.html"><img src="images/logo-dark.png" alt=""></a>
+                </div>
+                <p class="max-w400">اليوم يمكننا أن نخبرك ، بفضل شغفك وإبداعك في العمل الشاق وخبرتك ، لقد قدمت لنا أجمل
+                  إطلالات المنزل.</p>
+
+                <ul class="social-icons  mt-social-links">
+                  <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
+                  <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                  <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                  <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                  <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RESENT POST -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="widget widget_address_outer">
+                <h4 class="widget-title">اتصل بنا</h4>
+                <ul class="widget_address">
+                  <li>34/7 ليفر بول ستريت ، جناح 636 ، لندن ، المملكة المتحدة</li>
+                  <li>devdemo@gmail.com</li>
+                  <li>(+298) 012-3456-789</li>
+                  <li>(+298) 146-6543-480</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
+              <div class="widget widget_services inline-links">
+                <h4 class="widget-title">روابط مفيدة</h4>
+                <ul>
+                  <li><a href="#">حول</a></li>
+                  <li><a href="#">المشاريع</a></li>
+                  <li><a href="#">مدونة</a></li>
+                  <li><a href="#">اتصل بنا</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- TAGS -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="widget recent-posts-entry-date">
+                <h4 class="widget-title">المنشور الاخير</h4>
+                <div class="widget-post-bx">
+                  <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
+                    <div class="mt-post-date text-center text-uppercase text-white p-tb5">
+                      <strong class="p-date">24</strong>
+                      <span class="p-month">أبريل</span>
+                      <span class="p-year">2019</span>
+                    </div>
+                    <div class="mt-post-info">
+                      <div class="mt-post-header">
+                        <h6 class="post-title"><a href="#">على هذه الحزم ، نبني الأحلام.</a></h6>
+                      </div>
+                      <div class="mt-post-meta">
+                        <ul>
+                          <li class="post-author"><i class="fa fa-user"></i>بواسطة المشرف</li>
+                          <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
+                    <div class="mt-post-date text-center text-uppercase text-white p-tb5">
+                      <strong class="p-date">30</strong>
+                      <span class="p-month">مايو</span>
+                      <span class="p-year">2019</span>
+                    </div>
+                    <div class="mt-post-info">
+                      <div class="mt-post-header">
+                        <h6 class="post-title"><a href="#">سنكون ضجة كبيرة بالنسبة لك التجديد المقبل</a>
+                        </h6>
+                      </div>
+                      <div class="mt-post-meta">
+                        <ul>
+                          <li class="post-author"><i class="fa fa-user"></i>بواسطة المشرف</li>
+                          <li class="post-comment"><i class="fa fa-comments"></i> 29</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- NEWSLETTER -->
+
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER COPYRIGHT -->
+      <div class="footer-bottom overlay-wraper">
+        <div class="overlay-main"></div>
+        <div class="container">
+          <div class="row">
+            <div class="mt-footer-bot-center">
+              <span class="copyrights-text">© 2021 dev. صمم بواسطة.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- BUTTON TOP START -->
+    <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+  </div>
+
+  <!-- LOADING AREA START ===== -->
+  <div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+      <div class="cssload-loader">جار التحميل</div>
+    </div>
+  </div>
+  <!-- LOADING AREA  END ====== -->
+
+  <!-- JAVASCRIPT  FILES ========================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- JQUERY.MIN JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script><!-- BOOTSTRAP.MIN JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- MAGNIFIC-POPUP JS -->
+
+  <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+  <script src="js/counterup.min.js"></script><!-- COUNTERUP JS -->
+  <script src="js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
+
+  <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
+    integrity="sha512-lo4YgiwkxsVIJ5mex2b+VHUKlInSK2pFtkGFRzHsAL64/ZO5vaiCPmdGP3qZq1h9MzZzghrpDP336ScWugUMTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- OWL  SLIDER  -->
+  <script src="js/jquery.owl-filter.js"></script>
+
+  <script src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   -->
+
+
+
+  <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+  <script src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+  <script src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
+  <script src="js/switcher.js"></script><!-- SWITCHER FUCTIONS  -->
+
+</body>
+
+</html>

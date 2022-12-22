@@ -1,0 +1,41 @@
+mixin head(title)
+  head
+    //- +meta-title(" من نحن ")
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title=title
+    include ../includes/styles
+
+mixin breadcrumb-1-links(a1, link1,current)
+  nav(aria-label="breadcrumb")
+      ol.breadcrumb.mb-0
+        li.breadcrumb-item
+          a.s-color-text.d-color-text-hover.text-decoration-none(href=link1)=a1
+        li.breadcrumb-item.active(aria-current="page")=current
+
+mixin breadcrumb-2-links(a1, link1, a2, link2, current)
+  nav(aria-label="breadcrumb")
+      ol.breadcrumb.mb-0
+        li.breadcrumb-item
+          a.s-color-text.d-color-text-hover.text-decoration-none(href=link1)=a1
+        li.breadcrumb-item
+          a.s-color-text.d-color-text-hover.text-decoration-none(href=link2)=a2
+        li.breadcrumb-item.active(aria-current="page")=current
+
+mixin accordion-filter(accordion_id, flush_id, flush_collapse_id, title, loop_title)
+  .accordion.accordion-flush(id="accordion-"+accordion_id)
+    .accordion-item
+      h2.accordion-header(id="flush-"+flush_id)
+        .accordion-button.px-0.border-0.collapsed.pointer(
+          data-bs-toggle="collapse",
+          data-bs-target="#flush-collapse-"+flush_collapse_id,
+          aria-expanded="false",
+          aria-controls="flush-collapse-"+flush_collapse_id)=title
+
+      div(id="flush-collapse-"+flush_collapse_id).border-top-0.pb-3.rounded-0.accordion-collapse.collapse(aria-labelledby="flush-"+flush_id, data-bs-parent="#accordion-"+accordion_id)
+        div.accordion-body.py-0.accordion-body-scroll
+          ul.list-unstyled
+            -for(x = 1; x <= 10; x++)
+              li.mb-2
+                a.text-dark.s-color-text-hover(href="category.html") #{loop_title}  #{x}

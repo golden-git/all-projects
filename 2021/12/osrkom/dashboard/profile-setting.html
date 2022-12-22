@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title> اعدادات الحساب </title>
+      <!--  bootstrap rtl-->
+      <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+      <!--  bootstrap ltr-->
+      <!--  iconfont-->
+      <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+      <!--  fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!--  google font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick.css">
+      <!-- intlTelInput-->
+      <link rel="stylesheet" href="../css/intlTelInput.css">
+      <!--  slick style-->
+      <link rel="stylesheet" href="../css/slick-theme.css">
+      <!-- AOS-->
+      <link rel="stylesheet" href="../css/aos.css">
+      <!-- plyr-->
+      <link rel="stylesheet" href="../css/plyr.css">
+      <!--  main style-->
+      <link rel="stylesheet" href="../css/main.css">
+      <!--  main style ltr-->
+    </head>
+  <body class="dashboard-body mr-228">
+    <!-- dashboard sidebar-->
+    <aside class="dashboard-sidebar">
+      <div class="text-center mb-3"><img class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar" src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img src="../images/dashboard/logo.png" alt="logo"></a></div>
+      <ul class="list-unstyled px-0">
+        <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+        <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+        <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+        <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+        <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+        <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+        <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+        <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+        <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+      </ul>
+    </aside>
+    <div class="dashboard-container">
+        <!-- sart dashboard navbar-->
+        <nav class="navbar navbar-light dashboard-navbar mb-4"><img class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar" src="../images/icons/list.png">
+          <div>
+            <p class="mb-0">  اعدادات الحساب </p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع للرئيسية</a>
+          </div>
+          <div class="d-md-block d-none">
+            <div class="search"><i class="mbi mbi-magnifier"></i>
+              <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+              <select class="form-select">
+                <option>الطلبات</option>
+                <option>الطلبات</option>
+              </select>
+              <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+            </div>
+          </div>
+          <div class="user">
+            <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png" alt="user">
+              <div class="d-lg-block d-none align-self-center border-end pe-2">
+                <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية المتجر</a>
+              </div>
+              <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i class="mbi mbi-alarm-ringing h3"></i></div>
+            </div>
+          </div>
+        </nav>
+        <!-- sart dashboard navbar-->
+      <div class="row profile-setting">
+        <div class="col-12 mt-4 text-center"><img class="rounded-circle shadow mb-3" src="../images/icons/user.png" alt="user" width="100" height="100">
+          <div class="mb-3 position-relative input-style-container input-file" style="width: 100%">
+            <input class="input-style form-control mb-0" type="file" style="height: 25px">
+            <div class="chang-image"> <span class="input-label"> تغير الصورة</span><span class="file-name rounded-pill"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="auth text-center mt-4" style="max-width: 100%;">
+        <div class="type-container shadow-none">
+            <div class="text-start">
+              <label class="form-label">اسم المتجر</label>
+            </div>
+            <div class="mb-3 position-relative input-style-container form-floating input-style-container-with-icon" style="width: 100%"><span class="form-icon"><i class="mbi mbi-store"></i></span>
+              <input class="input-style form-control" type="text">
+            </div>
+          <div class="text-start">
+            <label class="form-label">رقم الجوال</label>
+          </div>
+          <div class="mb-3 position-relative input-style-container form-floating input-style-container-with-icon" style="width: 100%"><span class="form-icon"><i class="mbi mbi-telephone"></i></span>
+            <button class="px-4 icon text-muted border-0 btn">+958</button>
+            <input class="input-style form-control" type="phone">
+          </div>
+            <div class="text-start">
+              <label class="form-label">البريد الالكتروني</label>
+            </div>
+            <div class="mb-3 position-relative input-style-container form-floating input-style-container-with-icon" style="width: 100%"><span class="form-icon"><i class="mbi mbi-envelope"></i></span>
+              <input class="input-style form-control" type="emain">
+            </div>
+            <div class="text-start">
+              <label class="form-label">كلمة المرور</label>
+            </div>
+            <div class="mb-3 position-relative input-style-container form-floating input-style-container-with-icon" style="width: 100%"><span class="form-icon"><img src="../images/icons/lock.png"></span>
+              <button class="px-4 d-color-bg icon lef-0 m-color-bg-hover text-white btn">إعادة تعين</button>
+              <input class="input-style form-control" type="password">
+            </div>
+            <div class="text-start">
+              <label class="form-label">الموقع </label>
+            </div>
+            <div class="mb-3 position-relative input-style-container form-floating input-style-container-with-icon" style="width: 100%"><span class="form-icon"><i class="mbi mbi-map-marker"></i></span>
+              <button class="px-4 d-color-bg icon lef-0 m-color-bg-hover text-white btn"> تحديد من الخريطة</button>
+              <input class="input-style form-control" type="text">
+            </div>
+            <div class="mb-3 d-flex"><a class="px-5 me-3 btn-lg border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="#">حفظ</a><a class="px-5 btn-lg border-0 btn rounded-pill w-color-text-hover d-color-bg-hover" href="#">رجوع</a>
+            </div>
+          <div class="text-start mt-5">
+            <h4 class="mb-0">عن المنشأة </h4>
+            <label class="form-label">شهادة الصحة </label>
+          </div>
+          <div class="mb-3 position-relative input-style-container input-file" style="width: 100%">
+            <input class="input-style form-control mb-0" type="file" style="height: 60px">
+            <div> <span class="input-label">الشهادة الصحية</span><span class="file-name rounded-pill"></span>
+              <button class="px-4 d-color-bg icon lef-0 m-color-bg-hover text-white btn">تحديث الشهادة</button>
+            </div>
+          </div>
+            <div class="mb-3 d-flex"><a class="px-5 me-3 btn-lg border-0 btn text-white rounded-pill m-color-bg s-color-bg-hover" href="#">حفظ</a><a class="px-5 btn-lg border-0 btn rounded-pill w-color-text-hover d-color-bg-hover" href="#">رجوع</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--  jquery-->
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <!--  jquery-migrate-->
+    <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <!--  slick slider-->
+    <script src="../js/slick.js"></script>
+    <!-- intlTelInput-->
+    <script src="../js/intlTelInput.js"></script>
+    <!-- AOS-->
+    <script src="../js/aos.js"></script>
+    <!-- polyfilled-->
+    <script src="../js/plyr.polyfilled.js"></script>
+    <!--  chart-->
+    <script src="../js/chart/chart.min.js"></script>
+    <script src="../js/chart/chart-area-demo.js"></script>
+    <!--  main script-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

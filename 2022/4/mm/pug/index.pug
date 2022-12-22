@@ -1,0 +1,204 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head("الرئيسية")
+  body
+    main.home
+      a.login-btn(href="#")
+        img(src="images/login.png", alt="سجل الان", width="90") 
+      // header
+      header.g-color-bg
+        include ./includes/navbar
+        .container.pt-5.position-relative
+          .row
+            .col-lg-4.mb-md-0.mb-4.col-md-6
+              form.bg-white
+                h1.mb-3 تسجيل الدخول
+                .input-group.mb-3
+                  i.fas.fa-fw.fa-user.position-absolute.top-50.start-100.translate-middle
+                  input.form-control.form-control-lg(type="text", placeholder="اسم المستخدم", aria-label="Username", aria-describedby="name")
+                .input-group.mb-3
+                  i.fas.fa-fw.fa-lock.position-absolute.top-50.translate-middle
+                  input.form-control.form-control-lg(type="password", placeholder="كلمة المرور", aria-label="password", aria-describedby="password")
+                .mb-3.text-start.reset
+                  a.text-muted.text-decoration-none(href="#")  نسيت كلمة المرور؟
+                .mb-4.d-grid.gap-2
+                  button.btn.m-color-bg.d-color-bg-hover.text-white تسجيل الدخول
+                .mb-4
+                  h2.h6.text-center.mb-3 او سجل الدخول بالستخدام
+                  .btn-group.text-center.d-flex
+                    a.btn.rounded-3.m-color-bg-hover.text-white.twitter(href="#") twitter
+                    a.mx-2.btn.rounded-3.m-color-bg-hover.text-white.google(href="#") google
+                    a.btn.rounded-3.m-color-bg-hover.text-white.facebook(href="#") facebook
+                h3.text-center.h6
+                  | لا تملك حساب؟
+                  a.m-color-text.text-decoration-none(href="#") سجل الان
+
+            .col-lg-6.col-md-6.shape.text-center.mb-md-0.mb-4
+              img.img-fluid(src="images/header/2.png", alt="shape")
+            .col-lg-2.pt-lg-5
+              ul.list-unstyled.p-0.links
+                li: a.text-white.m-color.text-hover.text-decoration-none(href="#")
+                  i.fas.fa-spinner.ms-3
+                  | فقة المسيار
+
+                li: a.text-white.m-color.text-hover.text-decoration-none(href="#")
+                  i.fas.fa-key.ms-3
+                  | الاشتراكات
+
+                li: a.text-white.m-color.text-hover.text-decoration-none(href="#")
+                  i.fas.fa-crown.ms-3
+                  | خاطبات المسيار
+
+                li: a.text-white.m-color.text-hover.text-decoration-none(href="#")
+                  i.fas.fa-key.ms-3
+                  | سجل الان
+
+          .search.bg-white
+            div.ms-lg-4.mb-lg-0.mb-3
+              span.mb-lg-0.mb-3.m-color-text.ms-2
+                i.fas.fa-search.ms-2
+                | ابحث عن
+              select.form-select.d-inline
+                option زوجة
+
+            div.ms-lg-4.mb-lg-0.mb-3
+              span.mb-lg-0.mb-3.ms-2 العمر من
+              select.form-select.d-inline
+                option 18 سمة
+
+            div.ms-lg-4.mb-lg-0.mb-3
+              span.mb-lg-0.mb-3.ms-2 الي
+              select.form-select.d-inline
+                option 28 سمة
+
+            div.ms-lg-4.mb-lg-0.mb-3
+              span.mb-lg-0.mb-3.ms-2  الاقامة
+              select.form-select.d-inline
+                option السعودية
+
+            div.ms-lg-4.mb-lg-0.mb-3
+              span.mb-lg-0.mb-3.ms-2   المدينة
+              select.form-select.d-inline
+                option الرياض
+            div.ms-lg-4.d-grid
+              button.btn.m-color-bg.d-color-bg-hover.text-white.rounded-pill
+                i.fas.fa-search.ms-3
+                | بحث
+
+      section.pt-5.g-color-bg
+        .container
+          h2.section-title.text-center.has-dots.mb-4
+            img.d-lg-inline.d-block.ms-3.mx-auto(src="images/star1.png")
+            span تعرف على فتيات يرغبن بزواج المسيار
+            img.d-lg-inline.d-block.me-3.mx-auto(src="images/star2.png")
+
+          .row
+            -for(x=1; x<=16; x++)
+              .col-lg-3.col-md-3.col-6.mb-md-4.mb-3
+                .user-a.p-3.rounded-3
+                  .img-container.mb-3
+                    a(href="#")
+                      img.flag(src="images/sa.jpg", alt="location", width="30", height="25")
+                      img.img-fluid.rounded-circle.m-color-bg(src="images/users/girl_1.jpg", alt="user", width="120", height="120")
+                      i.fas.fa-circle.status
+                  .user-info
+                    h3.text-center.h5.fw-bold
+                      a.m-color-text.text-decoration-none(href="#") ولا حسين
+                    .text-center.m-0.fw-bold
+                      a.m-color-text.text-decoration-none(href="#")
+                        | السعودية
+                        i.fas.fa-map-marker-alt.mx-2
+                        | الرياض
+                    .text-center.m-0.fw-bold
+                      span.badge.m-color-bg.mx-1.rounded-pill مسيار
+                      span.badge.m-color-bg.mx-1.rounded-pill العتدد
+                      span.badge.m-color-bg.mx-1.rounded-pill يوجد سكن
+
+      section.wave.g-color-bg
+        .container-fluid
+          .row
+            div(class="col-12 text-center")
+              .container
+                .row
+                  div(class="col-lg-6 text-center wave_1")
+                    img.img-fluid(src="images/success-story.png", alt="success story")
+                    h2.section-title.text-center.mb-4.m-color-text
+                      | قصص حب توجت بالزواج
+                    p.text-dark.h4 اشكر كل القائمين على هذا الموقع الراقي  و لذي و لله الحمد و المنه  توفقت من خلالة في ايجاد و اختيار شريكة
+                    p.h3.text-center.mb-4.m-color-text يا مالك قلبي
+                  div(class="col-lg-6 text-center")
+                    img.img-fluid(src="images/phone.png", alt="success story")
+
+      section.py-5.g-color-bg
+        .container.text-center
+          h2.section-title.text-center.mb-4.position-relative
+            img.d-lg-inline.d-block.mx-auto.position-relative(src="images/heart.png", style="top: -15px")
+            span انظم لأكبر قاعدة بيانات لأشخاص يرغبون في زواج المسيار
+          .row
+            -for(x=1; x<=8; x++)
+              .col-lg-3.col-md-3.col-6.mb-md-4.mb-3
+                .user-b.p-3
+                  .d-flex.justify-content-between
+                    img.flag(src="images/sa.jpg", alt="location", width="30", height="25")
+                    span.fw-bold.text-muted 33 سنة
+                  .img-container.mb-3
+                    a(href="#")
+                      img.img-fluid.rounded-circle.m-color-bg(src="images/users/girl_1.jpg", alt="user", width="120", height="120")
+                      i.fas.fa-circle.status
+                  .user-info
+                    h3.text-center.h5.fw-bold
+                      a.m-color-text.text-decoration-none(href="#") ولا حسين
+                    .text-center.m-0
+                      a.text-muted.text-decoration-none(href="#")
+                        i.fas.fa-map-marker-alt.mx-2.m-color-text
+                        | الرياض
+                    .text-center.m-0.fw-bold
+                      span.badge.m-color-bg.mx-1.rounded-pill مسيار
+                      span.badge.m-color-bg.mx-1.rounded-pill العتدد
+                      span.badge.m-color-bg.mx-1.rounded-pill يوجد سكن
+          .row.my-4
+            .col-md-6.mb-3: img.img-fluid(src="images/ads/1.png", alt="ads")
+            .col-md-6.mb-3: img.img-fluid(src="images/ads/1.png", alt="ads")
+          .row
+            -for(x=1; x<=8; x++)
+              .col-lg-3.col-md-3.col-6.mb-md-4.mb-3
+                .user-b.p-3
+                  .d-flex.justify-content-between
+                    img.flag(src="images/sa.jpg", alt="location", width="30", height="25")
+                    span.fw-bold.text-muted 33 سنة
+                  .img-container.mb-3
+                    a(href="#")
+                      img.img-fluid.rounded-circle.m-color-bg(src="images/users/girl_1.jpg", alt="user", width="120", height="120")
+                      i.fas.fa-circle.status
+                  .user-info
+                    h3.text-center.h5.fw-bold
+                      a.m-color-text.text-decoration-none(href="#") ولا حسين
+                    .text-center.m-0
+                      a.text-muted.text-decoration-none(href="#")
+                        i.fas.fa-map-marker-alt.mx-2.m-color-text
+                        | الرياض
+                    .text-center.m-0.fw-bold
+                      span.badge.m-color-bg.mx-1.rounded-pill مسيار
+                      span.badge.m-color-bg.mx-1.rounded-pill العتدد
+                      span.badge.m-color-bg.mx-1.rounded-pill يوجد سكن
+            .col-12.text-end
+              button.btn.m-color-text.d-color-bg-hover.ms-3.bg-white.rounded-pill.border-0.shadow-sm.fw-blod المتواجدون الآن
+              button.btn.m-color-text.d-color-bg-hover.bg-white.rounded-pill.border-0.shadow-sm.fw-blod احدث الطلبات
+
+      section.footer-wave
+        .container.text-center
+          h1.text-center.mb-4.position-relative
+            img.position-relative(src="images/check.png", style="top: -25px; right: 60px")
+            span.m-color-text  خاطبات
+            |  المسيار
+          .row
+            -for(x=1; x<=8; x++)
+              .col-lg-3.col-md-3.col-6.mb-md-4.mb-3
+                .user-b.p-3
+                  .d-flex
+                    img.ms-3.flag.rounded(src="images/sa.jpg", alt="location", width="35", height="30")
+                    span.fw-bold.text-muted.h4 ام سلمي عبدالرحمن
+            .col-12.text-center
+              button.btn-lg.btn.m-color-text.d-color-bg-hover.bg-white.rounded-pill.border-0.shadow-sm.fw-blod المزيد من الخاطبات
+        include ./includes/footer

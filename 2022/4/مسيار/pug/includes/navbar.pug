@@ -1,0 +1,27 @@
+// navbar
+nav.navbar.navbar-expand-lg.navbar-light.py-3.main-nav
+  .container
+    a.navbar-brand(href="index.html")
+        img.img-fluid(src="images/Logo.png", alt="")
+    button.navbar-toggler.border-0(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+      i.fas.fa-bars.text-white
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          a.nav-link.text-white(aria-current="page", href="#")
+            i.fas.ms-2.fa-key
+            | تسجيل دخول
+
+        li.nav-item
+          a.nav-link.text-white(aria-current="page", href="#")
+            i.fas.ms-2.fa-edit
+            | سجل مجاناً
+
+        li.nav-item.dropdown
+            a#navbarList.nav-link.text-white(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                i.fas.fa-bars
+            ul.dropdown-menu(aria-labelledby="navbarList")
+                li
+                    a.dropdown-item(href="#") Action
+
+// navbar

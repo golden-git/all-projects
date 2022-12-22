@@ -1,0 +1,82 @@
+/*========== how-it-works ==========*/
+
+.how-it-works {
+    padding: 5% 0;
+    background-image: url(../imgaes/how-it-works/block-bg-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .work-step {
+        .number {
+            font-size: 400px;
+            right: -26px;
+            top: -80px;
+            z-index: 3;
+
+        }
+        .title {
+        transform: translate(60%, 0) !important;
+        }
+    }
+
+    
+
+}
+
+
+@media (max-width: 575.98px) {
+    .how-it-works {
+        padding: 10% 0;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 17px;
+        }
+     
+    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .how-it-works {
+        padding: 10% 0;
+    
+        h2 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 17px;
+        }
+     
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+     
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1606px) {}
+
+
+@media (min-width: 1200px) and (max-width: 1880px) {}
+
+/*========== how-it-works ==========*/

@@ -1,0 +1,99 @@
+extends components/layout.pug
+block title
+  |  اضافة فرع
+block main
+  +breadcrumb-in-2(' اضافة فرع ', ' اضافة فرع ', 'الرئسية', 'index.html',' الشركات' , 'companies.html')
+
+  form
+    .row
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | البيانات الاساسية
+
+            .card-body
+              .row
+                .col-md-6
+                  .form-group
+                    label  الشركة
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم الشركة #{x}
+                .col-md-6
+                  .form-group
+                    label  مركز التكلفة
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم مركز التكلفة #{x}
+                .col-md-6
+                  .form-group
+                    label الاسم عربي
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label الاسم إنجليزي
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label   التلفون
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label الايميل
+                    input.form-control(type="email")
+                .col-md-6
+                  .form-group
+                    label الفاكس
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label صندوق البريد
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label الموقع الالكتروني
+                    input.form-control(type="text")
+                .col-md-6
+                  .form-group
+                    label  الشعار
+                    input.form-control(type="file")
+                .col-md-4
+                  .form-group
+                    label  الدولة
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم الدولة #{x}
+                .col-md-4
+                  .form-group
+                    label  المحافظة
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم المحافظة #{x}
+                .col-md-4
+                  .form-group
+                    label  الحي
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم الحي #{x}
+
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | تذييل و ملاحظات
+            .card-body
+              .row
+                .col-12
+                  .form-group
+                    label ملاحظات
+                    textarea.form-control
+                each value in ["نذييل يمين 1", "نذييل يمين 2", "نذييل يمين 3", "نذييل يسار 1", "نذييل يسار 2", "نذييل يسار 3"]
+                  .col-md-6
+                    .form-group
+                      label=value
+                      input.form-control(type="text")
+
+        +btn-save

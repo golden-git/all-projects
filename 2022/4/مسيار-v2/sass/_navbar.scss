@@ -1,0 +1,11 @@
+.main-nav {
+    .navbar-brand {
+        img {
+            @include xs{width: 180px;}
+            @include sm{width: 180px;}
+            @include md{width: 180px;}
+            @include lg{width: 200px;}
+            @include xl{width: 200px;}
+        }
+    }
+}

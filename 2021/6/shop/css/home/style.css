@@ -1,0 +1,559 @@
+
+
+.loading-modal{
+  right: 50% !important;
+  left: auto;
+  margin-right: -28px;
+}
+
+.ajax-error-modal{
+  right: 0;
+  left: auto;
+}
+
+.ajax-success-modal .continue-shopping{
+  margin-left: 12px;
+}
+
+.success-message{
+  padding: 0 40px 0 0px ;
+}
+
+.ajax-success-modal .close-modal{
+  left: 10px;
+}
+
+.modal{
+  left: 0;
+  right: 0;
+}
+
+.close-modal{
+  float: left;
+  left: 0;
+}
+
+.quickview-template, .quick-view{
+  right: 0;
+  left: 0;
+}
+
+.quick-view .product-shop{
+  float: left;
+}
+
+.quick-view .product-img-box{
+  float: right;
+}
+
+.quick-view .product-img-box .thumbnails{
+  padding: 20px 40px 0 0 ;
+}
+
+.quick-view .product-img-box .thumbnails .jcarousel-next-horizontal{
+  left: 0;
+  float: right;
+}
+
+.quick-view .product-img-box .thumbnails .jcarousel-prev-horizontal{
+  right: 0;
+  float: right;
+}
+
+.quick-view .product-img-box .thumbnails ul{
+  float: right;
+  padding-right: 0;
+}
+
+.quickview-template,{
+  right: 0;
+  left: 0;
+}
+
+.quick-view{
+  right: 0;
+  left: 0;
+}
+
+.quick-view .product-detail-section p.dt-sc-button{
+  margin: 20px 0 0px 0 ;
+  float: right;
+}
+
+.quick-view form .actions button{
+  float: right;
+}
+
+.quick-view .close-window, #fancybox-close, .search-close, #popupBoxClose{
+  left: 0px;
+}
+
+#popupBoxClose{
+  left: -10px;
+}
+
+.search-close{
+  left: 15px;
+}
+
+.dialog, .dialog__overlay{
+  right: 0;
+  float: right;
+}
+
+.dialog__overlay{
+  background: none repeat scroll right  0 rgba(249, 249, 249, 0.95);
+  right: 0;
+  left: 0;
+}
+
+.dialog__content{
+  padding: 0px 260px 0 0 ;
+}
+
+.dialog input[type="text"]{
+  float: right;
+}
+
+.dialog input[type="submit"]{
+  float: right;
+}
+
+.clear-filter{
+  float: left;
+}
+
+#viewcontrols .gridview{
+  padding-left: 10px;
+}
+
+#viewcontrols{
+  float: right;
+}
+
+.swatch .header{
+  margin: 8px 0 0 0 ;
+}
+
+.swatch .swatch-element.soldout{
+  margin-left: 10px;
+}
+
+.crossed-out{
+  right: 0;
+}
+
+.swatch .tooltip{
+  right: ;
+}
+
+.swatch .tooltip:before{
+  right: 0;
+}
+
+.swatch .tooltip:after{
+  border-right: solid transparent 10px;
+  border-left: solid transparent 10px;
+  right: 50%;
+  margin-right: -13px;
+}
+
+.collection-list .product-list .reveal .swipe{
+  right: 0;
+  left: 0;
+}
+
+#email-modal .window-border{
+  right: 0;
+}
+
+#email-modal .window-window .window-content .title span:before{
+  right: 50%;
+  margin-right: -10px;
+}
+
+#mc_embed_signup .input-group-btn{
+  float: left;
+}
+
+.portfolio{
+  float: right;
+}
+
+.gallery img{
+  float: right;
+}
+
+.image-overlay-text{
+  float: right;
+  right: 0;
+  left: 0;
+}
+
+.image-overlay .white-box:before{
+  right: 10%;
+}
+
+.portfolio-container{
+  float: right;
+}
+
+.links .hexagon .fa{
+  right: 0;
+}
+
+.gallery .image-overlay .links li:first-child a{
+  right: 0;
+  left: 100%;
+}
+
+.gallery .image-overlay .links a.link{
+  left: 0;
+  right: 100%;
+}
+
+.gallery:hover .image-overlay .links li:first-child a{
+  right: 0px;
+  left: 60px;
+}
+
+.gallery:hover .image-overlay .links a.link{
+  right: 60px;
+  left: 0px;
+}
+
+.column{
+  float: right;
+}
+
+.column.no-space{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.progress-bar{
+  background: url(//cdn.safa.com/s/files/1/0012/3024/1844/t/11/assets/full-width-brilliance.jpg?4220809549026853820) repeat-y 50% right  fixed;
+  float: right;
+}
+
+.sidebar-tag .widget-title h4 span:before{
+  margin: 0 0 -2px 10px ;
+}
+
+.sidebar-tag .widget-title h4 a{
+  float: left;
+}
+
+.sidebar-tag .widget-title{
+  float: right;
+}
+
+.sidebar-tag.color ul li a img{
+  float: right;
+  margin-left: 10px;
+}
+
+.sidebar-tag.color ul li a i{
+  float: left;
+  text-align: left;
+}
+
+.item-swatch.color_swatch_Value label{
+  float: right;
+}
+
+.item-swatch{
+  text-align: right;
+  float: right;
+}
+
+.item-swatch li{
+  float: right;
+}
+
+ul.item-swatch.swatch_count{
+  right: 0;
+  left: 0;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper{
+  right: 0;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft{
+  clear: right;
+}
+
+#cboxTitle{
+  right: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic{
+  right: 0;
+}
+
+.cboxPhoto{
+  float: right;
+}
+
+#cboxCurrent{
+  left: 205px;
+}
+
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{
+  background: url(//cdn.safa.com/s/files/1/0012/3024/1844/t/11/assets/controls.png?4220809549026853820) no-repeat right  0;
+}
+
+#cboxPrevious{
+  background-position: right 0px 0px;
+  left: 44px;
+}
+
+#cboxPrevious:hover{
+  background-position: right 0px -25px;
+}
+
+#cboxNext{
+  background-position: right -25px 0px;
+  left: 22px;
+}
+
+#cboxNext:hover{
+  background-position: right -25px -25px;
+}
+
+#cboxClose{
+  background-position: right -50px 0px;
+  left: 0;
+}
+
+#cboxClose:hover{
+  background-position: right -50px -25px;
+}
+
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{
+  left: 66px;
+}
+
+.cboxSlideshow_on #cboxSlideshow{
+  background-position: right -75px -25px;
+  left: 44px;
+}
+
+.cboxSlideshow_on #cboxSlideshow:hover{
+  background-position: right -100px -25px;
+}
+
+.cboxSlideshow_off #cboxSlideshow{
+  background-position: right -100px 0px;
+  left: 44px;
+}
+
+.cboxSlideshow_off #cboxSlideshow:hover{
+  background-position: right -75px -25px;
+}
+
+section:after, .masthead:after{
+  right: 50%;
+}
+
+section header:after{
+  right: 40%;
+}
+
+.masthead hgroup, .colophon .group{
+  right: 0%;
+  left: 0%;
+}
+
+.glyphs, .classes{
+  margin-right: -1.5em;
+}
+
+.glyph{
+  margin: 0 0 3em -0.21em ;
+  padding: 1.5em 1.5em 0 0 ;
+}
+
+.item-box{
+  margin: 0 0 1em -0.22em ;
+  padding-right: 1em;
+}
+
+#wH{
+  right: 0;
+}
+
+.owl-carousel .owl-item{
+  float: right;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-next{
+  left: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev{
+  right: 0;
+}
+
+.owl-slider.owl-theme .owl-controls .owl-pagination{
+  right: 0;
+  left: 0;
+}
+
+.carousel li{
+  margin-left: 5px;
+}
+
+.flex-direction-nav .flex-prev{
+  right: -50px;
+}
+
+.flex-direction-nav .flex-next{
+  left: -50px;
+}
+
+.flexslider:hover .flex-prev{
+  right: 10px;
+}
+
+.flexslider:hover .flex-next{
+  left: 10px;
+}
+
+.flex-pauseplay a{
+  right: 10px;
+}
+
+.flex-control-nav{
+  right: 50%;
+}
+
+.flex-control-thumbs li{
+  float: right;
+}
+
+.main-slideshow{
+  float: right;
+}
+
+.main-slideshow .flexslider{
+  float: right;
+}
+
+.slide-des{
+  right: 20px;
+  left: 20px;
+}
+
+.slide-des p.line{
+  float: right;
+}
+
+.banner-home-top ul{
+  padding-right: 0;
+}
+
+.banner-home-top h4{
+  right: 0;
+}
+
+.banner .container{
+  right: 50%;
+  margin-right: -610px;
+}
+
+.banner .inner{
+  float: left;
+}
+
+.banner .inner a{
+  padding: 0 30px 0 15px ;
+}
+
+#fancybox-loading{
+  right: 50%;
+  margin-right: -20px;
+}
+
+#fancybox-loading div{
+  right: 0;
+}
+
+#fancybox-overlay{
+  right: 0;
+  left: 0;
+}
+
+#fancybox-wrap{
+  right: 0;
+}
+
+#fancybox-inner{
+  right: 0 !important;
+}
+
+#fancybox-hide-sel-frame{
+  right: 0;
+}
+
+#fancybox-title{
+  right: 0;
+}
+
+.fancybox-title-over{
+  text-align: right;
+}
+
+#fancybox-title-wrap span{
+  float: right;
+}
+
+#fancybox-title-left{
+  padding-right: 15px;
+  background-position: right -40px -90px;
+}
+
+#fancybox-title-main{
+  background-position: right  -40px;
+}
+
+#fancybox-title-right{
+  padding-right: 15px;
+  background-position: right -55px -90px;
+}
+
+#fancybox-left{
+  right: 0;
+}
+
+#fancybox-right{
+  left: 0;
+}
+
+#fancybox-left-ico, #fancybox-right-ico{
+  right: -9999px;
+}
+
+#fancybox-left-ico{
+  background-position: right -47px -40px;
+}
+
+#fancybox-right-ico{
+  background-position: right -47px -76px;
+}
+
+#fancybox-left:hover span{
+  right: 20px;
+}
+
+#fancybox-right:hover span{
+  right: auto;
+  left: 20px;
+}
+
+.zoomWrapper>div{
+  right: 50% !important;
+  margin: -32px -32px 0 0 !important;
+}
+

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> لوحة التحكم </title>
+  <!--  bootstrap rtl-->
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+  <!--  bootstrap ltr-->
+  <!--  iconfont-->
+  <link rel="stylesheet" href="../css/iconfont/css/iconfont.css">
+  <!--  fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--  google font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai&amp;family=Noto+Naskh+Arabic:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <!--  slick style-->
+  <link rel="stylesheet" href="../css/slick.css">
+  <!-- intlTelInput-->
+  <link rel="stylesheet" href="../css/intlTelInput.css">
+  <!--  slick style-->
+  <link rel="stylesheet" href="../css/slick-theme.css">
+  <!-- AOS-->
+  <link rel="stylesheet" href="../css/aos.css">
+  <!-- plyr-->
+  <link rel="stylesheet" href="../css/plyr.css">
+  <!--  main style-->
+  <link rel="stylesheet" href="../css/main.css">
+  <!--  main style ltr-->
+</head>
+
+<body class="dashboard-body mr-228">
+  <!-- dashboard sidebar-->
+  <aside class="dashboard-sidebar">
+    <div class="text-center mb-3"><img
+        class="d-inline p-1 me-2 toggle-dashboard-sidebar pointer rounded-circle hide-dashboard-sidebar"
+        src="../images/icons/list.png" width="40"><a class="d-inline navbar-brand pb-0 mx-0" href="#"><img
+          src="../images/dashboard/logo.png" alt="logo"></a></div>
+    <ul class="list-unstyled px-0">
+      <li><a class="text-dark active-link" href="dashboard.html"><i class="mbi mbi-home5"></i>الرئيسية</a></li>
+      <li><a class="text-dark" href="products.html"><i class="mbi mbi-store"></i>المنتجات</a></li>
+      <li><a class="text-dark" href="orders.html"><i class="mbi mbi-menu3"></i>إدارة طلباتي</a></li>
+      <li><a class="text-dark" href="#"><i class="mbi mbi-pie-chart"></i>التقارير</a></li>
+      <li><a class="text-dark" href="messages.html"><i class="mbi mbi-bubbles"></i>الرسائل</a></li>
+      <li><a class="text-dark" href="coupon.html"><i class="mbi mbi-gift"></i>كوبونات الخصم</a></li>
+      <li><a class="text-dark" href="clints.html"><i class="mbi mbi-user"></i>العملاء</a></li>
+      <li><a class="text-dark" href="ranges.html"><i class="mbi mbi-map-marker"></i>نطاقات التغطية</a></li>
+      <li><a class="text-dark" href="#"><i class="mbi mbi-cog"></i>الاعدادات</a></li>
+      <li><a class="m-color-text" href="#"><i class="mbi mbi-exit-left"></i>تسجيل الخروج</a></li>
+    </ul>
+  </aside>
+  <div class="dashboard-container">
+    <!-- sart dashboard navbar-->
+    <nav class="navbar navbar-light dashboard-navbar mb-4"><img
+        class="me-3 toggle-dashboard-sidebar pointer rounded-circle show-dashboard-sidebar"
+        src="../images/icons/list.png">
+      <div>
+        <p class="mb-0"> لوحة التحكم </p><a class="text-decoration-none d-color-text-hover s-color-text" href="#">الرجوع
+          للرئيسية</a>
+      </div>
+      <div class="d-md-block d-none">
+        <div class="search"><i class="mbi mbi-magnifier"></i>
+          <input class="form-control" type="search" placeholder="ابحث عن طلب ">
+          <select class="form-select">
+            <option>الطلبات</option>
+            <option>الطلبات</option>
+          </select>
+          <button class="rounded-0 px-4 m-color-bg d-color-bg-hover text-white btn">بحث</button>
+        </div>
+      </div>
+      <div class="user">
+        <div class="d-flex"><img class="d-lg-block d-none align-self-center me-3" src="../images/icons/user.png"
+            alt="user">
+          <div class="d-lg-block d-none align-self-center border-end pe-2">
+            <h6 class="mb-0">ابو مازن للماكولات</h6><a class="s-color-text d-color-text-hover" href="vendor.html">رؤية
+              المتجر</a>
+          </div>
+          <div class="position-relative ps-2 ringing"><small class="position-absolute m-color-bg text-white">1</small><i
+              class="mbi mbi-alarm-ringing h3"></i></div>
+        </div>
+      </div>
+    </nav>
+    <!-- sart dashboard navbar-->
+    <div class="row">
+      <div class="col-xl-8 mb-3">
+        <div class="border rounded-3 p-3 mb-3">
+          <h5>إعدادات المتجر السريعة</h5>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mb-3">
+              <div class="shadow rounded-3 p-3">
+                <div class="d-md-flex justify-content-between">
+                  <div class="align-self-center"><i class="fas fa-circle s-color-text me-2" style="font-size:7px">
+                    </i><small class="text-muted">خطتي الشهرية</small>
+                    <h6 class="mb-0">خطة برونزية </h6><small class="text-muted">250 ريال شهريا </small>
+                  </div>
+                  <div class="align-self-center"><small class="d-block text-muted" style="font-size:12px">تاريخ التجديد
+                      20 مارس 2021 </small><a class="s-color-text text-decoration-none m-color-text-hover"
+                      href="plans.html" style="font-size:14px">
+                      إدارة خطتك<i class="mbi mbi-arrow-left text-muted ms-2" style="font-size:12px"> </i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6 mb-3">
+              <div class="border rounded-3 p-3">
+                <div class="d-md-flex justify-content-between">
+                  <div class="align-self-center"><i class="fas fa-circle m-color-text me-2" style="font-size:7px">
+                    </i><small class="text-muted">نطاقات التغطية </small>
+                    <h6 class="mb-0">5 مناطق مغطاة </h6><small class="text-muted">من مناطق المملكة </small>
+                  </div>
+                  <div class="align-self-center"><a class="s-color-text text-decoration-none m-color-text-hover"
+                      href="ranges.html" style="font-size:14px">
+                      نطاقات التغطية <i class="mbi mbi-arrow-left text-muted ms-2" style="font-size:12px"> </i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 mb-3"> <a class="s-color-text text-decoration-none m-color-text-hover" href="#">
+                <div class="border rounded-3 p-3 s-color-border h-100 d-flex align-items-center justify-content-center">
+                  <i class="mbi mbi-arrow-left" style="font-size:15px"> </i></div>
+              </a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-6 mb-3">
+            <div class="border rounded-3 p-2">
+              <div class="d-flex mb-3"><img class="rounded-circle align-self-start me-1" src="../images/icons/bag.png"
+                  alt="user" width="45" height="40">
+                <div class="align-self-center"><span class="h6 mb-0"> الطابات </span><small
+                    class="badge s-color-bg rounded-pill px-3"> 2</small></div>
+              </div><span class="h3 mb-0"> 352 </span><small class="text-muted">طلب</small>
+              <p class="text-success mt-3"><img class="me-2" src="../images/icons/scall-up.png" alt="scall up"
+                  width="20"><span class="h5">26%</span></p><a
+                class="s-color-text text-decoration-none m-color-text-hover" href="#" style="font-size:14px">المزيد</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-6 mb-3">
+            <div class="border rounded-3 p-2">
+              <div class="d-flex mb-3"><img class="rounded-circle align-self-start me-1" src="../images/icons/cash.png"
+                  alt="user" width="45" height="40">
+                <div class="align-self-center"><span class="h6 mb-0"> الارباح </span></div>
+              </div><span class="h3 mb-0"> 352 </span><small class="text-muted">ريال سعودي</small>
+              <p class="text-danger mt-3"><img class="me-2" src="../images/icons/scall-down.png" alt="scall down"
+                  width="20"><span class="h5">26%</span></p><a
+                class="s-color-text text-decoration-none m-color-text-hover" href="#" style="font-size:14px">المزيد</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-6 mb-3">
+            <div class="border rounded-3 p-2">
+              <div class="d-flex mb-3"><img class="rounded-circle align-self-start me-1" src="../images/icons/users.png"
+                  alt="user" width="45" height="40">
+                <div class="align-self-center"><span class="h6 mb-0"> العملاء </span></div>
+              </div><span class="h3 mb-0"> 352 </span><small class="text-muted">عميل</small>
+              <p class="text-success mt-3"><img class="me-2" src="../images/icons/scall-up.png" alt="scall up"
+                  width="20"><span class="h5">26%</span></p><a
+                class="s-color-text text-decoration-none m-color-text-hover" href="#" style="font-size:14px">المزيد</a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-6 mb-3">
+            <div class="border rounded-3 p-2">
+              <div class="d-flex mb-3"><img class="rounded-circle align-self-start me-1" src="../images/icons/box.png"
+                  alt="user" width="45" height="40">
+                <div class="align-self-center"><span class="h6 mb-0"> المنتجات </span></div>
+              </div><span class="h3 mb-0"> 352 </span><small class="text-muted">منتج</small>
+              <p class="text-success mt-3"><img class="me-2" src="../images/icons/scall-up.png" alt="scall up"
+                  width="20"><span class="h5">26%</span></p><a
+                class="s-color-text text-decoration-none m-color-text-hover" href="#" style="font-size:14px">المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="border rounded-3">
+          <div class="d-md-flex justify-content-between py-2 px-3 border-bottom">
+            <h5>الاشعارات </h5><a class="s-color-text m-color-text-hover" href="#">حذف الاشعارات</a>
+          </div>
+          <div class="d-md-flex mb-3 py-3 px-3"><img class="rounded-circle align-self-start me-2"
+              src="../images/icons/users-m-color.png" alt="user" width="70" height="70">
+            <div class="align-self-center"><small class="text-muted">منذ ساعة واحدة</small>
+              <h5 class="mb-0">اشترك في عروض التخفيضات هذا الشهر</h5><span class="text-dark"> زد مبيعاتك</span><small
+                class="text-muted"> عن طريق توفير عروض لعملائك</small>
+              <div class="mt-3"> <a
+                  class="d-color-bg-hover px-5 text-white py-2 text-decoration-none rounded-pill m-color-bg"
+                  href="#">اشتراك </a></div>
+            </div>
+          </div>
+          <div class="px-3">
+            <hr>
+          </div>
+          <div class="d-md-flex mb-3 py-3 px-3"><img class="rounded-circle align-self-start me-2"
+              src="../images/icons/users-red-color.png" alt="user" width="70" height="70">
+            <div class="align-self-center"><small class="text-muted">منذ ساعة واحدة</small>
+              <h5 class="mb-0">لديك طلب جديد</h5><span class="text-dark"> طلب جديد </span><small class="text-muted">
+                اطلع عليه الان</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8 mb-3 my-sales">
+        <div class="border rounded-3 h-100 p-3">
+          <div class="d-xl-flex justify-content-between">
+            <h5>مبيعاتي </h5>
+            <div>
+              <ul class="justify-content-center nav nav-pills mb-3 g-color-bg px-4 py-2 rounded-pill" id="pills-tab"
+                role="tablist">
+                <li class="nav-item" role="presentation"><span class="rounded-pill px-4 pointer nav-link"
+                    id="pills-wek-tab" data-bs-toggle="pill" data-bs-target="#pills-wek" role="tab"
+                    aria-controls="pills-wek" aria-selected="false">اسبوعيا</span></li>
+                <li class="nav-item" role="presentation"><span class="rounded-pill px-4 pointer nav-link active"
+                    id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" role="tab"
+                    aria-controls="pills-month" aria-selected="true">شهريا</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+              <div class="chart-area" style="position: relative; height:50vh; width:auto">
+                <canvas id="myAreaChart"></canvas>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-wek" role="tabpanel" aria-labelledby="pills-wek-tab">
+              <div class="chart-area" style="position: relative; height:50vh; width:auto">
+                <canvas id="myAreaChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-3">
+        <div class="border rounded-3 p-3">
+          <div class="d-md-flex justify-content-between mb-3">
+            <h5>اكثر العملاء طلبا </h5><a class="s-color-text m-color-text-hover" href="clints.html">رؤية المذيد</a>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-6">
+              <div class="d-flex justify-content-between mb-2">
+                <div class="align-self-center">
+                  <div class="d-flex mb-3"><img class="rounded-circle align-self-center me-2"
+                      src="../images/icons/user.png" alt="user" width="50" height="50">
+                    <div class="align-self-center">
+                      <h6 class="mb-0"> Mohamed Ali </h6><small class="text-muted"> عميل منذ 28/1/2020 </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="align-self-center"> <small class="text-muted">اجمالي الشراء </small>
+                  <h6 class="m-color-text"> 360 SR </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="custom-table">
+          <div class="d-md-flex justify-content-between mb-3">
+            <h5>الطلب الاخيرة </h5><a class="s-color-text m-color-text-hover" href="orders.html">رؤية المزيد </a>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr></tr>
+                <th>رقم الطلب</th>
+                <th>العميل</th>
+                <th>عنوان العميل</th>
+                <th>تاريخ الطلب</th>
+                <th>الشحن</th>
+                <th>الدفع</th>
+                <th>حالة الطلب</th>
+                <th>المجموع</th>
+                <th>الاجراءات</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>#3456789</td>
+                  <td>
+                    <h6 class="mb-0">Mohamed ali</h6><small class="text-muted">عميل منذ 21\21\2020</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">مكة المكرمة</h6><small class="text-muted">السعودية</small>
+                  </td>
+                  <td>
+                    <h6 class="mb-0">21/1/2020</h6><small class="text-muted"> مساء 3:30</small>
+                  </td>
+                  <td>الى اقرم موقع تسليم</td>
+                  <td>كاش</td>
+                  <td><span class="m-color-text">بانتظار التاكيد</span></td>
+                  <td>9877 ريال</td>
+                  <td class="icons"><i class="mbi mbi-eye"></i><i class="mbi mbi-download2"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle with Popper.js-->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <!--  jquery-->
+  <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+  <!--  jquery-migrate-->
+  <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+  <!--  slick slider-->
+  <script src="../js/slick.js"></script>
+  <!-- intlTelInput-->
+  <script src="../js/intlTelInput.js"></script>
+  <!-- AOS-->
+  <script src="../js/aos.js"></script>
+  <!-- polyfilled-->
+  <script src="../js/plyr.polyfilled.js"></script>
+  <!--  chart-->
+  <script src="../js/chart/chart.min.js"></script>
+  <script src="../js/chart/chart-area-demo.js"></script>
+  <!--  main script-->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

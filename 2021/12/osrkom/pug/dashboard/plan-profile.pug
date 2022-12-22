@@ -1,0 +1,86 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" اعدادات الحساب ")
+  body.dashboard-body.mr-228
+    include ./includes/sidebar
+    .dashboard-container
+        +dashboard-navbar(" اعدادات الحساب ")
+        .row
+          .col-xl-8.mb-3
+            .shadow-sm.border.rounded-3
+                img.img-fluid.rounded-top.mb-4(src="../images/dashboard/plan.png", alt="")
+                div.px-4
+                    span خطتي الشهرية
+                    h4.mb-1 خطة برونزية
+                    br
+                    h5.mb-1 250 ريال شهرياً
+                    span.text-muted تاريخ السداد التالي 25/8/2022 (متبقي 12 يوم)
+
+                    h5.mb-1 مشمول الخطة
+                    div
+                        p
+                            i.fas.fa-check-circle.m-color-text.me-3
+                            | عدد منتجات لا محدود
+                        p
+                            i.fas.fa-check-circle.m-color-text.me-3
+                            | تقارير شاملة لمتجرك
+                        p
+                            i.fas.fa-check-circle.m-color-text.me-3
+                            | اضافة كوبونات خصم لعملاءك
+                    div.pb-4
+                        a.mb-lg-0.mb-3.d-inline-block.mx-1.m-color-shadow.d-color-bg-hover.text-white.border-0.px-5.py-2.text-decoration-none.rounded-pill.border.m-color-bg(href="#")   عرض باقي التفاصيل
+
+                        a.mb-lg-0.mb-3.d-inline-block.mx-1.m-color-shadow.w-color-text-hover.m-color-bg-hover.px-5.py-2.text-decoration-none.rounded-pill.border.m-color-border.m-color-text(href="plans.html")   ترقية الباقة
+
+          .col-xl-4.mb-3
+            .shadow-sm.border.rounded-3.p-3.h-100
+              img.rounded-circle.shadow.mb-3(src="../images/icons/user.png", alt="user", width="100", height="100")
+              h5.mb-0 ابو مازن للماكولات
+              a.s-color-text.m-color-text-hover(href="../vendor.html") رؤية المتجر
+              div.mt-3.text-muted
+                | rehammoa@gmail.com
+                i.mx-2.mbi.mbi-envelope
+              div.mb-3.text-muted
+                | 99223456789
+                i.mx-2.mbi.mbi-telephone
+              p
+                | نسيت كلمة المرور
+                a.mx-2.s-color-text.m-color-text-hover(href="profile-setting.html") إعادة تعيين
+              p
+                | شهادة الصحة
+                span.mx-2.s-color-text تم التاكد منها
+              p
+                |  موقعك
+                span.mx-2.text-dark الفروانية
+              a.mb-lg-0.mb-3.d-inline-block.mx-1.w-color-text-hover.m-color-bg-hover.px-5.py-2.text-decoration-none.rounded-pill.border.m-color-border.m-color-text(href="profile-setting.html")   تعديل ملف التعريف
+
+          .col-12
+            .shadow-sm.border.rounded-3.px-3.py-5
+              h4 إعدادات المتجر
+
+              .row
+                .col-lg-4
+                  a.text-dark.m-color-text-hover.text-decoration-none(href="wallet-earnings.html")
+                    .d-flex
+                      i.fas.fa-wallet.h2.me-3
+                      div
+                        h5.mb-0 محفظتي \ ارباحي
+                        small.text-muted رصيد المحفظة \ الارباح \الفواتير المستحقة
+
+                .col-lg-4
+                  a.text-dark.m-color-text-hover.text-decoration-none(href="#")
+                    .d-flex
+                      i.fas.fa-user.h2.me-3
+                      div
+                        h5.mb-0 موظفو المتجر
+                        small.text-muted ادارة الفريق و الموظفين
+
+                .col-lg-4
+                  a.text-dark.m-color-text-hover.text-decoration-none(href="#")
+                    .d-flex
+                      i.fas.fa-headset.h2.me-3
+                      div
+                        h5.mb-0 مساعدة
+                        small.text-muted تحديث مع الدعم الفني لدينا
+    include ./includes/scripts

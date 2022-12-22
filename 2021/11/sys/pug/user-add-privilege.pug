@@ -1,0 +1,60 @@
+extends components/layout.pug
+block title
+  |  اضافة صلاحية
+block main
+  +breadcrumb-in-1(' اضافة صلاحية لمستخدم  ', ' اضافة صلاحية لمستخدم  ', 'الرئسية', 'index.html')
+
+  form
+    .row
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | البيانات الاساسية
+
+            .card-body
+              .row
+                .col-12
+                  .form-group
+                    label  المستخدم
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option اسم المستخدم #{x}
+                .col-lg-4
+                  .form-group
+                    label  النظام
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option النظام #{x}
+                .col-lg-4
+                  .form-group
+                    label  التبويب
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option التبويب #{x}
+                .col-lg-4
+                  .form-group
+                    label  الشاشة
+                    select.form-control
+                      - for (var x = 1; x <= 10; x++)
+                        option الشاشة #{x}
+
+                .col-12
+                  .form-group
+                    label وصف
+                    textarea.form-control
+      .col-lg-6
+        section.content
+          .card.card-primary.card-outline
+            .card-header
+              i.fa.fa-list.ml-2
+              | الصلاحيات
+            .card-body
+              .row
+                .col-12
+                    each value, index in ["الوصول", "العرض", "الادخال", "التعديل", "الحذف", "التقارير"]
+                      .custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox", id=index)
+                        label.custom-control-label(for=index)='صلاحية ' + value
+        +btn-save

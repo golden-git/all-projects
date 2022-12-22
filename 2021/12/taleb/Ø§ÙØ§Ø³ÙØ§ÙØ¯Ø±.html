@@ -1,0 +1,822 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>الشركات
+</title>
+<!-- fontawesome-->
+<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+<!-- adminlte-->
+<link rel="stylesheet" href="dist/css/adminlte.css" />
+<!-- style1-->
+<link rel="stylesheet" href="dist/css/style1.css" />
+<!-- bootstrap-->
+<link rel="stylesheet" href="dist/css/bootstrap-rtl.css" />
+<!-- myEdit-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="./plugins/datatables/dataTables.bootstrap4.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="dist/css/myEdit.css" />
+<!-- style-->
+<link rel="stylesheet" href="dist/css/style.css" />
+<div class="wrapper">
+  <!-- navbar-->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="accountingSubMenu" href="#"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-magic"></i><span>روابط
+            سريعة</span></a>
+        <ul class="dropdown-menu" aria-labelledby="accountingSubMenu">
+          <li><a class="dropdown-item" href="index.html"><span>النظام</span></a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <div id="app">
+        <div>
+          <li class="navbar-link"><a class="nav-link" href="/mail"><i class="fa fa-bell"></i><span
+                class="badge badge-primary">0</span></a></li>
+        </div>
+      </div>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="mainSubMenu" href="#" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><i class="fa fa-th"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="transactionsSubMenu">
+          <li><a class="dropdown-item" href="#/tutorial/tutorials"><i class="fa fa-question-circle"></i><span>مركز
+                المعرفة</span></a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="mainSubMenu" href="#" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><i class="fa fa-language"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="transactionsSubMenu">
+          <li><a class="dropdown-item" href="#/translate?lang=ar"><i class="fa fa-language"></i><span>العربية</span></a>
+          </li>
+          <li><a class="dropdown-item" href="#/translate?lang=en"><i class="fa fa-language"></i><span>English</span></a>
+          </li>
+          <li><a class="dropdown-item" href="#/translate?lang=ur"><i class="fa fa-language"></i><span>ur</span></a></li>
+        </ul>
+      </li>
+      <li class="navbar-link"><a class="nav-link logout" href="#"><i class="fa fa-power-off"></i></a></li>
+    </ul>
+  </nav>
+  <!-- aside-->
+  <aside class="main-sidebar sidebar-light-primary elevation-4"><a class="brand-link" href="#">
+
+      <img src="dist/img/icon/logo1.png" width="200" height="40">
+      <span class="brand-text font-weight-light text-capitalize"> </span></a>
+
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+          </li>
+          <!-- index-->
+          <li class="nav-item"><a class="nav-link" href="index.html">
+
+
+              <img src="dist/img/icon/1.png" width="20" height="20">
+              <p>الرئيسية</p>
+            </a></li>
+          <!-- sys-->
+          <li class="nav-item"><a class="nav-link" href="%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%8A%D8%AF%D8%B1.html">
+              <img src="dist/img/icon/2.png" width="20" height="20">
+
+              <p> الاسلايجر </p>
+            </a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#"><img src="dist/img/icon/3.png" width="20" height="20">
+              <p> المدربين<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- add-->
+              <li class="nav-item"><a class="nav-link" href="%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%A8%D9%8A%D9%86.html">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>المدربين </p>
+                </a></li>
+              <!-- users-->
+              <li class="nav-item"><a class="nav-link"
+                  href="%D9%85%D8%AF%D8%B1%D8%A8%20%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%AC%D8%A7%D8%AA%20%D8%AE%D8%A7%D8%B5%D9%87.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p>مدرب احتياجات خاصه </p>
+                </a></li>
+              <!-- privilege-->
+
+              <!-- add privilege-->
+
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item"><a class="nav-link" href="%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A7%D8%AA.html"><img
+                src="dist/img/icon/4.png" width="20" height="20">
+
+              <p> الدورات </p>
+            </a></li>
+
+
+
+          <li class="nav-item"><a class="nav-link" href="%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D9%8A%D9%86.html"><img
+                src="dist/img/icon/5.png" width="20" height="20">
+
+              <p> المدرسين </p>
+            </a></li>
+
+
+          <li class="nav-item"><a class="nav-link" href="%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8.html"><img
+                src="dist/img/icon/6.png" width="20" height="20">
+
+              <p> الطلاب </p>
+            </a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="%D8%A7%D9%84%D9%83%D9%88%D8%A8%D9%88%D9%86%D8%A7%D8%AA.html"><img src="dist/img/icon/7.png"
+                width="20" height="20">
+
+              <p> الكوبونات </p>
+            </a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="%D8%A7%D9%84%D8%B3%D8%A7%D8%A6%D9%82%D9%8A%D9%86%D9%86.html"><img src="dist/img/icon/8.png"
+                width="20" height="20">
+              <p> المواصلات </p>
+            </a></li>
+
+          <li class="nav-item"><a class="nav-link" href="sys.html"><img src="dist/img/icon/9.png" width="20"
+                height="20">
+              <p> الاحتياجات الخاصة </p>
+            </a></li>
+
+
+
+          <li class="nav-item"><a class="nav-link" href="#"><img src="dist/img/icon/10.png" width="20" height="20">
+              <p> الطلبات<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- add-->
+              <li class="nav-item"><a class="nav-link"
+                  href="%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20-%20%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D9%8A%D9%86.html">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>طلبات المدرسين </p>
+                </a></li>
+              <!-- users-->
+              <li class="nav-item"><a class="nav-link"
+                  href="%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20-%20%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B5%D9%84%D8%A7%D8%AA.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p>طلبات المواصلات</p>
+                </a></li>
+              <!-- privilege-->
+
+              <!-- add privilege-->
+
+            </ul>
+          </li>
+
+
+
+
+
+          <li class="nav-item"><a class="nav-link"
+              href="%D8%A7%D9%84%D9%85%D9%86%D9%86%D8%B4%D8%A7%D9%87%20%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9.html"><img
+                src="dist/img/icon/12.png" width="20" height="20">
+              <p> المنشات التعليمية </p>
+            </a></li>
+
+
+
+
+
+
+          <!-- users-->
+          <li class="nav-item"><a class="nav-link" href="#"><img src="dist/img/icon/13.png" width="20" height="20">
+              <p> المستخدمين<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- add-->
+              <li class="nav-item"><a class="nav-link" href="add-user.html"><i class="far fa-circle nav-icon"></i>
+                  <p>اضافة مستخدم</p>
+                </a></li>
+              <!-- users-->
+              <li class="nav-item"><a class="nav-link" href="users.html"><i class="far fa-circle nav-icon"></i>
+                  <p>قائمة المستخدمين</p>
+                </a></li>
+              <!-- privilege-->
+              <li class="nav-item"><a class="nav-link" href="users-privilege.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p>الصلاحيات</p>
+                </a></li>
+              <!-- add privilege-->
+              <li class="nav-item"><a class="nav-link" href="user-add-privilege.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p>اضافة صلاحية لمستخدم</p>
+                </a></li>
+            </ul>
+          </li>
+          <!-- companies + bank-->
+
+
+          <li class="nav-item"><a class="nav-link" href="#"><img src="dist/img/icon/14.png" width="20" height="20">
+              <p> الاعدادت<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <!-- add-->
+              <li class="nav-item"><a class="nav-link"
+                  href="%D8%A7%D9%84%D8%A7%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p>الاعدادات عامه</p>
+                </a></li>
+              <!-- users-->
+              <li class="nav-item"><a class="nav-link"
+                  href="%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7%20%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D9%83%D8%A7%D9%85%20%D9%88%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9.html"><i
+                    class="far fa-circle nav-icon"></i>
+                  <p> الشروط والاحكام</p>
+                </a></li>
+              <!-- privilege-->
+
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+
+
+  <div class="content-wrapper" style="min-height: 757px;">
+    <!-- main content-->
+    <main class="content">
+      <div class="container-fluid">
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-12 mb-3">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">الرئسية</a></li>
+                  <li class="breadcrumb-item"><span>الاسلايدر</span></li>
+                </ol>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 new-cols">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-9">
+                  <h4 class="mt-0"></h4>
+                  <p class="text-muted"></p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-4">
+                      <div class="card mb-0">
+                        <div class="card-body">
+                          <div class="float-right">
+                            <i class="dripicons-user-group font-24 text-secondary"></i>
+                          </div>
+                          <span class="badge badge-danger"></span>
+                          <h3 class="font-weight-bold">1500</h3>
+                          <p class="mb-0 text-muted text-truncate font-weight-bold">اجمالي الصور</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-0">
+                        <div class="card-body">
+                          <div class="float-right">
+                            <i class="dripicons-cart  font-20 text-secondary"></i>
+                          </div>
+                          <span class="badge badge-info"></span>
+                          <h3 class="font-weight-bold">4000</h3>
+                          <p class="mb-0 text-muted text-truncate font-weight-bold"> الصور النشطه</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-0">
+                        <div class="card-body">
+                          <div class="float-right">
+                            <i class="dripicons-jewel font-20 text-secondary"></i>
+                          </div>
+                          <span class="badge badge-warning"></span>
+                          <h3 class="font-weight-bold">100</h3>
+                          <p class="mb-0 text-muted text-truncate font-weight-bold"> الصور الغير نشطه </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3 align-self-center">
+                  <img src="dist/img/dash.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <!--end card-body-->
+
+          </div>
+          <!--end card-->
+        </div>
+
+
+
+
+
+
+
+        <section class="content">
+          <div class="card card-primary card-outline card-outline-tabs">
+
+            <div class="card-body">
+              <div class="tab-content" id="tabs-tabContent">
+                <!-- companies-->
+                <div class="tab-pane fade active show" id="tabs-1" role="tabpanel" aria-labelledby="tabs-1-tab">
+                  <section class="content">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card shadow-none">
+                          <div class="d-flex bg-gray-light justify-content-between px-4 py-3">
+                            <h4 class="align-self-center">الاسلايدر </h4>
+                            <div class="align-self-center">
+                              <button class="btn btn-primary departments" data-toggle="modal" data-target="#modal1"><i
+                                  class="fa fa-plus"></i> اضافة</button>
+                              <button class="btn btn-tool" type="button" data-card-widget="maximize"><i
+                                  class="fas fa-expand"></i></button>
+                            </div>
+                          </div>
+                          <!-- add modal-->
+                          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title"> اضافة اسلايدر </h5>
+                                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                      aria-hidden="true">×</span></button>
+                                </div>
+                                <form>
+                                  <div class="modal-body row">
+                                    <div class="form-group col-lg-6">
+                                      <label>العنوان عربي</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>العنوان انجليزي</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-6">
+                                      <label> صورة الاسلايدر</label>
+                                      <input class="form-control" type="file" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الرابط </label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الفترة من </label>
+                                      <input class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الفترة الي </label>
+                                      <input class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <div class="form-group">
+                                        <label>الحاله</label>
+                                        <select name="status" class="form-control ">
+                                          <option value="1">نشط</option>
+                                          <option value="0">غير نشط</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+
+                                      <div class="form-group">
+                                        <label>مكان الاسلايدر</label>
+                                        <select name="place" class="form-control ">
+                                          <option value="0">الدورات</option>
+                                          <option value="1">المنشات التعليمية</option>
+                                          <option value="2">الاحتياجات الخاصه</option>
+                                          <option value="3">المواصلات</option>
+                                          <option value="4">الصفحه الرئيسيه</option>
+                                          <option value="5"> المدرسين </option>
+                                        </select>
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                  <div class="modal-footer justify-content-start">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                    <button class="btn btn-primary add" type="button">حفظ</button>
+                                  </div>
+                                </form>
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- edit modal-->
+                          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">تعديل الاسلايدر </h5>
+                                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                      aria-hidden="true">×</span></button>
+                                </div>
+                                <form>
+                                  <div class="modal-body row">
+                                    <div class="form-group col-lg-6">
+                                      <label>العنوان عربي</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>العنوان انجليزي</label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-6">
+                                      <label> صورة الاسلايدر</label>
+                                      <input class="form-control" type="file" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الرابط </label>
+                                      <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الفترة من </label>
+                                      <input class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <label>الفترة الي </label>
+                                      <input class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                      <div class="form-group">
+                                        <label>الحاله</label>
+                                        <select name="status" class="form-control ">
+                                          <option value="1">نشط</option>
+                                          <option value="0">غير نشط</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+
+                                      <div class="form-group">
+                                        <label>مكان الاسلايدر</label>
+                                        <select name="place" class="form-control ">
+                                          <option value="0">الدورات</option>
+                                          <option value="1">المنشات التعليمية</option>
+                                          <option value="2">الاحتياجات الخاصه</option>
+                                          <option value="3">المواصلات</option>
+                                          <option value="4">الصفحه الرئيسيه</option>
+                                          <option value="5"> المدرسين </option>
+                                        </select>
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                  <div class="modal-footer justify-content-start">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                    <button class="btn btn-primary add" type="button">حفظ</button>
+                                  </div>
+                                </form>
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- show modal-->
+                          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">عرض تفاصيل الاسلايدر</h5>
+                                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                      aria-hidden="true">×</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col-12 mb-4">
+                                      <div class="media"><img class="align-self-start mr-3"
+                                          src="dist/img/default-150x150.png" alt="logo" />
+                                        <div class="media-body">
+                                          <h5 class="mt-0">اليوم الوطني السعودي </h5>
+                                          <p class="h5">alyoum alwtani alsudia</p>
+                                          <p class="h5">مبلغ الاعلان :150 ريال</p>
+                                          <p class="h5">الحاله :
+                                            <span class="badge bg-success">نشط</span>
+
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <div class="form-group">
+                                        <label>الرابط</label>
+                                        <p class="h5">https://talab.evancarlo.com/slider </p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <div class="form-group">
+                                        <label> الفترة </label>
+                                        <p class="h5">2021-10-06 -
+                                          2021-10-30
+                                        </p>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                      <div class="form-group">
+                                        <label> تاريخ الاضافة </label>
+                                        <p class="h5">
+                                          2021-10-30
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <div class="form-group">
+                                        <label>المستخدم</label>
+                                        <p class="h5">taleb </p>
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                                <div class="modal-footer justify-content-start">
+                                  <button class="btn btn-secondary" type="button" data-dismiss="modal">اغلاق</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                          <div class="card">
+
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                              <div class="table-responsive">
+                                <table id="example1" class="table table-bordered table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th> </th>
+                                      <th>الرقم</th>
+                                      <th>العنوان عربي </th>
+                                      <th>العنوان انجليزي </th>
+                                      <th>المبلغ</th>
+                                      <th>الفترة من </th>
+                                      <th>الي الفترة</th>
+                                      <th>الحاله </th>
+                                      <th>تاريخ الاضافة </th>
+                                      <th> المستخدم</th>
+
+                                      <th> خيارات</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="dist/img/default-150x150.png" alt="alt" width="63" height="63" />
+                                      </td>
+                                      <td>1</td>
+                                      <td> اليوم الوطني١ </td>
+                                      <td>اليوم الوطني١ </td>
+                                      <td>1000 ريال</td>
+                                      <td>2021-09-19 </td>
+                                      <td>2021-10-01 </td>
+                                      <td> <label class="switch ">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label></td>
+                                      <td>2021-09-19 </td>
+                                      <td>taleb</td>
+                                      <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal"
+                                          data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                        <div class="dropdown d-inline-block">
+                                          <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span
+                                              class="caret"></span></button>
+                                          <div class="dropdown-menu"><a class="dropdown-item text-info" href="#"
+                                              data-toggle="modal" data-target="#modal3"><i
+                                                class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a
+                                              class="dropdown-item text-warning" href="#" data-toggle="modal"
+                                              data-target="#modal2"><i
+                                                class="fa fa-edit mr-1"></i><span>تعديل</span></a><a
+                                              class="dropdown-item delete text-danger" href="#"><i
+                                                class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="dist/img/default-150x150.png" alt="alt" width="63" height="63" />
+                                      </td>
+                                      <td>1</td>
+                                      <td> اليوم الوطني١ </td>
+                                      <td>اليوم الوطني١ </td>
+                                      <td>1000 ريال</td>
+                                      <td>2021-09-19 </td>
+                                      <td>2021-10-01 </td>
+                                      <td> <label class="switch ">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label></td>
+                                      <td>2021-09-19 </td>
+                                      <td>taleb</td>
+                                      <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal"
+                                          data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                        <div class="dropdown d-inline-block">
+                                          <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span
+                                              class="caret"></span></button>
+                                          <div class="dropdown-menu"><a class="dropdown-item text-info" href="#"
+                                              data-toggle="modal" data-target="#modal3"><i
+                                                class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a
+                                              class="dropdown-item text-warning" href="#" data-toggle="modal"
+                                              data-target="#modal2"><i
+                                                class="fa fa-edit mr-1"></i><span>تعديل</span></a><a
+                                              class="dropdown-item delete text-danger" href="#"><i
+                                                class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="dist/img/default-150x150.png" alt="alt" width="63" height="63" />
+                                      </td>
+                                      <td>1</td>
+                                      <td> اليوم الوطني١ </td>
+                                      <td>اليوم الوطني١ </td>
+                                      <td>1000 ريال</td>
+                                      <td>2021-09-19 </td>
+                                      <td>2021-10-01 </td>
+                                      <td> <label class="switch ">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label></td>
+                                      <td>2021-09-19 </td>
+                                      <td>taleb</td>
+                                      <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal"
+                                          data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                        <div class="dropdown d-inline-block">
+                                          <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span
+                                              class="caret"></span></button>
+                                          <div class="dropdown-menu"><a class="dropdown-item text-info" href="#"
+                                              data-toggle="modal" data-target="#modal3"><i
+                                                class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a
+                                              class="dropdown-item text-warning" href="#" data-toggle="modal"
+                                              data-target="#modal2"><i
+                                                class="fa fa-edit mr-1"></i><span>تعديل</span></a><a
+                                              class="dropdown-item delete text-danger" href="#"><i
+                                                class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="dist/img/default-150x150.png" alt="alt" width="63" height="63" />
+                                      </td>
+                                      <td>1</td>
+                                      <td> اليوم الوطني١ </td>
+                                      <td>اليوم الوطني١ </td>
+                                      <td>1000 ريال</td>
+                                      <td>2021-09-19 </td>
+                                      <td>2021-10-01 </td>
+                                      <td> <label class="switch ">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label></td>
+                                      <td>2021-09-19 </td>
+                                      <td>taleb</td>
+                                      <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal"
+                                          data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                        <div class="dropdown d-inline-block">
+                                          <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span
+                                              class="caret"></span></button>
+                                          <div class="dropdown-menu"><a class="dropdown-item text-info" href="#"
+                                              data-toggle="modal" data-target="#modal3"><i
+                                                class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a
+                                              class="dropdown-item text-warning" href="#" data-toggle="modal"
+                                              data-target="#modal2"><i
+                                                class="fa fa-edit mr-1"></i><span>تعديل</span></a><a
+                                              class="dropdown-item delete text-danger" href="#"><i
+                                                class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="dist/img/default-150x150.png" alt="alt" width="63" height="63" />
+                                      </td>
+                                      <td>1</td>
+                                      <td> اليوم الوطني١ </td>
+                                      <td>اليوم الوطني١ </td>
+                                      <td>1000 ريال</td>
+                                      <td>2021-09-19 </td>
+                                      <td>2021-10-01 </td>
+                                      <td> <label class="switch ">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                        </label></td>
+                                      <td>2021-09-19 </td>
+                                      <td>taleb</td>
+                                      <td><a class="btn btn-info btn-xs" href="#" data-toggle="modal"
+                                          data-target="#modal3"><i class="fa fa-eye mr-1"></i>عرض</a>
+                                        <div class="dropdown d-inline-block">
+                                          <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-expanded="false"><span>المزيد</span><span
+                                              class="caret"></span></button>
+                                          <div class="dropdown-menu"><a class="dropdown-item text-info" href="#"
+                                              data-toggle="modal" data-target="#modal3"><i
+                                                class="fa fa-eye mr-1"></i><span>تفاصيل</span></a><a
+                                              class="dropdown-item text-warning" href="#" data-toggle="modal"
+                                              data-target="#modal2"><i
+                                                class="fa fa-edit mr-1"></i><span>تعديل</span></a><a
+                                              class="dropdown-item delete text-danger" href="#"><i
+                                                class="fa fa-trash mr-1"></i><span>حذف</span></a></div>
+                                        </div>
+                                      </td>
+                                    </tr>
+
+                                  </tbody>
+                                  <tfoot>
+
+                                  </tfoot>
+                                </table>
+
+                              </div>
+
+
+
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+
+
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- branch-->
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </main>
+  </div>
+  <!-- footer-->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-inline"></div>
+  </footer>
+</div>
+<!-- jquery-->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- bootstrap-->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- adminlte-->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- min-->
+<script src="dist/js/main.js"></script>
+
+
+
+<script src="./plugins/datatables/jquery.dataTables.js"></script>
+<script src="./plugins/datatables/dataTables.bootstrap4.js"></script>
+<!-- SlimScroll -->
+<script src="../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="./plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="./dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>

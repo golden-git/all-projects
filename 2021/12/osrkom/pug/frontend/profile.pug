@@ -1,0 +1,119 @@
+doctype html
+html(dir="rtl", lang="ar")
+  include ./mixins/all.pug
+  +head(" الملف الشخصي   ")
+  body
+    include ./includes/navbar
+    .profile.py-5
+        .mt-md-4.food
+            .container-fluid
+                .row 
+                    .col-md-4.mb-md-0.mb-3
+                        .nav.d-md-block.d-flext.border-0.nav-tabs#nav-tab(role='tablist')
+                            
+                            span.nav-link.pointer.active#nav-1-tab(
+                                data-bs-toggle='tab',
+                                data-bs-target='#nav-1',
+                                role='tab',
+                                aria-controls='nav-1',
+                                aria-selected='true') تعديل بياناتي الشخصية
+                                
+                            span.nav-link.pointer#nav-2-tab(
+                                data-bs-toggle='tab',
+                                data-bs-target='#nav-2',
+                                role='tab',
+                                aria-controls='nav-2',
+                                aria-selected='true') عناويني
+                    
+                    .col-md-8
+                        .tab-content#nav-tabContent
+                            
+                            .tab-pane.fade.show.active(id="nav-1",role='tabpane', aria-labelledby='nav-1-tab')
+                                // auth
+                                .auth.text-center.mx-auto.my-4(style="max-width: 100%;")
+                                    
+                                    div.p-4.type-container.w-100
+                                        h6.mb-4.title.title-font تعديل بياناتي
+                                        +input-font-icon("text", "mbi-user", "اسم المستخدم")
+                                        .form-floating.mb-3
+                                            input.phone-input-style.form-control#phone(type="tel", placeholder="رقم الجوال")
+                                        +input-font-icon("emain", "mbi-envelope", "البريد الالكتروني")
+                                        .mb-3.position-relative.input-style-container.form-floating.input-style-container-with-icon
+                                                span.form-icon
+                                                    img(src="./images/icons/lock.png")
+                                                a.btn.icon.chang-password.pointer.d-color-bg.text-white.m-color-bg  تغيير
+                                                input.input-style.form-control(type="password", placeholder="كلمة المرور")
+                                                label="كلمة المرور"
+                                        .actions.mb-3
+                                            a.w-100.new(href="#") تحديث
+                                             
+                                        
+                             
+                            .tab-pane.fade(id="nav-2",role='tabpane', aria-labelledby='nav-2-tab')
+                                // auth
+                                .auth.text-center.mx-auto.my-4(style="max-width: 100%;")
+                                    div.p-4.type-container.w-100
+                                        - for (x=1; x <= 2; x++)
+                                            div.border.p-2.rounded.mb-3
+                                                .form-check.d-flex
+                                                    input.form-check-input#default(type='radio', name='default')
+                                                    label.ms-2.form-check-label(for='default') عنوان افتراضي
+                                                .code.mb-3.mb-2.d-flex.justify-content-between
+                                                    div
+                                                        .d-flex
+                                                            div.align-self-start.text-start
+                                                                h4.title-font.mb-0 تبوك, السعودية
+                                                                p.h6.mb-0.text-muted شاعر احمد سعود
+                                                                p.h6.mb-0.text-muted رقم الشقة 33 -رقم البناية 12
+
+ 
+                                                    div
+                                                        button.border-0.px-3.rounded-pill.btn.g-color-bg.m-color-bg-hover.text-dark منزل  
+                                                .d-flex.justify-content-between.h6
+                                                    span.pointer.text-success تعديل العنوان 
+                                                    span.pointer.text-danger حذف العنوان
+                                        .actions.mb-3.w-100
+                                            // add location Modal 
+                                            .modal.fade#addLocationModal(tabindex='-1', aria-labelledby='addLocationModalLabel', aria-hidden='true')
+                                                .modal-dialog
+                                                    .modal-content.border-0
+                                                        .modal-header
+                                                            h5.modal-title#addLocationModalLabel اضافة عنوان جديد
+                                                            button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                                                        .modal-body.check-out
+                                                            .row.map
+                                                                .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='الشارع')
+                                                                .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='البناية')
+                                                                .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='رقم الشقة')
+                                                                .col-md-6.mb-3: input.shadow-none.set-input.form-control.border-0.rounded-3.g-color-bg( type='text', placeholder='الطابق')
+                                                                .col-md-6.mb-3
+                                                                    .row
+                                                                        .col.mb-3
+                                                                            .form-check.location.pointer
+                                                                                label.form-check-label.pointer(for="check11")
+                                                                                    i.fas.fa-home.me-2
+                                                                                    | منزل
+                                                                                input.form-check-input.m-0.p-0.pointer#check11(type="radio", name="location")
+                                                                        .col.mb-3
+                                                                            .form-check.location.pointer
+                                                                                label.form-check-label.pointer(for="check22")
+                                                                                    i.fas.fa-building.me-2
+                                                                                    | عمل
+                                                                                input.form-check-input.m-0.p-0.pointer#check22(type="radio", name="location")
+
+                                                        .modal-footer.justify-content-start
+                                                            button.btn.btn-secondary(type='button', data-bs-dismiss='modal') الغاء
+                                                            button.btn.m-color-bg.d-color-bg-hover.text-white(type='button') حفظ
+                                            // add location btn 
+                                            button.btn.new.m-color-bg(type='button', data-bs-toggle='modal', data-bs-target='#addLocationModal')
+                                             i.fas.fa-plus
+                                            a.new(href="#") تحديث
+
+    include ./includes/footer
+    style.
+          
+        footer::after {
+            background-color: #fff
+        }
+
+    include ./includes/scripts

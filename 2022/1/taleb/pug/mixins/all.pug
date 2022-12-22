@@ -1,0 +1,101 @@
+mixin head(title)
+  head
+    //- +meta-title(" من نحن ")
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    title=title
+    include ../includes/styles
+
+mixin course()
+  // course
+  .course
+    // img course
+    a.img-course(href="course.html")
+      img.img-fluid(src="./images/course/2.jpg", alt="")
+    .course-info
+      // course price
+      span.course-price 150 رس
+      // course title
+      h4.course-title: a(href="course.html") التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات
+      // course reviews
+      .course-reviews
+        div.d-inline
+          span
+              i.mbi.mbi-star2.full
+          span
+              i.mbi.mbi-star2.full
+          span
+              i.mbi.mbi-star2.full
+          span
+              i.mbi.mbi-star2.full
+          span
+              i.mbi.mbi-star-outline.half
+        span.number (4 مراجعات)
+      hr
+      // icons
+      .d-flex.justify-content-between.icons
+        div
+          span 0
+          i.mbi.mbi-user
+        div
+          span 22h 30m
+          i.mbi.mbi-clock3
+
+mixin blog()
+  // blog
+  .blog
+    // img blog
+    a.img-blog(href="#")
+      img.img-fluid(src="./images/blog/1.jpg", alt="blog title")
+    .blog-info
+      // blog title
+      h4.blog-title: a(href="#") التغذية: قم ببناء نظام غذائي مثالي وخطة وجبات
+      p.blog-desc ولا الموز أو لكن الثمن ، آلام الألم ، ألم الأسد ، جلاد الأعضاء الأحرار لا شيء ناعم. هذا فقط.
+      hr
+      // icons
+      .d-flex.justify-content-between.icons
+        div.align-self-center
+          span Amir
+          i.mbi.mbi-user
+        div.align-self-center
+          span 22/1/20222
+          i.mbi.mbi-clock3
+
+mixin accordion-filter(accordion_id, flush_id, flush_collapse_id, title, loop_title)
+  .accordion.accordion-flush(id="accordion-"+accordion_id)
+    .accordion-item
+      h2.accordion-header(id="flush-"+flush_id)
+        .accordion-button.px-0.border-0.pointer(
+          data-bs-toggle="collapse",
+          data-bs-target="#flush-collapse-"+flush_collapse_id,
+          aria-expanded="true",
+          aria-controls="flush-collapse-"+flush_collapse_id)=title
+
+      div.show.border-top-0.pb-3.rounded-0.accordion-collapse.collapse(id="flush-collapse-"+flush_collapse_id, aria-labelledby="flush-"+flush_id, data-bs-parent="#accordion-"+accordion_id)
+        div.accordion-body.py-0.accordion-body-scroll
+          ul.list-unstyled
+            -for(x = 1; x <= 4; x++)
+              .form-check.mb-2.pointer
+                input.form-check-input.pointer(id="Check"+flush_collapse_id+x, type="checkbox")
+                label.form-check-label.pointer(for="Check"+flush_collapse_id+x) #{loop_title}  #{x}
+
+
+mixin course-topic-accordion(accordion_id, flush_id, flush_collapse_id, title, loop_title)
+  .accordion-item.border.mb-3.rounded-8
+    h2.accordion-header(id="flush-"+flush_id)
+      .accordion-button.pointer.collapsed.bg-transparent.border-0(
+        data-bs-toggle="collapse",
+        data-bs-target="#flush-collapse-"+flush_collapse_id,
+        aria-expanded="false",
+        aria-controls="flush-collapse-"+flush_collapse_id)=title
+
+    div.accordion-collapse.collapse(id="flush-collapse-"+flush_collapse_id, aria-labelledby="flush-"+flush_id, data-bs-parent="#accordion-"+accordion_id)
+      div.accordion-body.accordion-body-scroll.p-0
+        -for(x = 1; x <= 2; x++)
+            h6.d-flex.border-top.text-muted.mb-0.justify-content-between.p-3
+              span.align-self-center
+                i.fab.fa-youtube.me-2
+                =loop_title
+              span.align-self-center 00:03:00
+
